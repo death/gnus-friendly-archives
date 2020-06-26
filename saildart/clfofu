@@ -1,0 +1,694 @@
+--
+From: unknown
+Subject: (no subject)
+
+Introduction
+Welcome to the Common Lisp Foreign Function Call Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Foreign-Function-Call@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLFOFU.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Foreign-Function-Call-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Scott Fahlman		CMU		fahlman@cmuc
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Ben Zorn		UC Berkeley	zorn@berkeley
+Dave Matthews		HP		matthews.hplabs@csnet-relay (I hope)
+Tom Kaczuarek		ISI		kaczuarek@isi
+Walter VanRoggen	DEC		wvanroggen@dec-marlboro
+Ellen Waldrum		TI		Waldrum.TI-CSL@csnet-relay
+Carl Hewitt		MIT		hewitt-foreign-function@mc
+Eric Benson		Lucid		eb@su-ai
+Rick Hudson		UMass		hudson.umass-cs@csnet-relay
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-foreign-function-call@SU-AI.ARPA  
+Subject: Introduction
+Date: 23 Sep 1984 16:15 EST
+
+Welcome to the Common Lisp Foreign Function Call Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Foreign-Function-Call@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLFOFU.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Foreign-Function-Call-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Scott Fahlman		CMU		fahlman@cmuc
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Ben Zorn		UC Berkeley	zorn@berkeley
+Dave Matthews		HP		matthews.hplabs@csnet-relay (I hope)
+Tom Kaczuarek		ISI		kaczuarek@isi
+Walter VanRoggen	DEC		wvanroggen@dec-marlboro
+Ellen Waldrum		TI		Waldrum.TI-CSL@csnet-relay
+Carl Hewitt		MIT		hewitt-foreign-function@mc
+Eric Benson		Lucid		eb@su-ai
+Rick Hudson		UMass		hudson.umass-cs@csnet-relay
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-foreign-function-call@SU-AI.ARPA  
+Subject: Chairman
+Date: 02 Oct 1984 13:15 EST
+
+Now that we've basically got most everyone who is interested on the mailing
+list, let's pick a chairman. I suggest that people volunteer for chairman.
+
+The duties are to keep the discussion going, to gather proposals and review
+them, and to otherwise administer the needs of the mailing list. I will
+retain the duties of maintaining the list itself and the archives, but
+otherwise the chairman will be running the show. 
+
+Any takers?
+			-rpg-
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1984.10.3.13.36.23.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  Re: Chairman 
+cc:  cl-foreign-function-call@su-ai.arpa
+To:  Dick Gabriel <RPG@su-ai.arpa>
+Date:  Wednesday, 3 October 1984 09:39:07 EDT
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 3 Oct 84  06:42:04 PDT
+
+I've worked on remote procedure calling from Spice Lisp a good bit; I'll
+volunteer.  However, If someone else is hot to be chairman.... 
+
+- --Joe
+
+--
+From: RPG  
+To:    cl-foreign-function-call@SU-AI.ARPA  
+Subject: Chairman
+Date: 13 Oct 1984 14:46 EST
+
+No one has been nominated as chairman of the Foreign Function Call
+subgroup.  I will need either a volunteer or a nomination.  Please respond
+by October 24. At the end of this month I want to see some ideas and
+proposals coming in on this mailing list.
+
+			-rpg-
+
+--
+From:  Rob MacLachlan <RAM@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 13 Oct 1984  17:46-EDT from Dick Gabriel <RPG at SU-AI.ARPA>
+Subject:  Chairman 
+Cc:    cl-foreign-function-call@SU-AI.ARPA
+To:    Dick Gabriel <RPG@SU-AI.ARPA>
+Message-ID:  <RAM.12055210093.BABYL@CMU-CS-C.ARPA>
+Date:  Sat, 13 Oct 1984  19:26 EDT
+Received:  ID <RAM@CMU-CS-C.ARPA>; Sat 13 Oct 84 19:26:56-EDT
+
+
+    I believe Joe Ginder (jrg@cmu-cs-spice) volunteered to chair the
+foreign function call subgroup.  I am repeating his notification, and
+since he is out of town, he will be unable to retract it.
+
+    So far as activity goes, we here at CMU have a very hairy
+mechanism which Spice Lisp uses to communicate with the outside world.
+It is in fact a remote procedure call mechanism rather than a function
+call mechanism, since in Spice, nearly everything is done by sending
+messages to the kernel or various server processes.  In the Spice
+context, "foreign function call" is meaningless, since code for
+another language cannot run in a Lisp process.
+
+    There are basically two levels in the system:
+ 1] Matchmaker turns a language-independant definitions file into code
+    in the target language.  A definition file, which has a
+    pascal-like syntax, contains both definitions of calls and
+    definitions of any types or constants related to the calls.
+    See [cmu-cs-c]prva:<slisp.docs>mm.press, mm.doc, mm.mss.
+ 2] Aliens are a new type added to Lisp, with substantial support in
+    the compiler.  The code generated by matchmaker is defined in
+    terms of Aliens.  Aliens are used to get a fairly abstract way to
+    efficiently manipulate unboxed objects.
+    See [cmu-cs-c]prva:<slisp.docs>nalien.press, nalien.mss.
+
+    Of these two things, Aliens are probably more interesting to other
+implementations.  Aliens are not very useful by themselves however.
+They really need something to take a concise description and expand it
+into alien definitions.
+
+    I'm really not sure what this group is supposed to accomplish, and
+thus am unsure how relevant our experience is to the group's goals.
+Are we really supposed to come up with a standard mechanism suitable
+for the white pages?  It seems to me that the very meaning of foreign
+function call is so implementation dependant as to make this hopeless.
+Does anyone else out there have any opinions about this sort of thing?
+
+  Rob
+
+--
+From:  "Walter van Roggen" <WVANROGGEN@DEC-MARLBORO.ARPA>
+In-Reply-To:  Message from "Rob MacLachlan <RAM@CMU-CS-C.ARPA>" of Sat 13 Oct 84 19:31:35-EDT
+cc:  RPG@SU-AI.ARPA, cl-foreign-function-call@SU-AI.ARPA,
+To:  RAM@CMU-CS-C.ARPA
+Subject:  Re: Chairman 
+Date:  Mon 15 Oct 84 17:16:26-EDT
+Received:  from DEC-MARLBORO.ARPA by SU-AI.ARPA with TCP; 15 Oct 84  14:18:21 PDT
+
+I believe we should examine all the relevant alternatives and make
+recommendations consistent with every implementation's constraints.
+Now that may not mean much--we might recommend that there is no
+syntax and semantics which reasonably represents what most users
+would want on different implementations.
+But I think that users of our respective systems do actually have
+fairly similar requirements, even though the PERQ has a completely
+different underlying view of the world than the VAX. People do
+have lots of pre-written code in various languages, and it would
+be desirable to have whole systems be portable (not just lisp code).
+A foreign-function call specification should try to hide all the
+details that it can. What we need to discuss is what kinds of
+data can be passed, how to handle different parameter passing
+conventions, and the like.
+A useful start on this would be discussing alien-structures. The
+PERQ and the Vax probably already have some agreement here. (I
+haven't read your latest document.)
+
+			---Walter
+- -------
+
+--
+From:  Tom Kaczmarek <KACZMAREK@USC-ISIF.ARPA>
+To:  cl-foreign-function-call@SU-AI.ARPA
+Subject:  Import and Export
+Date:  18 Oct 1984 07:28:43 PDT
+Received:  from USC-ISIF.ARPA by SU-AI.ARPA with TCP; 18 Oct 84  07:30:44 PDT
+
+
+COMMON LISP FUNCTIONS WILL BE CONSIDERED FOREIGN FUNCTIONS BY SOME
+
+I believe that we ought to consider the fact that programs written in other
+languages may want to use programs written in common lisp.  This means we
+would have to specify what needs to be in some "kernel" that would have to
+be linked in with the other program.  My first guess is that the kernel
+will have to be much less expensive than a full common lisp implementation
+or there won't be many takers--experience indicates that the non-lisp
+community is more concerned than they ought to be about space/time
+efficiencies.  I realize that these are old-fashioned concerns, but they
+still exist and I suspect that sometimes we all still have them.  I believe
+the CMU approach allows common lisp functions to be used (Could someone
+from CMU please correct me if that is wrong?) but doesn't help with the
+efficiency issue.
+
+This seems to be an area where we could provide some fairly common standard
+for the community to use.
+
+Tom Kaczmarek
+- -------
+
+--
+From:  Rob MacLachlan <RAM@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 18 Oct 1984  10:28-EDT from Tom Kaczmarek <KACZMAREK at USC-ISIF.ARPA>
+Subject:  Import and Export
+Cc:    cl-foreign-function-call@SU-AI.ARPA
+To:    Tom Kaczmarek <KACZMAREK@USC-ISIF.ARPA>
+Message-ID:  <RAM.12056440683.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 18 Oct 1984  12:06 EDT
+Received:  ID <RAM@CMU-CS-C.ARPA>; Thu 18 Oct 84 12:06:50-EDT
+
+
+    What are you saying?  This sounds suspiciously like another
+attempt to subset Common Lisp.  Flaming on this topic should be
+directed to the subsets group.  This doesn't sound any different from
+saying that we should allow Common Lisp subsets because some things
+are too hard to implement efficiently.
+
+    Any reasonable FFC scheme should allow incoming was well as
+outgoing calls.  This is definitely true of Matchmaker interfaces.  I
+don't see how this has anything to do with efficiency of language
+features.  In any case, people excessively worried about efficiency
+aren't going to call a Lisp function from their "efficient" other
+language because they want something done fast; they are going to do
+it because they want to do something otherwise impossible.
+
+  Rob
+
+--
+From:  Rob MacLachlan <RAM@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 18 Oct 1984  13:50-EDT from Tom Kaczmarek <KACZMAREK at USC-ISIF.ARPA>
+Subject:  Import and Export
+cc:    cl-foreign-function-call@SU-AI.ARPA
+To:    Tom Kaczmarek <KACZMAREK@USC-ISIF.ARPA>
+Message-ID:  <RAM.12056466863.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 18 Oct 1984  14:30 EDT
+Received:  ID <RAM@CMU-CS-C.ARPA>; Thu 18 Oct 84 14:30:34-EDT
+
+    Date: Thursday, 18 October 1984  13:50-EDT
+    From: Tom Kaczmarek <KACZMAREK at USC-ISIF.ARPA>
+    To:   Rob MacLachlan <RAM>
+    Re:   Import and Export
+
+    Constraints imposed on a design may make it inappropriate to allocate large
+    chunks of memory (either virtual or real) to all of common lisp, which
+    appears to be quite large from the comments I've heard.  I don't think we
+    should be telling the non-lisp world to leave us alone if you have such
+    problems.  
+
+    This is either not really a subset issue or it is a very special kind of
+    subset.  I would like compiled functions to know how much baggage they need
+    to carry along with them to operate.  I realize one answer is all of common
+    lisp but I am unhappy with that reply.
+
+    One of the arguments being used in favor of subsetting is
+basically that.  "If I have an application written in Common Lisp, how
+do I get rid of the things I don't use so that it will fit in a small
+address space?"  The answer being proposed is to have a subset that
+contains the stuff you need without "all that garbage".
+
+    It is my opinion that this problem is much better addressed by
+having each application writer decide what parts of the language he
+wants to use.  The Lisp system can then provide a facility to make a
+saved lisp image which only contains objects actually referenced by
+the application.  This is a fairly simple thing to do, being a modest
+extension of the garbage collector.  I have written something of the
+sort, which I have used to make a 1MB editor core image out of our
+2.75MB lisp core image.  This core image still contained the reader
+and printer and the error system and eval and the package system and
+the debugger and format because they were all referenced by the
+editor.  Of course if I had an application that didn't use these
+systems it would have been much smaller.
+
+  Rob
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1984.10.23.12.56.30.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  Re: Import and Export
+cc:  Tom Kaczmarek <KACZMAREK@usc-isif.arpa>, cl-subsets@su-ai.arpa
+To:  cl-foreign-function-call@su-ai.arpa
+Date:  Tuesday, 23 October 1984 09:25:42 EDT
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 23 Oct 84  06:31:32 PDT
+
+The CMU approach does allow other languages to make remote procedure calls
+to Common Lisp.  I don't see that the issue of a minimal kernel is
+particularly relevant to this.  For a foreign language to make calls on
+Common Lisp does not require that the Lisp it is calling have some specific
+functionality more than that it is there and can be called.  I certainly
+don't expect to define what functions are avaliable in fortran libraries in
+order to define a foreign funcall mechanism for Common Lisp; I don't see how
+anything different is implied by the reverse situation.
+
+When we are concerned about supplying a minimal lisp for some application at
+Perq (and CMU), we just load whatever application stuff there is into a lisp
+and disembowel the lisp in such a way as to make all of the Common Lisp stuff
+that isn't used available for GC.  We then force a GC and save the new,
+application-specific lisp core.  The real problem then, becomes knowing what
+minimal stuff the foreign language will call in order not to disembowel too
+much.  I don't really have much of a feel for how important such minimal
+lisps are; I think this a task of the subset committee.  
+
+To the subset committee: I can imagine applications where the delivery
+vehicle for a lisp application is a fairly limited piece of hardware; is a
+subset appropriate or would the method described above be acceptable?  We've
+found that very straightforward methods of reducing a lisp core's size
+result in dramatic space reductions; more thoughtful approaches should
+result in really small lisps for delivery of applications without requiring
+a specific minimal subset (although a "kernel" subset might be useful for
+other reasons).
+
+- --Joe
+
+--
+From:  Doug <Faunt%hplabs.csnet@csnet-relay.arpa>
+Source-Info:   From (or Sender) name not authenticated.
+To:  cl-foreign-function-call%su-ai.arpa@csnet-relay.arpa, 
+Subject:  removal form list
+Date:  Tue 23 Oct 84 13:32:54-PDT
+Message-Id:  <8410232033.AA29013@HP-VENUS>
+Received:  by HP-VENUS id AA29013; Tue, 23 Oct 84 13:33:08 pdt
+
+Please remove dcm%hplabs@csnet-relay (or other equivalent address)
+from your list, since this user doesn't exist here by that name,
+and I'm tired of looking at the error messages.
+- -------
+
+--
+From: RPG  
+To:    cl-foreign-function-call@SU-AI.ARPA  
+Subject: Hello folks
+Date: 27 Oct 1984 21:53 EST
+
+We now have a chairman of the foreign function call subgroup:  Joe Ginder
+of Perq Systems.  I think he will make an excellent chairman.  For your
+information I am including the current members of the mailing list.
+
+I will now let Joe take over responsibility for the discussion.
+
+Dave Mattews		HP		"hpfclp!foreign%hplabs"@csnet-relay
+John Foderaro		Berkeley	jkf@ucbmike.arpa
+Steve Muchnick		SUN		"ucbvax!sun!muchnick"@berkeley
+Skef Wholey		CMU		Wholey@cmuc
+Ron MacLachlan		CMU		RAM@cmu-cs-c
+Scott Fahlman		CMU		fahlman@cmuc
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Ben Zorn		UC Berkeley	zorn@berkeley
+Tom Kaczmarek		ISI		kaczmarek@isi
+Walter VanRoggen	DEC		wvanroggen@dec-marlboro
+Ellen Waldrum		TI		Waldrum.TI-CSL@csnet-relay
+Carl Hewitt		MIT		hewitt-foreign-functions@mc
+Eric Benson		Lucid		eb@su-ai
+Rick Hudson		UMass		hudson.umass-cs@csnet-relay
+Neal Feinberg		Symbolics	feinberg@scrc-stony-brook
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1984.10.29.17.23.55.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  Re: Hello folks   
+cc:  cl-foreign-function-call@su-ai.arpa
+To:  Dick Gabriel <RPG@su-ai.arpa>
+Date:  Monday, 29 October 1984 13:09:14 EST
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 29 Oct 84  10:16:12 PST
+
+Have members of this list checked out Rob MacLachlan's alien document at
+CMU? (It can be accessed from [cmu-cs-c]prva:<slisp.docs>nalien.press or
+nalien.mss.  This is used in conjunction with mm.press (or mm.mss))  These
+documents attempt to explain how remote procedure calls are implemented in
+Spice, particularly Spice Lisp on the Perq.  
+
+In a nutshell, remote procedure calls are specifying by giving a
+language-independent template for a program, matchmaker, which then
+generates the corresponding remote procedure interfaces for Spice Lisp, C,
+and Perq Pascal.  Spice Lisp makes use of "alien structures" in order to
+manipulate non-tagged data acceptable to C or Pascal.  Spice Lisp remote
+procedures that call Pascal servers usually accept normal Lisp types as
+input, convert to the corresponding Pascalish type and send off a message
+containing the input arguments.  The Pascal remote server receives the
+message, does something with the input parameters (which look to it just as
+they would if a Pascal process had sent the message) and returns results in
+a message.  The Spice Lisp process receives the result message, converts the
+results into Lisp types and returns them as multiple values.  These simple
+conversions are handled inside program-generated (matchmaker) code; your
+lisp programs do not have to handle alien data directly.
+
+Complications arise when the input arguments or return values to the remote
+procedure are more "structured" types, like arrays or Pascal records
+(assuming a Pascal server).  Your program must treat these types as alien
+and use alien structure mechanisms for manipulating them.  For records,
+these mechanisms are much like defstruct mechanisms in appearance.  For
+arrays, a defstruct like mechanism with an index is used.  For example,
+assuming a Pascal record:
+
+type fruit = record of
+	apple : integer;
+	orange : boolean;
+	pear : integer
+     end;
+
+A lisp program dealing with a fruit alien record AF would use something like:
+
+	(setq apple-info (alien-access (fruit-apple AF)))
+
+or
+
+	(setf (alien-access (fruit-apple AF)) 17)
+
+
+If using an alien array defined as:
+
+type FOO = array [0..28] of integer;
+
+a lisp program delaing with alien array A would use something like:
+
+	(setq seventeenth (alien-access (foo A 16)))
+
+or 
+
+        (setf (alien-access (foo a 16)) 1024)
+
+Remote procedure parameters are basically call-by-value, but if a pointer
+type is passed, the pages containing the data are marked copy-on-write and
+shared between processes as an optimization.  It is also possible to say
+that the pages containing the data pointed to be a pointer type should be
+deallocated after the call; thus, in effect, the pages are mapped out of the
+calling processes space and into the called processes space.  In all of
+this, though, keep in mind that processes cannot share memory -- shared
+pages are an optimization used sometimes when convenient and when it can fit
+the semantics required.
+
+Also, much of the hair in Spice Lisp aliens is there to promote compilation
+into efficient alien manipulating code.  Is this part of the Spice Lisp
+alien specification generally useful?  (I suspect so.)
+
+I suppose we should discuss mechanisms for handling foreign data (like
+aliens), parameter passing mechanisms, and foreign call syntax (do they look
+just like lisp function calls as in Spice Lisp; is there any good reason for
+them not to?).  Is there any implementation-independent linkage information
+that we should consider?  Is any of this implementation-independent enough
+for a Common Lisp foreign funcall specification to make sense?  Are the Spice
+Lisp mechanisms for remote procedure calls a good start on a Common Lisp
+spec?  
+
+- --Joe
+
+Rob:  Feel free to correct any misinformation I've given above.  Also, you
+might discuss something about what aliens were intended to do in terms of
+making efficient compiled alien code possible.
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1985.2.5.19.14.0.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  no standard?
+To:  cl-foreign-function-call@su-ai.arpa
+Date:  Tuesday, 5 February 1985 14:29:26 EST
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 5 Feb 85  11:34:45 PST
+
+So far, discussion on the topic of foreign funcall in common lisp has been
+notably scarce.  At CMU, where we have integrated a foreign function calling
+mechanism into several implementations of Common Lisp, the feeling seems to
+be that the problem of incompatibilities arising from this issue is
+relatively small and solvable on an ad hoc basis.  Neither does our
+experience in working on this problem lead us to any solution that we
+believe deserves the status and permanance of a Common Lisp standard given
+the perceived small magnitude of the problem.  (That is, it seems a bad idea
+to impose the possibly large burden of a foreign funcall standard on
+implementors when the derived benefits do not seem to justify it.)  Thus, I
+propose that the foreign function calling committee come to the conclusion
+that we do not want to standardize on a foreign funcall mechanism.  We might
+come up with a set of guidelines for creating such a mechanism, which could
+later evolve into a standard if circumstances warrent.  Comments?  Flaming
+objections?  Accusations of laziness?
+
+- --Joe Ginder
+
+--
+From:  Tom Kaczmarek <KACZMAREK@USC-ISIF.ARPA>
+In-Reply-To:  <1985.2.5.19.14.0.Joseph.Ginder@cmu-cs-spice.arpa>
+To:  cl-foreign-function-call@SU-AI.ARPA
+Subject:  Re: no standard?
+Date:   5 Feb 1985 14:50:51 PST
+Received:  from USC-ISIF.ARPA by SU-AI.ARPA with TCP; 5 Feb 85  14:50:26 PST
+
+If the only choices are guidelines or a standard, then I'm in favor of a
+standard.  We should probably come up with something stronger than
+guidelines but less rigid than a standard.  Issues that are "small and
+solvable on an ad hoc basis" have a way of building up to make systems
+difficult to transport.  
+
+Regarding the burden of a standard on an implementor, we could establish a
+half-way standard--if you have a foreign function calling mechanism, then
+it must meet the standard.  I know there is some distaste for subsets but
+it is probably unavoidable.  Treatment of numeric data already defines
+subsets in terms of what numeric types are available.  Graphics will also
+define subsets based on the gross characteristics of the hardware, e.g.,
+bitmap versus crt.
+
+In an earlier exchange, I suggested having a pared down version of the
+common lisp environment so that other languages could more palatably use
+lisp in a subservant manner.  Apparently, the CMU group has done this
+successfully, although for different reasons.  I got the impression that
+there were no specific tools for aiding in the process.  I would like to
+see guidelines issued on this matter, including possible recommendations
+for tools.
+
+The previous point is one instance of what I see as a problem that
+standardizing on just a language, like common lisp, does not help.  Since
+the programming environment is so influential in what we do, I would like
+to see at least strong recommendations about what ought to be in the
+environment.  Although one might find faults with the result of the efforts
+by the ADA community regarding standardizing the environment, they have the
+right intentions.
+- -------
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1985.2.6.15.56.13.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  Re: no standard?
+cc:  cl-foreign-function-call@su-ai.arpa
+To:  Tom Kaczmarek <KACZMAREK@usc-isif.arpa>
+Date:  Wednesday, 6 February 1985 11:20:21 EST
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 6 Feb 85  08:24:02 PST
+
+The CMU group, which I work with, has made "pared down versions of Common
+Lisp" for use as stand-alone applications.  The technique is to build a core
+image of lisp with an application loaded and then (basically) unintern all
+symbols, GC, and write a new core image useful only for running the
+application.  We also reduce the size of the core through other fairly
+implementation-dependent techniques.  This is not the same as providing a
+subset of Common Lisp for use by other languages.  In our environment, one
+could use this technique to build a server that other languages could use
+through remote procedure calls, but the complexity of the "interface" is not
+particularly dependent upon what particular pieces of Common Lisp are still
+alive in the server -- that is, the "subset" of Common Lisp used for the
+server doesn't matter to the foreign languages using the service.
+
+As for wanting a standard rather than guidelines or nothing at all, I'd
+happily support a standard that made sense for many implementations.  I am
+not at all happy with standardizing unless we can standardize on something
+that will fulfill some real need and not be obsolete in 6 months when
+someone figures out how to do it better.  If someone has ideas about what a
+foreign function call standard should be, then please submit them to the
+mailing list for discussion.  So far, I've seen no proposals and am
+beginning to conclude that this is either not a problem that people really
+care about or that no one really has good ideas about what such a standard
+should be.  In fact, our experience at porting programs at CMU leads us to
+believe that foreign function call conventions are just not that much of an
+obstacle to porting applications.
+
+- --Joe
+
+
+P.S.  In signing up for this list, I expected that several of us at CMU
+would submit a proposal.  We have since decided that our solutions to the
+foreign function call problem are simply not general enough or good enough
+to make into a standard.  If you would like to see some documentation on
+what we have done, official pointers to it were sent out in an earlier
+mailing to this list.  Various versions of documentation for this exist on
+CMU-CS-C PRVA:<SLISP.DOCS> ALIEN.MSS and RED-ALIEN.MSS; and CMU-CS-SPICE
+/usr/slisp/docs/red/red-alien.mss.  These are various versions of a document
+that details how we deal with "alien" data -- that is, data from non-lisp
+languages.  I don't recall which of these (if any) is the document pointed
+to in the earlier mail.
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1985.2.22.21.30.50.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  proposal from Data General from Dan Oldman
+cc:  slisp@cmu-cs-c.arpa
+To:  cl-foreign-function-call@su-ai.arpa
+Date:  Friday, 22 February 1985 16:36:53 EST
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 22 Feb 85  13:42:02 PST
+
+I have placed a file in publicly readable places at CMU that is a proposal
+for a foreign function call mechanism for Common Lisp sent to me by Dan
+Oldman for the lisp group at Data General.  Dan does not yet have net access
+and arranged to send me a tape with the proposal on it.
+
+The proposal is about 36 thousand characters in length (thus I did not mail
+it out) and can be found in:
+
+	[CMU-CS-C] prva:<slisp.docs>dgprop.txt
+			and
+	[CMU-CS-SPICE] /usr/slisp/docs/dgprop.txt
+
+Please check it out and send your comments to the foreign function call 
+mailing list.
+
+- --Joe
+
+--
+From:  Rob MacLachlan <RAM@CMU-CS-C.ARPA>
+Subject:  proposal from Data General from Dan Oldman
+To:    cl-foreign-function-call@SU-AI.ARPA
+Message-ID:  <RAM.12090022857.BABYL@CMU-CS-C.ARPA>
+Date:  Sat, 23 Feb 1985  13:39 EST
+Received:  ID <RAM@CMU-CS-C.ARPA>; Sat 23 Feb 85 13:39:08-EST
+
+
+    I have looked at this proposal, and was not particularly suprised
+what I discovered.  It is a proposal for a foreign-call facility for
+an environment totally different from ours, and it is totally
+different.  This is the reason I don't believe that it make sense to
+talk about a Common Lisp standard for such things.  
+
+    This is not to say that discussion of the subject is pointless,
+however.  I think that sharing experience, and even code, could be
+very profitable.  DEC's foreign function call facility was based on
+the previous incarnation of Aliens, and the DG proposal seems to show
+some influence.  We have since replaced that facility with a much more
+general one, which has only the name in common with the old one.
+
+    The new Aliens were designed to provide a fairly general and
+abstract way for programs to define complex unboxed data structures.
+Users are not supposed to define data structures directly using
+Aliens, they use some other high-level mechanism which emits Alien
+definitions.  In the Spice environment, the high-level definition
+language is called MatchMaker, which specifies remote-procedure-call
+interfaces in a fairly language independent fashion.
+
+    Aliens can be used in other ways too.  We have a DEFRECORD macro
+for defining unboxed records which is implemented in terms of
+Aliens that is one page of code.  I suspect that if DG adapted Aliens to
+their environment, the facilities which they propose that are not directly
+provided by Aliens could be implemented by ten pages of code;  the
+inverse is definitely not true.
+
+    The basic idea of Aliens is that the application specifies how to
+perform an access as a sequence of indexing and indirection
+operations.  This access path should eventually result in a type of
+Alien which can be directly accessed by the Alien-Access primitive.
+An Alien is conceptually a triple (address, size, type), and is in
+general represented by a structure which must be consed.  There is
+extensive support in the compiler for open-coding Alien operations,
+and in practice operations are always open-coded.  The generated code
+is fairly good, probably better than the code on the other end.
+
+    In Spice Lisp we needed a powerful mechanism for dealing with
+foreign objects, since the entire Lisp system is written in Lisp, yet
+to do anything you have to send a message to some server.  The
+traditional approach of doing the operating system interface in some
+other language was not available to us, so we had to some up with
+something else.  We needed to be able to access arbitrarily complex
+unboxed data structures with a high level of efficiency; Aliens is the
+result.
+
+    The current Alien document is in
+        [cmu-cs-c]prva:<slisp.docs>red-alien.mss
+    The press file for our red-pages which includes this file
+        [cmu-cs-c]prva:<slisp.docs>red.press
+
+  Rob
+
+--

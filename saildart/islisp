@@ -1,0 +1,495 @@
+--
+From:  mcvax!inria.inria.fr!chaillou@uunet.UU.NET (Jerome Chailloux)
+Subject:  iso-list
+To:  inria!inria.inria.fr!chailloux@uunet.UU.NET, rpg@sail.stanford.edu
+Message-Id:  <8805152055.AA08475@inria.inria.fr>
+Date:  Sun, 15 May 88 22:55:48 +0200
+Received:  by inria.inria.fr; Sun, 15 May 88 22:55:48 +0200 (MET)
+
+Dick,
+
+Here is the content of the "iso-list" that I have established
+last week "iso-lisp@inria.inria.fr" :
+
+	chailloux
+	queinnec
+	tran
+	cointe
+	chailloux@ilog.fr
+	nuyens@ilog.fr
+	mldr@smapl.emse.fr
+	girardot@smapl.emse.fr
+	regourd@crcge1.cge.fr
+	padget@maths.bath.ac.uk
+	raper@cm.soton.ac.uk
+	R.Tobin@ed.ac.uk
+	ukc!ed.aiva!jeff
+	unido!ztivax!dae
+	unido!ztivax!kolb
+	unido!gmdzi!christal
+	unido!gmdzi!gmdxps!wedi
+	bsj@cri-std.dk
+	mcvax!dutrun!dutesta!arno
+	mcvax!dutinfd!poel
+	mcvax!dutinfd!jan
+	iso-lisp@sail.stanford.EDU
+
+And here is the rest of the list that you have to 
+establish at sail.
+
+	masinter.pa@xerox.com
+	baggins@ibm.com
+	dussud%jenner@ti-csc.com
+	rpg@sail.stanford.edu
+	willc%tekchips.tek.com@tektronix.cs.net
+	mathis@a.isi.edu
+	kmp@stony-brook.scrc.symbolics.com
+	
+	holtz@cascade.carleton.cdn
+	
+	kurokawa@JPNTSCVM.bitnet
+	ito@ito.aoba.tohuku.junet
+	yuasa@tutics.tut.junet
+	furuyama@nttslh.ntt.junet
+
+Jerome.
+
+--
+From:  mcvax!inria.inria.fr!chaillou@uunet.UU.NET (Jerome Chailloux)
+Subject:  next meeting
+To:  inria!inria.inria.fr!iso-lisp@uunet.UU.NET
+Message-Id:  <8808160747.AA26029@inria.inria.fr>
+Date:  Tue, 16 Aug 88 09:47:10 +0200
+Received:  by inria.inria.fr; Tue, 16 Aug 88 09:47:10 +0200 (MET)
+
+This is the "iso-lisp" mailing list :
+Internet :		iso-lisp@inria.inria.fr
+or (for USA) :		iso-lisp@sail.stanford.edu
+
+Mr Omnes (from the Commission des Communautes Europeennes)
+has accepted to host the third WG16/Lisp at Brussels,
+Monday 21st and Thuesday 22nd of November.
+
+The exact location and accomodations will follow very soon.
+
+Jerome.
+
+--
+From:  Takayasu ITO <ito%ito.ito.ecei.tohoku.junet@UTOKYO-RELAY.CSNET>
+To:  iso-lisp%sail.stanford.edu%relay.cs.net%u-tokyo.junet@UTOKYO-RELAY.CSNET
+Message-Id:  <8809110707.AA00221@ito.ito.ecei.tohoku.junet>
+Return-Path:  <ito@ito.ito.ecei.tohoku.junet>
+Date:  Sun, 11 Sep 88 16:07:21 jst
+Received:  by ito.ito.ecei.tohoku.junet (4.12/6.3Junet-1.0)
+Subject: (no subject)
+
+Subject: Test
+Dear Christian and Jerome,
+Thanks for establishing iso lisp mail address through cs-net.
+As I sent my telefax and e-mail(hoping that either of them has been received by
+you) I have found that I will be busy at the end of next June since I will be
+the chairman of our Department.After the middle of next September to the end
+of next November I will be not busy,compared with other days.
+So I would like to propose the exchange of Toyo(or Sendai) meeting and Munich
+meeting as follows
+  the 6th WG,at Munich, the end of next June or the beginning(or sometime) of
+             next July(I may not be able to attend,but Dr. Yuasa will attend.)
+  the 7th WG,at Tokyo or Sendai, September 20,21 and 22,1989
+             (I will take care of having this meeting.)
+I hope that this will work.
+Looking forward to seeing you at Brussels.
+Sincerely,
+Takayasu Ito
+
+--
+From:  Takayasu ITO <ito%ito.ito.ecei.tohoku.junet@UTOKYO-RELAY.CSNET>
+To:  iso-lisp%sail.stanford.edu%relay.cs.net%u-tokyo.junet@UTOKYO-RELAY.CSNET
+Message-Id:  <8809110712.AA00231@ito.ito.ecei.tohoku.junet>
+Return-Path:  <ito@ito.ito.ecei.tohoku.junet>
+Date:  Sun, 11 Sep 88 16:12:23 jst
+Received:  by ito.ito.ecei.tohoku.junet (4.12/6.3Junet-1.0)
+Subject: (no subject)
+
+Subject: Mail address
+ My mail address has been changed as follows:
+    ito@ito.ecei.tohoku.junet
+although my previous mail address should be valid until next year.
+Takayasu Ito
+
+--
+From:  Takayasu ITO <ito%ito.ito.ecei.tohoku.junet@UTOKYO-RELAY.CSNET>
+Subject:  Corrections on my mail on ISO Lisp of Long Term Design
+To:  iso-lisp%sail.stanford.edu%relay.cs.net%u-tokyo.junet@UTOKYO-RELAY.CSNET
+Message-Id:  <8809271229.AA00262@ito.ito.ecei.tohoku.junet>
+Return-Path:  <ito@ito.ito.ecei.tohoku.junet>
+Date:  Tue, 27 Sep 88 22:29:52+0900
+Received:  by ito.ito.ecei.tohoku.junet (3.2/6.3Junet-1.0)
+
+ 2nd line: "intersts" should be "interests"
+ 3rd line: "simantanously of ISLIP" should be "simultaneously of ISLISP".
+Thanks.
+Takayasu Ito
+
+--
+From:  Takayasu ITO <ito%ito.ito.ecei.tohoku.junet@UTOKYO-RELAY.CSNET>
+Subject:  ISO Lisp of Long Term Design
+To:  iso-lisp%sail.stanford.edu%relay.cs.net%u-tokyo.junet@UTOKYO-RELAY.CSNET
+Message-Id:  <8809271222.AA00255@ito.ito.ecei.tohoku.junet>
+Return-Path:  <ito@ito.ito.ecei.tohoku.junet>
+Date:  Tue, 27 Sep 88 22:22:38+0900
+Received:  by ito.ito.ecei.tohoku.junet (3.2/6.3Junet-1.0)
+
+At the 2nd ISO/IEC JTC1/SC22/WG16 at Snowbird we made two votes on designing
+ISO Lisp. Most of the members expressed their intersts on designing Long Term
+Design of ISO Lisp,after or simanltanously of ISLIP.
+Then, what is ISO Lisp in Long Term Design?
+I would like to propose to exchange some opinions on this matter,at the 3rd WG16meeting at Brussels.
+Looking forward to seeing you at Brussels.
+Sincerely,
+Takayasu Ito
+(P.S.: From Japan Mr. T. Kurokawa and I will attend at the 3rd WG16 meeting,and        Mr. Kurokawa will explain our efforts on Int'l Character Set Handling.)
+
+--
+From:  Richard P. Gabriel <mcvax!lucid.com!rpg@uunet.UU.NET>
+Subject:  US Position Statement
+To:  queinnec@poly.poly.fr, inria!inria.inria.fr!iso-lisp@uunet.UU.NET
+Message-Id:  <8811101723.AA02698@challenger>
+Date:  Thu, 10 Nov 88 09:23:43 PST
+Received:  by challenger id AA02698g; Thu, 10 Nov 88 09:23:43 PST
+
+
+The following is the US Position Statement, which was requested at the
+Snowbird ISO meeting. This position statement was developed by X3J13
+with the collaboration of Chris Haynes and Will Clinger from the IEEE
+Scheme standardization group. This statement accurately represents the
+position of X3J13.
+
+*********************************************************************
+
+The US is currently undertaking two standardization efforts in Lisp:
+X3J13 is standardizing Common Lisp for ANSI, and IEEE is standardizing
+Scheme.  The US believes that these two efforts cover a wide range of
+concerns and uses for Lisp: Scheme is small, elegant, and
+mathematically well-founded, and Common Lisp is full-featured, mature,
+and commercially viable.  Within the United States, there is no demand
+for another Lisp standard at this time. 
+
+The current activity of WG16 is to develop a standard for a dialect of
+Lisp directed at a community of users who are served neither by Common
+Lisp nor by Scheme---that dialect is IsLisp.  Although is is unlikely
+that IsLisp will have major near term commercial significance within
+the US, the US supports the IsLisp standardization effort as long as
+it does not negatively affect standards for other dialects of Lisp.
+In particular, the US feels that it is important not to have two
+standardized dialects of Lisp that are nearly identical unless one is
+a strict subset of the other.  Having two such similar but different
+dialects weakens the position of users who have come to depend on one
+of the dialects.
+
+The US believes that the primary focus of standardization is to codify
+existing practice to support the creation and delivery of portable
+software.  Thus, the major focus of the US standardization efforts is
+to provide stability to the community of Common Lisp and Scheme users.
+Of secondary importance are the invention of new Lisp dialects and the
+standardization of Lisp dialects or features not in common usage.  The
+US therefore agrees with the ISO goal of a near term standard in the
+1990 time frame along with longer range consideration of future
+dialects and features.
+
+Common Lisp is in wide use in Europe, Japan, and Australia.
+Implementations of Common Lisp are under way in the UK, Germany,
+Italy, and Japan (and possibly other countries).  In each of these
+countries there are companies whose customers depend on portable
+software written in Common Lisp.  The future of these companies thus
+depends on having a Common Lisp standard.
+
+The US believes that Common Lisp is a valid candidate for
+international standardization both because it is used internationally
+and also because it is a mature and stable dialect.  Common Lisp has
+been under design and specification for 8 years.  Commercial quality
+implementations of Common Lisp have been available for 4 years.  The
+near term standardization of ISO Common Lisp would have substantial
+positive impact on the acceptance of existing commercial Lisp
+implementations and on the viability of future Lisp dialects as
+vehicles for emerging applications.
+
+For these reasons, the US proposes the development of an ISO standard
+for Common Lisp.  Furthermore, the US proposes that WG16 request X3J13
+to prepare the ISO draft standard for Common Lisp.  The ISO Common
+Lisp draft and the ANSI Common Lisp draft should be identical.  The US
+believes such a draft standard could be developed by December 1989.
+The US also believes the development of an ISO standard for Common
+Lisp is within the charter of WG16, which endorses the standardization
+of multiple dialects of Lisp. At some point in the future, it may be
+appropriate to develop an ISO standard for Scheme.
+
+Looking beyond near term standardization, the US feels that an
+important task for WG16 is working towards a next generation dialect
+of Lisp, and this can be accomplished by drawing on the lessons
+learned from existing dialects of Lisp.
+
+--
+From:  mcvax!ilog.ilog.fr!chaillou@uunet.UU.NET (Jerome Chailloux)
+Subject:  ISO Lisp meeting
+To:  inria!inria.inria.fr!iso-lisp@uunet.UU.NET
+Message-Id:  <8811141755.AA03518@ilog.ilog.fr>
+Received:  by ilog.ilog.fr, Mon, 14 Nov 88 18:55:35 +0100
+Date:  Mon, 14 Nov 88 18:55:35 +0100
+
+Dear Colleagues,
+
+Just a last minute reminder:
+
+The next WG 16 ISO Lisp meeting is to take place in Brussels on
+November 21 and 22 at the following address:
+
+Berlaymont Building ; Meeting Room S 15 at 10:30 a.m.
+Rond Point Schuman - 1040 Brussels 
+
+If you have any problem you can call M. Omnes'secretary, 
+Mrs Rees in Brussels:
+	Tel. (322) 236 12 07
+
+If you have not yet an hotel, you can try :
+
+Hotel President Nord : Tel. (322) 219 00 60 - telex 61417
+Hotel President Centre : Tel. (322) 219 00 65 - telex 26784
+Hotel Royal Windsor : Tel. (322)511 42 15 - telex 62905
+Hotel Arenberger : Tel. (322) 511 07 70 - tlex 25660
+
+For further information, you can contact me or Mrs Odile chenetier
+at ILOG:
+	Tel. +33 (1) 46 63 66 66
+
+I am looking forward to our next meeting,
+
+Jerome Chailloux
+
+--
+From: RPG 
+To:    "@ISLISP.DIS[P,DOC]"@SAIL.Stanford.EDU    
+Subject: National Submissions
+Date: 10 Aug 1989 08:23 EST
+
+Colleagues:
+
+Last week I sent the US submissions for possible drafts to AFNOR and to
+several heads of delegation. I sent via UPS Chapters 1 through 5, Chapter
+8, and parts of Chapter 6 of the X3J13 draft, and all of the IEEE Scheme
+draft to the following individuals:
+
+Dr. Jerome Chailloux
+Dr. Dieter Kolb
+Prof. Takayasu Ito
+Prof. Julian Padget
+
+I have not yet received any submissions by other delegations.
+
+			-rpg-
+
+--
+From: RPG 
+To:    "@ISLISP.DIS[P,DOC]"@SAIL.Stanford.EDU    
+Subject: Action Item Responses
+Date: 05 Jan 1990 10:59 EST
+
+At the autumn meeting of X3J13 I presented the two questions posed at
+the September WG 16 meeting in Sendai Japan. The first question was
+asked as follows:
+
+   Each member body willing to participate to the ``CL subset approach''
+   is requested to produce for the next WG 16 meeting:
+
+   -Its definition of ``kernel'' concept
+
+   -The list of features that must be present in the Kernel
+
+The following is the precise answer formulated by X3J13:
+
+   Several times X3J13 considered the question of Common Lisp subsets.
+   There was a subcommittee on subsets which was unable to produce an
+   acceptable subset definition; the iteration subcommittee considered
+   making some iteration constructs optional and decided against it; and
+   the optionality of CLOS was considered and rejected because there has
+   been a recognized need for object-oriented programming in Lisp.
+
+   X3J13 finally decided that no technically acceptable subset is
+   consistent with the primary goals of X3J13, which place a strong
+   emphasis on portability of code.
+
+   Therefore, X3J13 advises against ISO WG 16 standardizing a subset of
+   Common Lisp.
+
+The second question was asked as follows:
+
+   Each member body is requested to identify their long term goals and
+   starting preferences.
+
+The following is the precise answer formulated by X3J13:
+
+   X3J13 is interested in exploring long-term Lisp standardization by
+   focusing on areas such as parallel processing, modules, distributed
+   computing, multi-language programming, and user interfaces.  At this
+   time, X3J13 has no more detailed ideas about a starting point for long
+   term standardization.
+
+X3J13 also prepared the following statement, which they asked me to
+distribute to WG 16:
+
+   X3J13 was not explicitly requested to do so, but we would like to
+   clarify our intention in the following sentence from page 1-17:
+
+      The language described in this standard contains no subsets,
+      although subsets are not forbidden.
+
+   We mean by this that we do not support subset standards, but we do support
+   (and envision) subset implementations.  Such implementations would be marked
+   as specified in Section 1.5, bullet 6.
+
+   To clarify what we mean when we use the word subset:
+
+      Language L is a subset of language L' iff
+       for every valid program P in language L
+        P is also a valid program in language L'
+         and P has the same defined behavior in both L and L'.
+
+--
+From:  queinnec@poly.polytechnique.fr (Queinnec Christian)
+To:  iso-lisp@inria.inria.fr
+Message-Id:  <9001081343.AA02758@poly.polytechnique.fr>
+Date:  Mon, 8 Jan 90 14:43:51 +0100
+Received:  from poly.polytechnique.fr by inria.inria.fr (5.61+/89.0.8) via Fnet-EUnet id AA09630; Mon, 8 Jan 90 14:45:30 +0100 (MET)
+Subject: (no subject)
+
+Originally From: Dick Gabriel <RPG@SAIL.Stanford.EDU>
+Original Date: 03 Jan 90  1442 PST
+Subject: Action Item Responses from US
+
+
+
+************************************************************************
+
+At the autumn meeting of X3J13 I presented the two questions posed at
+the September WG 16 meeting in Sendai Japan. The first question was
+asked as follows:
+
+   Each member body willing to participate to the ``CL subset approach''
+   is requested to produce for the next WG 16 meeting:
+
+   -Its definition of ``kernel'' concept
+
+   -The list of features that must be present in the Kernel
+
+The following is the precise answer formulated by X3J13:
+
+   Several times X3J13 considered the question of Common Lisp subsets.
+   There was a subcommittee on subsets which was unable to produce an
+   acceptable subset definition; the iteration subcommittee considered
+   making some iteration constructs optional and decided against it; and
+   the optionality of CLOS was considered and rejected because there has
+   been a recognized need for object-oriented programming in Lisp.
+
+   X3J13 finally decided that no technically acceptable subset is
+   consistent with the primary goals of X3J13, which place a strong
+   emphasis on portability of code.
+
+   Therefore, X3J13 advises against ISO WG 16 standardizing a subset of
+   Common Lisp.
+
+The second question was asked as follows:
+
+   Each member body is requested to identify their long term goals and
+   starting preferences.
+
+The following is the precise answer formulated by X3J13:
+
+   X3J13 is interested in exploring long-term Lisp standardization by
+   focusing on areas such as parallel processing, modules, distributed
+   computing, multi-language programming, and user interfaces.  At this
+   time, X3J13 has no more detailed ideas about a starting point for long
+   term standardization.
+
+X3J13 also prepared the following statement, which they asked me to
+distribute to WG 16:
+
+   X3J13 was not explicitly requested to do so, but we would like to
+   clarify our intention in the following sentence from page 1-17:
+
+      The language described in this standard contains no subsets,
+      although subsets are not forbidden.
+
+   We mean by this that we do not support subset standards, but we do support
+   (and envision) subset implementations.  Such implementations would be marked
+   as specified in Section 1.5, bullet 6.
+
+   To clarify what we mean when we use the word subset:
+
+      Language L is a subset of language L' iff
+       for every valid program P in language L
+        P is also a valid program in language L'
+         and P has the same defined behavior in both L and L'.
+
+--
+From:  queinnec@poly.polytechnique.fr (Queinnec Christian)
+Subject:  Dates for the next ISO meeting
+To:  iso-lisp@inria.inria.fr
+Message-Id:  <9004020740.AA23426@poly.polytechnique.fr>
+Date:  Mon, 2 Apr 90 09:40:50 +0200
+Received:  by poly.polytechnique.fr (5.57/Ultrix3.1-B)
+
+
+SInce the Lisp and FP conference will be held on thursday 27 to friday
+29 of june, I propose to hold the ISO meeting on tuesday 26 just before 
+the conference.
+	Christian Queinnec
+
+--
+From:  Jeff Dalton <jeff@aiai.edinburgh.ac.uk>
+In-Reply-To:  Queinnec Christian's message of Mon, 2 Apr 90 09:40:50 +0200
+Subject:  Re: Dates for the next ISO meeting
+To:  Queinnec Christian <queinnec@poly.polytechnique.fr>,
+Message-Id:  <RFC-822*584.9004021536@subnode.aiai.ed.ac.uk>
+Date:  02 Apr 90 15:39:29 GMT
+X400-Received:  by /PRMD=uk.ac/ADMD=gold_400/C=gb/;
+Received:  from kwai.inria.fr by inria.inria.fr (5.61+/89.0.8) via Fnet-EUnet id AA09404; Mon, 2 Apr 90 17:41:48 +0200 (MET)
+
+> SInce the Lisp and FP conference will be held on thursday 27 to friday
+> 29 of june, I propose to hold the ISO meeting on tuesday 26 just before 
+> the conference.
+
+This requires that I change my travel plans.  Of course, during the
+conference is worse.  How did this mess happen?
+
+--
+From:  Thom Linden <baggins@IBM.com>
+Subject:  sophia meeting
+Message-ID:  <900403.150057.baggins@IBM.com>
+To:  Christian Queinnec <mcvax!inria.inria.fr!queinnec@uunet.uu.net>,
+Date:  Tue, 03 Apr 90 15:00:57 PDT
+Received:  from ALMVMD by IBM.COM (IBM VM SMTP R1.2.1MX) with BSMTP id 3093; Tue, 03 Apr 90 15:01:00 PDT
+
+I understand L&FP registration is Tuesday, 26th June.  This
+should not be a conflict with a WG16 meeting in Sophia since
+it is presumably a short train/car ride back to Nice that evening.
+
+What is the agenda?  For example, what documents
+are expected to be commented upon?  Even a pre-preliminary agenda sent
+over the network would be of great help.
+
+Regards,
+  Thom
+
+--
+From:  queinnec@poly.polytechnique.fr (Queinnec Christian)
+Subject:  Next ISO meeting
+To:  iso-lisp@inria.inria.fr
+Message-Id:  <9007031407.AA07964@poly.polytechnique.fr>
+Date:  Tue, 3 Jul 90 16:07:34 +0200
+Received:  by poly.polytechnique.fr (5.57/Ultrix3.1-B)
+
+
+The next ISO meeting will be held in Blanes (near Barcelona, Spain)
+on friday 22 march 1991.
+	Christian.
+
+--

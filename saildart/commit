@@ -1,0 +1,98 @@
+--
+From: unknown
+Subject: (no subject)
+
+cl-iso/su
+Proposed Message regarding X3J13 Membership
+
+Below is a proposed message announcing the committee memberships,
+progress, and what to do next. Please comment and/or amend this.
+Once we all agree, we should mail it out.
+
+Subject: Members of the Common Lisp Committee
+
+At the December Common Lisp meeting Bob Mathis, Scott Fahlman, Guy Steele,
+Dan Weinreb, Dave Moon, and Dick Gabriel were charged with the duty of
+nominating a technical committee and a steering committee for the purpose
+of defining an ISO Lisp.  This message is to report on the membership of
+those committees, to describe the actions we have taken towards making
+those committees official, and to outline the next steps we need to take.
+
+First, we have decided not to create the committee under DARPA
+sponsorship, but to operate within the ANSI framework, setting up a
+committee for Common Lisp under X3 tentatively known as X3J13.  X3J13 will
+have international members, but we have not asked anyone outside the US to
+join as yet, though we intend to invite some number.
+
+There are two committess of importance, the steering committee and the
+technical committee.  The steering committee is charged with guiding the
+results of the technical committee through the standarization process,
+particularly at the ISO level. The technical committee decides the the
+language specification and develops a document specifying Common Lisp.
+
+The American members of the steering committee are:
+
+Bob Mathis, Private Consultant 
+Steve Squires, DARPA 
+Ron Ohlander, USC-ISI
+John McCarthy, Stanford University 
+Guy Steele Jr, Thinking Machines 
+Dick Gabriel, Lucid
+
+The American members of the technical committee were chosen according to
+several criteria:
+
+(1) The member must have a deep knowledge of Lisp and its implementation,
+with experience in at least one serious Lisp implementation.
+
+(2) The member must be a well-recognized, prominent individual.  He or she
+must be someone whose reputation is recognized internationally.
+
+(3) The member must represent an important segment of the current Lisp
+community.
+
+We recognize, though, that many important people have been left off of the
+committee. In particular, not all implementation efforts are represented.
+In order to recognize the contribution to Common Lisp that these efforts
+have made by supporting Common Lisp and to ensure that the experience of
+these efforts is not lost, we will ask each implementation group to
+designate an individual to whom all technical decisions must be presented
+before decisions are made.
+
+Although these technical liasons will not officially vote on the technical
+committee, the technical committee will consider the votes of these
+individuals carefully when making decisions. One of the first tasks of the
+technical committee will be to set up a set of procedures for making
+decisions and accepting comments and proposals from the Common Lisp
+community. Until then we can only state that a close working relationship
+with the Common Lisp community and with the implementation groups in
+particular is one of our main goals.
+
+The American members of the technical committee are:
+
+Alan Bawden, MIT
+Dan Bobrow, Xerox
+Scott Fahlman, CMU (Chairman of the Technical Committee)
+Dick Gabriel, Lucid
+Dave Moon, Symbolics
+Jonathon Rees, MIT
+Guy Steele, Thinking Machines
+
+At this point a document has been submitted to the Standards Planning and
+Requirements Committee of X3, known as SPARC, proposing the formation of
+the X3J13 committee.  SPARC is the committee which must approve the
+formation of any new technical committees. The document outlines the need
+for such a committee, the scope of the standard, the potential members of
+the committee, and the plan and schedule for accomplishing the standard.
+
+I hope that the standarization work informally started in the Lisp community
+will continue to fruition at the international level.
+
+				Dick Gabriel
+				Scott Fahlman
+				Dave Moon
+				Dan Weinreb
+				Guy Steele
+				Bob Mathis
+
+--

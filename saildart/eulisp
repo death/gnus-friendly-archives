@@ -1,0 +1,942 @@
+--
+From:  mcvax!ux63.bath.ac.uk!ma_jap@seismo.CSS.GOV
+Subject:  delft minutes
+To:  eulisp <mcvax!cwi.nl!eulisp@seismo.CSS.GOV>
+Received:  from bath63 by hlh.co.uk; Wed, 14 Jan 87 16:50:23 gmt
+Message-Id:  <11111.8701141650@hlh.co.uk>
+Date:  Wed, 14 Jan 87 16:50:23 gmt
+Mmdf-Warning:   Parse error in original version of preceding line at Ukc.AC.UK
+
+.sc
+.ps 14
+.vs 16
+.ce
+\fBMinutes of EuLISP-XIV, Delft, 870105\fP
+.ps 10
+.vs 12
+
+\fBAttendees\fP\*[1\*]
+.(f
+\*[1\*]Secretary's Note: The general lack of funding available to the
+participants, combined with the rail strike in France, severely
+affected the number of people able to attend.  It was therefore
+decided to curtail the meeting to one day.
+.)f
+
+.nf
+Je\*'ro\*↑me Chailloux, INRIA, Paris (JC)
+Jan van Katwijk, University of Technology, Delft (JvK)
+Timm Krumnack, Krupps-Atlas Elektronik, Bremen (TK)
+Julian Padget, University of Bath (JAP)
+Willem van der Poel, University of Technology, Delft (WvdP)
+
+\fBAgenda\fP
+
+1.	Minutes of Eulisp-XIII (Paris)
+2.	Report on X3J13 meeting in Dallas
+3.	Funding
+4.	Future meetings
+5.	Status of national standards efforts
+6.	Timescales/Objectives
+.fi
+
+.fi
+.ce
+\fIMinutes of Eulisp-XIII\fP
+
+JC had not received these despite their having been circulated on
+the eulisp mailing list.  JAP reported that he had got feedback from
+several people on the December minutes, including Dick Gabriel, Mario
+Furnari and Roland Rehmnert.
+
+.ce
+\fIReport on X3J13 in Dallas\fP
+
+Two supportng documents were received: the proposed X3J13 charter and
+the minutes of the Dallas meeting.  X3J13 has identified a number of
+task groups and set up some of those task groups.  It was noted that
+amongst the unconstituted groups was the one for ISO interaction.
+
+The various officers of X3J13 were noted: Chairman - Bob Mathis,
+Vice-Chairman - Guy Steele, International representative - Dick
+Gabriel, Secretary - Mary van Deusen, Vocabulary: Bill Scherlis,
+Editors: Dick Gabriel and Will Clinger.
+
+The next meeting of X3J13 will take place in Palo Alto over 17-19
+March.
+
+.ce
+\fIFunding\fP
+
+JC reported that the EEC has given approval for suppport to this
+standardisation activity and that INRIA will act as banker.  However
+the official announcement has not yet been received by INRIA and no
+support can be given until this has happened.  The mechanism should
+certainly be in place by the March meeting.
+
+.ce
+\fIFuture Meetings\fP
+
+In view of the cost of attending meetings (although this may be
+ameliorated to a certain extent soon) and, more importantly the need
+for more time to work in between meetings, it was proposed that EuLISP
+should move to a two month cycle starting immediately.  Therefore, the
+next meeting of EuLISP will be in March.  In the previous minutes it
+had been proposed to hold the March meeting in Italy.  It was agreed
+that we should continue with the same schedule of locations and
+therefore the next meeting will be held in Paris at IRCAM for 2 days
+on March 2\*[nd\*]/3\*[rd\*]
+
+.ce
+\fIStatus of national standards efforts\fP
+
+JAP reported that the last meeting of BSI/IST/5 (Programming
+Languages) had agreed to the formation of a LISP panel.  JAP has been
+nominated as the convenor.
+
+.ce
+\fITimescales/Objectives\fP
+
+There was a long discussion about the need and subsequently the
+strategy for building trial implemenations of the different levels of
+the EuLISP proposal.  There appear to be two options:
+.ip (i)
+define in Common LISP, using the package system to obtain the
+necessary security/visibility to make the scheme work.  This would be
+good because it may be relatively portable and also it would make the
+results easily accessible to industry.  It is also rather hard because
+of the difficulty of producing a compiler in such an environment.
+.ip (ii)
+define in Scheme.  The type system is not a fundamental mechanism and
+could be built on top of Scheme.  Again there are attractions because
+of the portability of Scheme code and the relatively wide availability
+of Scheme implementations.  Scheme also has the sound semantic base
+that the EuLISP proposal requires rather than having to construct it
+as would be necessary in a CL based system.  The detraction from using
+Scheme is the subsequent accessibility of the system to industry where
+the only major user of Scheme is Texas Instruments.
+.lp
+The consensus was that it should be possible to prototype most of the
+EuLISP ideas in about a year given the appropriate environment and
+resources.
+.pp
+To make progress on the above matter a much more detailed definition
+of the language levels is necessary.  To this end it was agreed that
+Christian Queinnec, Herbert Stoyan and JAP will work on such a
+document with the intention of having a significant strawman
+completed in time for the March meeting.
+
+.ce
+\fIFINIS - 1730\fP
+
+.ce
+\fIOutstanding Action Items\fP
+
+Christian Queinnec will add macro expansion to the level0 interpreter
+
+JAP will describe the interpreter outlined at the December meeting in
+more detail
+
+JAP to mail Clinger on LISP/VM macro expansion strategy
+
+.ce
+\fINew Action Items\fP
+
+Herbert Stoyan, Christian Queinnec and JAP to collaborate on producing
+a defining document for level0/1 for the March meeting.
+
+
+
+
+
+
+padget@RAND-UNIX/su
+Delft Meeting
+
+I read the minutes, and I think there is an important factual error.
+The ``editors'' group is the ISO interaction group. That is, the ISO
+delegation is intended to be Mathis, Clinger, and I; Clinger and I are
+the nominated people for the ISO project editor position. Aside from
+the object-oriented programming specification, which I am helping to write,
+Clinger and I are not involved in any ANSI Common Lisp work, only ISO work
+(moving Common Lisp in the proper direction).
+
+So I believe the statement that the ISO interaction group is unconstituted
+is incorrect.
+			-rpg-
+
+--
+From:  mcvax!ux63.bath.ac.uk!uucp@seismo.CSS.GOV
+To:  eulisp <inria!eulisp@seismo.CSS.GOV>,
+Date:         7 May 1987 20:02:33 BST
+Received:  from ux63.bath.ac.uk by kestrel.Ukc.AC.UK   via Janet (UKC CAMEL FTP)
+Message-Id:  <8705071913.AA28442@inria.inria.fr>
+Subject: (no subject)
+
+Received: from m42.maths.bath.ac.uk (m42) by bond.maths.bath.ac.uk; Thu, 7 May 87 18:56:41 BST
+From: Julian Padget <jap@uk.ac.bath.maths>
+Date: Thu, 7 May 87 18:51:22 BST
+Message-Id: <15198.8705071751@m42.maths.bath.ac.uk>
+To: eulisp@uk.ac.bath.maths
+Subject: Bruxelles minutes
+Cc: chenetier@uucp.inria
+
+.ce
+.ps 12
+\f3Minutes EuLisp XIV Brussels 870408\f1
+.ps 10
+
+
+
+.EQ
+delim @@
+.EN
+.nh
+.tr ~
+.IP "\f3Present\f1" 1i
+J~Chailloux~(INRIA), J~H~Davenport~(Bath),
+T~Krumnack~(Krupp~Atlas~Elektronik), W~van~der~Poel~(Delft),
+H~Stoyan~(Konstanz), D~Nardi~(Rome), P~Coint (Xerox\(hyParis),
+E~Neidl~(CGE),
+.nh
+T~Bub~(Danet), J~F~Omnes~(EEC), J~Dalton (Edinburgh), C~Queinnec~(LITP).
+
+.LP
+J~Chailloux took the chair.  J~H~Davenport took minutes in
+the absence of C~Queinnec.
+
+.IP "\f3Next Meeting\f1" 1i
+.sp -1
+It was decided to hold a two-day meeting in early June.  After a
+consideration of dates, it was decided to hold a meeting \f311-12 June\f1
+(just before parallel machines and object-oriented programming
+conferences).  The obvious alternatives were Brussels and Paris: a vote
+was held, with the result being \f3Brussels\f1.  H Stoyan will only
+attend 870612.
+
+.nh
+.IP "\f3Funding\f1" 1i
+.sp -1
+J~Chailloux raised the question of funding.  He understood that the EEC
+would only fund 12 participants, whereas the EuLisp mailing list was about
+40, and he had heard complaints from those not invited.  J~F~Omnes said
+that more could be funded (though obviously not vast teams) \(em it
+appeared that there had been a misunderstanding.  W~van~der~Poel asked if
+one could send a substitute: J~F~Omnes saw no problem.  The EEC will
+only \f3fund\f1 people from EEC countries, though others may \f3attend\f1
+(they will need a telex of invitation as well).
+
+.LP
+\f3Approval of Minutes of Delft\f1
+
+None had been circulated.
+
+\f3Report X3J13 meeting Palo Alto.  3rd meeting 16-18~March~1987 by
+J~Chailloux.\f1
+
+70 people present.  At previous meeting they had decided to form many
+sub-committees.  These reported, but many decisions will be taken later.
+
+\f3Cleanup SubCommittee\f1.  This has done a lot of work on cleaning up
+the book, but there is a lot to do.  A special form has been designed for
+making changes to the book.  Four trivial amendments have been agreed, but
+most decisions will be taken later.  It had been agreed that ANSI CL would
+have a functional object, described by J~Chailloux as "like SCHEME's, but
+fuzzier".  This involves changes to apply, funcall and functionp.  The
+book will be rewritten by a DEC employee, but the copyright will rest with
+ANSI.  The concept of Level 1/Level 2 is still in the air, but ANSI CL
+will definitely be Level 2.
+
+\f3CL Object System SubCommittee\f1.  This has prepared a revised draft
+(which J~Chailloux has), which is certainly better.  But
+Bobrow/Gabriel/Moon still do not agree on multiple inheritance.
+
+\f3Validation SubCommittee\f1.  Nothing has really been done.  Xerox have
+bought a validation suite from Lucid.  How does one validate an undefined
+object?
+
+[C Queinnec arrived]
+
+McCarthy was there, and was strongly against the standardisation of "LISP"
+as a word.  ANSI will call theirs ANSI-LISP.  W~van~der~Poel supported this
+view, and the group re-affirmed its decision to call its result "ISO
+LISP".
+
+[J Dalton arrived]
+
+The SC-22 plenary meeting in Washington in October 87 should create the
+ISO LISP working group.  Nations then have 2 or 3 months to nominate
+members, so the first meeting cannot take place until early 1988.  It
+appears that ANSI will choose Gabriel and Klinger.
+
+Fahlmann apparently says that, if the "macro problem" is solved, then he
+would be prepared to accept a single value/function space.
+
+The next X3J13 meeting will be in Boston, June 30/July 1.  J~Chailloux
+estimated that ANSI LISP would take two years: J~Dalton thought that was
+optimistic.
+
+\f3General discussion\f1
+.nh
+
+The discussion became general: "is ISO-LISP a creative or a normative
+process".  C~Queinnec thought that we were combining existing features in
+a new way.
+
+J~Chailloux said that he thought that we needed an implementation to prove
+our importance in face of ANSI LISP.  This provoked a lively debate.
+People distinguished between "toy implementations", eg in SCHEME or COMMON
+LISP.  D~Neidl called for at least a macro implementation of Level 0, for
+experimental purposes.  H Stoyan doubted that implementations were either
+necessary or sufficient, and stated that he would not be working on
+implementations.
+
+C~Queinnec felt that implementations served two distinct purposes:
+
+.IP 1)
+verifying the consistency of the definition.
+.IP 2)
+verifying that efficient implementations exist.
+
+.LP
+J~Chailloux felt that we needed a real vehicle, not just a toy built on
+SCHEME, and asked who was working on one.  J~H~Davenport asked whether the
+definition was sufficiently precise.
+
+The discussion was inconclusive on the point of implementation, but agreed
+that more documentation, and more precise documentation, on EuLisp were
+required. The question was raised about formatting systems, and it was
+decided that LaTeX was the best vehicle.  Not everyone has LaTeX, and the
+group was reminded of the need for circulating documents in a directly
+human-readable form.
+
+In the afternoon, C~Queinnec introduced two documents:
+
+.IP
+Denotational Semantics for LISP
+.nf
+Genericity and Types.
+.LP
+.fi
+
+The first is, essentially, a "pretty print" of an actual LISP program
+(nevertheless, several typographic errors were found).
+
+The first remark made was that this document described things in terms of
+a concrete syntax, not an abstract syntax.  W~van~der~Poel drew
+attention to a preprint of his on "Constructing @lambda@\f1-expressions in the
+@lambda@\f1-calculus", and offered to send it round.
+
+A long debate ensued on the semantics of alternative.  It was decided to
+modify this to accept only three arguments, ie only (IF A B C).
+.bp
+It was also pointed out that there was no way of changing topenv at the
+moment: this would be remedied.
+
+It was noticed that EuLisp prohibited
+
+.IP
+(setq a b)
+.nf
+(defconst a b)
+
+.fi
+.LP
+unlike common lisp.  The reason was that a piece of code compiled after
+(setq~a~b) would become invalidated by the (defconst a b).
+
+It was observed that constant-assignment defines a binding to be
+immutable, but does \f3not\f1 guarantee that the value will not be changed
+by rplac etc.  This provoked a lively discussion.  It was decided not to
+change matters for the time being.
+
+.nh
+It was agreed that C~Queinnec would circulate the revised version of the
+semantics, and the underlying Lisp code, to EuLisp.  It was also requested
+that a physical copy be sent to all attendees at this meeting.
+
+The general question of physical distribution of material to the group was
+raised.  Given the number of US participants, and the thickness of some of
+the X3J13 documents, the exercise is expensive.  It was agreed:
+
+.IP 1)
+to ask J~F~Omnes if the EEC could organise the distribution
+.IP 2)
+that J~Chailloux would append a \f3list\f1 of his papers to these minutes,
+which could be requested from him.
+
+.LP
+
+
+
+"mcvax!inria!chaillou"@seismo.CSS.GOV/su
+EuLisp Meeting
+
+Hm, I thought the meeting was to have been June 18, 19, and I
+had planned my trip accordingly. Lynne's birthday is June 11,
+so if I change my plans, I run the risk of disappointment on
+her part. I will see what can be done.
+
+On the other hand, it appears I would need to be invited (via telex) to
+attend. Given that I have not been so invited, perhaps I should simply
+attend ECOOP.
+
+Nevertheless, I will be in Paris for ECOOP and the OOP workshop
+June 18. Is it still true that I can stay with you? I currently
+am scheduled to arrive June 13. Will you be back in Paris by then?
+
+On the minutes, Moon/Bobrow/Gabriel disagree on some aspects of
+multiple inheritance, not on multiple inheritance in general.
+
+Lucid is providing a service of making sure that Xerox Common Lisp passes
+the test suite that Lucid uses for its internal testing, which means that
+the two Lisps are roughly compatible. This is different from a validation
+suite. I suppose this is an example of what happens when people speculate
+about undisclosed business relationships, but it also has a little bad
+rhetoric about it.
+
+For the record, Clinger's name is ``Clinger'' not ``Klinger.''
+
+I hope all is well with you. My daughter, Mariko Gabrielle Toribara,
+and her mother are well.
+
+			-rpg-
+
+--
+From:  mcvax!maths.bath.ac.uk!jap@uunet.UU.NET
+Sender:  mcvax!maths.bath.ac.uk!jap@uunet.UU.NET
+Date:  Tue, 19 Jan 88 13:24:26 GMT
+Subject:  corrected minutes (spelling mistakes)
+To:  inria!eulisp@uunet.UU.NET
+Received:  from watt by mordell.maths.bath.AC.UK id aa14481; 19 Jan 88 13:24 GMT
+Message-Id:  <8801191422.AA24298@inria.inria.fr>
+
+.sc
+.ps 14
+.vs 16
+.ce
+\fBMinutes of EuLISP-XVIII, Bruxelles, 871125-26\fP
+.ps 10
+.vs 12
+
+\fBAttendees\fP\
+
+.nf
+Mariarosario Boscotrecase, Delphi Systems, Pisa (MB)
+Je\*'ro\*↑me Chailloux, INRIA/ILOG S.A., Paris (JC)
+Thomas Christaller, GMD, St Augustin (TC)
+Pierre Cointe, Rank-Xerox, Paris (PC)
+Roland Ducournau, Sema-Matra, Paris (RD)
+Orri Erling, Entity Systems, Helsinki, (OE)
+John ffitch, University of Bath (JPff)
+Jan van Katwijk, Universiteit Delft (JvK)
+Arno Klassen, Delft University (AK)
+Dieter Kolb, Siemens, Mu\*:nchen (DK)
+Timm Krumnack, Krupp-Atlas Elektronik, Bremen (TK)
+Pattie Maes, Vrije Universiteit Brussel (PM)
+Kris van Marcke, Vrije Universtiteit Brussel (KvM)
+Silvia Mazzini, Delphi Systems, Pisa (SM)
+Eugen Neidl, ILOG S.A., Paris (EN)
+Francois Neumann, Thomson CSF, Paris (FN)
+Greg Nuyens, ILOG S.A., Paris (GN)
+Jean Omnes, EEC, Bruxelles (JO)
+Julian Padget, University of Bath (JAP)
+Pierre Parquier, Bull S.A., Paris (PP)
+Willem van der Poel, Universiteit Delft (WvdP)
+Christian Queinnec, Universite\*' Paris VI, (CQ)
+Jean-Pierre Regourd, CGE Laboratoires de Marcoussis (JPR)
+Herbert Stoyan, Universita\*:t Konstanz (HS)
+Richard Tobin, University of Edinburgh, (RT)
+Christoph Wedi, GMD, St Augustin (CW)
+.fi
+
+\fBAgenda\fP
+
+1.	National standardisation processes
+	A.	report on November X3J13 meeting
+	B.	IWoLES
+	C.	WG-16 meeting in February
+2.	Evaluation and status of European progress towards ISO Lisp
+3.	Technical issues (packages/modules, types, objects, macros, 
+	declaration/scope, CLOS, character sets)
+4.	Future meetings
+
+.sh 1 "National Standardisation Progress"
+
+.sh 2 "Report on November X3J13 meeting"
+
+GN gave a oral report on the X3J13 meeting in Fort Collins (16-18
+November) at which he, JC and JP were present.  He reported that X3J13
+are revising their charter and considering an accelerated work
+schedule in order to produce a draft standard within 1 year.  The next
+meeting of X3J13 will be a week long to permit some of the technical
+sub-committees to report and then revise in the light of comments
+received within the period of the meeting.  The next X3J13 meeting
+will be held in Palo Alto, March 14-18, 1988.  The CLOS sub-committee
+are meeting in Boston in December.  GN also reported that matters seems
+to be moving fairly slowly within X3J13, which could in part, be a
+consequence of the goal moving.
+
+.sh 2 "International Workshop on Lisp Evolution and Standardisation"
+
+CQ announced the 1st IWoLES meeting which will take place in Paris on
+21-23 February, a few days before the first meeting of ISO WG-16.  The
+definitive call for participation will be complete shortly.
+
+.sh 2 "First meeting of ISO WG16 (Lisp)"
+
+The first meeting of ISO WG-16 will take place in Paris under the
+auspices of AFNOR on February 24-25, 1988.  CQ reported that he has
+been notified who will be the national representatives for the
+Netherlands and for Denmark (N.B. CQ will ensure that the Danish
+representative also receives an invitation to the next Eulisp
+meeting), but has yet to hear from the rest of the countries who
+stated they wished to participate and had resources in their NWI
+returns.  Each country is permitted two representatives and 1-2
+observers.  France will decide next week.  It is likely that the US
+will send Gabriel, Clinger and Mathis.  The UK will decide at the next
+meeting of IST/5 on December 15th.
+
+CQ presented a preliminary agenda for WG-16:
+.ip 1
+organisation and voting policy
+.ip 2
+the name of the standard (ref ANSI comments on NWI)
+.ip 3
+remarks on the ballot
+.ip 4
+method of standardisation (e.g. formal semantics, informal definition
+like CLtl)
+.ip 5
+work plan
+.lp
+The agenda (work schedule) for the WG must be fixed by the end of
+1988.
+
+The second ISO WG-16 meeting will probably be in Snowbird at the Lisp
+Conference.
+
+.sh 1 "Evaluation and status of European progress towards ISO Lisp"
+
+JC distributed the letter written by JC, GN, CQ and JP before the Fort
+Collins meeting which has been sent to a limited number of people on
+X3J13 (Gabriel, Clinger, Mathis, Steele, Fahlman, Masinter).  JC
+stressed that it was his belief that there is a danger of a loss of
+commercial credibility for Lisp if a draft standard was not ready by
+the end of 1988.
+
+HS pointed out that this suggested wholesale adoption of Common Lisp
+and that the letter invited that conclusion.
+
+GN summarised the spectrum reactions he was expecting to the letter as
+(i) no interest (ii) ANSI standardisation first, ISO later (iii) drop
+ANSI work, start ISO.  The unanimous reaction was (ii).  GN described
+the purpose of the letter to be to make progress on commonly
+understood issues such as function type (CL cleanup strict
+redefinition) and DYNAMIC-LET.  It was apparent that there was no
+common ground on modules.  The lack of common ground could arise
+from one of two possibilities: a lack of comprehension of the
+problem or a desire to take packages as a starting point.  This group
+is inclined to start afresh.  GN also noted that individuals in the
+X3J13 group have different opinions from the committee as a whole.
+
+JC again stated his belief in a need for an ISO standard for Lisp now,
+with the Eulisp work being a basis for an ISO standard for the 1990's.
+
+Various people remarked that there had been vigorous debate within
+their companies about whether projects should be done in Lisp or C and
+that the doubt surrounding the standardisation of Lisp often counted
+against it.  CQ pointed out that there has been a marked rise in the
+number of expert system shells available written in C.  DK referred to
+the need for portability in applications.  HS summarised that there
+can be no definitive conclusion to the Lisp versus C debate unless
+someone makes a move to standardise.
+
+Returning to the issue of timescale raised by JC, HS reminded the
+meeting that part of the point of the Eulisp 3 level structure was to
+permit us to define level-0 in one year.  On other hand the letter
+sent to selected members of X3J13 suggests something much close to a
+Common Lisp cleanup and takes Eulisp almost into the CL camp.
+Following such a route will very likely preclude for ever the
+development of a standard like that originally envisaged by the Eulisp
+committee.  HS pointed out further that rather than putting effort
+into the basis the letter is emphasising putting effort into
+peripheral issues.
+
+TC viewed the letter as stating a form of compromise, consistent with
+the spirit of ISO work, and queried whether the letter was really so
+supportive of CL as HS had interpreted it.
+
+JP stated that his view was that the letter expressed a relationship
+between CL and level-1 of Eulisp.  He personally objected to the list
+of special forms given on page 2, PROGV and MULTIPLE-VALUE-PROG1 in
+particular.
+
+There followed a general discussion on short and long term objectives
+which is summarised as follows.
+
+.ip Q1
+Where does the Eulisp proposal to ISO start?  Five options were
+discussed: from scratch, ANSI, CL (as defined in CLtl), Scheme and
+Eulisp (as proposed in the 1986 paper and developed since then).  The
+first four alternatives require work on Eulisp to stop.  The last
+option demands that the levels are fully specified, in particular the
+gap between level-1 and level-2 needs filling in, and that some
+implementations be developed.  The following motion was approved:
+.(b
+The Eulisp committee will propose to ISO WG-16 a 3 level standard
+comprising: level-0,1 based on the Eulisp efforts to date and level-2
+which is the extension of level-0,1 to be as close to ANSI Common Lisp
+as possible.
+
+We note that consistency between level-0, level-1 and level-2 is more
+important than individual technical issues.
+.)b
+
+.ip Q2
+Time scale of first ISO proposal?  Short term suggests something
+within about one year.  However JvK pointed out that it is important
+\fInot\fP to be specific about how long this will take because this
+can lead to rushed decisions.  Long term will correspond to the more
+sedate pace of the majority of ISO processes, that is about five to
+six years.
+
+.ip Q3
+What are the rules for ISO WG-16?  There was a general discussion
+about what topics are important to the Eulisp community, which
+countries are likely to attend WG-16 (France, United Kingdom,
+Netherlands, West Germany, Finland, Canada, Denmark, South Korea,
+United States, Japan), how the interests of Eulisp can be represented
+at ISO and the relationship of the Eulisp proposal to the statement in
+the NWI.
+
+.sh 1 "Technical Issues"
+
+.sh 2 Objects
+
+JC reported on the state of CLOS as of the Fort Collins meeting of
+X3J13 where Gregor Kiczales gave a presentation.  There are four new
+items in CLOS now:
+.ip 1
+Keyword parameters in method lambda lists
+.ip 2
+Initialisation protocol
+.ip 3
+Change in \fIwith-slots\fP (local binding of slot-names)
+.ip 4
+New functions \fIgeneric-flet\fP and \fIgeneric-labels\fP which have
+the same status as \fIflet\fP and \fIlabels\fP).
+
+PC and RD went to the last CLOS meeting (held during OOPSLA-87) and
+talked about CQ's types and genericity proposal, RD's analysis of
+multiple inheritance and PC's ObjVLisp/meta-object protocol work.
+
+PC also reported on HP's experiments in CommonObjects on metaclass
+management and analysis of the number of arguments used in
+discrimination.  Apparently no examples were found which used more
+than two arguments.
+
+PC is discussing ObjVLisp with Kiczales with a view to encouraging
+minimalism.  The minimal architecture for CLOS contains
+standard-object (which is a subtype of T - the only relationship
+between the object system and CL's type mechanism - and is a member of
+standard-class) and standard-class (which is a member of itself and a
+subtype of standard-object).  Standard-class contains information
+about supers, subs, prototype, slots, all-slots, methods and SOMETHING
+ELSE I HAVE FORGOTTEN).
+
+The minimal architecture for ObjVLisp simply contains class, which is
+a member of itself and contains information about supers, methods and
+instance variables.  However, this forms a basis for describing CLOS.
+
+PC and CQ will work on types and genericity to make sure that the type
+system works with the object system in Eulisp.
+
+MB gave a presentation of the work at Delphi on the implementation of
+CLOS using the ObjVLisp model.  Under this scheme, standardmetaclass
+is an instance of class and standardobject is an instance of
+standardmetclass and both inherit from class.  
+
+Dk asked about the current state of integration between CLOS and CL.
+JC's impression was that it is not progressing.
+
+The meeting adjourned until 0900 on 871126.
+
+.sh 2 "Types & Genericity"
+
+CQ presented the latest version of the types and genericity proposal.
+It is addressing the issues of the management of common behaviours and
+representation of structures.  The full details of the proposal are
+given in Eulisp-87-004.  The philosophy of the mechanism is primarily
+simplicity, there being three type constructors (cartesian product,
+bounded repetition and sequence).  Other features are expressiveness:
+capable of precise and exportable representation; disjointness: every
+object has an unique type; minimality: sufficient to mimic CL; no type
+hierachy: see generics; type TYPE: immutable, indefinite extent;
+anonymous and inquireable: types are values.
+
+New to the scheme is the operation of dynamic-extent-allocation.  This
+idea will need quite a lot more work to uncover all the implications.
+An obvious restriction that this imposes is the use of range checking
+type schema.
+
+.sh 2 "Packages/Modules"
+
+DK reported on the difficulties being experienced in trying to write
+applications using packages at Siemens.  The hardest problem for
+beginners is name-conflict and the use of \fIshadow\fP, \fIunintern\fP
+and \fIshadowing-import\fP.  He showed various tricky examples to
+illustrate the problem.  He summarised with some recommendations for
+packages which would improve matters in the cases they had considered:
+shadow and shadowing-import should be removed and use only fully
+qualified names or when using imported packages, name conflicts should
+signal an error rather than silently interning somewhere else.
+
+Another deficiency with the package system was the lack of an
+operation to map over all the internal symbols (currently there exist
+do-exported-symbols and do-symbols).
+
+The style of application development at Siemens means that different
+people are working on different modules within an application.  At
+some point it is necessary to glue these modules (packages) together
+into one, but there are two problems: firstly, there may be name
+conflicts across the packages and secondly, exporting names from
+package-1 to package-2 does not make the names in package-1 visible in
+package-3 which is imports package-2 (that is, export is not
+transitive).  As a result he proposed two new package functions:
+
+.ce
+(transmit-package packages &optional package)
+
+and
+
+.ce
+(untransmit-package packages &optional package)
+
+A package structure will now need a transmit list (which is the
+composition of export with do-exported-symbols).  It was noted that
+adding an exported symbol to a transmitted package will cause it to be
+seen in the using package.
+
+.sh 2 Character Sets
+
+GN reported on the discussion on character sets at X3J13.  There is
+some debate as to where multi-octet character sets fit in a language.
+There is some work already in hand at the ISO level on this problem
+(note that there is already an ISO approved character encoding scheme
+for all the latin languages) and Thad Holka who is leading this work
+is an invited speaker at IWoLES in February.  Another open question is
+how multi-octet character sets fit into a type system.  Apparently
+X3J3 (FORTRAN) is also concerned about this issue.
+
+GN volunteered to find out more about the ISO draft standard on
+character sets.
+
+JC will circulate ISO standard on latin character sets.
+
+.sh 2 Macros
+
+JP talked about his initial investigation into macros and whether
+there really is an issue here or not.  JP is also on the X3J13 macro
+subcommittee.  There seems to be a fairly widely held belief that
+there is a macro problem (because of the yet further inconsistencies
+between interpreted and compiled code which can be introduced by
+macros) but little consensus on what the problem actually is.
+
+JP worked with Mark Wegman (IBM Yorktown - also X3J13 macro
+subcommittee) over the summer started by trying to classify macro
+usage and by trying out two mechanisms which have claimed to "solve"
+the macro problem (Bawden's scheme publicised on the scheme-request
+mailing list and Kohlbecker's scheme published in the Proceedings of
+the 1986 Lisp Conference).  Both of these mechanisms resolve the
+problem of inadvertent free variable capture.
+
+Some issues in macro expansion lie in the dependencies within a macro
+body, which come in two forms: structural - depend on the form of the
+argument and environmental - depend on information available in
+variable bindings extant at the moment of expansion.  Procedure
+integration offers a solution to some of these problems as well as
+having the advantage of removing the need to retain a consistent
+function and macro definition of the same operator.
+
+JPff pointed out that a deficiency in defining macro expansion to
+take place in a null environment is if one wishes to profile the
+macro, such as by counting the number of expansions or the number of
+executions.  GN remarked that these data could be provided by
+alternative means and were not necessarily the direct concern of the
+macro writer.
+
+WvdP offered to give a talk at the next meeting on some work on alpha
+conversion that has been done at Delft University.	
+
+.sh 2 Declaration/Scope
+
+DK discussed a mail item he sent out recently talking about the
+pervasiveness of special declarations and the resolution of free
+variable bindings in CL.  He gave the following example:
+.nf
+
+(defun foo (x)
+  (let ((y 3))
+       (declare (special y))
+       (fum x)))
+
+(defun fum (x) (+ x y z))
+
+(setq y 1)
+
+(setq z 2)
+
+(foo 5) -> 10
+
+.fi
+That is, although CL is a more lexical dialect of Lisp than some
+before it, some arcana has been retained.  If CL is lexically scoped
+then (foo 5) should deliver 8 by default.  The problem lies in the
+absence of a special declaration at the reference site of the
+variable.  This is not necessary according to CLtl but thus engenders
+the behaviour above.  The Siemens group have come out in favour of the
+notation put forward in Eulisp, namely the dynamic-let construct, in
+conjunction with which they would like accessors: global-ref,
+dynamic-ref, lexical-ref and constant-ref.  They also referred to the
+problem of multi-processing and shallow versus deep binding which has
+not been addressed at all in CLtl.
+
+.sh 1 "Future Meetings"
+
+It was agreed to hold the next meeting in Brussels on 3rd/4th February
+starting at 1000.  Papers for distribution for the next meeting must
+be with Odile Chenetier (chenetier@inria.inria.fr) at least one week
+before the meeting.  Address for physical mail:
+.nf
+.(b
+Odile Chenetier
+ILOG
+2 Avenue Gallieni
+94250 Gentilly
+
+Tel: +33(1)46-63-66-66
+.)b
+.fi
+
+The meeting closed at 1630.
+
+.sh 1 "Documents"
+
+.ip Eulisp-87-004
+Types and Genericity for Schisp.
+
+--
+From:  Jeff Dalton <mcvax!aiva.ed.ac.uk!jeff@uunet.UU.NET>
+Subject:  Comments on Nov 87 meeting
+To:  inria!inria.inria.fr!eulisp@uunet.UU.NET
+Message-Id:  <18890.8801211532@aiva.ed.ac.uk>
+Date:  Thu, 21 Jan 88 15:32:22 gmt
+Received:  from aiva.ed.ac.uk by kestrel.Ukc.AC.UK   via Janet (UKC CAMEL FTP)
+
+I haven't seen much EuLisp mail for some time, but Julian's recent
+posting (the revised minutes) reminded me that it could be done.
+
+1. Declaration / Scope
+
+	(defun foo (x)
+	  (let ((y 3))
+	    (declare (special y))
+	    (fum x)))
+
+	(defun fum (x) (+ x y z))
+
+I have heard some confusing accounts of this example.  There seems to
+be a suspicion that the SPECIAL declaration in FOO somehow affects Y
+in FUM as well.  However, Y and Z in FUM are special regardless of any
+declarations because they refer to global variables, and global variables
+in Common Lisp are special.
+
+However, here is the same example in T, a Scheme dialect that implements
+a DYNAMIC-LET, called simply BIND:
+
+	> (define (foo x)
+	    (bind ((y 3))
+	      (fum x)))
+	#{Procedure 1 FOO}
+	> (define (fum x) (+ x y z))
+	#{Procedure 2 FUM}
+	> (lset y 1)
+	1
+	> (lset z 2)
+	2
+	> (foo 5)
+	10
+
+BIND operates by making temporary assignments to locations, in this
+case the global (modulo locales) variable Y.
+
+The result is the same as in Common Lisp.  So, I don't think this
+particular example shows that Common Lisp is all that strange.  Still,
+the T approach is simpler, and it should be possible to find an
+example that shows it (CLtL, p. 158?).  The nice thing is that T
+doesn't have to say that global variables are special.
+
+I am not in favor of having to say (FLUID Y) whenever I want to
+refer to a dynamic binding.  I prefer the T approach.  I find it
+simple and clear enough and easier to read and write.
+
+2. Types and Genericity
+
+I'm not sure I understand this.  It appears to specify representations
+exactly and to be rather like structures in, say, C.  There doesn't seem
+to be any room for type information so that I can determine the type of
+an object at run-time.  Suppose I have an object of type (type-power 1
+char-type).  Suppose I apply numberp to this object.  How is numberp
+able to see if it's a number of not?  (Another way to ask this: how
+are generic functions able to find out the type?  If they can, it seems
+that there's more to the representation than has been specified.)
+
+What does it mean to say there is no type hierarchy?  Are fixnums and
+flonums not both numbers or is number not a type?  Presumably number is
+not a type and numberp is a generic function but not a "type predicate".
+Is that so?
+
+I do not find dynamic-extent allocation very Lisp-like and am worried
+the giving it so prominent a role will require a lot of work rather
+late in the day (with respect to standardization).
+
+3. Modules
+
+I would like to hear more about what's being discussed.  The Fort
+Collins letter said:
+
+     Modules (as the term is used in other programming languages,
+     referring to freezing the behavior and access to code and
+     data) are necessary to guarantee the correct behavior of
+     valid programs.
+
+I see two separate issues here.  One is the freezing of access.
+Modules are a natural unit on which to freeze access, but freezing
+access is not a necessary property of modules.  (Other languages
+tend to freeze access anyway -- you have to rewrite and recompile
+to change it -- and so have frozen modules too, but it's not modules
+that add the freezing.  Pascal is frozen, not just Modula-II.)
+
+The other issue is what modules should be.  I see advantages to
+environment-based modules, as in T's locales and MIT Scheme, over
+reader-based schemes such as CL packages, but we will have to see
+whether these ideas are ready to be standardized.
+
+By the way, Common Lisp already has something like modules that
+freeze access to code and data.  CL supports a style like this:
+
+	(let ((var expr) ...)		;local variables
+	  (labels (function-def ...)    ;local functions
+	     (defun ...) ...))		;public functions
+
+The problem is that it's not so flexible and general as something
+like T's locales.
+
+- -- Jeff
+
+Jeff Dalton,                      JANET: J.Dalton@uk.ac.ed             
+AI Applications Institute,        ARPA:  J.Dalton%uk.ac.ed@nss.cs.ucl.ac.uk
+Edinburgh University.             UUCP:  ...!ukc!ed.ac.uk!J.Dalton
+
+--

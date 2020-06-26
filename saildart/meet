@@ -1,0 +1,92 @@
+--
+From: unknown
+Subject: (no subject)
+
+common-lisp, Squires@isi, Ohlander@isi
+Common Lisp Meeting
+
+Here is a summary of the responses I got to the suggestion of a
+Common Lisp meeting and some suggestions I have on its organization:
+
+1. The meeting will be held either at MIT or at a local convention
+center in the Boston Area.
+
+2. The meeting will last 2 days.
+
+3. The dates are, Thursday and Friday, Decemeber 5 and 6.
+
+4. The schedule of events will be:
+
+Thurs	8:30am  Welcome, registration, and coffee
+	9:00am  Charter Discussion
+	Noon	Lunch (brought in)
+		[Informal discussion and lobbying]
+	1:00pm	Charter Discussion
+
+Fri	8:30am 	Coffee
+	9:00am	Parallel discussions on:
+		Object-oriented programming
+		Errors
+		Validation
+		ANSI
+		Windows
+	Noon	Lunch (brought in)
+	1:00pm 	Parallel Discussion
+	5:00pm  Hit the Road
+
+During the Charter discussion, the following topics will be discussed:
+
+	Inclusion of the recent minor changes and errata to the 
+	Common Lisp specification
+
+	Methods for updating the book (second edition)
+
+	Publishing problems - some vendors wish to have a language manual
+	for their Common Lisp and desire to publish it themselves.
+
+	Making decisions during the parallel sessions on Friday
+
+	Administrative format of validation
+
+                *   *   *
+
+    Suggested Administrative Format of the Charter Discussion
+
+[Please note: these are my suggestions and do not represent an edict.]
+
+At the start of each session, including the Charter session, the chairman
+of the committee will review the state of the discussion under his
+purview.
+
+Each organization - company or university - doing an implementation of Common
+Lisp may send 2 representatives who can comment and vote during the
+Charter discussion. Each organization representing a significant user
+community may send 1 individual who can comment and vote during the
+Charter discussion. Interested individuals of standing in the Lisp
+community may also attend and vote; however, some votes may be taken
+in which implementors only may vote.
+
+In addition, each organization doing an implementation may send 2 people
+to each of the parallel discussions, but only 1 of those may vote.  Each
+organization representing a significant user community may send 1 person
+to each of the parallel discussions. Individuals may attend the parallel
+discussions, but they might be restricted from voting in some cases as
+in the Charter Discussion.
+
+Each discussion will be run approximately according to Robert's Rules of
+Order to keep things under control. I assume only Guy Steele knows these
+rules, so perhaps he should help run the Charter discussion so that the
+other chairmen will learn how to do it. I know this sounds silly, but
+remember the madhouse at Monterey.
+
+I would like to get a list of the proposed attendees for planning
+purposes.  I would also like to solicit one of our friends for the Boston
+Area to arrange for the meeting rooms. Once I have a count of attendees, I
+will pass the information on to that person.
+
+I propose that the meeting rooms, morning coffee, and the lunches be
+paid for by DARPA.
+
+			-rpg-
+
+--

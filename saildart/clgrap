@@ -1,0 +1,1659 @@
+--
+From: unknown
+Subject: (no subject)
+
+Introduction
+Welcome to the Common Lisp Graphics Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Graphics@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLGRAP.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Graphics-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Tom Kaczuarek		ISI		kaczuarek@isi
+Dan Stenger		TI		stenger.ti-csl@csnet-relay
+Carl Hewitt		MIT		hewitt-graphics@mc
+Eric Benson		Lucid		eb@su-ai
+Guy Steele		Tartan		steele@tl-20a
+Gary Brown		DEC		gbrown@dec-marlboro
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-graphics@SU-AI.ARPA
+Subject: Introduction
+Date: 23 Sep 1984 16:14 EST
+
+Welcome to the Common Lisp Graphics Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Graphics@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLGRAP.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Graphics-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Tom Kaczuarek		ISI		kaczuarek@isi
+Dan Stenger		TI		stenger.ti-csl@csnet-relay
+Carl Hewitt		MIT		hewitt-graphics@mc
+Eric Benson		Lucid		eb@su-ai
+Guy Steele		Tartan		steele@tl-20a
+Gary Brown		DEC		gbrown@dec-marlboro
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-graphics@SU-AI.ARPA
+Subject: Chairman
+Date: 02 Oct 1984 13:14 EST
+
+Now that we've basically got most everyone who is interested on the mailing
+list, let's pick a chairman. I suggest that people volunteer for chairman.
+
+The duties are to keep the discussion going, to gather proposals and review
+them, and to otherwise administer the needs of the mailing list. I will
+retain the duties of maintaining the list itself and the archives, but
+otherwise the chairman will be running the show. 
+
+Any takers?
+			-rpg-
+
+--
+From: RPG  
+To:    cl-graphics@SU-AI.ARPA
+Subject: Chairman
+Date: 13 Oct 1984 14:45 EST
+
+No one has been nominated as chairman of the Graphics subgroup.  I will
+need either a volunteer or a nomination.  Please respond by October 24. At
+the end of this month I want to see some ideas and proposals coming in on
+this mailing list.
+
+			-rpg-
+
+--
+From:  John W. Peterson <JW-Peterson@UTAH-20.ARPA>
+ReSent-To:  cl-windows@SU-AI.ARPA, cl-graphics@SU-AI.ARPA
+ReSent-From:  Dave Dyer       <DDYER@USC-ISIB.ARPA>
+ReSent-Date:   9 Jan 1985 11:16:59 PST
+In-Reply-To:  Message from "Dave Dyer       <DDYER@USC-ISIB.ARPA>" of Wed 9 Jan 85 01:07:31-MST
+cc:  JW-Peterson@UTAH-20.ARPA
+To:  DDYER@USC-ISIB.ARPA
+Subject:  Re: This space intentionally left blank
+Date:  Wed 9 Jan 85 02:35:55-MST
+Received:  FROM UTAH-20.ARPA BY USC-ISIB.ARPA WITH TCP ; 9 Jan 85 01:33:45 PST
+Return-Path:  <JW-PETERSON@UTAH-20.ARPA>
+
+A related question.  I thought (or at least was under the impression) that
+I was tuned into the CL-GRAPHICS list as well.  I have not heard a *peep* out
+of that list, do you know if it's active?
+
+This is somewhat relavent to CL-Windows, since I am from the school of thought
+that the window system should know about (and perhaps be based on) the
+graphics support.  To some extent, I've been "waiting" to see what that list
+says  (This may hold true for others as well, e.g., the "units of measurement"
+discussion a while back).
+
+Cheers.
+- -------
+
+--
+From:  boetje@DEC-HUDSON
+To:  cl-windows@su-ai.arpa, cl-graphics@su-ai.arpa
+Subject:  here's something to make up for the long silence... Jerry
+Date:  Wed, 09 Jan 85 15:10:36 EST
+Received:  from DEC-HUDSON.ARPA by SU-AI.ARPA with TCP; 9 Jan 85  12:40:16 PST
+
+
+
+
+
+
+
+                                                        9 January 1985
+
+
+
+
+
+
+
+
+
+
+                             COMMON LISP
+
+                           Graphics Models
+!
+                                                               Page ii
+
+
+                                   CONTENTS
+
+        1       INTRODUCTION . . . . . . . . . . . . . . . . . . . . 1
+        1.1       Purpose  . . . . . . . . . . . . . . . . . . . . . 1
+        1.2       Terms  . . . . . . . . . . . . . . . . . . . . . . 1
+        2       GENERAL CONCEPTS . . . . . . . . . . . . . . . . . . 2
+        3       COORDINATE SYSTEMS . . . . . . . . . . . . . . . . . 4
+        3.1       Application, World, User Coordinates . . . . . . . 5
+        3.2       Master, Object Coordinates . . . . . . . . . . . . 5
+        3.3       Physical Device Coordinates  . . . . . . . . . . . 5
+        3.4       Logical Device Coordinates . . . . . . . . . . . . 6
+        3.5       Virtual Display Coordinates  . . . . . . . . . . . 6
+        3.6       Normalized Device Coordinates (NDC)  . . . . . . . 7
+        4       TRANSFORMATION . . . . . . . . . . . . . . . . . . . 8
+        4.1       Rotation . . . . . . . . . . . . . . . . . . . . . 8
+        4.2       Scaling  . . . . . . . . . . . . . . . . . . . . . 8
+        4.3       Translation  . . . . . . . . . . . . . . . . . . . 8
+        5       TRANSFORMATION OPERATIONS  . . . . . . . . . . . . . 9
+        5.1       Matrix Representation  . . . . . . . . . . . . . . 9
+        5.2       Window-Viewport Transformation . . . . . . . . . . 9
+        5.3       Active Transformation  . . . . . . . . . . . . .  10
+        6       CLIPPING RECTANGLE . . . . . . . . . . . . . . . .  10
+        7       COMPOSITION  . . . . . . . . . . . . . . . . . . .  11
+        7.1       Composition Space  . . . . . . . . . . . . . . .  11
+        7.2       Segments . . . . . . . . . . . . . . . . . . . .  12
+        7.3       Virtual Display Composition  . . . . . . . . . .  12
+        7.4       COMMON LISP Composition Levels . . . . . . . . .  13
+        8       ATTRIBUTES . . . . . . . . . . . . . . . . . . . .  13
+        8.1       Attribute Descriptions . . . . . . . . . . . . .  13
+        8.2       Attribute Inheritance  . . . . . . . . . . . . .  16
+        9       VIRTUAL DISPLAYS . . . . . . . . . . . . . . . . .  17
+        9.1       Composition Space  . . . . . . . . . . . . . . .  18
+        9.2       Picture Area . . . . . . . . . . . . . . . . . .  18
+        9.3       Banner Area  . . . . . . . . . . . . . . . . . .  18
+        9.4       Border . . . . . . . . . . . . . . . . . . . . .  19
+        9.5       Margin . . . . . . . . . . . . . . . . . . . . .  19
+        9.6       Virtual Display Window . . . . . . . . . . . . .  19
+        9.7       Device Viewport  . . . . . . . . . . . . . . . .  19
+        9.8       LISP Terminal Streams To Virtual Devices . . . .  19
+        9.9       Input Cursor . . . . . . . . . . . . . . . . . .  20
+        10      POINTING AND PICKING . . . . . . . . . . . . . . .  20
+        10.1      Pointing   . . . . . . . . . . . . . . . . . . .  21
+        10.2      Picking  . . . . . . . . . . . . . . . . . . . .  21
+        11      DISPLAY MANAGEMENT . . . . . . . . . . . . . . . .  21
+        11.1      Visibility And Stacking  . . . . . . . . . . . .  22
+        11.2      Sensitive Regions  . . . . . . . . . . . . . . .  23
+        11.3      Menus  . . . . . . . . . . . . . . . . . . . . .  23
+        11.4      Pointer And Selection  . . . . . . . . . . . . .  23
+        12      BITMAPS  . . . . . . . . . . . . . . . . . . . . .  24
+!
+COMMON LISP Graphics Models                                     Page 1
+INTRODUCTION
+
+
+1  INTRODUCTION
+
+1.1  Purpose
+
+This somewhat ambitious document is an attempt to establish  a  common
+framework  for discussions of graphics, windows, virtual displays, and
+all the supporting concepts that go along with them.  It  specifically
+doesn't define LISP functions yet.  My claim is that without agreement
+at the level of concepts and terminology, we can't possbly get started
+on defining LISP functions.
+
+The material presented here covers concepts and terms  which  properly
+belong  to  both  the graphics and windows committees.  The reason for
+this is to present a unified view  toward  video  displays  before  we
+define  functions.   I  believe that when we start defining functions,
+we'll find a fairly neat partition of functions between  graphics  and
+virtual  display  creation  and  management.  But we're less likely to
+have functional incompatibilities if we can agree on some  high  level
+ideas.
+
+A section missing from this document is  a  discussion  of  levels  of
+capabilities  that  can  be supported by various hardware and software
+implementations.  I'd welcome ideas on this.  As  a  first  cut,  I'll
+propose three levels:
+
+     1.  That which you can do on a cell-oriented  character  terminal
+         such  as a VT100 (text editor capabilities, multiple displays
+         and simple menus).
+
+     2.  Add basic graphics operations but without composition.  Level
+         2  might  include  restricted composition of virtual displays
+         (no additional scaling or rotation) much like the  frame/pane
+         systems around.
+
+     3.  Full multi-level composition  capability  and  allowance  for
+         user-written N-dimensional processing.
+
+With some luck, this should start a new flood  of  discussion.   Happy
+reading.
+
+
+
+1.2  Terms
+
+Terms will be defined in this document by  establishing  the  concepts
+they  represent.   This  will not only provide context and explanation
+but show the functional interrelationships among  the  various  terms.
+Where  possible,  "established" terms will be used.  A difficulty with
+the  current  industry  environment  is  that  the  same  word   (e.g.
+"window")  is  often  used to represent very different concepts.  Such
+industry discrepancies will be noted.
+
+At least the following terms will be defined:
+!
+COMMON LISP Graphics Models                                     Page 2
+INTRODUCTION
+
+
+     Attribute
+     Clipping rectangle
+     Composition
+     Display management
+     Picking 
+     Pointing
+     Segment
+     Transformation
+     Viewport
+     Virtual display
+     Window
+
+The presentation of conceptual  models  is  designed  to  explain  and
+illustrate  both the generalization of certain techniques, such as the
+window-viewport transformation, and the methods by which  COMMON  LISP
+integrates  the  various  objects  and  operations  that  support  the
+workstation.
+
+
+
+2  GENERAL CONCEPTS
+
+This paper deals with the concepts used in displaying data on a  video
+terminal.   Such  a  display might be as simple as placing consecutive
+lines of text on a screen.   It  might  also  involve  drawing  lines,
+shading  figures,  and overlapping independent displays.  This process
+can be made arbitrarily complex.  Certain conventions  and  techniques
+have  evolved  for defining and managing this process.  Unfortunately,
+different conventions and terminology have evolved  in  the  different
+worlds  of  display  management  and  graphics.   Much  of  this paper
+describes a system of terminology and concepts which attempts to unify
+the different approaches taken by display management and graphics.
+
+The remainder of this section will describe%!tλE0*display  process  in
+general (and not always immediately defined) terms.
+
+The basic displayable  object  is  a  "virtual  display."  This  is  a
+rectangular  area  which  can be associated with (made visible on) the
+screen of a video display  device.   A  virtual  display  can  have  a
+"banner"   (identifying  information),  a  "border"  (a  pattern  that
+outlines the virtual display), a "picture area"  (the  inside  of  the
+display  where  information  can  be  shown), and up to four "margins"
+(space between the border and the picture area).
+
+The simplest kind of information display involves creating  a  virtual
+display  and  writing  text  into its picture area by using the normal
+COMMON LISP stream output operations.
+
+The next level of complexity involves doing  graphical  operations  to
+the picture area of a virtual display.  Graphical operations are those
+which (loosely  speaking)  produce  non-text  images  in  the  virtual
+display.   They include operations such as drawing lines and polygons,
+filling areas with some pattern,  and  putting  graphical  symbols  at
+points.
+!
+COMMON LISP Graphics Models                                     Page 3
+GENERAL CONCEPTS
+
+
+Graphical operations usually require one or more pairs of  coordinates
+to  give  the  location(s) of the output.  A virtual display's picture
+area has a coordinate system with its origin  (location  0,0)  at  the
+lower  left corner.  The location of points in the picture area can be
+given by specifying offsets into the picture area along the horizontal
+(X)  and  vertical  (Y) axes.  These offsets, as well as the bounds of
+the picture area, are expressed in centimeters.
+
+All supported graphics operations can be done directly  in  a  virtual
+display,  as long as the coordinates are restricted to those that fall
+roughly within the bounds of the picture area.  However, not all  data
+in  the  world  falls numerically within the bounds of a picture area.
+For example, a physicist might want to graph pion production rate  vs.
+impact energy in furlongs per fortnight.  In order to present a visual
+depiction, the data (in both axes) must be scaled  and  translated  in
+order to fit into the bounded coordinate system of a picture area.  It
+may also need to be rotated about some axis.  This process is known as
+"coordinate transformation." What is required is a method that defines
+the appropriate transformation and thus allows the user to express his
+data  in  the  most convenient units.  The commonly selected method is
+called the "window-viewport transformation."
+
+A "window" is a rectangular area usually specified in  the  coordinate
+system  of  the  user data.  This user coordinate system is called the
+"application data space." The specification of a window  is  really  a
+statement that says "all data of interest to me falls in this range."
+
+A "viewport" is a rectangular area defined in the coordinate system in
+which  the  graphical  representation  of  the  data  will  be kept or
+displayed.  Such a coordinate  system  might  be  that  of  a  virtual
+display,  with  the  viewport defined to be all or part of the virtual
+display's  picture  area.   The  specification  of  a  viewport  is  a
+statement  that  "this is where I want to see the pictorial view of my
+data."
+
+At the simplest level, a window-viewport transformation might  involve
+the  definition  of a window in a user's application data space and an
+associated viewport which is the picture area of  a  virtual  display.
+Now  the  user is free to draw lines and do other graphical operations
+in the coordinate system of his data.  The results will appear in  the
+picture area of the virtual display.
+
+Now  that  the  transformation  operation  is   defined,   a   further
+complication   can   be  introduced:   the  notion  of  "composition."
+Composition means the building up of a graphical object in a  separate
+coordinate  system  (the  "composition space").  In the previous case,
+the picture area of a virtual display was used as a composition space.
+
+There is no reason that the notion of composition cannot  be  combined
+with  transformation  to  enable  production  of  arbitrarily  complex
+graphical systems.  For example,  the  Graphics  Kernel  System  (GKS)
+defines  two levels of composition and transformation.  GKS comes with
+a predefined composition space called  Normalized  Device  Coordinates
+(NDC)  which  has  bounds  at (0.0,0.0) and (1.0,1.0).  The user first
+!
+COMMON LISP Graphics Models                                     Page 4
+GENERAL CONCEPTS
+
+
+specifies a transformation from application data space into NDC.  Then
+additional transformations are created which map portions of NDC space
+onto  the  physical  device  screen  (which  is  treated  as   another
+composition space).
+
+This complexity can be increased since this  process  can  go  to  any
+level if the user is allowed to create independent composition spaces.
+The graphics world has created the concept of "segments" to  represent
+independent   composition   spaces.    These  composition  spaces  are
+typically mapped onto multiple viewports so that  a  single  graphical
+object  may be viewed simultaneously in many places.  For example, the
+symbol for a NAND gate is drawn in an  independent  composition  space
+which is then mapped into multiple places in a circuit diagram.
+
+"Display management" refers to the means supplied to position  virtual
+displays  on  the  screen  and  to  determine  which shall be visible.
+Virtual displays are made visible on the screen  by  associating  them
+with the screen.  Since virtual displays are opaque, they can hide, or
+"occlude," other virtual displays.  The display management system must
+therefore  determine  which  virtual display will be occluded when two
+overlap on the  screen.   The  system  does  this  by  consulting  the
+"stacking  order"  to  see  when  each display was associated with the
+device.  The position of a virtual display in the stacking  order  can
+be  altered,  or  the virtual display can be removed from the stacking
+order altogether.
+
+The display management system must also provide means to move  virtual
+displays on the screen and to change their shape and size.
+
+A pointing system allows the user to move a cursor around  the  screen
+in  order  to indicate positions where operations should take place or
+to choose some object (such as a menu selection) from a display.   The
+positioning  operation  is  called "pointing" and the process of using
+the pointing system to choose an object is called  "picking."  Certain
+areas  of  the  display can be made sensitive to the pointing system's
+cursor so that an action can be triggered when the  cursor  enters  or
+leaves the sensitive area.
+
+With this introduction, the remainder of the paper  goes  on  to  more
+rigorously  define  these and other concepts of a possible COMMON LISP
+graphics and display model.
+
+
+
+3  COORDINATE SYSTEMS
+
+Much of the confusion around displays, graphics, bitmaps, etc.  has to
+do   with   the   use   of   different   coordinate  systems  and  the
+transformations between them.  Several coordinate systems will be used
+in later discussions.  Some of the important ones are defined here.
+!
+COMMON LISP Graphics Models                                     Page 5
+COORDINATE SYSTEMS
+
+
+3.1  Application, World, User Coordinates
+
+These terms all loosely refer  to  the  same  idea  of  an  unbounded,
+N-dimensional  space of floating-point numbers, where N is typically 2
+or 3.  As used in graphics systems, these terms really  refer  to  the
+coordinate system in which some particular set of graphical operations
+(draw line, draw point, etc.) is performed.  Another  way  of  stating
+this is that these are the most convenient coordinates in which a user
+can graphically describe his data.
+
+For example, for a graph  of  volume  of  sales  by  year,  it's  most
+convenient  for  the  user  to give the data to the graphics system as
+number pairs representing millions per year.  The graphics  system  is
+then   responsible  for  eventually  transforming  this  data  to  the
+coordinates of the display device and displaying it.
+
+There is no  composition  implied  by  the  specification  of  several
+graphical   objects   in  overlapping  application  coordinates.   For
+example, several objects may be drawn in a range of  coordinates  from
+(1.0,1000.0)  to (5.0,1000.5) and yet they will not appear together in
+the display if they are directed to different composition spaces.
+
+All output operations are specified in application data space and  are
+transformed  into  a  composition  space.  This implies that there can
+only be a single "active transformation" in effect at any given  time.
+(See  Transformation  Operations  for  more  information on the active
+transformation.)
+
+This paper will use the term "application data space"  when  referring
+to  the  coordinate  system  in  which  the  user  performs  the basic
+graphical operations that build an object.
+
+
+
+3.2  Master, Object Coordinates
+
+These terms refer to the coordinate system defined by some composition
+space  used  to  describe  a  particular  object.  The coordinates are
+expressed as floating-point numbers.  This new object may be a part of
+a larger drawing in one or more different composition spaces.
+
+This paper will use  the  term  "master  coordinates"  for  coordinate
+systems used in this way.
+
+
+
+3.3  Physical Device Coordinates
+
+Physical  device   coordinates   consist   of   a   bounded   set   of
+two-dimensional  integer  coordinates  that  specify  the  addressable
+positions of an output device's display area.  The device  coordinates
+themselves  do  not  specify the absolute size of an addressable unit.
+The unit may be a pixel on a bitmap terminal, or a character cell on a
+character  terminal.   Each implementation must supply functions which
+!
+COMMON LISP Graphics Models                                     Page 6
+COORDINATE SYSTEMS
+
+
+give the physical size of the addressable units  of  the  device,  for
+example,  the height and width of a pixel.  This allows users who wish
+to work in the physical units of the device to scale their coordinates
+appropriately.
+
+The numeric range of each axis  is  defined  by  the  physical  device
+itself,  as  are  the  location of the origin and the direction of the
+axes.  For example, a character terminal may have an origin  at  (1,1)
+in  the  upper left corner of the screen with the X bound of 80 or 132
+and the Y bound of 24.  A  particular  bitmap  terminal  may  have  an
+origin  at  (0,0)  in the lower left corner with X and Y ranges of 767
+and 468.
+
+
+
+3.4  Logical Device Coordinates
+
+Logical  device  coordinates  are  two-dimensional  coordinates   with
+floating-point   values.    Logical  device  coordinates  specify,  in
+centimeters, locations on a "logical device" which is  independent  of
+the   particular   physical   display  device.   Furthermore,  logical
+coordinates always have a (0,0) origin at the lower left corner of the
+display  screen.   The  logical display screen thus corresponds to the
+upper right quadrant of a conventional X-Y coordinate system.
+
+Since  logical  device  coordinates  always  specify  measurements  in
+centimeters,  an  object  or  display  that is described using logical
+device coordinates will have the same size and  shape  on  any  output
+device.  Users who wish to work in physical device coordinates can use
+the functions that give the size of a physical device unit to  control
+the size and shape of their images.  (See Physical Device Coordinates,
+above.)
+
+This paper will always use the term "device coordinates" in the  sense
+of "logical device coordinates" unless otherwise stated.
+
+
+
+3.5  Virtual Display Coordinates
+
+Virtual  display  coordinates   are   two-dimensional   floating-point
+coordinates  that  specify  locations  within  a virtual display.  The
+units of the virtual display coordinates are the same as the units  of
+the logical device coordinates, that is, centimeters.
+
+Since virtual display coordinates and logical device coordinates share
+the  same  units and since both have origins in the lower left corner,
+the position of a point in a virtual display on the logical display is
+a  pure  translation  of  that  point  from  the origin of the logical
+display coordinate  system.   In  other  words,  only  translation  is
+required  when  placing  or  shifting a virtual display on the logical
+device; no scaling or rotation is needed.
+!
+COMMON LISP Graphics Models                                     Page 7
+COORDINATE SYSTEMS
+
+
+3.6  Normalized Device Coordinates (NDC)
+
+This is a term  commonly  defined  by  the  implementors  of  graphics
+systems.    Normalized   Display  Coordinates  describe  an  idealized
+graphics display device that has a square display and an aspect  ratio
+of  1  (meaning that a mathematical square is "displayed" as a square,
+not  a  rectangle).   Locations  in  this  display  are  specified  by
+coordinates  whose X and Y values can be floating-point numbers in the
+range of 0.0 to 1.0, inclusive.  The origin in the NDC  system  is  at
+the lower left of the display.
+
+By using Normalized Device Coordinates, all graphics  data  is  mapped
+into NDC space before mapping to the physical device.  In the Graphics
+Kernel System (GKS), NDC  space  provides  both  a  device-independent
+coordinate mapping and a graphical composition layer.
+!
+COMMON LISP Graphics Models                                     Page 8
+TRANSFORMATION
+
+
+4  TRANSFORMATION
+
+Transformation  (or  coordinate  transformation)  is  the   one-to-one
+mathematical  mapping  of  points in one coordinate system to those in
+another.  In the current context, transformation is limited to  linear
+operations of scaling, rotation, and translation.  Projection (mapping
+of an N-dimensional space onto N-1 or fewer dimensions) is not treated
+in  this document.  The remaining discussions are therefore limited to
+two dimensions, although nothing in the design should prohibit a  user
+from  defining  N-dimensional transformations and implementing his own
+projection algorithms for treating higher dimensional graphics.
+
+See Chapter 7  of  "Fundamentals  of  Interactive  Computer  Graphics"
+(Foley   and   Van  Dam)  for  a  thorough  discussion  of  coordinate
+transformations in graphics systems.
+
+
+
+4.1  Rotation
+
+Rotation is the mapping of points  (x,y)  to  points  (x',y')  by  the
+equations
+
+     x' = x * cos(a) - y * sin(a)
+     y' = x * sin(a) + y * cos(a)
+
+where a is the angle  of  counterclockwise  rotation.   Visually,  the
+entire picture is rotated by the angle a.  Rotation is always computed
+around the coordinate origin.  Aspect ratio is always preserved  under
+a rotation transformation.
+
+
+
+4.2  Scaling
+
+Scaling is a  mapping  of  points  (x,y)  to  points  (x',y')  by  the
+equations
+
+     x' = x * x←factor
+     y' = y * y←factor
+
+where x←factor and y←factor are  constant  terms.   Visually,  scaling
+produces  an  enlargement  or  diminishment  of the plotted data along
+either axis.  Aspect ratio (the ratio of the sizes  of  the  x  and  y
+axes) is preserved only when x←factor = y←factor.
+
+
+
+4.3  Translation
+
+Translation is the mapping of points (x,y) to points  (x',y')  by  the
+equations
+
+!
+COMMON LISP Graphics Models                                     Page 9
+TRANSFORMATION
+
+
+     x' = x + x←offset
+     y' = y + y←offset
+
+where x←offset and y←offset are constant terms.  Visually, the  entire
+picture is moved intact to another location.
+
+
+
+5  TRANSFORMATION OPERATIONS
+
+5.1  Matrix Representation
+
+All points in the  graphics  system  are  represented  in  homogeneous
+coordinates.   Therefore,  all  transformations in N-dimensional space
+may be represented by an (N+1)-dimensional square matrix.  The  actual
+mapping of points (x,y) to points (x',y') may be carried out using the
+following equation:
+
+     [x', y', 1] = [x, y, 1] *  | r11 r12  0 |
+                                | r21 r22  0 |
+                                | t1  t2   1 |
+
+which reduces to two equations involving a total of four multiply  and
+four add operations.
+
+Transformations in COMMON LISP will be treated as LISP  objects  which
+may    contain    these   specialized   N-dimensional   matrices.    A
+transformation object can be created by specifying  a  window-viewport
+pair  and  adding rotation information, if any.  The user will also be
+allowed to create transformation objects to suit his own needs.   This
+latter    capability   is   important,   since   the   window-viewport
+transformation only  produces  scaling  and  translation  without  any
+rotation  capability.  Also, the transformation manipulation functions
+will accept N-dimensional transformation objects and are likely to  be
+more efficient than user-written matrix multiplication code.
+
+A  transformation  object  may  also  be  defined  which  involves   a
+user-written  function  that  will  be called when a transformation is
+required.   This  feature  may  be  used  to  allow  users  to   write
+3-dimensional projection and clipping transformations.
+
+
+
+5.2  Window-Viewport Transformation
+
+A window is a rectangle whose limits (vertices) are defined in  a  set
+of  coordinates  which  may  lie  in application data space or in some
+defined composition space.  Conceptually, a window  functions  like  a
+"window"   in  the  real  world  (the  glass  variety).   It  opens  a
+rectangular area in some coordinate space so that any data which falls
+within  the  limits  of the window may be made visible to the user.  A
+window may specifically delete data that falls outside its limits;  in
+this  case it is a clipping rectangle (see Clipping Rectangle, below).
+If clipping is not enabled, data that falls  outside  the  window  may
+!
+COMMON LISP Graphics Models                                    Page 10
+TRANSFORMATION OPERATIONS
+
+
+still be visible.
+
+In conjunction with a viewport, a window is used to provide a  scaling
+and  translation  transformation.   This  is  a conventional method in
+graphics to specify a coordinate transformation.
+
+A viewport is a rectangle whose limits are  defined  in  a  coordinate
+system  that must lie in some defined composition space.  The viewport
+serves two functions:
+
+      o  It defines where in the composition space the data  or  other
+         information will appear.
+
+      o  When associated  with  a  window,  it  defines  a  coordinate
+         transformation  specification  and  also  indicates that data
+         "seen through" that particular  window  will  appear  in  the
+         viewport.
+
+
+
+5.3  Active Transformation
+
+All  graphics  operations  must  be  applied  with  respect  to   some
+transformation.   For  example,  a line is drawn by specifying the end
+points  of  the  line.   The  coordinates  of  these  points  may   be
+transformed  into the master system of some object which is being used
+in a composite display, or directly into the picture area of a virtual
+display.   In  the  first case, the transformation may be an elaborate
+one which includes multiple  levels  of  scaling  and  rotation.   The
+latter may only involve a simple translation of points relative to the
+origin of the logical device coordinates.
+
+All of the output functions  which  require  positioning  information,
+such  as  line  drawing and character insertion, will take an optional
+transformation argument.  The default value of this argument  will  be
+the   currently   specified   active   transformation.    The   active
+transformation is no different from any  other  transformation  except
+that  it  has  been  designated  to  be the default transformation for
+output operations.  The system should provide a  function  similar  to
+the  COMMON LISP IN-PACKAGE function which sets the value of a special
+variable which is the active transformation.  In addition, the  system
+may  have  a  macro (WITH-TRANSFORMATION) which binds the value of the
+current transformation within some scope.
+
+
+
+6  CLIPPING RECTANGLE
+
+A clipping rectangle is a rectangle defined  as  a  window  either  in
+application data space or in a composition space.  Clipping is part of
+the transformation operation.  It is usually done in  the  originating
+coordinate  system.   The  purpose  of  clipping is to remove from the
+display any portions  of  a  graphical  image  that  lie  outside  the
+clipping rectangle.  Thus, if the user specification of a line has end
+!
+COMMON LISP Graphics Models                                    Page 11
+CLIPPING RECTANGLE
+
+
+points which are outside the rectangle and clipping is  enabled,  only
+the portion of the line that falls within the rectangle will be mapped
+onto the destination composition space.  If clipping is  not  enabled,
+the entire line will be mapped.
+
+In the destination coordinate system, clipping is  performed  only  at
+the  boundaries  of  the physical device.  (A viewport cannot define a
+clipping rectangle.) Since physical device coordinates are  a  bounded
+coordinate  system,  any  points  which  lie outside the bounds of the
+physical device will be unconditionally clipped.
+
+Clipping can be enabled or disabled on a  global  basis  or  for  each
+graphical output operation.
+
+
+
+7  COMPOSITION
+
+Composition is the process of building complex graphical objects  from
+(potentially)  a  number  of different objects and coordinate systems.
+Conceptually, composition is akin to placing various graphical objects
+onto some flat surface in a particular arrangement.  This flat surface
+is termed a composition space.  Windows can then  select  portions  of
+this  flat  space either for viewing on the screen or for use in other
+composition spaces.
+
+A simple example of composition is the definition of the symbol for  a
+NAND  gate.   The symbol is created in its own master coordinates.  It
+is then mapped onto various parts of  another  composition  space  and
+lines are drawn using a different transformation into that composition
+space to connect the symbols into a circuit diagram.
+
+
+
+7.1  Composition Space
+
+A composition space is an independent data  space  which  has  certain
+special characteristics:
+
+      o  It can store graphical objects.
+
+      o  It can optionally  define  a  rectangle  which  may  be  used
+         simultaneously  as  a  window,  a  viewport,  and  a clipping
+         rectangle.
+
+Mapping from application data space or from a composition  space  onto
+another  composition  space  is  accomplished  by  specifying either a
+window-viewport pair (plus rotation) or by explicitly providing source
+and  destination  spaces  plus  a transformation matrix and a clipping
+rectangle.
+
+Portions of a composition space  can  be  further  mapped  onto  other
+composition  spaces  to an arbitrary depth; and composition spaces can
+be recursively mapped to themselves.   When  a  composition  space  is
+!
+COMMON LISP Graphics Models                                    Page 12
+COMPOSITION
+
+
+mapped  onto  other  composition  spaces, changes made in the original
+composition space appear in all the composition spaces  it  is  mapped
+onto.   By contrast, the contents of a composition space can be copied
+to other composition spaces.   Any  subsequent  changes  made  in  the
+original composition space will not be reflected in the copies.
+
+
+
+7.2  Segments
+
+"Segment" is a term used in conventional graphics systems to denote an
+independently  specified  graphical  object.   Segments  are  built in
+independent composition spaces.  Segments may be  used  together  with
+other  graphical  objects  and  primitive  operations to create a more
+complex graphical object.
+
+The creation  and  use  of  segments  is  entirely  analogous  to  the
+segmentation of programs into subroutines which may be used repeatedly
+by different code segments.  The building process is not confined to a
+single  level.   Segments  may  be  composed of other segments and the
+entire object then used  as  a  portion  of  a  larger  diagram.   The
+graphics   system   handles   the  nested  coordinate  transformations
+necessary to produce the levels of graphical object.
+
+A significant feature of a segment is that it is created once and  may
+then  be  mapped  (via additional transformations) any number of times
+into different composition spaces.  An example of  a  segment  is  the
+symbol  for  a  NAND gate.  This symbol need only be defined once.  It
+can then be mapped any number of times to create  a  circuit  diagram.
+Note  that  if  the  original  NAND  gate  symbol  is changed, all the
+mappings of it automatically change.  Furthermore,  any  change  to  a
+transformation  between  one  space  and  another  propagates into any
+further mappings.  For example, if the  window  surrounding  the  NAND
+gate  segment  is  made larger, the NAND gate will appear to shrink in
+each viewport mapped to that window.  The graphics system handles  all
+intermediate  levels  of  coordinate  transformation needed to map the
+segments.
+
+Segments may be copied rather than mapped, in  which  case  they  lose
+their  reference to the original object.  Changes in the original will
+not affect any copies made from it.
+
+Segments may be returned as  the  result  of  a  pick  operation  (see
+Pointing and Picking).
+
+
+
+7.3  Virtual Display Composition
+
+Since virtual displays are themselves composition spaces (see  Virtual
+Displays),  they can be mapped onto other composition spaces.  This is
+particularly useful when making a virtual display that is a  composite
+of other virtual displays.  Such a composite display can be treated as
+a single display for display management purposes, and yet each display
+!
+COMMON LISP Graphics Models                                    Page 13
+COMPOSITION
+
+
+can  retain  its  own identity for all other operations.  Some systems
+call this a "pane" system with the final composite  display  called  a
+"frame."
+
+
+
+7.4  COMMON LISP Composition Levels
+
+COMMON  LISP  should  allow  for  creation  of  arbitrary  levels   of
+composition.  One that will be provided by default is:
+
+      o  Virtual display space (allowing virtual displays to be mapped
+         into the picture area of another virtual display)
+
+
+
+8  ATTRIBUTES
+
+Attributes are parameters that affect  the  visual  representation  of
+output  operations.   They  can, for example, determine the background
+color of a composition space, the width and pattern  of  a  line,  the
+font  and  spacing  of  text,  or the visibility of a graphical object
+mapped onto some composition space.
+
+Some attributes are inherently "static" while  others  are  inherently
+"dynamic."  When dynamic attributes are changed, the visual results of
+previous  operations  that  used  those  attributes  will  immediately
+change.  Operations done with static attributes must be re-executed in
+order to change the visual appearance of their results.
+
+Some attributes are naturally  associated  with  types  of  operations
+(such as graphics primitives) while others are associated with objects
+(such as composition  spaces).   Some  can  be  associated  with  both
+objects  and operations.  For example, a composition space can have an
+attribute that specifies the default color of all operations that take
+place  within  it,  and an individual graphics operation can specify a
+color attribute to override the default.
+
+Attributes are also organized in blocks.  (GKS calls attribute  blocks
+"bundles.")   Attribute  blocks  can  be  associated  with  individual
+operations,  transformations,  or  composition  spaces.   Nesting   of
+transformations implies some form of attribute nesting as well.
+
+
+
+8.1  Attribute Descriptions
+
+Attributes can be categorized by the type of operation or object  they
+affect,   although   this   categorization   is  more  for  conceptual
+convenience than  to  suggest  a  meaningful  difference  between  the
+attributes.   The  following  is  a  suggested  list of categories for
+COMMON LISP attributes:
+
+     Composition space
+!
+COMMON LISP Graphics Models                                    Page 14
+ATTRIBUTES
+
+
+     Graphics
+     Text
+
+Attributes associated with a composition space  serve  two  functions:
+they  describe  attributes  of  the composition space itself, and they
+also provide a complete set of default attributes for any graphics  or
+text   operations  done  into  that  space.   These  defaults  can  be
+overridden by  attributes  applied  to  individual  graphics  or  text
+operations.
+
+The  following  possible  attributes  which  will  be  considered  for
+inclusion  in  a  possible COMMON LISP graphics model are listed under
+the categories described above.  These attributes are all described in
+terms  of  bitmapped  terminals.   Some of the attributes may function
+differently - or not function at all - on other  types  of  terminals,
+such  as character terminals.  The specific behavior of each attribute
+on various terminals is implementation-dependent.
+
+      o  Composition Space  Attributes  -  the  first  two  attributes
+         determine  characteristics  of  the composition space itself,
+         while the second two establish defaults for graphics or  text
+         operations done in the space.
+
+          -  Visibility - specifies whether operations done into  this
+             space  (when  it  is  mapped  into some other composition
+             space) will be immediately visible or  deferred  until  a
+             later time.
+
+          -  Background Color - specifies the background color of  the
+             composition space.
+
+          -  Drawing Color - specifies the default color to be applied
+             to all output operations into this space.
+
+          -  Writing Mode - specifies the relationship applied  to  an
+             output  operation  and  the  existing  bitmap  pattern to
+             produce the resulting display rendition:
+
+                  NIL - operation is performed (information is kept in
+                  the  display  list)  but  the  output display is not
+                  changed.
+
+                  :XOR,  :OR,  :ORC1,  :AND,  :ANDC1  -  the   Boolean
+                  operation  that  is applied to the bitmap pattern of
+                  the operation and the  existing  bitmap  pattern  to
+                  produce  the  displayed  result.   The C1 forms mean
+                  that the bitmap produced by the operation  is  first
+                  complemented   before   the   logical  operation  is
+                  performed with the existing bitmap.
+
+                  :REPLACE, :COMPLEMENT-REPLACE - the  result  of  the
+                  operation  (or  its  complement) completely replaces
+                  the affected contents of the display.
+!
+COMMON LISP Graphics Models                                    Page 15
+ATTRIBUTES
+
+
+                  :ERASE,  :COMPLEMENT-ERASE  -  the  result  of   the
+                  operation is completely replaced with the background
+                  color (or its complement) of the composition space
+
+      o  Graphics  Attributes  -  these  attributes   are   associated
+         specifically  with  graphics  operations.   They  can also be
+         applied to a composition  space  to  determine  defaults  for
+         graphics operations in that space.
+
+          -  Line Width - specifies the  width  of  a  displayed  line
+             expressed  as  a (floating-point) multiple of the minimum
+             width that the device can draw.
+
+          -  Line Style - specifies the particular visual style of the
+             line  to  be drawn.  The following are suggested although
+             implementations may vary in the types available:
+
+                           :SOLID
+                           :DASHED
+                           :DOTTED
+                           :DASHED-DOTTED
+
+
+          -  Fill - specifies whether or not objects are to be filled,
+             the fill pattern to use, and the fill reference point.
+
+          -  Marker Symbol - specifies the visual symbol used  by  the
+             graphics operations which place marker symbols at points.
+             The symbol is centered on the specified point.   Supplied
+             symbols are implementation dependent.
+
+      o  Text   Attributes   -   these   attributes   are   associated
+         specifically  with text operations.  They can also be applied
+         to  a  composition  space  to  determine  defaults  for  text
+         operations in that space.
+
+          -  Font - specifies the font set to  be  used  when  writing
+             text.  Values are implementation dependent.
+
+          -  Character  Spacing  -  alters  the  normal   spacing   of
+             character  writing.   This  attribute  is  expressed as a
+             floating-point number that is multiplied by the character
+             height to produce additional space to be inserted between
+             characters.  The number can be negative,  in  which  case
+             characters may be forced closer together or overlapped.
+
+          -  Character Slant - slants fonts to produce  italics.   The
+             slant  is expressed in degrees and should be in the range
+             of -45 to +45.
+
+          -  Base  Line  Angle  -  specifies  the  angle  of   writing
+             characters.    This   attribute   is   expressed   as   a
+             floating-point number representing  degrees  of  rotation
+             from  the  normal  horizontal.  Unslanted characters will
+!
+COMMON LISP Graphics Models                                    Page 16
+ATTRIBUTES
+
+
+             always appear to be vertical when viewed  from  an  angle
+             parallel to the base line.
+
+          -  Text Path - specifies the direction of character  writing
+             in  relation  to  the base line.  There are four possible
+             values:
+
+                  :FORWARD - this is the normal left-to-right  display
+                  of  characters  in  a direction parallel to the base
+                  line.
+
+                  :BACKWARD - this is  the  reverse  of  the  :FORWARD
+                  direction  and  is  used,  for example, when writing
+                  Hebrew text.
+
+                  :UP - characters are displayed sequentially  "above"
+                  each other in relation to the base line.
+
+                  :DOWN - the reverse of :UP; characters are displayed
+                  sequentially  "below"  each other in relation to the
+                  base line.
+
+
+          -  Texture - a bitmap pattern which is logically ANDed  with
+             a character bitmap before writing to the display.
+
+An implementation is free to designate  supported  attributes  and  to
+categorize any supported attributes as static or dynamic.
+
+
+
+8.2  Attribute Inheritance
+
+Every composition space has a default attribute block associated  with
+it.   This  block  must  contain  a  complete specification of all the
+supported  attributes  for  an  implementation.   In  general,   these
+attributes may be overridden on a per-operation basis.
+
+A set of operations into some composition space may be performed  with
+respect  to some other attribute block.  This block may be incomplete.
+Any required attribute values will be taken either  from  an  explicit
+value in a specific operation or from the default attribute block.
+
+Attribute  inheritance  in  the  presence  of   multiple   levels   of
+composition  is not well understood.  Static attributes may be treated
+easily since the visual results of a  performed  operation  cannot  be
+changed  without  re-executing  the  operation.  Proper inheritance of
+dynamic attributes, however, is more difficult to determine.  At  this
+point,   the  inheritance  of  dynamic  attributes  is  implementation
+dependent.
+!
+COMMON LISP Graphics Models                                    Page 17
+VIRTUAL DISPLAYS
+
+
+9  VIRTUAL DISPLAYS
+
+A virtual display is a specialized graphical object  used  to  display
+graphics  or  text  information  on a physical device.  It is the only
+type of graphics object which can be displayed on a device.
+
+A virtual display is made visible on a device by associating  it  with
+that  device,  although  a  virtual  display  can  exist without being
+associated with any device.  Associating  a  virtual  display  with  a
+device  is  similar  to,  but  not  the  same operation as, creating a
+mapping from one composition space to another.  A major difference  is
+that  virtual  displays  are opaque; that is, the order of association
+affects the visible result on the device.   If  two  virtual  displays
+overlap on the screen, the portion of the first which is overlapped by
+the second will not be  visible.   Normal  mappings  onto  composition
+spaces  are  transparent,  that  is, all operations are always visible
+(see Display Management).
+
+Creation of a virtual display creates a composition space onto which a
+number  of  graphical  objects are mapped.  These objects have default
+spatial relationships which can be altered at  the  time  the  virtual
+display  is created.  The following diagram illustrates the objects of
+a virtual display in a typical configuration.  All objects except  the
+picture area are optional.
+
+
+     Banner  +--------------------------+
+     area    |    Banner area           |
+     origin->+--------------------------+
+             ============================<--+
+             =                          =   |
+             = +----------------------+ =<--Borders
+             = |                      | =
+             = |    Picture area      | =
+             = |                      | =
+             = |                      | =
+             = | Picture area         | =
+             = | origin               | =
+             = |/                     | <--Margins
+             = +----------------------+ =  |
+             =                          <--+
+          +->+===========================
+          |
+     Virtual display origin
+
+
+Each of the objects shown will be discussed in greater detail later in
+this section.
+
+The mapping of a virtual display's objects into its composition  space
+produce  transformations  which  can  be  used  during I/O operations.
+Additional arbitrary transformations into this composition  space  can
+be created as needed.
+!
+COMMON LISP Graphics Models                                    Page 18
+VIRTUAL DISPLAYS
+
+
+To create a virtual display, one specifies the  size  of  its  picture
+area  along  with  the  size  and spatial relationship of any optional
+parts.  The total size of the virtual  display  is  the  size  of  the
+picture area as extended by the optional parts.
+
+
+
+9.1  Composition Space
+
+The creation of a  virtual  display  results  in  the  creation  of  a
+composition  space  within  which  the virtual display is built.  This
+space may be used in all respects  as  any  other  composition  space;
+users can do arbitrary graphical operations within it.
+
+
+
+9.2  Picture Area
+
+The picture area of a virtual display is the  rectangular  area  where
+data is normally displayed.  It is a window-viewport pair which maps a
+portion of application data space into the composition  space  of  the
+virtual  display.  The size of the viewport is the size specified when
+the virtual display was created.  By default, the window is  the  same
+size  and  has  the  same coordinate system as the viewport; thus, the
+transformation is trivial.  A different window may be  specified  when
+the  display is created.  Unless otherwise specified, the picture area
+viewport has a coordinate origin at the lower left corner and  a  size
+expressed  in  virtual  display units (centimeters).  The picture area
+has  a  transformation  object  which  may  be  used  as  the   active
+transformation in any graphics operation.
+
+The other objects of a virtual display are placed in a  fixed  spatial
+relationship  to  the  sides of the picture area.  If the picture area
+grows or shrinks, the margins, border, and banner  area  move  on  the
+screen to maintain this relationship.
+
+
+
+9.3  Banner Area
+
+The banner area is an optional part  of  a  virtual  display.   It  is
+similar to the picture area in that it is defined as a window-viewport
+pair.  The  viewport  is  mapped  into  the  composition  space  in  a
+particular  spatial  relation  to  the picture area.  It may be above,
+below, or to the right or left of the picture area.  It  is  separated
+from  the  picture area by the width of the margin and border.  Unless
+otherwise specified, the banner area viewport has a coordinate  origin
+at  the  lower  left corner.  Its width (or height if the banner is to
+the right or left) is, by  default,  the  width  (or  height)  of  the
+picture  area viewport plus the width of any margins and borders.  The
+banner area has a transformation object  which  may  be  used  as  the
+active transformation in any graphical operation.
+!
+COMMON LISP Graphics Models                                    Page 19
+VIRTUAL DISPLAYS
+
+
+9.4  Border
+
+A virtual display may optionally have a  border.   The  border  is  an
+outline  of  the  picture area, separated from the picture area by the
+margins.  Its width is specified in virtual  display  units.   In  its
+most  basic  form,  the  border  may  be  a line of some default width
+surrounding the picture area.  If supporting hardware permits, it  may
+have  an  arbitrary  thickness  and  tile  pattern (see Bitmaps).  The
+border may be designated as a sensitive area for the pointing system.
+
+
+
+9.5  Margin
+
+The margin is the space between the border and the picture area; there
+can  be  four  margins associated with a virtual display.  Its size is
+measured in virtual display units.  The default size of any margin  is
+implementation dependent.
+
+Margins are  most  often  used  to  separate  text  from  the  border.
+However,  some  set of implementation dependent operations may also be
+performed in the margins of a  display,  such  as  drawing  lines  for
+scroll  bars.   The  margins  lie outside the coordinate system of the
+picture area; they must be accessed by using the coordinate system  of
+the virtual display composition space.
+
+
+
+9.6  Virtual Display Window
+
+The entire rectangle encompassing the picture area, banner, border and
+margins  of  a  virtual display is enclosed in a window in the virtual
+display composition space.  This window may be used to map the display
+onto a physical device or into some other composition space.  The size
+of this window tracks the "size" of the virtual display, such that if,
+for example, the picture area viewport is changed, the virtual display
+window is automatically adjusted.
+
+
+
+9.7  Device Viewport
+
+A device viewport is a specification, in logical  device  coordinates,
+of  the  size  and location of a virtual display on a physical device.
+Unless otherwise specified, the size of a device viewport is the  same
+size as the virtual display window.  The transformation is then a pure
+translation.  An arbitrary transformation may be applied to scale  and
+rotate the appearance of the virtual display on the screen.
+
+
+
+9.8  LISP Terminal Streams To Virtual Devices
+
+A virtual display may be used as an argument to the various  varieties
+!
+COMMON LISP Graphics Models                                    Page 20
+VIRTUAL DISPLAYS
+
+
+of MAKE-STREAM functions that exist in COMMON LISP.  Such a stream can
+be input, output, or both.  A virtual display stream opened for output
+means  that  printed  LISP  output  will  be  directed to that virtual
+display.  An input stream designation means that a LISP read operation
+on that stream will get input from the keyboard device attached to the
+terminal.  An input-output stream reads characters from  the  keyboard
+and  echoes those characters in that virtual display.  All designation
+of font, spacing,  color,  etc.   is  specified  in  attribute  blocks
+associated with that virtual display.
+
+The physical device need not be  a  keyboard,  although  that  is  the
+normal  device.   It may be any device capable of responding correctly
+to the COMMON LISP input operations.  This allows, for example, a file
+to  be associated with one display and the keyboard with another.  The
+resulting effects on the screen (and to the program)  depend  only  on
+the choice of virtual display used in the input operation.
+
+
+
+9.9  Input Cursor
+
+Each virtual display which has an associated virtual input device will
+have   an  input  cursor  defined.   The  nature  of  this  cursor  is
+implementation dependent but it must at least provide  an  indication,
+when  this  display  is  being used for input, of the current location
+where echoed input will appear.  This cursor is  often  distinct  from
+the pointing (or mouse) cursor.
+
+
+
+10  POINTING AND PICKING
+
+In a virtual display and graphics environment, it is  often  necessary
+to  translate a visually perceived location on the display device into
+information  useful  to  the  running  program.   Operations  such  as
+selecting  an  item from a menu, indicating a virtual display to bring
+to the top of the stacking order, and selecting a gate connection in a
+circuit diagram are all examples of pointing or picking.
+
+Pointing and picking are input operations that require a certain level
+of  physical device support.  The device must be capable of generating
+a visual indicator (cursor) which indicates a screen position, and  it
+must have a means of manipulating the position of this indicator.  The
+manipulation need not be independent from  the  host  processor.   For
+example, the arrow keys on a character-oriented terminal might be used
+to request the host processor to move the cursor to different spots on
+the  screen.   Other supporting devices can be various forms of mouse,
+light pen, tablet and cross-hair.
+
+The distinction between pointing and picking is in the nature  of  the
+object  returned  as  a  result  of  the  operation.   The result of a
+pointing operation is always an N-dimensional (usually 2)  coordinate.
+The  result  of  a picking operation is a previously defined graphical
+object.  This might be a simple object such as a line or it might be a
+!
+COMMON LISP Graphics Models                                    Page 21
+POINTING AND PICKING
+
+
+composition space which makes up a part of the display.
+
+A pointing or picking operation is always performed  with  respect  to
+some  transformation.  This transformation is used to specify both the
+coordinate system in which the results are expressed and the level  of
+detail  required of the operation.  For example, a pick might return a
+particular mapping of a NAND gate symbol, the  NAND  gate  composition
+space,  or  a portion of the NAND gate symbol, depending on the chosen
+transformation.
+
+Both pointing and picking are primarily input operations but may  also
+involve  placement  of  the  position  cursor  using  the  appropriate
+coordinate  system.   The  input  operations  are   completed   in   a
+device-dependent  fashion, such as clicking a mouse button or pressing
+a function key on the terminal.
+
+Rectangular sections of the  screen  can  be  made  sensitive  to  the
+pointing cursor.  Section 11.2 discusses this concept.
+
+
+
+10.1  Pointing
+
+Pointing is an input operation  that  returns  a  coordinate  in  some
+N-dimensional  space.   The  space  must  be  previously defined.  For
+example, the  coordinate  may  be  an  X-Y  pair  of  physical  device
+coordinates.   It  may  also  be a coordinate in the master coordinate
+system of some defined graphical object.
+
+
+
+10.2  Picking
+
+Picking is an  input  operation  that  returns  a  previously  defined
+graphical  object.  Such an object might be an entire virtual display,
+for instance, when selecting a display to bring  to  the  top  of  the
+stacking  order.   It  might  also  be  some  component of a graphical
+object, such as a point, a line, or a segment.
+
+
+
+11  DISPLAY MANAGEMENT
+
+"Display  management"  refers  to   the   facilities   available   for
+controlling  the  appearance of the physical screen and making virtual
+displays visible to the user.  Since virtual displays are opaque  when
+placed  onto  a  physical  screen, they behave like cards stacked on a
+table.  Portions of the screen that are covered by the rectangle of  a
+virtual  display are not visible while that display is visible.  Thus,
+a virtual display may hide (or "occlude") portions  of  other  virtual
+displays  which  were  already  on the screen.  The display management
+system must have the capability  to  place  virtual  displays  on  the
+screen  and remove them from the screen.  The system must also be able
+to move virtual displays on  the  screen  and  change  their  stacking
+!
+COMMON LISP Graphics Models                                    Page 22
+DISPLAY MANAGEMENT
+
+
+order.
+
+Other display management capabilities  arise  from  the  necessity  to
+provide  a  flexible  and  powerful user interface.  Since the display
+system  should  have  some  type  of  pointing  device,  the   display
+management  system must allow the programmer to define all or portions
+of a virtual display as being sensitive to the pointing device.   This
+means  the the user's software can detect whenever the pointing device
+enters or leaves some selected area of a virtual display.  The  system
+must  also provide for normal terminal I/O to be performed to and from
+a virtual display.
+
+
+
+11.1  Visibility And Stacking
+
+A virtual display is a graphical object which may become visible on  a
+terminal  screen.   It  can  exist  without  being associated with any
+device or it may be associated with several devices simultaneously.
+
+The display management system remembers the order  in  which  displays
+are  associated with each device.  Associating several displays with a
+device is called "stacking" since it is analogous to stacking up cards
+on  a  flat surface; the order in which displays are associated with a
+particular device  is  called  that  device's  "stacking  order."  The
+position of a display in the stacking order can be altered.  It can be
+brought to the top, pushed to the bottom, or  placed  above  or  below
+another  virtual display in the stacking order.  If a display is moved
+on the display screen, it  maintains  its  position  in  the  stacking
+order.
+
+The stacking order is important  to  the  appearance  of  the  screen,
+because  it helps determine which displays can hide other displays.  A
+virtual display is said to be "occluded"  on  some  device  if  it  is
+beneath  another virtual display in the stacking order for that device
+and if some or all of its area is within the screen area  occupied  by
+the other virtual display.
+
+A virtual display, in addition to being associated with a device,  may
+also   be   "exposed"  (rendered  visible)  or  "unexposed"  (rendered
+invisible) on that device.  In order  for  a  virtual  display  to  be
+visible  to  the  user on some device, it must be associated with that
+device, be exposed, and not be  entirely  occluded  by  other  exposed
+virtual  displays.   A  display can be made invisible but preserve its
+position in the stacking order by making it unexposed.  In this state,
+it cannot occlude other virtual displays.
+
+Exposure is a property of an element (virtual display) in a particular
+stacking  order,  not  a  property  of the element itself.  Since each
+display device has its own stacking order, a display may be associated
+with more than one device but be exposed on only some of the devices.
+!
+COMMON LISP Graphics Models                                    Page 23
+DISPLAY MANAGEMENT
+
+
+11.2  Sensitive Regions
+
+Rectangular areas of a virtual display may be made  sensitive  to  the
+pointing  device.   A  sensitive  region is defined in virtual display
+coordinates by specifying the lower left corner  and  the  height  and
+width of the rectangle.
+
+Designating a region as sensitive provides the programmer with several
+capabilities for creating a user interface to the display system:
+
+      o  The visual appearance of the sensitive region can be  altered
+         either  automatically  when  the  pointing  device  enters or
+         leaves the region,  or  under  program  control  without  the
+         pointer moving at all.
+
+      o  A LISP  function  can  be  invoked  asynchronously  when  the
+         pointing device enters or leaves the region.
+
+      o  The sensitive region can be returned as the result of a  user
+         selection among a list of sensitive regions.
+
+
+
+11.3  Menus
+
+All display management systems should provide for a  special  type  of
+virtual display called a "menu." There can be many types of menus, but
+one kind should be provided with all Common LISP systems.  This  is  a
+simple  choice  menu.   The  display  appears  as  a  vertical list of
+options.  The pointing device is used to point to a desired  item  and
+the  item  is  selected in an implementation-dependent fashion.  There
+must be LISP functions which allow the programmer to create  the  menu
+(providing both the selectable items and the value to be returned from
+selection of each item) and to display the menu and query the user for
+an  item  selection.   All  of  the usual display management functions
+operate correctly on menus.
+
+
+
+11.4  Pointer And Selection
+
+Each implementation must provide a method for the user to "point" at a
+particular location on the physical screen.  This might be implemented
+with a mouse, light pen, cross hairs, or the cursor movement keys of a
+simple  video  terminal.   This pointer should be able to indicate all
+visible areas of the screen.
+
+There must be a defined method of indicating  to  the  display  system
+that  some  selection  has  been made relative to the pointing device.
+The most common of these is the buttons on a mouse.  It  may  also  be
+one or more special keys on the keyboard of the terminal device.  Each
+implementation must define the number of selection  possibilities  and
+the method for invoking each.
+!
+COMMON LISP Graphics Models                                    Page 24
+DISPLAY MANAGEMENT
+
+
+Each implementation must also provide some way of indicating that  the
+pointing device has moved.
+
+
+
+12  BITMAPS
+
+Many video terminal devices operate by allocating  fixed-sized  blocks
+of  display space (cells) for display of character and graphical data.
+These  cells  are  individually  addressable  and  are  the   smallest
+addressable  unit  from  the programmer's perspective.  Other graphics
+devices  are  capable  of  doing  direct  vector  and  other   graphic
+operations  on  the display.  Bitmapped terminals allow the programmer
+to access individual pixels in the display directly.   The  method  of
+access  is  to maintain a two-dimensional array of bits in memory that
+directly controls the display of each pixel.  The array  is  called  a
+bitmap.   All  operations to the terminal display are made by altering
+the bitmap.
+
+In any implementation that supports bitmapped  devices,  each  virtual
+display  will have a bitmap and each device will have a device bitmap.
+It will be possible to retrieve  all  or  portions  of  any  of  these
+bitmaps  via  implementation-supplied  functions  as well as to create
+bitmaps as  LISP  objects.   Functions  will  exist  to  do  arbitrary
+operations  combining  bitmaps  (OR, AND, etc.).  These operations are
+not clearly defined  at  this  time.   Suggestions  appreciated.   The
+purpose of such bitmap operations is to provide special visual effects
+such as shading and texturing.
+
+--
+From:  Henry Lieberman <Henry%MIT-OZ@SCRC-RIVERSIDE.ARPA>
+To:  Cl-Windows@SU-AI.ARPA, Cl-Object-Oriented-Programming@SU-AI.ARPA,
+Subject:  Silence breaker
+Date:  Wed, 9 Jan 85 17:17 EST
+Received:  from MIT-APIARY-3 by MIT-OZ via Chaosnet; 9 Jan 85 17:17-EST
+
+
+As some of you may know, I am working on a kit for building menu-driven
+graphical interfaces [such as document illustrators, circuit diagrammers,
+etc.] called EzWin. The kit provides protocols for representing menu commands as
+objects, mouse sensitivity and selection of graphical objects. It also tries to 
+separate the functionality of commands from the interface techniques and allow
+alternative interaction styles. It is at a level considerably above the "just
+bits on the screen" one at which Boetje@Dec's proposal is aimed, but would be
+complementary to such proposals. A wide range of interesting graphical interfaces
+is easily specifiable using this approach. I hadn't designed it with a "language
+standard" in mind, but perhaps standardizing things at this level as well might
+productive, promoting portability of interfaces. 
+
+I am currently preparing a paper on it for SigGraph '85. Interested people can
+send me a message with US Mail address for a copy. It is too long for
+transmission on this list and has many pictures.
+
+--
+From:  shih.pa@Xerox.ARPA
+Message-ID:  <850528-171504-1009@Xerox>
+cc:  shih.pa@Xerox.ARPA
+To:  CL-Graphics@su-ai.arpa
+Subject:  GKS binding to Lisp
+Date:  28 May 85 16:51 PDT
+Received:  from Semillon.ms by ArpaGateway.ms ; 28 MAY 85 17:15:04 PDT
+
+     Would anyone out there be interested in discussing a GKS binding to
+Lisp?  Does anyone
+know if anyone is working on one?
+
+     The arguments in favour of GKS are mainly that it is a standard,
+and if this group wants the
+eventual Lisp binding to reflect its interests,
+perhaps we should contact X3H3.
+
+     Accepting the GKS framework also seems simpler than having this
+group rediscuss windows, viewports, NDC spaces, etc. etc.
+
+     I'm personally interested in seeing at least a stripped (less than
+level ma) binding.
+
+--
+From:  Fanya S. Montalvo <MONTALVO%MIT-OZ@MIT-MC.ARPA>
+In-Reply-To:  Message from "shih.pa@Xerox.ARPA" of Tue 28 May 85 16:51:00-EDT
+Cc:  CL-Graphics@SU-AI.ARPA, MONTALVO%MIT-OZ@MIT-MC.ARPA
+To:  shih.pa@XEROX.ARPA
+Subject:  Re: GKS binding to Lisp
+Date:  Wed 29 May 85 11:04:16-EDT
+Message-Id:  <8505291502.AA21306@MIT-HTVAX.ARPA>
+Received:  from MIT-OZ by MIT-HTVAX (4.12/4.7) with CHAOS 
+
+I did a Franz Lisp binding to a Metheus package called Axia, which 
+Metheus purports to be a GKS.  It's probably close to it with add-ons
+that support the Metheus hardware directly.  I'd be very interested in
+discussing the issue.
+
+Fanya Montalvo
+- -------
+
+--
+From:  S Sridhar <sridhar%tekchips%tektronix.csnet@CSNET-RELAY.ARPA>
+Date:  Tuesday, 17 Dec 85 15:16:03 PST
+Received:  from tekchips by tektronix with smtp ; 17 Dec 85 15:26:20 PST
+To:  cl-windows@su-ai.ARPA, cl-graphics@su-ai.ARPA
+Subject: (no subject)
+
+
+ PL add me to your mailing list.
+
+sridhar%tekchips@tektronix.csnet
+
+--
+From:  David C. Plummer <DCP@QUABBIN.SCRC.Symbolics.COM>
+Message-ID:  <860624225836.8.DCP@FIREBIRD.SCRC.Symbolics.COM>
+In-Reply-To:  <8606242039.AA10124@hplabsc>,
+To:  Jim Kempf <kempf%hplabsc@hplabs.HP.COM>, Pavel.pa@Xerox.COM,
+Subject:  Re:  raster graphics
+Date:  Tue, 24 Jun 86 22:58 EDT
+Received:  from FIREBIRD.SCRC.Symbolics.COM by QUABBIN.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 13328; Tue 24-Jun-86 22:56:10 EDT
+
+    Date: Tue, 24 Jun 86 13:39:41 pdt
+    From: Jim Kempf <kempf%hplabsc@hplabs.HP.COM>
+
+    How does this fit in with existing graphics standards (GKS, etc.)?
+
+I have no idea.  Don't existing standards have a funny language which
+isn't Lisp?  At some point, some Lisp hacker is going to want to look at
+the pixel value of some x,y coordinate of a "raster", for speed if for
+nothing else.
+
+    Date: 24 Jun 86 18:20 PDT
+    From: Pavel.pa@Xerox.COM
+
+    PLEASE!!  Stop right here and move this discussion to the CL-Graphics
+    list!  It doesn't belong here and does belong there!
+
+This message moves it.  I sent a message to common-lisp-request asking
+what to do and RPG said there is CL-graphics, but that it would be
+better to do a first wave on CL and then move it to CL-graphics.
+
+--

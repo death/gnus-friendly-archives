@@ -1,0 +1,4618 @@
+--
+From:  "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+In-reply-to:  Msg of 3 Feb 1987  17:34-EST from MATHIS at ADA20.ISI.EDU
+Subject:  next x3j13 agenda
+Cc:    bobrow.pa@XEROX.COM, gls@ZARATHUSTRA.THINK.COM, rpg@SAIL.STANFORD.EDU,
+To:    MATHIS@ADA20.ISI.EDU
+Sender:  FAHLMAN@C.CS.CMU.EDU
+Message-ID:  <FAHLMAN.12277009706.BABYL@C.CS.CMU.EDU>
+Date:  Fri, 6 Feb 1987  20:48 EST
+Received:  ID <FAHLMAN@C.CS.CMU.EDU>; Fri 6 Feb 87 20:48:38-EST
+
+
+    That leaves Wed morning for the "cleanup" committee.  That may be
+    right for an initial session of that type, but we cann't expect
+    much in the way of results.
+
+The compiler committee may actually have more to present than the
+cleanup committee.  Rob Maclachlan has produced an excellent proposal
+that looks to me like it might fix up almost all the outstanding
+compilation issues at one swoop.  Whether the rest of the compiler
+committee will want to put this forward as a proposal, I can't say.
+Unfortunately, Rob won't be at this meeting (CMU has no budget for such
+travel), but perhaps one of the other compiler committee people will
+want to present Rob's proposal.
+
+I think that the cleanup committee is going to have to be reorganized so
+that some work gets done.  Most of the original members have been
+inactive, and some have been downright incommunicado.  I think we're
+going to have to oust the inactive members and try to add some new ones
+with more time and energy for this task.  I think this will need to be
+discussed by mail BEFORE the meeting, rather than trying to solve the
+problem in the middle of the conference.  If we just ask for volunteers,
+we'll get all the wrong people and things will be even worse than now.
+I think that the right move might be to invite some specific people to
+join the committee and help out: Rob, Skef Wholey, Eric Benson...people
+who might be able to grab a few issues and run with them.
+
+I don't know if there will be anything to report on errors, presentation
+of the standard, windows, or the other issues that had committees set up
+for them.
+
+Any chance that a more or less final object proposal will be ready for
+circulation before the meeting?
+
+I don't see any point in wasting any more time on Lisp1/Lisp2 until
+someone has a coherent Macro proposal to present and some better ideas
+on how to automate the transition.  No sense plowing the same technical
+ground and stating the same opinions over and over again, unless the
+plan is to bring this to a final vote and be done with it once and for
+all.
+
+- -- Scott
+
+--
+From:  Danny Bobrow <Bobrow.pa@Xerox.COM>
+Message-ID:  <870209-084444-5562@Xerox>
+cc:  MATHIS@ADA20.ISI.EDU, bobrow.pa@Xerox.COM,
+To:  Fahlman@C.CS.CMU.EDU
+In-reply-to:  "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>'s message of Fri,
+Subject:  Re: next x3j13 agenda
+Sender:  Bobrow.pa@Xerox.COM
+Date:  9 Feb 87 08:44 PST
+Received:  from Cabernet.ms by ArpaGateway.ms ; 09 FEB 87 08:44:44 PST
+
+    Any chance that a more or less final object proposal will be
+    ready for circulation before the meeting?
+We expect to circualte a document to the committee so that it can be
+presented.  As to what "final" means, we have mostly agreed on most of
+the contents, but what happens when the committee sees it.
+
+  danny
+
+--
+From:  MATHIS@ADA20.ISI.EDU
+In-Reply-To:  The message of 18 Feb 87  0948 PST from Dick Gabriel <RPG@SAIL.STANFORD.EDU>
+Message-ID:  <[ADA20.ISI.EDU]19-Feb-87 10:15:25.MATHIS>
+To:  RPG@SAIL.STANFORD.EDU
+Subject:  Re: Questions
+Sender:  MATHIS@ADA20.ISI.EDU
+Date:  19 Feb 1987 10:15-PST
+Received:  from ADA20.ISI.EDU by SAIL.STANFORD.EDU with TCP; 19 Feb 87  11:13:36 PST
+
+Dick,
+
+I will try to retransmit my prior message on new addresses to
+rmaiii at sail etc.
+
+yes slater is the smoker.  try slater@a.isi.edu.
+
+my tendency has been to put people on the list and then check
+them later.  I sent letters to about a dozen people on the
+physical list and about six of them dropped off.  After the Palo
+Alto meeting and the X3 bills, I was planning to question some of
+the people on both the electronic and physical lists.
+
+I think of the meetings as partially open.  Additional people
+from the same companies as members are welcome as are potential
+new members; but not just anybody.  Speaking and participating
+might be restticted.
+
+Bob
+
+--
+From:  MATHIS@ADA20.ISI.EDU
+In-Reply-To:  The message of 19 Feb 87  1230 PST from Dick Gabriel <RPG@SAIL.STANFORD.EDU>
+Message-ID:  <[ADA20.ISI.EDU]20-Feb-87 06:52:52.MATHIS>
+Cc:  Mathis@ADA20.ISI.EDU
+To:  RPG@SAIL.STANFORD.EDU
+Subject:  Re: Address  
+Sender:  MATHIS@ADA20.ISI.EDU
+Date:  20 Feb 1987 06:52-PST
+Received:  from ADA20.ISI.EDU by SAIL.STANFORD.EDU with TCP; 20 Feb 87  06:52:52 PST
+
+Dick, you had about three items:
+
+1. in an attemp to be efficient I cleaned-up my old messages when
+I put that address list together for you, so I don't know who
+RMAIII is either.  Even though I wish I could answer the
+question, this is the first time I have deleted a message that I
+later wanted back.  That situation occurs so infrequently, I am
+sure I am not deleting enough.
+
+2. about all those names from Symbolics and Xerox.  I am waiting
+to see how many they are willing to pay for.  It is also early.
+Moon hasn't come to a meeting yet, but is very active; Masinter
+wasn't on the original Xerox list and now he is also very active.
+
+3. About the ISO meeting.  Since the French will have the
+convenorship, it is natural for them to want to host the first
+meeting in France.  The European countries seem to be much more
+concerned about invitations to meet in particular countries and
+so the French would not invite themselves to Italy.  We can
+however point out in our ballot that it would be nice to have the
+meeting in Italy and the Italian standards body hopefully would
+respond by inviting us.  Another solution is to hold the meeting
+in France (Paris or Nice for example) at a time that could fit in
+nicely with IJCAI in August.  The reason for this June suggestion
+was some other conference they wanted to attach to.  I really
+don't have any other information on that.  It may be possible
+that we would like to attend that conference anyway.  I don't
+know.  In any case We can suggest the August meeting time.  I
+didn't know anything about this funding business.
+
+- -- Bob
+
+--
+From:  Masayuki Ida <a37078%ccut.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  PART 2 of 2 
+To:  mathis@ADA20.ISI.EDU, rpg@SAIL.STANFORD.EDU
+Message-Id:  <8703041522.AA29804@tansei.u-tokyo.junet>
+Return-Path:  <a37078@ccut.u-tokyo.junet>
+Date:  Thu, 5 Mar 87 00:22:28+0900
+Received:  by tansei.u-tokyo.junet (4.12/6.2Junet)
+
+- ---- PART 2 Activities of Selected Working Groups
+
+
+ A Survey on needs for Lisp and AI applications in Japan
+
+     Ryu Katayama, Sanyo Electric Co.,Ltd.
+     1-18-13 Hashiridani Hirakata, Japan
+
+     Jeida Lisp Committee made a survey on Lisp and  AI  applica-
+tions  from  Nov.  1985 to Feb. 1986 to clarify the current needs
+and trends of AI languages (including Lisp) and  AI  applications
+in Japan [1].  The contents of questionnaire are (1) company out-
+line, (2) interests and development policy  on  AI  systems,  (3)
+needs  for AI languages and its applications, (4) needs for Lisp,
+(5) needs for Common Lisp, and (6) Common  Lisp  subsetting.  350
+questionnaires  were sent to researchers and engineers engaged in
+knowledge information processing, and among 135 replies,  56  are
+from those who belong to private companies, 37 from universities,
+and 42 from public research institutes and others.
+     Concerning interests on AI systems  such  as  expert  system
+(ES),  image recognition, voice recognition, machine translation,
+CAI system, and intelligent  robot,  ES  is  most  interested  in
+(91.1%),  followed by machine translation (57.0%), image recogni-
+tion (52.6%). Also over 10 % answers indicate that those three AI
+systems  are  now  commercially  developed at their own organiza-
+tions.
+     With respect to (3), needs for AI languages are surveyed in-
+cluding hardware environments. Most widely used machine is VAX-11
+family (72), followed by SUN (28), Xerox-1100 series  (27),  Sym-
+bolics  (22),  FACOM  M  series  (17),  ACOS series (17), HITAC M
+series (16), USTATION (15), DEC 20XX family (15).
+     Commonly used AI languages are illustrated in Fig.1.  Widely
+used  Lisp  languages  are Franz Lisp (60), VAX Lisp (40), Inter-
+lisp/ Interlisp-D(33), UtiLisp (33), Zetalisp (18), Kyoto  Common
+Lisp  (17),  while  popular  Prolog  languages are C-Prolog (46),
+Prolog-KABA (44), DEC-10 Prolog (23), micro-Prolog (19),  Quintus
+Prolog  (17),  Prolog/KR  (17), and so on. Familiarly used object
+oriented languages are smalltalk-80  (38),  Flavors  (19),  Loops
+(7),  Objective-C  (8). Among other conventional languages, C (89
+answers), FORTRAN (51), PASCAL (49), BASIC (30) are also used.
+     Major objectives for those AI languages are for  development
+of  ES  (29.6%),  natural  language processing (including machine
+translation) (17.8%), intelligent man machine interface  (17.8%),
+image recognition/understanding (10.4%).
+     On the development of ES, 62.8% organizations are developing
+ES  by  their  own,  and  among them 46.8% are also developing ES
+development tool (shell), while 32.3% utilize commercially avail-
+able shells.  Most commonly used language for developing shell is
+Lisp (55 answers), followd by Prolog (26), C  (19).  Widely  used
+shells are OPS5 (18), KEE (8), ZEUS (7), ART (5), BRAINS (4).
+     Concerning needs or complaints for Lisp, many users tend  to
+point out slow execution speed (32), poor graphics (28), inabili-
+ty to handle Japanese characters (26), lack  of  object  oriented
+facilities  (18), large size of required memory (16), inefficient
+programming tools such as editor or debugger (16).
+     With respect to Common Lisp (CL), 82.7% are interested in CL
+,  and  66 users already introduced CL, 21 are planning to intro-
+ducing CL.
+     Concerning language specifications of CL, there are comments
+that  appreciates  its  compiler  oriented design such as lexical
+scope or function closure (20.3%), sufficient data types  (8.6%),
+while  point  out  the large memory use (21.4%), needs for object
+oriented facilities (18.7%),  requests  for  supporting  Japanese
+characters (16.0%), etc.
+      On the needs for subsetting CL, 60.2% answers indicate that
+some  suitable  organization  or  committee  should deal with the
+standardization of CL subsets.
+     Based upon the survey, needs for standardization of CL  sub-
+sets,  object  oriented facilities, embedding Japanese characters
+in CL are considered to be made clear in Japan.
+
+                                        number of users
+                                0   10   20   30   40   50   60
+                                ------------------------------------
+                                |    |    |    |    |    |    |
+Franz Lisp                      |****************************** (60)
+C-Prolog                        |************************ (46)
+Prolog-KABA                     |********************** (44)
+VAX Lisp                        |******************** (40)
+smalltalk-80                    |******************* (38)
+Interlisp,Interlisp-D           |***************** (33)
+UtiLisp                         |***************** (33)
+DEC-10 Prolog                   |************ (23)
+micro-Prolog                    |********** (19)
+Flavors                         |********** (19)
+Zetalisp                        |********* (18)
+Kyoto Common Lisp               |********* (17)
+Quintus Prolog                  |********* (17)
+Prolog/KR                       |********* (17)
+Maclisp                         |******** (16)
+muLisp                          |******* (14)
+PSL (Protable Standard Lisp)    |******* (13)
+K-Prolog                        |****** (12)
+Loops                           |**** (7)
+MProlog                         |**** (7)
+Objective-C                     |*** (5)
+
+        Fig. 1  Commonly used AI Programming Languages in Japan '85
+
+Acknowledgements
+   The author would like to thank Jeida Lisp committee members who
+made great efforts to accompolish this survey, especially Satoshi
+Uchida and his colleagues of Aoyama Gakuin University for their primary
+analysis of the collected data.
+
+
+
+================================================================
+
+             Activities of Subset Working Group
+
+                        Katsuhiko Yuura
+                Central Research Laboratory, Hitachi,Ltd.
+        1-280, Higashi-koigakubo, Kokubunji-shi, Tokyo 185, Japan
+
+1. Background and Purpose
+     Most Japanese Lisp users on personal  computers(pc)  do  not
+use  all  functions  of  the full set of Common Lisp so that good
+performance is a constant concern.  Although some  subset  imple-
+mentations for pc have been developed, they not surprisingly have
+different specifications.  To set up an international Lisp  stan-
+dard  for  pc,  the authors would like to propose a subset, which
+does not include seldom used functions and those that make a sys-
+tem inefficient.
+
+2. Discussions and Proposal Activities
+     Discussions for the subset started in December 1985, and the
+authors  decided  on  four  steps  for the completetion of Common
+Lisp/Core.  The first step was the review of Ida's personal  pro-
+posal for a subset (IPSJ WGSYM 34-4), and the second step was the
+examination of the necessities for each function and  the  diffi-
+culties in implementing them.  In the third step the basic issues
+of Common Lisp/Core were decided, and  in  the  fourth  step  the
+functions were selected by the vote of WG members.
+     An open meeting on Common Lisp/Core was  held  in  Tokyo  on
+July 8, 1986, in which sixty researchers and users came together.
+From the implementer's point of view, it was felt that the  scale
+of Common Lisp/Core was not so much smaller than that of the full
+set.  From the user's point of view, it was hoped that more func-
+tions were selected from packages, streams and declarations.
+     Common Lisp/Core was proposed at  the  Lisp  standardization
+meeting  on August 5, 1986 during Lisp and Functional Programming
+Conference.  Common Lisp/Core is regarded as the middle  position
+of  three levels, which are theoretical basis, kernel and practi-
+cal use, of the Lisp language definition.
+
+3. Basic Issues of Common Lisp/Core
+     Common Lisp/Core preserves the arms and legs of Common Lisp,
+because  it  is  important to be able to transfer programs in the
+subset to those in the full set easily, as well as to enable sub-
+set  users  to grow into full set users naturally.  The following
+"arms and legs" features were selected in  the  third  discussion
+step:  scope and extent rules including lexical closure features,
+keyword parameters, the principles of type hierarchy and  generic
+functions, and some useful and characteristic data types (bignum,
+ratio, structure and readtable).  Some package features are  very
+useful,  and  other  parts  are  not  so useful and make a system
+heavy.  But the useful part can not be cut out of the whole pack-
+age features with keeping Common Lisp/Core language consistent.
+     On the other hand, Common  Lisp  is  characterized  by  rich
+functions,  so that the aim for the number of functions in Common
+Lisp/Core is about a half of the full set, which is over that  of
+Utilisp  (developed  at  University  of Tokyo in 1981, one of the
+most famous Lisps' in Japan) or Franzlisp.  The  functions  which
+do  not  correspond to the "arms and legs" features were selected
+in the fourth discussion step, giving higher  priority  to  func-
+tions  having high necessity than to functions that can be imple-
+mented easily.
+    Common Lisp/Core includes 356 functions and 20 variables  and
+constants,  wheras  Common  Lisp  includes  622 functions and 101
+variables and constants.  Major deleted  items  are  most  system
+parameter  constants, complex numbers, most package features, lo-
+cal functions, adjustable arrays, hashtables and pathnames.
+
+Subset WG members :
+    Hideki Kato              (Fujitsu Laboratories Ltd.)
+    Yukiko Hashimoto         (NEC Corp.)
+    Kazusaku Kawagome        (SORD Computer Corp.)
+    Susumu Kawai             (Nihon Digital Equipment Corp.)
+    Shigeaki Harada          (Sharp Corp.)
+    Yoichi Yamamura          (Nippon UNIVAC Kaisha Ltd.)
+    Nobuyuki Saji            (NEC Corp.)
+    Masayuki Ida             (Aoyama Gakuin Univ.)
+
+
+
+
+
+====================================================================
+ 
+    Recent Activities of Object Oriented Programming Working Group
+                        Toru Ishida
+           NTT Electrical Communication Laboratories
+           1-2356 Take, Yokosuka-shi, 238-03, Japan
+
+The working group for Object Oriented Programming (OOWG) was organized
+in April 1985  as the  first working group  of the  JEIDA Common  Lisp
+Committee.  Although there were more urgent problems for the  Japanese
+Lisp Society, such as subsetting and handling Japanese characters,  we
+started the OOWG so early because:
+
+- The Object Oriented Programming paradigm was the center of attention
+in Japanese academic society  at that time.   However, notion and  its
+effectiveness were not well understood by industrial society.
+
+- Standardization  of  new programming  paradigms  requires a  lot  of
+experience.  Thus,  we  thought discussion  should  begin as  soon  as
+possible.
+
+In 1985, six companies  joined the OOWG. Our  first job was to  arouse
+positive public opinion about  the movement toward standardization  of
+Lisp Object Oriented Programming.  The members reviewed and summarized
+on-going discussions  at  the  Common Lisp  Committee  of  the  United
+States, and reported on the  major problems in standardization to  the
+JEIDA Lisp Workshop[1] and the IPSJ (Information Processing Society of
+Japan) Special  Interest Group  of Symbolic  Processing.  The  reports
+include analysis of the three standardization proposals from HP, Xerox
+and LMI.
+
+Since 1986, fourteen companies have  been involved in the OOWG.   More
+people have  participated  in  the discussions  and  contacted  people
+outside of the working  group.  Several members  of the OOWG  attended
+the Lisp Standardization Meeting in Boston in August. In addition,  an
+extended  JEIDA   meeting  with   Gregor  Kczales,   a  co-author   of
+CommonLoops[2], was held in October.  Various other matters have  also
+been discussed at meetings and through mail networks.
+
+Discussions have also been expanded to cover wider problems.  Language
+specification issues  have  been  clarified through  the  use  of  the
+Portable CommonLoops provided by Xerox  Corporation.  From the end  of
+1986,  discussions   have   involved   Object   Oriented   Programming
+Environments and applications: AI tools, window systems, etc.
+
+As a summary of  our activities in  the last two  years, the OOWG  has
+contributed to the understanding  of Lisp Object Oriented  Programming
+in Japanese industry.   In the next  stage, we hope  to contribute  to
+international standardization of Lisp Object Oriented Programming.
+
+[1] Report on Microcomputer - Common Lisp - , Jeida,  61-A-235[2],1986
+(in Japanese)
+
+[2] D.   G.   Bobrow  et  al: CommonLoops:  Merging  Common  Lisp  and
+Object-Oriented Programming, Proc. of OOPSLA '86, ACM, 1986.
+
+Contributors:
+     Nobuyuki Saji (NEC Corp.)
+     Kiyoki Ohkubo (Panafacom Ltd.)
+     Taiji Nishida (Fuji Zerox Co., Ltd.)
+     Haruyuki Kawabe (Nippon UNIVAC Kaisha Ltd.)
+     Tadashi Maruyama (FUJIFACOM Corp.)
+     Yasutaka Tominaga (Fuji Electric Corporate Research and Development Ltd.)
+     Hiroshi Nakajima (OMRON TATEISI ELECTRONICS Co.)
+     Makoto Yokoo (Nippon Telegraph and Telephone Corp.)
+     Satoshi Uchida (Aoyama Gakuin Univ.)
+     Masayuki Ida (Aoyama Gakuin Univ.)
+
+=============================================================
+
+
+          Kanji WG --- Embedding Japanese Characters in Common Lisp
+        
+                              MOTOYOSHI, F.
+
+                      Electrotechnical Laboratory,
+             1-1-4 Umezono, Sakura-mura, Niihari-gun, Ibaraki,
+                              305 JAPAN
+        
+             We have discussed the  way to embed Japanese  characters
+        in Common Lisp for a year.  We first decided on the policy to
+        be followed in the whole discussions:
+        
+          a Japanese character should be treated as a character  of
+          Common Lisp.
+        
+        All members of the working group agreed this policy and  many
+        users prefer it to others.
+             Then we drew up guidelines to be respected within the
+        limits of above policy.  The are
+        
+        1) a program  which is  written without  regard to Japanese
+          characters should run as expected  when it is given  data
+          which include Japanese characters,
+        
+        2) any  multi-byte   character  set   other  than  Japanese
+          characters can be implemented in the same manner,
+        
+        3) a program which  does not deal  with Japanese characters
+          should run without so much  loss of efficiency for  speed
+          and memory.
+        
+             According to above principles,  we have made a  proposal
+        to embed Japanese characters in  Common Lisp as described  in
+        the following.  The basic idea is very simple and is that
+        
+          let the value  of 'char-code-limit' be  large enough  for
+          the system to include all Japanese characters.
+        
+        This means  that one  can even  define a  read macro  to  any
+        Japanese character.
+             By taking that  way, we  need only one  change to  CLtL,
+        which is concerning to  character printing width.  The  point
+        is that  the set  of  fixed-pitch characters  for font  0  is
+        limited  to   graphic  standard   characters.   Instead,   we
+        introduce a  function  'write-width' for  getting  the  print
+        width.
+             No problem occurs when a  system has a uniform  internal
+        structure for strings, however, some  system may have two  or
+        more types  of  strings  internally  for  memory  efficiency.
+        There may be some loss of  efficiency for users who use  only
+        standard characters in such a system. 
+             A new type of string is introduced in such cases and  is
+        used    mainly    in     declarations.     The    name     is
+        'internal-thin-string',  which   is  a   vector  of   special
+        characters  distinguished   from   others  by   a   predicate
+        'internal-thin-char-p'.  This  does not  mean that  'internal
+        thin  character'  should  be  a  proper  subset  of   'string
+        character'.  They may represent a same character set and this
+        case is equivalent to the above one for uniform structure  of
+        string.
+             We have  described the  common topic  to any  multi-byte
+        characters so far.  We also discussed the problem specific to
+        Japanese, where our main concerns are related to the  meaning
+        of each Japanese  character.  The  major problem  is that  of
+        characters whose print forms are similar to those of standard
+        characters.  We  reached to  the  agreement that  any  system
+        should have at least one mode where any characters other than
+        standard  characters  have  not  special  meanings.   Althogh
+        functions to define classes of Japanese characters were  also
+        determined, they are not described in this paper.
+
+	Contributed by
+                IKEO, J. (Fuji Xerox Co., Ltd.)
+                KIMURA, K. (Toshiba Corp.)
+                MURAYAMA, K. (Nippon Univac Kaisha, Ltd.)
+                NAKAMURA, S. (Fujitsu, Ltd.)
+                OKA, M. (Japan Radio Co., Ltd.)
+                SAKAIBARA, K. (Hitachi Co., Ltd.)
+                SHIOTA, E. (Nihon Symbolics Corp.)
+                SUGIMURA, T. (Nippon Telegraph and Telephone Corp.)
+
+--
+From:  Masayuki Ida <a37078%ccut.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  PART 1 of my report
+To:  mathis@ADA20.ISI.EDU, rpg%su-ai.arpa@RELAY.CS.NET
+Message-Id:  <8703041521.AA29798@tansei.u-tokyo.junet>
+Return-Path:  <a37078@ccut.u-tokyo.junet>
+Date:  Thu, 5 Mar 87 00:21:53+0900
+Received:  by tansei.u-tokyo.junet (4.12/6.2Junet)
+
+A progress report on the Common Lisp related activities in Japan
+
+                Compiled by Masayuki Ida
+
+
+This report is composed of two parts.
+     One is a survey of the recent activities related  to  Common
+Lisp  and  Lisp standardization efforts in japan by Masayuki Ida,
+who chairs the Jeida Common Lisp committee, and  the JIS Lisp  WG
+both.
+     The other is the reports of the sub working groups under the
+Jeida Common Lisp committee by each chair.
+
+Since JIS Lisp WG has only 7 months  history  and  still  in  the
+'first' phase to design a draft, this paper is mainly stressed on
+the activities of Jeida Common Lisp committee.
+     The contents of this report contains lots  of  contributions
+of many persons, the authors express their thanks to all the con-
+tributors.  This report is not the official ones, though each au-
+thors is (was) responsible person for each group.
+
+
+
+
+- ----- PART 1    Summary
+
+
+                        Masayuki Ida
+                Aoyama Gakuin University
+        1 Morinosato-aoyama, Atsugi, Kanagawa, Japan 243-01
+                ida%u-tokyo.junet@utokyo-relay.csnet
+                        ida@utokyo-relay.csnet
+
+
+1. before the dawn --- 1984 ----
+
+The year 1984 is the year CLtL was published. In USA,  a  conver-
+gence  of  the  E-mail discussions gave CLtL, while in japan, the
+possibility to form a committee to investigate the current  move-
+ment  of Lisps had been discussed.  As one of the candidates, The
+author proposed to form a Common Lisp related committee for  Jei-
+da.  This proposal was selected as a candidate of the next year's
+project.  We had two more pre-assembly meeting and as  a  conclu-
+sion  of  several  key companies, Jeida Common Lisp committee was
+scheduled to start in April 1985.
+
+
+2. The activities of Jeida Common Lisp committee
+
+2.1 Purposes
+
+     The purposes of the committee is  NOT  to  make  a  domestic
+standard lisp in Japan. The work was governed by the following:
+     1) Understand the Common Lisp specification
+     2) Discussion on implementation techniques
+     3) Investigations of existing CL implementations
+     4) Communicating with CL community of the USA
+     5) Investigations of applications of Common Lisp
+
+
+2.2 Organizations sending members
+
+Here is an alphabetical list of the early 28 organizations  which
+sent members, including several subsidiaries of USA companies.
+ Aoyama  Gakuin  University,  DEC  Japan,  Electro-Technical  Lab
+(MITI),  Fuji  Electronic, Fuji Facom, Fuji XEROX, Fujitsu, Hita-
+chi, JRC, Matsushita (panasonic), Meidensha,  Mitsubishi,  Nippon
+Telegraph  and  Telephone (NTT), NEC, nippon Data General, Omron,
+Oki electric, panaFacom, Sanyo,  Sharp,  Sinko,  Sord,  Sumitomo,
+Symbolics   Japan,  Toshiba,  nippon  UNIVAC,  Yamatake-Honeywell
+(later in 1986, Kyoto university, and several companies joined)
+
+2.3 Brief history
+
+From May 1985, the meeting has been held once a  month.  In  Sep-
+tember  1985, a Common Lisp work shop was held for intensive dis-
+cussion.  Under the committee there were two groups in 1985 and 4
+groups  in  1986; an object oriented working group(OOWG 1985-), a
+subset working group(subsetWG 1985-), a kanji working group(kanji
+WG  1986-), a bboard working group (bboardWG 1986-).  The summary
+of OOWG, subsetWG and kanjiWG is attached  as  PART II contribut-
+ed  by  the chair of each WG.  At monthly meeting of Jeida Common
+Lisp committee, along with the technical discussions the  presen-
+tation of the Common Lisp implementors, and related announcements
+and discussions are there.  (we had the hearings from  DEC,  NTT,
+Hitachi, Fujitsu, Fuji Xerox, DG, Symbolics, ...)
+
+
+2.4 questionnaire asking the directions
+
+To know the basic needs, in October 1985, the Common Lisp commit-
+tee  sent  questionnaire to selected organizations, whom might be
+considered to be the most  advanced  in  Lisp  related  works  in
+Japan.   This  results of the questionnaire assured the direction
+of the later related activities of us in  japan.   We  found  the
+needs  for Common Lisp is large and if we can make a line for ob-
+ject oriented facility inclusion, japanese  character  provision,
+subsetting consideration on Common Lisp, it will almost cope with
+the japan domestic needs which was considered at the time of  the
+questionnaire.   The details are summarized by the editor elected
+by the committee, which is attached in PART 2.  Major differences
+between  the  population status of '85 and that of now are KCL is
+now more used and there are several Common Lisps as company  pro-
+ducts,  such  as HiLisp from Hitachi and Fujitsu Lisp.  The ques-
+tionnaire reflecting the current status  is  under  consideration
+but not yet performed.
+
+2.5 working groups under Jeida Common Lisp committee
+
+The formation of the WG is based on the results of the  question-
+naire.  That is, subsetting, object oriented facilities, japanese
+character manipulation.  From time to time, the author have  sent
+private  mails  and  common lisp bboard mails.  The triggering of
+the kanji issues, subsetting issues and other mails  were  there.
+While  we  have  discussions  based on the communications, as Dr.
+Yuasa of Kyoto university brought us a copy of the  archives,  we
+formed a bboardWG to translate the contents.
+
+Subset WG made a CL/Core design and reported to USA.  OOWG inves-
+tigated  the  OO bboard discussion given by Ken Kahn and later by
+G.Kiczales, and use PCL as an executable model to  analyze.   The
+versions  of PCL have been brought from G.Kiczales with the cour-
+tesy of Xerox PARC to the  author.  They  were  re-sent  to  OOWG
+members,  along with universities and software vendors.  Kanji WG
+made a design to cope with japanese  characters  with  the  major
+contributions  from  Fuji  Xerox  and  Symbolics  along  with the
+japanese companies.  From the author's point of view, the current
+design  was  only to cope with japanese characters. So the author
+asked them as a task of 1987  to  extend  it  to  more  universal
+specification  to cope with the multi national treatment. Say, It
+should be possible for the Chineses  Common  Lisp  can  translate
+japanese  natural  language  texts into arabic ones on the United
+states machines.  After the discussion is over, it will be avail-
+able  to  anyone.   (the  progress  is well understood anytime by
+several USA companies who sending members).
+
+
+3. Common Lisp implementations in japan.
+
+The questionnaire told the most dominant Common Lisp in japan  at
+that  time was VAXLisp, whose population was the second among the
+overall Lisp population.  (the number 1 is 4BSD Franzlisp)
+
+There are KCL (kyoto Common Lisp),  HiLisp  (Hitachi  Lisp),  and
+others to be appeared as japan domestic products, while Symbolics
+Common Lisp, Vaxlisp, and other US made  Common  Lisps  are  also
+well  used.   As  for  the  Common Lisps on PC, there are several
+Lisps which claim a subset  of  Common  Lisp,  including  GCLisp,
+ICLisp,  muLisp and more.  The populations of them are NOT inves-
+tigated yet.
+
+
+4. JIS Lisp WG
+
+In 1986 July, JIS Lisp WG is formed as an official  committee  to
+make  a  draft for JIS Lisp standard along with the international
+movement.  The activity of  the  JIS  WG  during  1986  has  been
+stressed  on  the design principles.  French government asked the
+JIS WG to be the contact point to Eulisp matters, and the JIS  WG
+agreed  to  do  so.   (But JIS WG will not make a joint effort to
+make Eulisp.) JIS WG also knows the importance  of  Common  Lisp.
+The  term  for  the  work is until June 1989.  JIS WG will try to
+discuss the principle issues like, Lisp1/Lisp2, scoping,  evalua-
+tion  of  forms,  special  variables, terminology, layered model,
+generic functions, inclusion of environments,  etc.   Members  of
+1986 are; Masayuki Ida (Aoyama Gakuin University, chair), Taiichi
+Yuasa (Kyoto University),  Y.  Murao  (Tokyo  University),  Fumio
+Motoyoshi  (Electro  technical Lab), Nobuyuki Inada (Riken), Ikuo
+Takeuchi (NTT), Toshiaki Kurokawa (IBM), Michiaki Yasumura (Hita-
+chi  Ltd.),  Shuichi  Nakamura  (Fujitsu  Ltd.), Yukiko Hashimoto
+(NEC), Atsusi Nagasaka (Oki electric), Shigeru Kobayashi  (Toshi-
+ba),  Masahiro Kuroda (Mitsubishi), Shoichi Itoh (standards divi-
+sion, AIST MITI), Hiroshi Torii (Jeida) 6 persons (and 10 organi-
+zations) are also in the name list of Jeida Common Lisp Committee
+at the same time.  The members of 1987 fiscal year will change in
+some extent.
+
+--
+From:  Masayuki Ida <a37078%ccut.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Cc:  RPG@SAIL.STANFORD.EDU
+Subject:  Re: I sent you 2 mails
+To:  MATHIS@ADA20.ISI.EDU, 
+Message-Id:  <8703060107.AA24398@tansei.u-tokyo.junet>
+Return-Path:  <a37078@ccut.u-tokyo.junet>
+Date:  Fri, 6 Mar 87 10:07:26+0900
+Received:  by tansei.u-tokyo.junet (4.12/6.2Junet)
+
+Bob, yes, it was a report you are hoping for. 
+I will appreciate you will print it in the US and distribute at the meeting
+with the kind assistnance of Dick.
+The meeting schedule was changed from March 5 to March 4.
+And we have had important meetings 4 or 5 times in Feb and March.
+I was asked by the chair of the JIS standardization committee
+which is the boss of my JIS Lisp WG to have more close direction to Common Lisp.
+I and he made every eforts to do so. I now have a strong confidence
+to steer my JIS Lisp WG.
+In 1987, I will send mails as a chair of JIS WG saying japanese official comments
+to assist Common Lisp based standardization efforts of US, oops,
+"In 1987" means "after April 1987".
+
+One question.
+Where I can submit comments on Common Lisp Object system ?
+commonloops.pa @ xerox ?
+Common-lisp @ su - ai ?
+X3j13@su-ai ?
+I have over 20 points to suggest. The list I am maintaining was checked by
+the persons from Fuji Xerox, Symbolics japan, Nippon Univac (TI-explorer),
+NEC, and NTT specialists. They gave me more advices.
+I dont want to discuss about my list by E-mail to avoid the chaos.
+Please suggest a best way.
+
+Thank you Bob and thank you Dick.
+
+Sincerely yours
+Masayuki
+
+"a37078%ccut.u-tokyo.junet%utokyo-relay.csnet"@RELAY.CS.NET/su
+News
+
+Prof IDA:
+
+I have printed up your report and will pass it out at the X3J13 meeting.
+
+Please mail your comments about the object system to:
+
+Common-lisp-object-system@sail.stanford.edu.
+
+			-rpg-
+
+--
+From:  mike%acorn@oak.lcs.mit.edu
+To:  RPG@SAIL.STANFORD.EDU,
+Date:  Thu, 12 Mar 87 06:43 est
+Received:  from BOSTON.Gold-Hill.DialNet.Symbolics.COM by ACORN.Gold-Hill.DialNet.Symbolics.COM via CHAOS with CHAOS-MAIL id 57861; Thu 12-Mar-87 15:07:19-EST
+Subject: summary of replies to 86-019
+
+KMP@SCRC-STONY-BROOK.ARPA,
+"willc%tekchips@tek.csnet"@CSNET-RELAY.ARPA,
+"RSG%OZ"@AI.AI.MIT.EDU,
+DLW@SCRC-STONY-BROOK.ARPA
+Subject: summary of replies to 86-019
+Reply-To: mike%acorn@oak.lcs.mit.edu
+
+
+
+To: x3j13 subcommittee on Lisp1/Lisp2.
+From: mike beckerle
+
+This is a bit late for discussion at the March meeting, but since I
+will be unable to attend this session I wanted to forward to you a
+summary of the replies to my proposal about Functional-style
+programming in Common Lisp.  A hardcopy of this will be available at
+the meeting. Let me know if you think a revised proposal is in order
+at some point, etc.
+
+See you at the June meeting.
+
+...Mike Beckerle
+
+********************************************************************
+
+   Summary of Responces to x3j13 document 86-019.
+   Titled: Accommodating Functional-Style Programming 
+           in Common Lisp.
+   10 March '87
+   Mike Beckerle
+   Gold Hill Computers.
+
+********************************************************************
+
+The following people sent responces to the proposal document 86-019.
+
+Allan C. Wechsler
+Jonathan A. Rees
+David A. Moon
+Scott E.Fahlman
+Larry Masinter
+
+Reactions to the original proposal were mixed, with some points
+drawing more controversy than others.  The responses are included
+below.  First, for context let me briefly excerpt the 5 points of the
+proposal, and provide my own summary of the comments by Wechsler,
+Rees, Moon, and Fahlman. Masinter is the dissenter of the group.
+
+
+Change 1:
+
+To section 5.2. Functions
+
+Function call forms should be changed to allow the lisp1 like
+syntax of:
+
+((f g) h)
+
+((lambda (x) x) #'(lambda (y) y)) 10) => 10.
+
+This change was generally favored with important clarifications by
+Rees and Moon about the semantics of ((f g) h) when (f g) is
+"EFUNCTUATED" (Moon's term). Rees pointed out that the semantics of
+((f g) h) cannot be given in terms of (funcall (f g) h) since that
+begs the question of what a symbol as the car of the list means, in
+particular, the symbol FUNCALL. Moon pointed out that the
+efunctuation rule must be carefully explained, so that in ((f g) h)
+if (f g) returns something that is not FUNCTIONP, then one should not
+recursively evaluate that list again, etc. since the scope of the
+variables in that list would be unclear. My origninal intent was that
+in ((f g) h) if (f g) returns anything other than a FUNCTIONP object,
+then it IS an error. (I am ignoring the case of macros for the
+moment.  The semantics of ((f g) h) when F is a macro must be
+described of course.)
+
+Masinter thought this change would complicate the semantics of the
+language, increasing the number of exceptions in the evaluation rules,
+etc. I was rather surprised by this since I feel this greatly simplifies
+the language, making fewer exceptions in the difference between
+evaluation and efunctuation. He is definitely right that the 
+description of how macroexpansion is effected by this change was
+not adequate in the original proposal. 
+
+
+Change 2: Section 7.1.1.
+
+The FUNCTION special form will be optional in front of 
+lambda expressions regardless of where they appear in a 
+program text. (The obvious exception for within quoted lists
+obviously applies here, but isn't worth mention.)
+
+It is as if the following definition was part of the CL system
+
+(Defmacro lambda (&rest forms)
+  `(function (lambda ,@forms)))
+
+This is the least controversial change, since this macro works in
+CL now.
+
+Change 3: Section 20.2
+
+For syntactic convenience, the value cell of all CL symbols
+which are defined as functions are defined to contain
+the function object as well as the function cell.
+E.g.,
+
+(symbol-value 'mapcar) => #<compiled-function 1234>
+(symbol-function 'mapcar) => #<compiled-function 1234>
+
+This change was generally opposed. I would be willing to withdraw it.
+
+Change 4: Section 7.11. Use of Higher-order Functions
+
+FUNCTIONAL Vars* {form}*                               [Macro]
+
+Allows syntax of:
+
+(defun doublemap (f g)
+  (functional (f g)
+    (lambda (list) (f (g (mapcar f list)
+                         (mapcar g list))))))
+
+(defun y (f) ;; the paradoxical combinator
+    (functional (f)
+     ((lambda (x)
+       (functional (x)
+        (f (x x))))
+     (lambda (x)
+       (functional (x)
+	(f (x x)))))))
+
+This proposal was generally favored.  There is a similar 
+proposal for &FUNCTION syntax in the lambda-list, and
+also Rees points out that declarations could be used instead.
+
+
+Change 5: Section 7.1.1. (again)
+
+SYMBOL-CONTENTS symbol                           [Function]
+
+Combined operation on both function and value cell.
+
+(defun foobar (x) x)
+(symbol-contents 'x) => #<unbound>
+(setf (symbol-contents 'x) (lambda (x) (+ x x)))
+(symbol-contents 'x) => #<function-object (lambda (x) (+ x x))>
+(symbol-function 'x) => #<function-object (lambda (x) (+ x x))>
+(symbol-value 'x) =>  #<function-object (lambda (x) (+ x x))>
+(eq (symbol-function 'x) (symbol-value 'x)) => T
+
+This change was generally opposed. I am willing to withdraw it.
+
+At this point, I am submitting this to the subcommittee on 
+Lisp1/Lisp2. I will redraft (or assist in redrafting)
+the proposal for reexamination if that is desired. 
+
+- ---------------------------------------------------------------------
+
+Responces to ANSI x3j13 Common Lisp document 86-019
+
+Accommodating Functional-Style Programming in Common Lisp.
+
+Date: Thu, 15 Jan 87 18:26 EST
+From: Allan C. Wechsler <acw@WAIKATO.S4CC.Symbolics.COM>
+Subject: Document 86-019
+To: mike%acorn@MIT-LIVE-OAK.ARPA
+
+I'm a Lisp teacher by profession.  My current feeling is that actually
+changing CL to be a Lisp1 is impossible at this stage; although I prefer
+Lisp1 for reasons of style, conceptual economy, and aesthetics, and
+although I am nervous about CL macro semantics, on grounds of momentum
+and politics I am a strong Lisp2er.
+
+Your proposals in 86-019 show a laudable spirit of compromise.  There
+are a couple of technical problems -- doubtless others will point them
+out too.
+
+Change 1 -- No problems I can see.  Ask Moon -- he's great at spotting
+pathologies.  It'll be a little harder to teach the new rules than it is
+to teach the current ones.
+
+Change 2 -- fine
+
+Change 3 -- Problems here.
+
+Many fine CL compilers warn programmers of scoping problems.  For
+example, if I try to compile
+
+(defun foo (count)
+  (+ 1 ct))
+
+I get two warnings: that there was a free reference to the variable CT,
+and that the local variable COUNT was never used.  This procedure
+catches three common errors: 
+
+1. I misspelled a local variable name.
+
+2. I misscoped some local-variable-creating construct (closed a LET too
+soon, for example).
+
+3. I forgot a parenthesis, as in (+ 5 CAR X).
+
+Of course, there has to be a way to turn the warning off for known
+global variable references.  We use the SPECIAL declaration.  If you
+declare a symbol special, the compiler doesn't warn you of free
+references to that symbol.
+
+Problem: in order to disable compiler warnings about this new, enormous
+class of function-valued global variables (will DEFUN create new ones?
+I read you as saying "yes"), each such symbol must be declared special.
+But this will give dynamic binding semantics to all those symbols!  In
+order to make your idea work, we must disentangle the two meanings of
+SPECIAL -- turn off free reference warnings, and change binding
+semantics.  The obvious way to do that would be to introduce a new
+declaration.  So -- it's not a killer, but some people might jump on
+you.
+
+Second problem: +1, +2, and +3 are read by the CL reader as integers.
+See CLtL 22.1.2, p. 339, table 22-2 "Actual Syntax of Numbers".  You'll
+have to come up with better names.  $1, $2, $3?
+
+Change 4 -- Clever.
+
+Change 5 -- There is a weird sort of precedent for this in the
+treatment of the "macro cell".
+
+- ------------------------------------------------------------------------
+
+Date: Thu, 15 Jan 87 23:55:35 EST
+From: Jonathan A Rees <JAR@AI.AI.MIT.EDU>
+Subject:  Document 86-019
+To: mike%acorn@LIVE-OAK.LCS.MIT.EDU
+cc: JAR@AI.AI.MIT.EDU, KMP@AI.AI.MIT.EDU
+
+A few remarks, mostly nits, for you to do with as you wish.  I basically
+like the idea of dropping the #' off of lambda's, and allowing arbitrary
+expressions in the car of a form.  These changes are fully compatible.
+The rest seems rather kludgey, and doesn't seem to me to be worth the
+trouble.
+
+    Date: Thu, 15 Jan 87 14:31 est
+    From: mike%acorn at mit-live-oak.arpa
+
+    ((f g) h)
+
+    ((lambda (x) x) #'(lambda (y) y)) 10) => 10.
+
+(The second example already works in CL.)
+
+    The forms above should, in every sense of the word except syntax,
+    be equivalent to:
+
+    (funcall (f g) h)
+
+You don't really mean this.  You don't want to go through the function
+binding of the symbol FUNCALL.  You have to specify that what's really
+meant is function call.  The meaning of a form whose car is a non-symbol
+shouldn't be affected by the current function binding of the symbol
+FUNCALL, as it would if the two variants were equivalent in "every sense
+of the word".
+
+    Essentially, whenever symbols are used as functions, their
+    function-cell definitions are used. Lambda expressions and
+    function applications can also be used as functions.
+
+So can arbitrary expressions, like (LET ...), (IF ...), and (PROGN ...).
+Actually, you don't really mean that you can do (FUNCALL '(F G) H), do
+you?  The list (F G) is certainly a function application.
+
+Your wording is the problem here.  It's not right to say that the car of
+a form is function; you should say instead invent a new term, like
+"function expression" or "functional expression", to name this syntactic
+category.  ("Function" means a kind of datum and shouldn't be used when
+talking about syntax.)  Then say that the car of a form should be a
+functional expression, and a functional expression is evaluated exactly
+the same as an expression, except when it's a symbol.
+
+    The CL spec can explain the purpose of this special treatment for
+    function-positioned symbols in terms of the name-capture problem
+    of macros. Inadvertant name capture is, after all, the only real
+    reason for the special distinction for funtion-positioned symbols.
+
+No!  Compatibility is the main reason.  Maybe you meant the only "real"
+technical reason.  In any case, don't use judgmental terms like "real"
+in a proposal like this, it doesn't help; people will certainly
+disagree.
+
+    The FUNCTION special form will be optional in front of 
+    lambda expressions regardless of where they appear in a 
+    program text. (The obvious exception for within quoted lists
+    obviously applies here, but isn't worth mention.)
+
+This is going about it ass-backward.  Better to say that LAMBDA is a new
+special form, and that (function x) is just like (the function x),
+except that x is a functional expression, not an expression.  I.e. make
+FUNCTION act just the same as the car position of a form.
+
+    For syntactic convenience, the value cell of all CL symbols
+    which are defined as functions are defined to contain
+    the function object as well as the function cell.
+
+You should define what you mean by "CL symbols".
+
+This is a pretty random half-way measure, when you don't specify any
+change to DEFUN, and it breaks the rule that system functions and user
+functions should look as much alike as possible.
+
+    I suggest that the following renamings be used:
+
+    +    => +1 ...
+
+Conflicts with the syntax for numbers (in this case, positive one).
+Suggest something else.
+
+    (defun doublemap (f g)
+      (functional (f g)
+        (lambda (list) (f (g (mapcar f list)
+                             (mapcar g list))))))
+
+You should consider using DECLARE for this purpose rather than inventing
+a new special form.  There's a precedent for DECLARE carrying semantic
+import, namely SPECIAL.  I'm not very serious about this, since I
+consider DECLARE SPECIAL to be an abomination, but it's always goodto be
+consistent with the approach taken by the rest of the language, even if
+you don't agree with the approach.  Consistency is the most important
+thing, even if it means consistency with something you don't like.
+
+    -----
+
+You might be interested in taking a look at my scheme-in-common-lisp
+implementation, if you haven't already.  It's in file "JAR; PSEUDO 102"
+(doc file is "JAR; PSEUDO DOC") on MIT-MC.  DEFINE becomes DEFUN plus
+SETQ, SET! at top level becomes SETQ plus (SETF (SYMBOL-FUNCTION '...)
+...), and there's a macro called something like ALLOW-FUNCTION-REFERENCES
+whichturns into an appropriate MACROLET.
+
+Jonathan
+
+
+- ---------------------------------------------------------------------------
+
+Date: Thu, 15 Jan 87 23:13 EST
+From: David A. Moon <Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Subject: Document 86-019
+To: mike%acorn@MIT-LIVE-OAK.ARPA
+cc: x3j13@sail.stanford.edu
+
+    Date: Thu, 15 Jan 87 14:31 est
+    From: mike%acorn@mit-live-oak.arpa
+
+I don't know if X3J13 is the right mailing list for technical discussions,
+but I'd like to offer a few comments on your proposal.  To avoid contributing
+to total mail overload, I will abbreviate your proposal as much as possible
+when referring to it.
+
+    Change 1: Function call forms should be changed to allow the lisp1 like
+    syntax of: ((f g) h)
+    i.e., the "function" position of an application should be treated 
+    specially only if it contains a SYMBOL. If it contains a list
+    it should be interpreted as an application itself.
+
+I think this is a good idea.  It's a kludge, of course, and creates a
+small inconsistency in the language (allowing list forms but not symbol
+forms), however I think the ratio of benefit to harm is favorable.
+
+Maclisp on the pdp-10 used to have a feature similar to this, but it was
+removed because it caused a lot of problems.  I believe the problems can
+be traced to the fact that it allowed the result of evaluating a list or
+efunctuating a symbol to be another list, which was then evaluated.  The
+question is, in what lexical scope should that list be evaluated.  Your
+proposal avoids this problem by forbidding repeated evaluation.
+
+Your proposal allows repeated efunctuation (that is, the result of
+evaluating a list can be a symbol, which is then efunctuated) and you
+don't specify in what lexical environment the symbol is to be
+efunctuated.  CLtL is not very clear on this point; p.107 says that
+APPLY efunctuates in the global lexical environment if given a symbol,
+but otherwise the issue is not addressed as far as I can see.  This
+feature may not be essential to your proposal; you might want to remove
+it.
+
+(For those who haven't seen the term before, "efunctuate" is what the
+FUNCTION special form does.)
+
+    Change 2: It is as if the following definition was part of the CL system
+    (defmacro lambda (&rest forms)
+      `(function (lambda ,@forms)))
+
+This is definitely a good idea and causes no problems.
+
+    Change 3:
+    For syntactic convenience, the value cell of all CL symbols
+    which are defined as functions are defined to contain
+    the function object as well as the function cell.
+
+I don't think this is a good idea, because it creates an artificial
+distinction between built-in CL functions and functions defined by
+the user with DEFUN or LABELS.  If the rule of storing the definition
+in both cells applies to the latter type of functions too, then
+we would just have Lisp1.
+
+    Change 4:
+    The Functional macro is used to create an environment where the 
+    variables in the list "Vars" can be used both as variables and
+    in function position within the body forms without need for the #' or
+    (function ...) operator, nor use of (funcall ...).
+
+This is a good idea.  To me it seems that having this eliminates the
+need for your change 3.
+
+    Change 5:
+    Symbol-contents returns the contents of the value-cell of the
+    symbol when used as an accessor.  When used as an assigner
+    (with setf); however, the value assigned is placed into both 
+    the function-cell, and the value-cell.
+
+This stands or falls with change 3.  Again, I think change 4 is
+a better approach.
+
+- ----------------------------------------------------------------------------
+
+Date: Fri, 16 Jan 1987  11:21 EST
+Message-ID: <FAHLMAN.12271401438.BABYL@C.CS.CMU.EDU>
+Sender: FAHLMAN@C.CS.CMU.EDU
+From: "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+To:   "David A. Moon" <Moon@SCRC-STONY-BROOK.ARPA>
+Cc:   mike%acorn@LIVE-OAK.LCS.MIT.EDU, x3j13@SAIL.STANFORD.EDU
+Subject: Document 86-019
+In-reply-to: Msg of 15 Jan 1987  23:13-EST from David A. Moon <Moon at STONY-BROOK.SCRC.Symbolics.COM>
+
+
+This discussion should probably be on the Common-Lisp mailing list, but
+since I'm responding to Moon's mail to this list, I'll do it here.
+
+I agree totally with Moon on this one -- I was just about to write a
+reply with essentially the same content as his, supporting the idea
+except for parts 3 and 5.
+
+If the goal is to make functional-style programming easier without
+disrupting Common Lisp too badly, I think your proposals (minus numbers
+3 and 5) do the job about 90% as well as a move to Lisp1.  For those
+people whose goal is to merge Common Lisp with Scheme and/or Eulisp,
+then only a move to Lisp1 will do.  However, unless great progress is
+made on the macro issue and on ways of making the conversion less
+painful, I think that a move to Lisp1 is unlikely; less radical
+proposals such as yours are definitely worth considering.
+
+I like this much better than the &function idea, by the way.  that
+seems very confusing and irregular to me.
+
+- -- Scott
+
+- ------------------------------------------------------------------------
+
+Date: 16 Jan 87 11:24 PST
+From: Masinter.pa@Xerox.COM
+Subject: Re: Document 86-019, &function, etc.
+In-reply-to: various
+To: x3j13@sail.stanford.edu
+
+These proposals fail to meet what I believe is the primary goal of those
+who want 1-lisp over 2-lisp, namely, to simplify and make more
+consistent the programming language semantics, to reduce the number of
+different kinds of references in the language.
+
+Instead, they do the opposite.  While superficially bearing some
+resemblance to 1-lisp, there are more rules for evaluation rather than
+fewer, the description of the language and its semantics is complex,
+there are odd exceptions. (For example, in the
+funcall-if-car-of-form-is-list proposal, what if the car of the form is
+a macro? A macro that expands to a symbol? To a lambda?).
+
+It does no good to pick some minor syntactic feature of 1-lisp,
+implement that, and ignore the basic principle.
+
+- --------------------------------------------------------------------------
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  JIS LISP
+To:  fahlman@C.CS.CMU.EDU, gls@THINK.COM, 
+Message-Id:  <8706080657.AA13412@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078@tansei.cc.u-tokyo.junet>
+Date:  Mon, 8 Jun 87 15:57:13+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+Beb,
+
+Usually, or always in the past with my best knowledge,
+Japan domestic standardization start completely after
+the ISO draft is appeared. I am talking about the official
+process for language by japanese government.
+
+Several professors having the relation to standardization, especially who are interested
+in the international contribution, worried about this situation.
+
+In the spring of 1986, they and I made a discussion and formed the JIS LISP
+WG to contribute international standardization of Lisp.
+They suggested me that the group is the first trial of them (and of me)
+to go along with the very early stage of the standardization.
+
+But, unfortunately, there were two misunderstandings,
+which are not yet solved.
+One is,
+the members of JIS Lisp WG are respectfull and knowledgeable persons
+but does not always be interested in international standardization
+through co-operative approach,
+and many of them have their own experience on designing and
+implementing Lisp and
+many time said the phrase like;
+"USA 'movement' is the things of Common Lispers and JIS WG is
+to talk about 'Lisp' not about 'Common Lisp'."
+As the result, several of them especially Mr. Kurokawa,
+strongly insisted that the JIS WG should not committ
+to any other nation's domestic activity and
+should make an independent design and send it to ISO.
+(I feel it is a stupid idea.)
+I and several of us told them that JIS is for industries
+and not for the main subject of academic research to explorer new technologies.
+They still wanted the table of JIS LISP WG to be
+the table for thinking what is the best Lisp spec.
+
+The second problem is related to the japanese culture.
+As I stated in the top, most of the language related people think
+JIS discussion should be delayed after ISO is active and ISO has a draft.
+And, as Scott suggested in May 1986, japanese culture
+favors the official committee work should be
+carried by senior person with very slow steps.
+ANSI activities seemes to fast for them to follow
+though I tried to let them informed everything happened
+in USA as far as I know.
+And there is a communication gap among the members.
+Or there is a quite difference about the information
+networks.
+Several members have E-mail links inside japan,
+and several has E-link to USA, as you know.
+But severals have no E-links to the out world
+even in japan.
+Some companies have a policy of isolationism, so they cannot connect their
+machine to other host !
+As a result, the following situation arise:
+Though they have important information but it cannot
+be proved by themselves and was treated as one the many information.
+One of the big mainframers in japan is it.
+
+I thought JIS WG is going to treat CL language details, I hoped,
+so, I left the discussion around the language details
+intentionally untouched by Jeida Common Lisp Committee (JCLC),
+which is the committee of Common Lispers.
+Recently, the several companies supporting JCLC implemented
+their own Common Lisp, and they piled up the opinions to Common Lisp spec.,
+and they have their own testing suites.
+Taking account these situations,
+I decided to be a p-member of ANSI X3J13 after Palo Alto meeting was over.
+and sent the fee to CBEMA on April 1st or so.
+The money I sent to CBEMA was later given by Jeida after their decision.
+So, I represent myself  but financially partly supported by
+JCLC, and the fact was known by JIS WG.
+I will consult with JCLC to support X3J13 as for clearn up issue
+or editorial issue I can concern. I am now loading
+my CLtL japanese draft of my S3620 as a base for revision up.
+
+This is the whole story as of now.
+Unless there will be no trigger from outside japan,
+with my observation, JIS WG cannot make any meaningfull decision
+for a while.
+I cannot tell how long is 'for a while'.
+It may be three months, half ayear, one year or more.
+
+Please remember JCLC is quite healthy and I too.
+
+Thank you
+
+Masayuki
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  again
+To:  fahlman@C.CS.CMU.EDU, gls@THINK.COM, 
+Message-Id:  <8706080704.AA13712@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078@tansei.cc.u-tokyo.junet>
+Date:  Mon, 8 Jun 87 16:04:54+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+Dear Bob,
+
+The first line of my last mail has typo error.
+Beb, -----> Bob,
+I'm sorry.
+
+Do you have an idea to send your mail to JIS WG
+to ask the official liason ?
+I'm not so serious. this is only my frank talk
+without deep think.
+
+Masayuki
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  Common Lisp vs Lisp : terminology issue
+To:  fahlman@C.CS.CMU.EDU, gls@THINK.COM, 
+Message-Id:  <8706090848.AA06902@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078@tansei.cc.u-tokyo.junet>
+Date:  Tue, 9 Jun 87 17:48:17+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+
+Bob,
+
+Thank you for your coment on US delegation.
+Your comment is just what I am believing.
+
+Can I ask one question ?
+
+When I directed to make a JIS group,
+I found the name is JIS 'LISP' WG, not JIS 'Common Lisp' WG.
+It might be my mistake that I did accept this name.
+Or it might be a hard but good trial.
+
+Anyhow, we have a JIS LISP WG, not JIS Common Lisp WG.
+
+And, I've heard that Prof. McCarthy said 
+'there is no Lisp standard in the world.
+the standard for one dialect of Lisp may be possible.'
+I did not heard this kind of message directly from him.
+(So, I may be wrong.)
+Unfortunately, JIS group seems to try to discuss 
+about the Lisp standard wihich is the integration
+of lots of Lisp dialects.
+I think it is impossible (or its not feasible.)
+
+Could you tell me your attitude or philosophy
+on using the word 'Lisp' or 'Common Lisp' ?
+Or, do you have an idea to make 'ANSI Common Lisp'
+be 'ISO LISP' ?
+
+Thank you
+
+Masayuki...
+
+--
+From:  "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+In-reply-to:  Msg of Tue 9 Jun 87 17:48:17+0900 from Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet at RELAY.CS.NET>
+Subject:  Common Lisp vs Lisp : terminology issue
+Cc:    gls@THINK.COM, mathis@ADA20.ISI.EDU, rpg@SAIL.STANFORD.EDU
+To:    a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET
+Sender:  FAHLMAN@C.CS.CMU.EDU
+Message-ID:  <FAHLMAN.12309133894.BABYL@C.CS.CMU.EDU>
+Date:  Tue, 9 Jun 1987  10:51 EDT
+Received:  ID <FAHLMAN@C.CS.CMU.EDU>; Tue 9 Jun 87 10:52:02-EDT
+
+
+Masayuki,
+
+Maybe I can help to answer your question about names.
+
+I think the philosophy of most of the people in the Common Lisp effort
+is that Lisp is a growing, evolving set of language ideas.  There are
+many branches of the Lisp tree, some of which are experimental and some
+of which are stable and ready for heavy-duty industrial use.  Whenever
+you standardize something, you stop or greatly slow down its evolution;
+that is sometimes necessary in order to create a stable base upon which
+large industrial applications can be built.  I think that most of us
+believe that such a stable base is needed for the growing AI industry
+and for applied AI work in universities.  Common Lisp can provide that
+base.  It was never our intention to stop the evolution of Lisp as a
+whole, just to freeze one reasonably up-to-date version of Lisp so that
+people could use it while the rest of us go on to explore new ideas.
+There is at least one other branch of the tree already in existence --
+Scheme -- and it continues to evolve.
+
+So, while we believe that it is beneficial to standardize ONE DIALECT of
+Lisp, none of us wants to standardize all of Lisp.  We don't want to say
+that people should not use Scheme or some future Lisp dialect; we just
+want to say that if they choose to use Common Lisp, this is what they
+mean by that statment.  If I thought that the standardization of Common
+Lisp would prevent people from working on Scheme or other more advanced
+Lisp dialects, I would quit this effort at once.
+
+What we call an eventual standard is important because government
+bureaucracies tend to say, "If there is a standard for X, you must use
+the standard".  I don't think that all Lisp users should be forced to
+use standard Common Lisp; I do think that all Common Lisp users should
+adhere to the standard.  By naming our effort ANSI Common Lisp, we
+emphasize that there may be other Lisps around, and that someday we may
+want to standardize one of them as well.
+
+Anyway, that is why we would like to have an ANSI or ISO standard for
+"Common Lisp" but not for "Lisp".  I think that concerns like this were
+behind John McCarthy's remarks as well.  He doesn't believe that ISO or
+anyone else has the right to grab the name "Lisp" and try to force it to
+mean just one dialect of Lisp that happenes to exist at one moment in
+time.  I don't think it matters much what your committee is called,
+however.  A committee can study the standardization of "Lisp" and then
+decide to propose a standard for Common Lisp or EuLisp or whatever, as
+long as we don't get into a position where the use of other Lisp
+dialects is suppressed by government decree.
+
+I think that the view of the EuLisp group is rather different from ours.
+They represent less than ten percent of the worldwide Lisp community,
+but because of the country-by-country voting in ISO, they probably are a
+majority in that body.  If they just produced a new Lisp -- some
+three-level variant of Scheme. perhaps -- it might be ignored unless it
+contained some really good new ideas.  Perhaps I am too cynical, but I
+believe that *SOME* of the Eulisp people want to have a single
+internation standard for Lisp, which they would control, in order to
+force people to use their particular dialect.  We have suggested many
+times that there should perhaps be an ISO Common Lisp and, some years
+later, an ISO Eulisp/Scheme.  The former is for industrial use in the
+near future, and contains many compromises; the latter would be a new,
+cleaner, more rational design for the future.  So far, the Europeans
+have always rejected this view.
+
+- -- Scott
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  ISO schedule
+To:  fahlman@C.CS.CMU.EDU, gls@THINK.COM, 
+Message-Id:  <8706101015.AA09680@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078@tansei.cc.u-tokyo.junet>
+Date:  Wed, 10 Jun 87 19:15:46+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+Scott,
+
+Thank you for sending me your comment on the naming issue.
+I feel relieved. I understood your statement is quite same
+as your E-mail of last year.
+
+
+Bob,
+
+Could you give me your schedule in mind for ISO Lisp ?
+I mean, in japan, ISO corespondence is carried by IPSJ
+and we have not full knowledge about the progress of ISO matter.
+JIS Lisp WG and JCLC have no relation to ISO thing yet.
+This situation may change in the (near) future.
+So, we want to have arough image of the progress on ISO Lisp.
+When the draft will be presented ?
+
+There was a fllowing talk at a meeting of last year;
+"if ANSI will make Common Lisp as the national standard
+in 1988,and it will be send to ISO and accepted as draft
+in 1990 or so, we should take more care of ISO.
+Because even if we can make a draft in 1988 in japan
+it will need one or more year to be approved by the  parent
+committee.
+Or, if ISO schedule will be delayed by more than five years,
+ANSI Common Lisp will have a role of the acting worldwide
+standard for industrial use.
+In such case,  we should have more close relation to X3J13 work.
+And JIS WG itself will think the ideal Lisp specification
+with long term view."
+
+- -- Masayuki
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  appendix: ISO schedule
+To:  fahlman@C.CS.CMU.EDU, gls@THINK.COM, 
+Message-Id:  <8706101027.AA09906@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078@tansei.cc.u-tokyo.junet>
+Date:  Wed, 10 Jun 87 19:27:47+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+I feel the latter case will happen.
+
+To my regret, I cannot attend the next meeting of X3J13.
+Instead, I asked Mr. Shiota to attend .
+I delegate him.
+He can make a presentation on multi-byte character issue.
+He have been in the center of kanji discussion and
+he knows everything about what was proposed to JCLC
+by each implementation.
+
+If september meeting will be held in the week of sept.7 -12
+or Sept.14-19, I can attend. 
+
+- -- Masayuki
+
+--
+From:  Eric Schoen <spar!schoen@decwrl.dec.com>
+Subject:  Bob Mathis?   
+In-Reply-To:  Dick Gabriel's message of 19 Jun 87  1202 PDT <8706191902.AA09867@decwrl.dec.com>
+To:  RPG@SAIL.STANFORD.EDU
+Message-Id:  <8706192017.AA05594@gyro.SPAR.CAS.SLB.COM>
+Date:  Fri, 19 Jun 87 13:17:42 PDT
+Received:  By gyro.SPAR.CAS.SLB.COM
+Return-Path:  <schoen@gyro>
+
+Thanks.  A couple of weeks ago, he and Larry Masinter and I were discussing
+scheduling of the window systems sessions (both ours and a presentation from
+the X group [Schieffler, I think]) at the meeting.  Bob scheduled us for
+Tuesday afternoon; I asked him if it would be possible to move us to Thursday,
+but I haven't gotten a reply.  
+
+I have a prior committment on Tuesday (symphony tickets--"Since when do
+personal concerns enter into these things?" says Larry) I'd like not to break,
+but I will if it's not convenient to reschedule the windows session.
+
+Eric
+
+"spar!schoen"@decwrl.dec.com/su
+Schedule
+
+Eric, the X3 meeting is currently scheduled to take place tuesday
+and wednesday (June 30 and July 1). Here is the tentative schedule
+sans your part. I think most people already have planned to leave
+wednesday night. There is a private CLOS meeting thursday July 2,
+which I intend to attend, but you could try to see whether people
+might want to stay an extra day.
+
+
+   Tuesday morning     -- clean-up committee
+   Tuesday afternoon   -- X windows presentation, Japanese
+       characters presentation, administrative work of committee,
+       reports from various subcommittees and liaisons
+   Wednesday morning   -- continuation of subcommittee reports
+       and other business, clean-up committee
+   Wednesday afternoon -- clean-up committee
+
+			-rpg-
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Cc:  common-lisp@SAIL.STANFORD.EDU
+Subject:  Re:  A multi-byte character extension proposal
+To:  baggins@ibm.com, 
+Message-Id:  <8706290425.AA04557@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078@tansei.cc.u-tokyo.junet>
+Date:  Mon, 29 Jun 87 13:25:54+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+
+I got a mail from nippon UNIVAC person as for the matter.
+He is one of the contributors of Kanji WG.
+
+Here is his comment.
+(I am just acting as a junction between japanese net and US.)
+
+If someone is interested in his reply, I will forward
+mails to him (since direct mailing is not premitted.)
+
+
+Masayuki Ida
+
+
+============================ his comment =================================
+
+Date: Fri, 26 Jun 87 16:46:31 JST
+From: tshimizu@xxx.yyy.junet (Toshihiko Shimizu)
+To: ida@u-tokyo.junet
+Subject: Our comments to Thom Linden's q
+
+  We  have  reviewed  the  JEIDA  proposal  and  Mr.   Thom   Linden's
+questions.  We have been making  efforts for an implementation  of the
+extention of Common Lisp for Japanese character processing on Explorer
+lisp machine.  Our  efforts have  been made  in pararell  to the JEIDA
+Kanji WG activity, and our specifications had been nearly fixed before
+the final proposal was issued.  But our implementation almost conforms
+to the proposal except the point left being implementation  dependent.
+We think it is important to answer Linden's question according to  our
+implementation for your information.
+
+ First we have to give an overview of our implementation.  Our primary
+goal is completely the same as the JEIDA proposal that we want to  use
+Japanese  characters  "as  almost  the  same  as"  characters  already
+available.  In Explorer, an extended  ASCII character set called  Lisp
+Machine character set has  been used.  We  have added a  new character
+set for Japanese characters called JIS character set which is  defined
+to be the standard in Japan.  This set has double-byte character code.
+Explorer has the  capability to  handle strings  whose elements  are 2
+byte long.  This string type can be considered to be a subtype of type
+string.  Then  we  use  this  type  of  strings  to  hold  double-byte
+characters.  Apparently  these  strings  are  able to hold single-byte
+characters as mixture.  This  implementation is considered  almost the
+same as the scheme using "internal-thin-string" type described in  the
+proposal.  We are  now preparing  a paper  on this  implementation for
+WGSYM IPSJ, September 1987.  Please refer it for further detailes.
+
+
+The followings are our answers to Linden's questions;
+
+
+1)
+ All Common Lisp standard characters are included in the standared JIS
+character set, but they have different character code from the ones in
+ASCII character set.  This situation is almost likely in case of usual
+file systems  which  allow  JIS  character  set.   Then we think these
+difference has to  be preserved  when files  are read  into Lisp  as a
+sequance of characters.  After that we can think of parsing, discussed
+later.
+
+
+2)
+ Above interpretation seems  to lead  to a  contradiction against  the
+description in CLtL  (p.233).  We  think that  two distinct  character
+objects may have the  same print glyphs,  but in this  case they shold
+have  the  same  syntactic  properties.   Indeed  they  are  different
+characters but somtimes we doubt.   Because they may be  printed using
+various fonts and sometimes these printed figures are very similar.
+
+
+3), 4)
+ Actually we have both single-byte and double-byte representations for
+some characters.  But  we never  try to  map them  into the one except
+when the Lisp reader  parses them.  This  is because these  difference
+have to be preserved as described above.  And we think that once these
+two representation is mapped into the one, there are no reasonable way
+to make inverse mapping.  This  is the crucial point  for applications
+on Lisp to interact with other conventional applications.  Suppose  we
+have a text processing application on Lisp and we want use it  against
+a text  file  in  which  single-byte  and  double-byte  characters are
+containted in  mixture.   It  is  not  desirable  if  all  single-byte
+characters in the source text file are mapped into double-byte ones.
+
+
+5)
+ Now our stand point is that a double-byte character can be a standard
+character within  the  parsing  context  only  if its printed glyph is
+regarded as a  standard character.   As a  result, there  must be some
+test for  this  correspondence.   Acturally  we have this "equivalence
+test".   Both  the  single-byte  character  set  and  the  double-byte
+character set include  standard characters.   If a  character from the
+single-byte character set which  is a standard  character, there is  a
+corresponding character in the  double-byte character set.   And these
+two characters  pass  the  "equivalence  test",  but they never be EQ.
+However this point may lead to  a contradiction to the description  in
+CLtL (p.20).
+
+5a)
+ Then, our implementation  recognizes some  double-byte characters  as
+standard characters.  For example,  STANDARD-CHAR-P returns T  against
+#\a in the double-byte character set.
+
+5b)
+ Our implementation takes option 3 in the proposal.  That is, we don't
+distinguish single-byte and  double-byte versions  of symbols,  but we
+preserve these difference within strings.  For example, two version of
+a symbol 'LAMBDA are considered to be EQ, but two versions of a string
+"LAMBDA" are  distinguished,  or  not  EQUAL,  but  they pass the test
+described above.  Further,  there may  be mixed  versions of  a string
+"LAMBDA".
+
+5c)
+ We might  agree  Linden's  point  if  we  didn't think about strings.
+Actually our  primary  understanding  was  that  there  was no need to
+distinguish such a  difference for  the sole  purpose of  Common Lisp.
+But there is a certain  requirement for interaction with  conventional
+applications in which distinction between single-byte and  double-byte
+version is significant.  Then we  decided that the distinction  is not
+neccessary for  symbols  which  plays  an  important role in programs,
+whereas it  is  neccessary  for  strings  which are primarily used for
+interaction with outer world, such as files, displays, and networks.
+
+5d)
+ As we  defined  that  a  double-byte  character  may  be  a  standard
+character, it  is  consistent  to  define  such a character to satisfy
+ALPHA-CHAR-P.   Then  both   version  of   a  character   'a'  satisfy
+ALPHA-CHAR-P, ALPHANUMERICP and LOWER-CASE-P.
+
+5e)
+ We think that these description  sholud be eraborated, but  the JEIDA
+committee  has  decided  that  these  should  be  left  implementation
+dependent.
+
+
+6)
+ In our implementation, such syntactic attributes relevant to  parsing
+and format controlling are only defined for standard characters.  That
+is, if a  character is  a double-byte  character and  also a standared
+character at  the  same  time,  it  may  have  non-constituent syntax.
+Indeed it has the same syntax attribute as the single-byte version  of
+it.  For example, a string "123" in double-byte version is also parsed
+into a  number  123.   Otherwise  its  syntax  cannot  be  other  than
+constituent.
+
+
+7)
+ We think it is  not neccessary to  have such a  large readtable which
+covers all characters of type  string-char.  We only have  a readtable
+for single-byte characters and uses  the "equivalent" mapping for  the
+double-byte version of these characters.  And the rest of  double-byte
+characters are defined to have constituent syntax.
+
+
+8)
+ In  our  implementation,   MAKE-DISPATCH-MACRO-CHARACTER  against   a
+non-standard, double-byte character is an error.
+
+
+
+
+
+- ------------- end of the message -----------
+
+--
+From:  Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Cc:  fahlman@C.CS.CMU.EDU, gls@THINK.COM, rpg@SAIL.STANFORD.EDU
+Subject:  Question
+To:  mathis@ADA20.ISI.EDU
+Message-Id:  <8707090216.AA00845@tansei.cc.u-tokyo.junet>
+Return-Path:  <a37078>
+Date:  Thu, 9 Jul 87 11:16:21+0900
+Received:  by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+
+Bob,
+
+Can  I ask you one question ?
+
+When I got an invoice from CBEMA for the annual fee for the X3J13,
+it is titled with 'status' field 'p'(Principal).
+I payed $175.00 and sent it to X3 Secretariat.
+The invoice number is No. 8701923.
+I knew the diffrence bewtween principal member and observer,
+and I also knew it is the national committee work in USA, not in Japan,
+But I simply understood 'I am going to be a member of X3J13 as a principal
+member'.
+I told this fact to the Boss of JIS language committee (which is the boss
+of JIS Lisp WG) when we became to be in a complex status as you know and as
+we discussed.
+I decided to welcome a senior professor as the chair of JIS Lisp WG,
+to solve the complex status in japan,
+and I thought I am to work with US and japan co-operation-ship.
+I told this story at JIS WG meeting and Jeida CL committee both.
+They understood and they welcomed my story.
+This is what was happend in japan.
+
+I am afraid I misunderstood your intention.
+
+Masayuki
+
+--
+From:  MATHIS@ADA20.ISI.EDU
+In-Reply-To:  <8707090216.AA00845@tansei.cc.u-tokyo.junet>
+Message-ID:  <[ADA20.ISI.EDU]10-Jul-87 14:30:44.MATHIS>
+Cc:  rpg@SAIL.STANFORD.EDU, Mathis@ADA20.ISI.EDU
+To:  a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET
+Subject:  Re: Question
+Sender:  MATHIS@ADA20.ISI.EDU
+Date:  10 Jul 1987 14:30-PDT
+Received:  from ADA20.ISI.EDU by SAIL.STANFORD.EDU with TCP; 10 Jul 87  14:48:14 PDT
+
+Masayuki,
+
+You are a full member of X3J13 in all respects except one.  When
+we are acting as the US technical advisory group on an ISO issue
+only the US members count in the voting results.  I sent the
+information to everyone and your comments and your sharing it
+with others is welcome.
+
+Bob
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <870916-134358-5886@Xerox>
+cc:  rpg@sail.stanford.edu, mathis@ada20.isi.edu
+To:  ito%aoba.aoba.tohoku.junet%utokyo-relay.CSNet@relay.cs.net,
+In-reply-to:  Takayasu ITO
+Subject:  ANSI Lisp standards
+Date:  16 Sep 87 13:43 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 16 SEP 87 13:43:58 PDT
+
+
+I am having some trouble with the mail system -- my last reply to you
+was returned.
+
+Q: "1) What is going on at ANSI?"
+
+A group which is part of the ANSI standard process, X3J13, meets
+regularly to discuss Lisp standardization items. The next meeting is in
+November. We have discussed the  Common Lisp Object System, the error
+system,  numerous minor clean-up items, the issue of one vs two name
+spaces for functions and values, and some more fundamental semantic
+changes.
+
+Most of the work happens in sub-committees. The sub-committees "meet"
+using electronic mail primarily, and the X3j13 meetings are to discuss
+the subcommittee's results.  
+
+You and members of your committee can be added to the network
+distribution list for announcements of X3J13 activities, and reports of
+ISO activities.   I would also welcome some individual contributors to
+the "cleanup" committee.
+
+Q: "Is it possible to send some of my committee members to ANSI meeting
+on Lisp?"
+
+Your committee members are welcome at the X3J13 meetings. I've attached
+an announcement of the next meeting.
+
+Q: Can I get any report to explain ANSI activities on Lisp
+standardization?
+
+Perhaps Bob Mathis (who is the chairman of X3J13) has reports of
+previous meetings.
+
+Q: Would you let me the schedule of ANSI meeting if I can send someone
+to it?
+
+See attached announcement.
+
+
+For 2: what is going on at ISO?
+    Do you know the meeting schedule on ISO-Liso? I would like to send
+some of
+    my committee members to ISO meeting.
+    {I myself may attend it if the situation allow;this year I am quite
+busy as
+    the chairman of Department at the university.}
+
+
+Bob Mathis has a report of ISO activities. Bob, can you send it via
+electronic mail?
+
+
+ - - - - - - - - - - - ANNOUNCEMENT OF X3J13 MEETING - - - - - - - - - -
+- - - - - - -
+
+To: x3j13@sail.stanford.edu
+Cc: mathis@ada20.isi.edu, dcm%hpfcdcm@hplabs.HP.COM
+Subject: November X3J13 meeting
+From: Dave_Matthews%hpfclp@hplabs.HP.COM
+Date: Wed, 16 Sep 87 12:43:19 MST
+Message-Id: <1297.558816199@hpfcdcm>
+Sender: dcm%hpfclp@hplabs.HP.COM
+ 
+
+Bob Mathis requested that I delay the meeting a month so the
+subcommittees
+will have more time to prepare their reports.  I have rescheduled the
+meeting a month later, November 16-18, which seemed to be the most
+desirable dates in November.  Other than the date changes there are no
+other changes in the arrangements.
+
+Dave Matthews
+
+- --------------------------------------------------------------------------
+
+			    X3J13 Meeting
+			 11/16/87 - 11/18/87
+			Fort Collins, Colorado
+
+The fifth meeting of X3J13 will be held Monday through Wednesday,
+November
+16-18 at the University Park Holiday Inn in Fort Collins, Colorado.
+Monday
+has been set aside for committee meetings, followed by the main meeting
+on
+Tuesday and Wednesday.  November is the perfect time to see fall (and
+sometimes winter) in Colorado.  Rocky Mountain National Park is
+approximately one hour from Fort Collins.
+
+Hewlett-Packard's travel affiliate, Lifeco Travel, has negotiated
+discount
+airfares that you can obtain by calling:
+
+	800-521-8858 (in California)
+	800-722-8755 (elsewhere)
+
+Ask to make a group reservation for X3J13.  You may also make your room,
+rental car, or airport limousine reservations through Lifeco at the same
+time.  Payment must be made by credit card.  Tickets will be mailed via
+registered mail.  Late reservations can be express mailed at additional
+cost.
+
+A block of rooms is available at the University Park Holiday Inn at
+$46.50
+plus tax per night.  If you don't make reservations through Lifeco
+Travel,
+please make your own reservations by calling (303)482-2626 and asking to
+reserve a room in the "HP X3J13" block.  Reservations will be held until
+6
+PM unless guaranteed by a major credit card.  Non-smoking rooms are
+available.  Check-in and check-out times are 1 PM.  The block of rooms
+will
+be dropped on 11/2/87, but you should still be able to obtain the
+discounted room rate on available rooms if you specify you are attending
+the the "HP X3J13" conference.
+
+Refreshments and lunch are being arranged for Tuesday and Wednesday.  I
+expect these arrangements will run $50 or less per person which I will
+collect at the meeting.  I should be able to update this value in a few
+weeks.  Please note any dietary restrictions so I can make the necessary
+arrangements with the catering department.
+
+If there is sufficient interest I would like to arrange a dinner Tuesday
+evening at Cuisine, Cuisine.  Cuisine, Cuisine is an intimate cafe
+offering
+some the best and most unusual food in Northern Colorado.  It is a very
+small cafe which can only accommodate 60 total patrons, but they are
+willing to put together a special banquet for us. To handle a group this
+large in a short period of time they would like to limit the menu to 4
+items.  The list of possible entrees includes: Cajun roast duckling with
+spice peach gravy, chicken boursin (double breast of chicken stuffed
+with
+herbed cream cheese dressing and mushroom voloute' sauce), shrimp diane
+(sauteed jumbo shrimp in a garlic cajun sauce), sirloin tips with
+mushrooms
+and onions, poached salmon with a special sauce, or boned leg of lamb
+stuffed with spinach and served with a dijon sauce.  A vegetarian entree
+will also be available.  Entrees would be about 15 dollars, including
+soup
+or salad.  Appetizers, dessert, and beverage would be ala carte.
+Cuisine,
+Cuisine accepts charge cards, but cash would also be welcome.
+
+I would need to narrow this to the four items at least 2 weeks in
+advance
+so they could make the necessary preparations.  Note if you are
+interested
+on the registration form and mark your first and second choice entrees.
+Please note any dietary restrictions if this selection is not
+sufficient.
+
+Fort Collins is approximately a one hour drive from Denver's Stapleton
+International Airport.  From the airport take I-270 or I-70 west to I-25
+and go north on I-25 towards Cheyenne, Wyoming.  Take the first Fort
+Collins exit, #265, turn left and drive 5 miles to the College Avenue
+intersection.  Turn right and drive 3 miles to the Prospect Road
+intersection.  Turn left and the Holiday Inn is just across the railroad
+tracks on the south side of the road.  It shouldn't be hard to see since
+it
+is 8 stories tall in an area with very few building over 2 stories.
+
+Two limousine services provide shuttle service from Stapleton directly
+to
+the Holiday Inn.  Fort Collins Express (303-482-0505) leaves Stapleton
+on
+the hour while the Front Range Airporter (303-221-5466) leaves Stapleton
+on
+the half hour.  Both are located in the baggage claim area.  The charge
+is
+$12 each way on the Express and $13 on the Airporter.
+
+
+               |     Prospect Road                           ||
+      =========|======================                       ||
+           HI  |                                             ||
+M              |                                             ||
+O              |                                             ||
+U              |                                             ||
+N              |     Drake Road                 North        ||
+T     =========|======================           /\          ||
+A              |                                 ||          ||
+I              |US 287/ College Avenue                       ||
+N              |                                             ||I-25
+S              |                                             ||
+               |     Horsetooth Road                         ||         
+      =========|======================                       ||
+               |                                             ||
+               |                                             ||
+               |                                             ||
+               |                                             ||
+               |     Harmony Road                  HP       /||\ 
+
+=========|=============================================||===========
+               |                                            \||/ Exit
+265  
+               |                                             ||
+                                                             ||
+                                                             \/
+                                                            Denver
+
+
+Please return the following registration form by November 2 via
+electronic
+mail to dcm%hpfclp@hplabs.hp.com or via US Mail to:
+
+	Dave Matthews
+	Hewlett-Packard Company
+	3404 E Harmony Road
+	Fort Collins, Colorado  80525
+	(303)339-2201
+
+Feel free to contact me if you have any questions.
+
+
+__________________________________________________________________________
+
+
+	       X3J13 NOVEMBER MEETING REGISTRATION FORM
+                                           
+
+Name:			__________________________________________________
+
+Institution:		__________________________________________________
+
+Street Address:		__________________________________________________
+
+City, State, Zip:	__________________________________________________
+
+Phone:			__________________________________________________
+
+Network Address:	__________________________________________________
+
+Dinner	11/17 (y/n):	__________________________________________________
+
+	First choice:	__________________________________________________
+
+	Second choice:	__________________________________________________
+
+	(Duck, chicken, shrimp, sirloin, salmon, lamb, vegetarian)
+
+Dietary Restrictions:
+__________________________________________________
+                      
+		  	__________________________________________________
+
+		  	__________________________________________________
+
+--
+From:  mcvax!inria.inria.fr!chaillou@uunet.UU.NET (Jerome Chailloux)
+Subject:  For spare time (hah) in Fort Collins...
+To:  fahlman@cmu-cs-c.edu, gls@think.com, masinter@xerox.com,
+Message-Id:  <8711122210.AA11492@inria.inria.fr>
+Date:  Thu, 12 Nov 87 23:10:06 +0100
+Received:  by inria.inria.fr; Thu, 12 Nov 87 23:10:06 +0100 (MET)
+
+Sorry to get this in the mail to you so late... see you in Fort Collins.
+
+
+- --------------------
+
+Dear Colleagues,
+
+This note is a continuation of the efforts made on both sides of the
+Atlantic to combine our efforts fruitfully in the area of Lisp
+standardisation.  Your overtures together with the recent
+developments at ISO prompt us to assist the dialogue by clarifying
+our ideas.  We hope this may be able to serve as a basis for informal
+discussion at the X3J13 meeting at Fort Collins.
+
+The recent formation of Working Group Sixteen at ISO provides all of
+us with an official framework within which to continue our efforts
+toward an international Lisp standard.  However, as all of us have
+seen, the formal procedures require a considerable level of consensus
+which is most practically reached with the usual kind of technical
+interchange.  In that context, we hope to clarify for you our ideas in
+this note.
+
+Common Lisp represents a wealth of experience and effort which will
+immensely benefit the development of an international Lisp standard.
+The ongoing activity at X3J13 indicates your interest in having Common
+Lisp evolve into an official standard. We will set out our ideas about
+how the efforts at ISO relate to those at X3J13.
+
+Our goal in working toward a Lisp standard is to provide a Lisp which
+will be useful in (in no particular order) industrial software
+products,  in research and in instruction in Computer Science.  That
+goal dictates the following desiderata:
+
+1) a standard which allows and encourages efficient implementation on
+general purpose hardware.  (the advances in non-dedicated
+architectures discourage the use of the slightly pejorative term
+"conventional hardware")
+
+2) a validation procedure for implementations that will guarantee a
+degree of portability for Lisp equivalent to that expected in other
+standardized languages.
+
+3) a language structured such that the principles may be set forth
+succinctly and absorbed straightforwardly (although not necessarily
+easily!)
+
+These desiderata are consistent with the goals set out for Common
+Lisp in CLtL.  	However, how do we advance from these common goals in
+a concrete fashion?  For ISO Lisp to benefit significantly from
+Common Lisp it is important to share the general framework within
+which that effort took place.  This means that no single issue (for
+instance, the debate at both X3J13 and the EuLisp committee
+surrounding a unified value/function cell) should unduly impede the
+ISO process.
+
+We have however, two general concerns which must be allayed that we
+may make use of the framework of Common Lisp.
+
+First of all, the demands for run-time processing (dynamic decision
+making), made of interpreter, compiler, incremental compiler or
+whatever other implementation technique, should be reduced.  This is
+consistent with desiderata one above about general purpose hardware.
+Run-time processing is more easily made invisible on micro-coded
+machines but often introduces arcana on a general purpose machine,
+coupled with a cost which is amortized over the whole computation.
+Two examples are "explicit dynamic binding" and "absence of type
+specific versions" in section II and III below.
+
+Our second concern is that for proposal at ISO Lisp, portions of
+Common Lisp will need to be better specified to guarantee the twin
+goals of validation of implementations as well as guaranteed behavior
+of valid programs.
+
+As a basis for ISO Lisp, Common Lisp is split into 3 groups by the
+previous concerns.  The first part comprises those portions of Common
+Lisp that we propose ISO Lisp should adopt without significant
+revision.  That part represents the majority of Common Lisp and
+corresponds to that part which describes the functionality of Common
+Lisp (which would be called libraries in other languages).  The
+second part comprises aspects of Common Lisp for which we are
+examining improvements or clarifications.  It is to the third part
+that we are paying the most attention to ensure the satisfaction of
+the goals stated above about limiting run-time requirements and
+provision for validation and security.
+
+We do not give a definitive categorization here, but outline the parts
+as follows:
+
+I) Acceptable without revision from Common Lisp:
+	(other than those proposed at X3J13 already):
+	Default lexical binding, and optional dynamic binding.
+	Naming Conventions (full English words separated by dashes).
+	The standard presence of NIL of any empty list type.
+	The majority of the syntax.
+	The following special forms
+		(block catch flet function go if
+		labels macrolet multiple-value-call
+		multiple-value-prog1 progn progv quote
+		return-from setq
+		tagbody throw unwind-protect)
+
+II) Topics requiring revision or further specification:
+
+Explicit dynamic binding:
+
+	We propose special forms dynamic-let and dynamic-let*.
+	This would remove the only obligatory declaration (special)
+	which is something of an anomaly amongst the rest of the
+	declarations: it specifies behavior of the name not the type
+	of the value.  (This would also help	
+	clarify the moment of macro expansion, since the first
+	macros in a form wouldn't be expanded at a different
+	time while hunting for declarations.)
+
+Formal semantics for the special forms and evaluation process:
+
+	While a formal semantics for all of ISO Lisp would be of
+	dubious utility, a formal description of the action of the
+	special forms and evaluation process would help specify
+	their interaction.  
+
+Clarification of environment and moment:
+
+	Macroexpand and eval-when lack sufficient description
+	of their environment.
+	
+	The phases considered by eval-when  need to be fully specified
+	describe in the case of an interpreter, incremental compiler, 
+	and file compilation.  The semantics of top-level require further 
+	specification (do intervening progns still constitute
+	top-level?  What else?).
+
+III) Major questions:
+
+Types:
+
+	Some of these questions have already been identified by the
+		cleanup committee.
+	A distinct type 'function' is necessary (to sort out the problems
+		vis a` vis apply).
+	The type hierarchy needs to be uniformly extensible
+		(e.g. in CL one cannot extend number or sequence).
+	The subtype predicate needs an exact definition.
+	The relationship between the type system and the object system
+		needs to be spelled out exactly.
+	Access to primitives must be assured (e.g. for fixnum arithmetic,
+		direct functional access, or mandatory treatment of
+		declarations)
+
+Packages:
+
+It is important that the mechanisms of the name space management be
+clear enough for users to predict behavior of the system.  In
+addition, a facility for symbols that are accessible by default at the
+top-level regardless of the current package is convenient.
+
+modules:
+
+Modules (as the term in used in other programming languages, referring
+to freezing the behavior and access to code and data) are necessary to
+guarantee the correct behavior of valid programs.
+
+Of course, just by listing the topics this way, we haven't provided
+detailed justification for our concerns nor full explanations of the
+kind of solutions on which we are working.  However, we hope that
+providing our view of the concerns for ISO Lisp can encourage concrete
+co-operation on the development of ISO Lisp.
+
+Yours,
+
+Jerome Chailloux
+Greg Nuyens
+Julian Padget
+Christian Queinnec
+
+--
+From:  Taiichi Yuasa <yuasa%kurims.kurims.kyoto-u.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  Japanese Activities toward Lisp Standardization
+To:  x3j13@SAIL.STANFORD.EDU
+Message-Id:  <8709240537.AA01964@kurims.kurims.kyoto-u.junet>
+Return-Path:  <yuasa@kurims.kurims.kyoto-u.junet>
+Date:  Thu, 24 Sep 87 14:37:43 JST
+Received:  by kurims.kurims.kyoto-u.junet (3.2/6.2Junet)
+
+
+            Japanese Activities toward Lisp Standardization
+
+
+The demand for Lisp standardization has been growing rapidly in Japanese
+computer industries and academic organizations.  AIST (Agency of Industrial
+Science and Technology), which is responsible for Japan Industrial Standards
+(JIS in short), has initiated its activity toward JIS Lisp standardization.
+In April 1986, in response to the request from AIST, a working group for Lisp
+standardization was formed at JEIDA (Japan Electronic Industry Development
+Association).  After one year's preliminary discussions, the following
+committee "JEIDA Committee for Lisp Standardization" was formed and its
+active efforts have begun in June 1987.  The aim of this committee is to
+develop a Lisp language specification suitable for JIS standard in cooperation
+with ISO and the organizations for Lisp standardization in other countries.
+
+    JEIDA Committee for Lisp Standardization
+    ----------------------------------------
+
+    Chairman:
+        Takayasu Ito (Tohoku University)
+    Secretaries:
+        Tsuneo Furuyama (NTT: Nippon Telegraph and Telephone Corp.)
+        Fumio Motoyoshi (ETL: Electrotechnical Laboratory)
+        Taiichi Yuasa (Kyoto University)
+    Members from Major Computer Companies:
+        Fujitsu Ltd.
+        Hitachi Ltd.
+        IBM Japan Ltd.
+        Mitsubishi Electric Corp.
+        NEC Corp.
+        Oki Electric Industry Co. Ltd.
+        Toshiba Corp.
+    Observers:
+        Masayuki Ida (Aoyama Gakuin University)
+        Tetsuo Ida (The Institute of Physical and Chemical Research)
+        Ryo Kamito (AIST)
+        Masakazu Nakanishi (Keio University)
+        Takehisa Nireki (JEIDA)
+        Kentaro Shimizu (University of Tokyo)
+
+Technical issues for Lisp standardization will be discussed by the subsidiary
+working group "JEIDA Technical Working Group for Lisp Standardization", or
+TG/A in short.  This group started technical discussions soon after it was
+formed in August 1987.  It has been agreed that Common Lisp is a good starting
+point for technical discussions.  But various technical deficiencies of Common
+Lisp have been already pointed out at TG/A.  The role of TG/A is to clear up
+major technical issues for Lisp standardization, continuing detailed technical
+examinations on Common Lisp and other Lisp dialects.
+
+    JEIDA Technical Working Group for Lisp Standardization
+    ------------------------------------------------------
+
+    Chairman:
+        Taiichi Yuasa (Research Institute for Mathematical Sciences,
+                       Kyoto University)
+    Members:
+        Takashi Chikayama (ICOT)
+        Etsuya Shibayama (Dept. of Information Science,
+                          Tokyo Institute of Technology)
+        Kentaro Shimizu (Dept. of Information Science, University of Tokyo)
+        Akikazu Takeuchi (Central Research Lab., Mitsubishi Electric Corp.)
+        Kyoji Umemura (NTT Software Lab., NTT)
+    Advisors:
+        Toshiaki Kurokawa (Tokyo Research Lab., IBM Japan Ltd.)
+        Michiaki Yasumura (Central Research Lab., Hitachi Ltd.)
+
+Anyone interested in Japanese activities for Lisp standardization should
+contact:
+
+        Professor Takayasu Ito
+        Department of Information Engineering
+        School of Engineering
+        Tohoku University
+        Sendai 980, Japan
+        Junet: chairlsp@nttlab.ntt.junet
+or
+        Dr. Taiichi Yuasa
+        Research Institute for Mathematical Sciences
+        Kyoto University
+        Kyoto 606, Japan
+        Junet: yuasa@kurims.kurims.kyoto-u.junet
+
+--
+From:  Taiichi Yuasa <yuasa%tutics.tut.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Subject:  new address
+To:  common-lisp@SAIL.STANFORD.EDU
+Date:  Wed, 18 Nov 87 15:23:57 jst
+Message-Id:  <8711181523.AA01704@tutics.tut.junet>
+Received:  by tutics.tut.junet (ver3.3/6.2J/systemV)
+Return-Path:  <yuasa@tutics.tut.junet>
+
+
+
+I recently moved to Toyohashi University of Technology, which is located
+somewhere between Kyoto and Tokyo, Japan.  My new mail address is
+
+	yuasa@tutics.tut.junet
+
+from within Japan, and
+
+	yuasa%tutics.tut.junet%utokyo-relay.csnet@RELAY.CS.NET
+
+from csnet in US.
+
+Sincerely,
+
+Taiichi Yuasa, Dr. 
+Lecturer
+Department of Information and Computer Science
+Toyohashi University of Technology
+Tempaku-cho, Toyohashi, 440, Japan
+
+tel: 0532-47-0111 ext 503
+
+--
+From:  mcvax!inria.inria.fr!chaillou@uunet.UU.NET (Jerome Chailloux)
+Subject:  For spare time (hah) in Fort Collins...
+To:  fahlman@cmu-cs-c.edu, gls@think.com, masinter@xerox.com,
+Message-Id:  <8711122210.AA11492@inria.inria.fr>
+Date:  Thu, 12 Nov 87 23:10:06 +0100
+Received:  by inria.inria.fr; Thu, 12 Nov 87 23:10:06 +0100 (MET)
+
+Sorry to get this in the mail to you so late... see you in Fort Collins.
+
+
+- --------------------
+
+Dear Colleagues,
+
+This note is a continuation of the efforts made on both sides of the
+Atlantic to combine our efforts fruitfully in the area of Lisp
+standardisation.  Your overtures together with the recent
+developments at ISO prompt us to assist the dialogue by clarifying
+our ideas.  We hope this may be able to serve as a basis for informal
+discussion at the X3J13 meeting at Fort Collins.
+
+The recent formation of Working Group Sixteen at ISO provides all of
+us with an official framework within which to continue our efforts
+toward an international Lisp standard.  However, as all of us have
+seen, the formal procedures require a considerable level of consensus
+which is most practically reached with the usual kind of technical
+interchange.  In that context, we hope to clarify for you our ideas in
+this note.
+
+Common Lisp represents a wealth of experience and effort which will
+immensely benefit the development of an international Lisp standard.
+The ongoing activity at X3J13 indicates your interest in having Common
+Lisp evolve into an official standard. We will set out our ideas about
+how the efforts at ISO relate to those at X3J13.
+
+Our goal in working toward a Lisp standard is to provide a Lisp which
+will be useful in (in no particular order) industrial software
+products,  in research and in instruction in Computer Science.  That
+goal dictates the following desiderata:
+
+1) a standard which allows and encourages efficient implementation on
+general purpose hardware.  (the advances in non-dedicated
+architectures discourage the use of the slightly pejorative term
+"conventional hardware")
+
+2) a validation procedure for implementations that will guarantee a
+degree of portability for Lisp equivalent to that expected in other
+standardized languages.
+
+3) a language structured such that the principles may be set forth
+succinctly and absorbed straightforwardly (although not necessarily
+easily!)
+
+These desiderata are consistent with the goals set out for Common
+Lisp in CLtL.  	However, how do we advance from these common goals in
+a concrete fashion?  For ISO Lisp to benefit significantly from
+Common Lisp it is important to share the general framework within
+which that effort took place.  This means that no single issue (for
+instance, the debate at both X3J13 and the EuLisp committee
+surrounding a unified value/function cell) should unduly impede the
+ISO process.
+
+We have however, two general concerns which must be allayed that we
+may make use of the framework of Common Lisp.
+
+First of all, the demands for run-time processing (dynamic decision
+making), made of interpreter, compiler, incremental compiler or
+whatever other implementation technique, should be reduced.  This is
+consistent with desiderata one above about general purpose hardware.
+Run-time processing is more easily made invisible on micro-coded
+machines but often introduces arcana on a general purpose machine,
+coupled with a cost which is amortized over the whole computation.
+Two examples are "explicit dynamic binding" and "absence of type
+specific versions" in section II and III below.
+
+Our second concern is that for proposal at ISO Lisp, portions of
+Common Lisp will need to be better specified to guarantee the twin
+goals of validation of implementations as well as guaranteed behavior
+of valid programs.
+
+As a basis for ISO Lisp, Common Lisp is split into 3 groups by the
+previous concerns.  The first part comprises those portions of Common
+Lisp that we propose ISO Lisp should adopt without significant
+revision.  That part represents the majority of Common Lisp and
+corresponds to that part which describes the functionality of Common
+Lisp (which would be called libraries in other languages).  The
+second part comprises aspects of Common Lisp for which we are
+examining improvements or clarifications.  It is to the third part
+that we are paying the most attention to ensure the satisfaction of
+the goals stated above about limiting run-time requirements and
+provision for validation and security.
+
+We do not give a definitive categorization here, but outline the parts
+as follows:
+
+I) Acceptable without revision from Common Lisp:
+	(other than those proposed at X3J13 already):
+	Default lexical binding, and optional dynamic binding.
+	Naming Conventions (full English words separated by dashes).
+	The standard presence of NIL of any empty list type.
+	The majority of the syntax.
+	The following special forms
+		(block catch flet function go if
+		labels macrolet multiple-value-call
+		multiple-value-prog1 progn progv quote
+		return-from setq
+		tagbody throw unwind-protect)
+
+II) Topics requiring revision or further specification:
+
+Explicit dynamic binding:
+
+	We propose special forms dynamic-let and dynamic-let*.
+	This would remove the only obligatory declaration (special)
+	which is something of an anomaly amongst the rest of the
+	declarations: it specifies behavior of the name not the type
+	of the value.  (This would also help	
+	clarify the moment of macro expansion, since the first
+	macros in a form wouldn't be expanded at a different
+	time while hunting for declarations.)
+
+Formal semantics for the special forms and evaluation process:
+
+	While a formal semantics for all of ISO Lisp would be of
+	dubious utility, a formal description of the action of the
+	special forms and evaluation process would help specify
+	their interaction.  
+
+Clarification of environment and moment:
+
+	Macroexpand and eval-when lack sufficient description
+	of their environment.
+	
+	The phases considered by eval-when  need to be fully specified
+	describe in the case of an interpreter, incremental compiler, 
+	and file compilation.  The semantics of top-level require further 
+	specification (do intervening progns still constitute
+	top-level?  What else?).
+
+III) Major questions:
+
+Types:
+
+	Some of these questions have already been identified by the
+		cleanup committee.
+	A distinct type 'function' is necessary (to sort out the problems
+		vis a` vis apply).
+	The type hierarchy needs to be uniformly extensible
+		(e.g. in CL one cannot extend number or sequence).
+	The subtype predicate needs an exact definition.
+	The relationship between the type system and the object system
+		needs to be spelled out exactly.
+	Access to primitives must be assured (e.g. for fixnum arithmetic,
+		direct functional access, or mandatory treatment of
+		declarations)
+
+Packages:
+
+It is important that the mechanisms of the name space management be
+clear enough for users to predict behavior of the system.  In
+addition, a facility for symbols that are accessible by default at the
+top-level regardless of the current package is convenient.
+
+modules:
+
+Modules (as the term in used in other programming languages, referring
+to freezing the behavior and access to code and data) are necessary to
+guarantee the correct behavior of valid programs.
+
+Of course, just by listing the topics this way, we haven't provided
+detailed justification for our concerns nor full explanations of the
+kind of solutions on which we are working.  However, we hope that
+providing our view of the concerns for ISO Lisp can encourage concrete
+co-operation on the development of ISO Lisp.
+
+Yours,
+
+Jerome Chailloux
+Greg Nuyens
+Julian Padget
+Christian Queinnec
+
+--
+From:  mcvax!maths.bath.ac.uk!jap@uunet.UU.NET
+Sender:  mcvax!maths.bath.ac.uk!jap@uunet.UU.NET
+Date:  Fri, 12 Feb 88 20:52:30 GMT
+Subject:  EuLisp 18 minutes (final version)
+To:  inria!eulisp@uunet.UU.NET
+Received:  from telford by mordell.maths.bath.AC.UK id aa00400;
+Message-Id:  <8802122146.AA10531@inria.inria.fr>
+
+.sc
+.ps 14
+.vs 16
+.ce
+\fBMinutes of EuLISP-XVIII, Bruxelles, 871125-26\fP
+.ps 10
+.vs 12
+
+\fBAttendees\fP\
+
+.nf
+Mariarosario Boscotrecase, Delphi Systems, Pisa (MB)
+Je\*'ro\*↑me Chailloux, INRIA/ILOG S.A., Paris (JC)
+Thomas Christaller, GMD, St Augustin (TC)
+Pierre Cointe, Rank-Xerox, Paris (PC)
+Roland Ducournau, Sema-Matra, Paris (RD)
+Orri Erling, Entity Systems, Helsinki, (OE)
+John ffitch, University of Bath (JPff)
+Jan van Katwijk, Universiteit Delft (JvK)
+Arno Klassen, Delft University (AK)
+Dieter Kolb, Siemens, Mu\*:nchen (DK)
+Timm Krumnack, Krupp-Atlas Elektronik, Bremen (TK)
+Pattie Maes, Vrije Universiteit Brussel (PM)
+Kris van Marcke, Vrije Universtiteit Brussel (KvM)
+Silvia Mazzini, Delphi Systems, Pisa (SM)
+Eugen Neidl, ILOG S.A., Paris (EN)
+Francois Neumann, Thomson CSF, Paris (FN)
+Greg Nuyens, ILOG S.A., Paris (GN)
+Jean Omnes, EEC, Bruxelles (JO)
+Julian Padget, University of Bath (JAP)
+Pierre Parquier, Bull S.A., Paris (PP)
+Willem van der Poel, Universiteit Delft (WvdP)
+Christian Queinnec, Universite\*' Paris VI, (CQ)
+Jean-Pierre Regourd, CGE Laboratoires de Marcoussis (JPR)
+Herbert Stoyan, Universita\*:t Konstanz (HS)
+Richard Tobin, University of Edinburgh, (RT)
+Christoph Wedi, GMD, St Augustin (CW)
+.fi
+
+\fBAgenda\fP
+
+1.	National standardisation processes
+	A.	report on November X3J13 meeting
+	B.	IWoLES
+	C.	WG-16 meeting in February
+2.	Evaluation and status of European progress towards ISO Lisp
+3.	Technical issues (packages/modules, types, objects, macros, 
+	declaration/scope, CLOS, character sets)
+4.	Future meetings
+
+.sh 1 "National Standardisation Progress"
+
+.sh 2 "Report on November X3J13 meeting"
+
+GN gave a oral report on the X3J13 meeting in Fort Collins (16-18
+November) at which he, JC and JP were present.  He reported that X3J13
+are revising their charter and considering an accelerated work
+schedule in order to produce a draft standard within 1 year.  The next
+meeting of X3J13 will be a week long to permit some of the technical
+sub-committees to report and then revise in the light of comments
+received within the period of the meeting.  The next X3J13 meeting
+will be held in Palo Alto, March 14-18, 1988.  The CLOS sub-committee
+are meeting in Boston in December.  GN also reported that matters seems
+to be moving fairly slowly within X3J13, which could in part, be a
+consequence of the goal moving.
+
+.sh 2 "International Workshop on Lisp Evolution and Standardisation"
+
+CQ announced the 1st IWoLES meeting which will take place in Paris on
+21-23 February, a few days before the first meeting of ISO WG-16.  The
+definitive call for participation will be complete shortly.
+
+.sh 2 "First meeting of ISO WG16 (Lisp)"
+
+The first meeting of ISO WG-16 will take place in Paris under the
+auspices of AFNOR on February 24-25, 1988.  CQ reported that he has
+been notified who will be the national representatives for the
+Netherlands and for Denmark (N.B. CQ will ensure that the Danish
+representative also receives an invitation to the next Eulisp
+meeting), but has yet to hear from the rest of the countries who
+stated they wished to participate and had resources in their NWI
+returns.  Each country is permitted two representatives and 1-2
+observers.  France will decide next week.  It is likely that the US
+will send Gabriel, Clinger and Mathis.  The UK will decide at the next
+meeting of IST/5 on December 15th.
+
+CQ presented a preliminary agenda for WG-16:
+.ip 1
+organisation and voting policy
+.ip 2
+the name of the standard (ref ANSI comments on NWI)
+.ip 3
+remarks on the ballot
+.ip 4
+method of standardisation (e.g. formal semantics, informal definition
+like CLtl)
+.ip 5
+work plan
+.lp
+The agenda (work schedule) for the WG must be fixed by the end of
+1988.
+
+The second ISO WG-16 meeting will probably be in Snowbird at the Lisp
+Conference.
+
+.sh 1 "Evaluation and status of European progress towards ISO Lisp"
+
+JC distributed the letter written by JC, GN, CQ and JP before the Fort
+Collins meeting which has been sent to a limited number of people on
+X3J13 (Gabriel, Clinger, Mathis, Steele, Fahlman, Masinter).  JC
+stressed that it was his belief that there is a danger of a loss of
+commercial credibility for Lisp if a draft standard was not ready by
+the end of 1988.
+
+HS pointed out that this suggested wholesale adoption of Common Lisp
+and that the letter invited that conclusion.
+
+GN summarised the spectrum reactions he was expecting to the letter as
+(i) no interest (ii) ANSI standardisation first, ISO later (iii) drop
+ANSI work, start ISO.  The unanimous reaction was (ii).  GN described
+the purpose of the letter to be to make progress on commonly
+understood issues such as function type (CL cleanup strict
+redefinition) and DYNAMIC-LET.  It was apparent that there was no
+common ground on modules.  The lack of common ground could arise
+from one of two possibilities: a lack of comprehension of the
+problem or a desire to take packages as a starting point.  This group
+is inclined to start afresh.  GN also noted that individuals in the
+X3J13 group have different opinions from the committee as a whole.
+
+JC again stated his belief in a need for an ISO standard for Lisp now,
+with the Eulisp work being a basis for an ISO standard for the 1990's.
+
+Various people remarked that there had been vigorous debate within
+their companies about whether projects should be done in Lisp or C and
+that the doubt surrounding the standardisation of Lisp often counted
+against it.  CQ pointed out that there has been a marked rise in the
+number of expert system shells available written in C.  DK referred to
+the need for portability in applications.  HS summarised that there
+can be no definitive conclusion to the Lisp versus C debate unless
+someone makes a move to standardise.
+
+Returning to the issue of timescale raised by JC, HS reminded the
+meeting that part of the point of the Eulisp 3 level structure was to
+permit us to define level-0 in one year.  On other hand the letter
+sent to selected members of X3J13 suggests something much close to a
+Common Lisp cleanup and takes Eulisp almost into the CL camp.
+Following such a route will very likely preclude for ever the
+development of a standard like that originally envisaged by the Eulisp
+committee.  HS pointed out further that rather than putting effort
+into the basis the letter is emphasising putting effort into
+peripheral issues.
+
+TC viewed the letter as stating a form of compromise, consistent with
+the spirit of ISO work, and queried whether the letter was really so
+supportive of CL as HS had interpreted it.
+
+JP stated that his view was that the letter expressed a relationship
+between CL and level-1 of Eulisp.  He personally objected to the list
+of special forms given on page 2, PROGV and MULTIPLE-VALUE-PROG1 in
+particular.
+
+There followed a general discussion on short and long term objectives
+which is summarised as follows.
+
+.ip Q1
+Where does the Eulisp proposal to ISO start?  Five options were
+discussed: from scratch, ANSI, CL (as defined in CLtl), Scheme and
+Eulisp (as proposed in the 1986 paper and developed since then).  The
+first four alternatives require work on Eulisp to stop.  The last
+option demands that the levels are fully specified, in particular the
+gap between level-1 and level-2 needs filling in, and that some
+implementations be developed.  The following motion was approved:
+.(b
+The Eulisp committee will propose to ISO WG-16 a 3 level standard
+comprising: level-0,1 based on the Eulisp efforts to date and level-2
+which is the extension of level-0,1 to be as close to ANSI Common Lisp
+as possible.
+
+We note that consistency between level-0, level-1 and level-2 is more
+important than individual technical issues.
+.)b
+
+.ip Q2
+Time scale of first ISO proposal?  Short term suggests something
+within about one year.  However JvK pointed out that it is important
+\fInot\fP to be specific about how long this will take because this
+can lead to rushed decisions.  Long term will correspond to the more
+sedate pace of the majority of ISO processes, that is about five to
+six years.
+
+.ip Q3
+What are the rules for ISO WG-16?  There was a general discussion
+about what topics are important to the Eulisp community, which
+countries are likely to attend WG-16 (France, United Kingdom,
+Netherlands, West Germany, Finland, Canada, Denmark, South Korea,
+United States, Japan), how the interests of Eulisp can be represented
+at ISO and the relationship of the Eulisp proposal to the statement in
+the NWI.
+
+.sh 1 "Technical Issues"
+
+.sh 2 Objects
+
+JC reported on the state of CLOS as of the Fort Collins meeting of
+X3J13 where Gregor Kiczales gave a presentation.  There are four new
+items in CLOS now:
+.ip 1
+Keyword parameters in method lambda lists
+.ip 2
+Initialisation protocol
+.ip 3
+Change in \fIwith-slots\fP (local binding of slot-names)
+.ip 4
+New functions \fIgeneric-flet\fP and \fIgeneric-labels\fP which have
+the same status as \fIflet\fP and \fIlabels\fP).
+
+PC went to the last CLOS meeting (held during OOPSLA-87) and
+talked about CQ's types and genericity proposal, RD's analysis of
+multiple inheritance and PC's ObjVLisp/meta-object protocol work.
+
+PC also reported on HP's experiments in CommonObjects on metaclass
+management and analysis of the number of arguments used in
+discrimination.  Apparently no examples were found which used more
+than two arguments.
+
+PC is discussing ObjVLisp with Kiczales with a view to encouraging
+minimalism.  The minimal architecture for CLOS contains
+standard-object (which is a subtype of T - the only relationship
+between the object system and CL's type mechanism - and is a member of
+standard-class) and standard-class (which is a member of itself and a
+subtype of standard-object).  Standard-class contains information
+about supers, subs, prototype, slots, all-slots, methods and the
+class-precedence list).
+
+The minimal architecture for ObjVLisp simply contains class, which is
+a member of itself and contains information about supers, methods and
+instance variables.  However, this forms a basis for describing CLOS.
+
+PC and CQ will work on types and genericity to make sure that the type
+system works with the object system in Eulisp.
+
+MB gave a presentation of the work at Delphi on the implementation of
+CLOS using the ObjVLisp model.  Under this scheme, standardmetaclass
+is an instance of class and standardobject is an instance of
+standardmetclass and both inherit from class.  
+
+DK asked about the current state of integration between CLOS and CL.
+JC remarked that it is currently difficult to gauge progress on the
+basis of activity on the CLOS mailing list.
+
+The meeting adjourned until 0900 on 871126.
+
+.sh 2 "Types & Genericity"
+
+CQ presented the latest version of the types and genericity proposal.
+It is addressing the issues of the management of common behaviours and
+representation of structures.  The full details of the proposal are
+given in Eulisp-87-004.  The philosophy of the mechanism is primarily
+simplicity, there being three type constructors (cartesian product,
+bounded repetition and sequence).  Other features are expressiveness:
+capable of precise and exportable representation; disjointness: every
+object has an unique type; minimality: sufficient to mimic CL; no type
+hierachy: see generics; type TYPE: immutable, indefinite extent;
+anonymous and inquireable: types are values.
+
+New to the scheme is the operation of dynamic-extent-allocation.  This
+idea will need quite a lot more work to uncover all the implications.
+An obvious restriction that this imposes is the use of range checking
+type schema.
+
+.sh 2 "Packages/Modules"
+
+DK reported on the difficulties being experienced in trying to write
+applications using packages at Siemens.  The hardest problem for
+beginners is name-conflict and the use of \fIshadow\fP, \fIunintern\fP
+and \fIshadowing-import\fP.  He showed various tricky examples to
+illustrate the problem.  He summarised with some recommendations for
+packages which would improve matters in the cases they had considered:
+shadow and shadowing-import should be removed and use only fully
+qualified names or when using imported packages, name conflicts should
+signal an error rather than silently interning somewhere else.
+
+Another deficiency with the package system was the lack of an
+operation to map over all the internal symbols (currently there exist
+do-exported-symbols and do-symbols).
+
+The style of application development at Siemens means that different
+people are working on different modules within an application.  At
+some point it is necessary to glue these modules (packages) together
+into one, but there are two problems: firstly, there may be name
+conflicts across the packages and secondly, exporting names from
+package-1 to package-2 does not make the names in package-1 visible in
+package-3 which is imports package-2 (that is, export is not
+transitive).  As a result he proposed two new package functions:
+
+.ce
+(transmit-package packages &optional package)
+
+and
+
+.ce
+(untransmit-package packages &optional package)
+
+A package structure will now need a transmit list (which is the
+composition of export with do-exported-symbols).  It was noted that
+adding an exported symbol to a transmitted package will cause it to be
+seen in the using package.
+
+.sh 2 Character Sets
+
+GN reported on the discussion on character sets at X3J13.  There is
+some debate as to where multi-octet character sets fit in a language.
+There is some work already in hand at the ISO level on this problem
+(note that there is already an ISO approved character encoding scheme
+for all the latin languages).  Another open question is how
+multi-octet character sets fit into a type system.  Apparently X3J3
+(FORTRAN) is also concerned about this issue.
+
+GN volunteered to find out more about the ISO draft standard on
+character sets.
+
+JC will circulate ISO standard on latin character sets.
+
+.sh 2 Macros
+
+JP talked about his initial investigation into macros and whether
+there really is an issue here or not.  JP is also on the X3J13 macro
+subcommittee.  There seems to be a fairly widely held belief that
+there is a macro problem (because of the yet further inconsistencies
+between interpreted and compiled code which can be introduced by
+macros) but little consensus on what the problem actually is.
+
+JP worked with Mark Wegman (IBM Yorktown - also X3J13 macro
+subcommittee) over the summer started by trying to classify macro
+usage and by trying out two mechanisms which have claimed to "solve"
+the macro problem (Bawden's scheme publicised on the scheme-request
+mailing list and Kohlbecker's scheme published in the Proceedings of
+the 1986 Lisp Conference).  Both of these mechanisms resolve the
+problem of inadvertent free variable capture.
+
+Some issues in macro expansion lie in the dependencies within a macro
+body, which come in two forms: structural - depend on the form of the
+argument and environmental - depend on information available in
+variable bindings extant at the moment of expansion.  Procedure
+integration offers a solution to some of these problems as well as
+having the advantage of removing the need to retain a consistent
+function and macro definition of the same operator.
+
+JPff pointed out that a deficiency in defining macro expansion to
+take place in a null environment is if one wishes to profile the
+macro, such as by counting the number of expansions or the number of
+executions.  GN remarked that these data could be provided by
+alternative means and were not necessarily the direct concern of the
+macro writer.
+
+WvdP offered to give a talk at the next meeting on some work on alpha
+conversion that has been done at Delft University.	
+
+.sh 2 Declaration/Scope
+
+DK discussed a mail item he sent out recently talking about the
+pervasiveness of special declarations and the resolution of free
+variable bindings in CL.  He gave the following example:
+.nf
+
+(defun foo (x)
+  (let ((y 3))
+       (declare (special y))
+       (fum x)))
+
+(defun fum (x) (+ x y z))
+
+(setq y 1)
+
+(setq z 2)
+
+(foo 5) -> 10
+
+.fi
+That is, although CL is a more lexical dialect of Lisp than some
+before it, some arcana has been retained.  If CL is lexically scoped
+then (foo 5) should deliver 8 by default.  The problem lies in the
+absence of a special declaration at the reference site of the
+variable.  This is not necessary according to CLtl but thus engenders
+the behaviour above.  The Siemens group have come out in favour of the
+notation put forward in Eulisp, namely the dynamic-let construct, in
+conjunction with which they would like accessors: global-ref,
+dynamic-ref, lexical-ref and constant-ref.  They also referred to the
+problem of multi-processing and shallow versus deep binding which has
+not been addressed at all in CLtl.
+
+.sh 1 "Future Meetings"
+
+It was agreed to hold the next meeting in Brussels on 3rd/4th February
+starting at 1000.  Papers for distribution for the next meeting must
+be with Odile Chenetier (chenetier@inria.inria.fr) at least one week
+before the meeting.  Address for physical mail:
+.nf
+.(b
+Odile Chenetier
+ILOG
+2 Avenue Gallieni
+94250 Gentilly
+
+Tel: +33(1)46-63-66-66
+.)b
+.fi
+
+The meeting closed at 1630.
+
+.sh 1 "Documents"
+
+.ip Eulisp-87-004
+Types and Genericity for Schisp.
+
+--
+From:  willc%tekchips.CRL@tektronix.tek.com
+Date:  01 Mar 88 15:04:15 PST (Tue)
+In-Reply-To:  Your message of 28 Feb 1988 12:17-EST.
+Subject:  Re: Scheme liaison
+Cc:  willc@tekchips.crl.tek.com, rpg@SAIL.STANFORD.EDU, 
+To:  MATHIS@A.ISI.EDU
+Message-Id:  <8803012304.AA15530@tekchips.CRL.TEK.COM>
+Received:  by tekchips.CRL.TEK.COM (5.51/6.24)
+
+    Date: 28 Feb 1988 12:17-EST
+    Sender: MATHIS@a.isi.edu
+    Subject: Scheme liaison
+    From: MATHIS@a.isi.edu
+    To: willc%tekchips.tek.com@relay.cs.net
+    Cc: rpg@sail.stanford.edu
+    Message-Id: <[A.ISI.EDU]28-Feb-88 12:17:22.MATHIS>
+
+    Will,
+
+    Could you give a brief report at the next X3J13 meeting on any
+    possible liaison between the Common Lisp committee (x3j13) and
+    the scheme committee (under IEEE maybe).  If you don't consider
+    yourself appropriate, how about David Bartley.
+
+    I think it is better to let some of you set the tone you want
+    rather than it come up in the background and look like maybe you
+    were trying to do something hidden.
+
+    -- Bob
+
+I consider myself inappropriate because I probably won't be there.
+I think David Bartley would be an excellent person to do this.
+I agree that it is now appropriate to let X3J13 as a whole know what
+is going on, since the Scheme community seems to have arrived at a
+consensus that the issue of formal standardization must at least
+be addressed squarely.  I think what's going on with Scheme fits in
+well with two of the major points made by the U.S. at WG-16:  (1)
+Lisp is a family of languages; and (2) design and standardization
+are distinct activities.  It might therefore fit into the agenda
+following Dick's report on the first WG-16 meeting.
+
+While I will probably not go to Palo Alto, Semantic Microsystems may
+well wish to designate someone who will be there as its representative
+for this meeting.  If so, I will soon let you know by electronic mail.
+
+Peace, Will
+
+--
+From:  David Bartley <bartley@mips.csc.ti.com>
+Subject:  Scheme liaison
+In-Reply-To:  willc%tekchips.CRL@tektronix.tek.com's message of 01 Mar 88 15:04:15 PST (Tue) <8803012304.AA15530@tekchips.CRL.TEK.COM>
+Cc:  MATHIS@A.ISI.EDU, rpg@SAIL.STANFORD.EDU, bartley@mips.csc.ti.com
+To:  willc%tekchips.CRL@tektronix.tek.com
+Message-Id:  <8803041937.AA13857@mips>
+Date:  Fri, 4 Mar 88 13:37:33 CST
+Received:  by mips id AA13857; Fri, 4 Mar 88 13:37:33 CST
+
+    From: willc%tekchips.CRL@tektronix.tek.com
+
+	    From: MATHIS@a.isi.edu
+
+	    Will,
+
+	    Could you give a brief report at the next X3J13 meeting on any
+	    possible liaison between the Common Lisp committee (x3j13) and
+	    the scheme committee (under IEEE maybe).  If you don't consider
+	    yourself appropriate, how about David Bartley.
+
+	    I think it is better to let some of you set the tone you want
+	    rather than it come up in the background and look like maybe you
+	    were trying to do something hidden.
+
+	    -- Bob
+
+    I consider myself inappropriate because I probably won't be there.
+    I think David Bartley would be an excellent person to do this.
+    I agree that it is now appropriate to let X3J13 as a whole know what
+    is going on, since the Scheme community seems to have arrived at a
+    consensus that the issue of formal standardization must at least
+    be addressed squarely.  I think what's going on with Scheme fits in
+    well with two of the major points made by the U.S. at WG-16:  (1)
+    Lisp is a family of languages; and (2) design and standardization
+    are distinct activities.  It might therefore fit into the agenda
+    following Dick's report on the first WG-16 meeting.
+
+I'll volunteer to speak on this subject if Will is unable to attend.
+- --db--
+
+--
+From:  MATHIS@A.ISI.EDU
+In-Reply-To:  <8803041937.AA13857@mips>
+Message-ID:  <[A.ISI.EDU] 6-Mar-88 20:21:37.MATHIS>
+Cc:  rpg@SAIL.STANFORD.EDU
+To:  bartley%mips.csc.ti.com@RELAY.CS.NET
+Subject:  Re: Scheme liaison
+Sender:  MATHIS@A.ISI.EDU
+Date:  6 Mar 1988 20:21-EST
+Received:  from A.ISI.EDU by SAIL.Stanford.EDU with TCP; 6 Mar 88  17:26:38 PST
+
+Thanks, I sent the message to Will first since he and I had
+talked about the IEEE and Scheme issue.  Very glad to have you
+explain things to X3J13.  -- Bob
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  RE: Your Concerns  
+To:  RPG@sail.stanford.edu, CHAPMAN%aitg.DEC@decwrl.dec.com
+Message-Id:  <8803071550.AA23729@decwrl.dec.com>
+Date:  Mon, 7 Mar 88 07:50:34 PST
+Received:  by decwrl.dec.com (5.54.4/4.7.34)
+
+
+ 
+>In order to get a draft for this language in 18 months requires the ANSI
+>draft in 12 months. There is a good possibility that the ISO process will
+>break down and they will accept Common Lisp as it is.  It is up to X3J13
+>to decide whether to work with the ISO folks or ignore them.  We will not
+>know that until the meeting next week.
+
+
+What I understand you to be saying is that we (ANSI) are
+hoping that ISO will not be able to produce a standard in 18 months,
+so the ANSI standard will be the ISO standard. 
+
+If that's what you are saying, I see three possible outcomes:
+
+1. ISO will accept ANSI.
+
+2. ISO won't have a standard ready, but won't accept ANSI.
+
+3. ISO will have a standard ready, different from ANSI.
+
+If either 2 or 3 happens, vendors who sell to international as well
+as US customers will be required to 
+
+1. Maintain two versions of Lisp.
+
+2. Choose one of the standards and implement that one.
+
+3. Bring industry pressure to ANSI or ISO to make the standards look
+alike.
+
+If Common Lisp and ISLISP are very different, there is no sense in having
+X3J13 and ISO work together. Afterall, we aren't working with Ada or PL/1.
+In that case, vendors would just choose option 1.
+
+However, it sounds more like X3J13 is working towards something that would
+make option 3 a possibility, and would therefore leave vendors in limbo
+until something is resolved.
+
+I'm sorry I can't be convinced that what I am doing won't end up being a
+waste of time and money. Certainly the thought put into cleaning up the
+language (represented by all the various X3J13 sub-committees) won't be
+wasted, but actually formally specifying Common Lisp as we know it has
+the potential of being an interesting exercise.
+
+Having not been in Paris, I can't really make any suggestions that make
+sense. That is why I asked Bob for the names of the people who appeared
+to be the decision-makers at the meeting, so I could get a sense of what's
+going on. Do you have any suggestions as to how I can sort this out for
+my management?
+
+
+Did Will C. go to the meeting?
+
+kc
+
+--
+From:  MATHIS@A.ISI.EDU
+Message-ID:  <[A.ISI.EDU] 3-Mar-88 20:39:08.MATHIS>
+To:  rpg@SAIL.STANFORD.EDU
+Subject:  [MATHIS@A.ISI.EDU: Re: what does this mean]
+Sender:  MATHIS@A.ISI.EDU
+Date:  3 Mar 1988 20:39-EST
+Received:  from A.ISI.EDU by SAIL.Stanford.EDU with TCP; 3 Mar 88  17:39:10 PST
+
+
+	
+Begin forwarded messages
+Received: from decwrl.dec.com by A.ISI.EDU with TCP; Wed 2 Mar 88 23:16:03-EST
+          by decwrl.dec.com (5.54.4/4.7.34)
+          id AA17443; Wed, 2 Mar 88 20:15:26 PST
+Date: Wed, 2 Mar 88 20:15:26 PST
+From: chapman%aitg.DEC@decwrl.dec.com
+To: mathis@a.isi.edu
+Subject: what does this mean
+Return-Path: <chapman%aitg.DEC@decwrl.dec.com>
+Message-ID: <8803030415.AA17443@decwrl.dec.com>
+
+
+>The working group decided "The draft standard to be provided by
+>the Working Group within 18 months will take as starting point
+
+Does this mean I should stop writing now? Who is writing this
+document that will be done in 18 months?
+
+>There is considerable hope in both X3J13 and this ISO working
+>group that the results of their work match exactly (this will
+>require close cooperation).
+
+There will be more than hope needed here, maybe a miracle?
+
+
+Please let me know ASAP what is going on. If you have already informed
+Gary Robinson, let me know and I will get in touch with him. Otherwise,
+I will pass on the information you give me to him. I'm sure you under-
+stand my and DEC's concern surrounding the formulation of two separate
+standard documents (i.e. one will get trashed).
+
+Thanks for your time.
+kc
+
+          --------------------
+Received: By A.ISI.EDU via direct-append with Hermes; 3 Mar 88 20:37:31-EST
+Date: 3 Mar 1988 20:37-EST
+From: MATHIS@A.ISI.EDU
+To: chapman%aitg.DEC@DECWRL.DEC.COM
+Cc: Mathis@A.ISI.EDU
+Subject: Re: what does this mean
+In-Reply-To: <8803030415.AA17443@decwrl.dec.com>
+Message-ID: <[A.ISI.EDU] 3-Mar-88 20:37:30.MATHIS>
+Sender: MATHIS@A.ISI.EDU
+
+Kathy,
+
+Dick Gabriel and I were going to talk to you about this in
+private.  It is our hope that the X3J13 draft which you are doing
+will become the ISO standard as well.  We are however very
+sensitive to European concerns in this area and are giving them
+some time to talk themselves into it.
+
+We are in every way very appreciative of what you and DEC are
+doing and want it to continue.
+
+- -- Bob
+
+          --------------------
+End forwarded messages
+
+--
+From: RPG
+Subject: (no subject)
+Date: 07 Mar 1988 08:25 EST
+
+"chapman%aitg.DEC"@decwrl.dec.com/su
+Your Concerns
+
+Kathy, Bob forwarded to me the message with your concerns; I hope you
+don't mind. Let me try to explain a little about what was done in
+Paris, which I think will allay your fears a bit.
+
+What I tried to accomplish was to create a situation in which the X3J13
+work could contijnue and that it would be proper and reasonable for there
+to be an ANSI Common Lisp, separate and distinguishable from the ISO
+language. To do this requires that the name of the ISO language be different
+and the language be different.
+
+The name of the ISO language is ISLISP, which is a stupid name and which
+cannot be reasonably nicknamed ``ISO Lisp'' or ``Lisp.'' We fought for nearly
+an entire day to stop it from being named any of these:
+
+	ISO Lisp
+	ISO Lisp 89 (or 90 ...)
+	Lisp
+	Lisp 89 (or 90 ...)
+	International Standard Lisp
+	ISO Common Lisp
+
+ISLISP will be a different language from Common Lisp. It might not have
+packages, it will have very restricted keyword arguments, it will possibly
+have a different type structure, it might not have multiple values, it
+won't have CLOS or the error handler. Therefore, it is a different language.
+There is an ISO rule that prevents ANSI from working on a language when
+ISO is working on it; that rule does not apply to Common Lisp.
+
+In order to get a draft for this language in 18 months requires the ANSI
+draft in 12 months. There is a good possibility that the ISO process will
+break down and they will accept Common Lisp as it is.  It is up to X3J13
+to decide whether to work with the ISO folks or ignore them.  We will not
+know that until the meeting next week.
+
+			-rpg-
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  RE: Your Concerns  
+To:  RPG@sail.stanford.edu, CHAPMAN%aitg.DEC@decwrl.dec.com
+Message-Id:  <8803071550.AA23729@decwrl.dec.com>
+Date:  Mon, 7 Mar 88 07:50:34 PST
+Received:  by decwrl.dec.com (5.54.4/4.7.34)
+
+
+ 
+>In order to get a draft for this language in 18 months requires the ANSI
+>draft in 12 months. There is a good possibility that the ISO process will
+>break down and they will accept Common Lisp as it is.  It is up to X3J13
+>to decide whether to work with the ISO folks or ignore them.  We will not
+>know that until the meeting next week.
+
+
+What I understand you to be saying is that we (ANSI) are
+hoping that ISO will not be able to produce a standard in 18 months,
+so the ANSI standard will be the ISO standard. 
+
+If that's what you are saying, I see three possible outcomes:
+
+1. ISO will accept ANSI.
+
+2. ISO won't have a standard ready, but won't accept ANSI.
+
+3. ISO will have a standard ready, different from ANSI.
+
+If either 2 or 3 happens, vendors who sell to international as well
+as US customers will be required to 
+
+1. Maintain two versions of Lisp.
+
+2. Choose one of the standards and implement that one.
+
+3. Bring industry pressure to ANSI or ISO to make the standards look
+alike.
+
+If Common Lisp and ISLISP are very different, there is no sense in having
+X3J13 and ISO work together. Afterall, we aren't working with Ada or PL/1.
+In that case, vendors would just choose option 1.
+
+However, it sounds more like X3J13 is working towards something that would
+make option 3 a possibility, and would therefore leave vendors in limbo
+until something is resolved.
+
+I'm sorry I can't be convinced that what I am doing won't end up being a
+waste of time and money. Certainly the thought put into cleaning up the
+language (represented by all the various X3J13 sub-committees) won't be
+wasted, but actually formally specifying Common Lisp as we know it has
+the potential of being an interesting exercise.
+
+Having not been in Paris, I can't really make any suggestions that make
+sense. That is why I asked Bob for the names of the people who appeared
+to be the decision-makers at the meeting, so I could get a sense of what's
+going on. Do you have any suggestions as to how I can sort this out for
+my management?
+
+
+Did Will C. go to the meeting?
+
+kc
+
+--
+From: RPG
+Subject: (no subject)
+Date: 07 Mar 1988 08:25 EST
+
+"chapman%aitg.DEC"@decwrl.dec.com/su
+More
+
+Your conclusions about what I meant are not entirely correct. There
+are two likely outcomes: 
+
+1. ISO breaks down and ANSI Common Lisp becomes ISLISP
+
+2. ISO doesn't break down and the ANSI document becomes the
+basis of the ISO document.
+
+A third possibility is that X3J13 adopts some of the changes made by ISO
+and the two Lisps become the same.
+
+One thing to consider, which didn't come out in my message, is that the
+eventuality in which vendors must adopt ISLISP will happen (if it ever does)
+5 years after the draft standard from ISO. That is, in 6.5 years. I think we
+need not worry yet.
+
+Who are the decisions makers? Well, you're conversing with the most
+influential of the delegates. I didn't plan it or expect it to be this
+way, but I was the most listened-to delegate, and the way the US voted
+determined how the rest of the voting went. ISLISP was proposed by someone
+before the first ballot (I did not propose it). After the first round
+there were about 9 votes for International Standard Lisp and 1 for ISLISP
+(the US vote) and 1 for Common Lisp (Switzerland). After the second round
+it was 9 for ISLISP, 1 for International Standard Lisp, and 1 for Common Lisp.
+
+The worst thing that could happen to the whole process is if you stop working
+on the draft. In that event X3J13 will never do anything - unless it adopts
+the second edition of the Steele book - and the US will be obligated to
+produce the draft for ISLISP under direction from the ISO working group.
+This will guarantee that the US vendors will need to change their Lisp in
+a few years, and it will guarantee that Common Lisp cannot be used for
+DoD work in the interim.
+
+The ISO process can be delayed almost indefinitely if things go bad for us.
+You should not worry too much about the rhetoric you hear. Common Lisp will
+not be screwed, your work will not go for nought, ISLISP will not amount to
+anything in under 5 years. Unless the US wants to change those things, and
+we will not know what the US wants until next week at the earliest, and
+even then I don't expect to know what the US will do until the summer.
+
+I cannot guarantee any of this, and all my statements are probabilities,
+but I now feel confident that the US can dominate the ISO process if we want
+to do that. This means we control our own destiny.
+
+Do you think you should stop working until then?
+
+			-rpg-
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  RE: More 
+To:  RPG@sail.stanford.edu, CHAPMAN%aitg.DEC@decwrl.dec.com
+Message-Id:  <8803071625.AA25698@decwrl.dec.com>
+Date:  Mon, 7 Mar 88 08:25:51 PST
+Received:  by decwrl.dec.com (5.54.4/4.7.34)
+
+Three questions:
+
+1. If we control our own destiny, why don't we direct ISO to adopt
+the ANSI standard?
+
+2. Who is in charge of writing the ISO standard? Was that decided
+at the meeting?
+
+3. When is the next ISO meeting?
+
+
+kc
+
+--
+From: RPG
+Subject: (no subject)
+Date: 07 Mar 1988 08:38 EST
+
+"chapman%aitg.DEC"@decwrl.dec.com/su 
+Control
+
+Ah, interesting question, and the fact you ask it explains to me
+your concerns. Control is different from authority. I don't have the
+authority to make ISO adopt Common Lisp, but I think the US has the
+control via influence to direct ISO towards that goal if we wish.
+
+Three years ago the Europeans decided to make ISO use EuLisp. I started
+to stop them from doing that. This involved discussions, negotiations,
+travel to Europe, and the same on the US side. The whole Lisp1/Lisp2 thing
+was aimed at that, getting CLOS off the ground was part of it.
+
+Did it work? EuLisp was dropped from consideration. ISO has as its charter
+the process of starting with Common Lisp and modifying it slightly. This
+is counter to the goals of the Europeans. Is it not the case I controlled
+the process, since my direct actions with them caused them to believe that
+CL could change, that CL was powerful?
+
+I think that with one more year of the same sort of influence we can get
+mostly what we want to get, possibly with some compromises.  Constant
+gentle pressure is much more effective than one sudden jolt.
+
+Who is in charge of the draft? The US is in charge of doing that. Currently
+that is Will Clinger and me. We expect that we will act as true editors with
+you doing the bulk of the work in the form of the ANSI draft, and we will
+make the modifications (if it comes to that). If Will and I drop out
+(possible, but not likely), the US must volunteer someone else - the
+responsibility is by country not by individual. What would make Will and
+me quit? If you stop working that might. If X3J13 does not commit to
+a draft by this time next year. These are the tools the US needs to
+keep the pressure up.
+
+The next meeting is at Snowbird right after the Lisp conference this
+summer.
+
+			-rpg-
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  RE: Control   
+To:  RPG@sail.stanford.edu, CHAPMAN%aitg.DEC@decwrl.dec.com
+Message-Id:  <8803071649.AA26741@decwrl.dec.com>
+Date:  Mon, 7 Mar 88 08:49:08 PST
+Received:  by decwrl.dec.com (5.54.4/4.7.34)
+
+>Ah, interesting question, and the fact you ask it explains to me
+>your concerns. Control is different from authority. I don't have the
+>authority to make ISO adopt Common Lisp, but I think the US has the
+>control via influence to direct ISO towards that goal if we wish.
+
+Two more questions:
+
+1. Since the US, via you and Will, have the control to influence ISO
+and to direct it towards a goal, can you give me an outline of the
+goal you have in mind?
+ 
+2. Did Will attend the ISO meeting? Is he dropping out of the Lisp
+community because of Scheme's effort towards standarization?
+
+kc
+
+"chapman%aitg.DEC"@decwrl.dec.com/su
+The Future
+
+I have no goal in mind with respect to what the US should be doing at ISO
+nor for what ISO should be doing. My opinion is that Common Lisp should
+serve as a standard for another 5 years or so, and that some better
+standard should be set in 5 - 7 years. However, I do not wish to push this
+goal. My role is to act as the US representative, and I think I have
+elbowed out plenty of room for the US at the last ISO meeting.  In fact, I
+believe that I am acting like a classic diplomat who is skilled at getting
+things done but who can only follow orders and give advice as to what will
+work.
+
+Will went to the ISO meeting and was very helpful. He might not continue, but
+I don't know. It is because his interests are in Scheme that he might
+quit, but I think he enjoyed the battle.
+
+			-rpg-
+
+--
+From:  Skona Brittain <skona%csilvax@hub.ucsb.edu>
+Subject:  mail
+To:  RPG@SAIL.Stanford.edu
+Posted-Date:  Fri, 1 Apr 88 18:27:57 PST
+Date:  Fri, 1 Apr 88 18:27:57 PST
+Received:  from  by csilvax.ucsb.CSNET (5.51) id AA10860; Fri, 1 Apr 88 18:27:57 PST
+
+Larry said that you said that my mail address wasn't working anymore
+and that I should send you confirmation of my address.
+  
+It had been working, since I'd gotten some cleanup mail and some general 
+mail as of a week ago, but the only thing I've gotten since then is an
+editorial committee letter, so I don't know.  Maybe nothing else has been
+sent, hard as it is to imagine such silence from such a vocal and verbose
+committee as the cleanup committee.  Has any of my mail gotten returned?  
+
+As far as I can tell, my address is, and was, skona%csilvax@hub.ucsb.edu, 
+but maybe you can tell further from the return address on this message.
+
+"skona%csilvax"@hub.ucsb.edu/su
+Mail
+
+I started getting mail bounced from csilvax saying that you were unknown.
+I commented out your address until Larry could get in touch. If you get this,
+I will set things aright with your acknowledgement. Sometimes computers running
+Unix don't understand why they aren't working and say silly things.
+
+			-rpg-
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  two things
+To:  rpg@sail.stanford.edu, CHAPMAN%aitg.DEC@decwrl.dec.com
+Message-Id:  <8804012030.AA01764@decwrl.dec.com>
+Date:  Fri, 1 Apr 88 12:30:11 PST
+Received:  by decwrl.dec.com (5.54.4/4.7.34)
+
+Dick,
+
+How do I change the names on the cl-editorial mailing list? Should I send
+you a list, or can you give me directions so I can change it myself?
+
+A group of us at DEC would like to volunteer to work on one or both of
+the following ISO issues: Character sets and types. What is the procedure
+for doing this?
+
+kc
+
+"CHAPMAN%aitg.DEC"@decwrl.dec.com/su
+Mailing List
+
+Here who is on the list now. The funny syntax is to speed up
+our mailer:
+
+rpg
+"willc%tekchips.tek.com"@RELAY.CS.NET
+Kiczales.pa@xerox.com
+Masinter.pa@xerox.com
+"uwmcsd1!marque!maxiv"@UNIX2.MACC.WISC.EDU
+Rosenking@a.isi.edu
+"skona%csilvax"@hub.ucsb.edu
+SKeene@SCRC-Stony-Brook.arpa
+mathis@c.isi.edu
+Ohlander@VENERA.ISI.EDU
+KMP@SCRC-Stony-Brook.arpa
+jar@ai.ai.mit.edu
+gls@THINK.com
+vanroggen@hudson.dec.com
+"chapman%aitg.DEC"@decwrl.dec.com
+#cledit.msg[com,lsp]
+
+The last entry is the archives. To change people, you mail to
+cl-editorial-request@sail.stanford.edu.
+
+I will volunteer you at ISO.
+
+Please mail me your current chapter on evaluation model for Steele and
+I to rewrite. Thanks.
+			-rpg-
+ ∂03-Apr-88  1511	@Score.Stanford.EDU:nilsson@Tenaya.stanford.edu 	[AS.BTH@forsythe.stanford.edu: Funding Announcements]   
+Received: from Score.Stanford.EDU by SAIL.Stanford.EDU with TCP; 3 Apr 88  15:11:51 PDT
+Received: from Tenaya.stanford.edu by SCORE.STANFORD.EDU with TCP; Sun 3 Apr 88 14:05:15-PST
+Received: by Tenaya.stanford.edu (4.0/SMI-DDN)
+	id AA18846; Sun, 3 Apr 88 15:08:59 PDT
+Date: Sun, 3 Apr 88 15:08:59 PDT
+From: nilsson@Tenaya.stanford.edu (Nils Nilsson)
+Message-Id: <8804032208.AA18846@Tenaya.stanford.edu>
+To: faculty@score
+Subject: [AS.BTH@forsythe.stanford.edu: Funding Announcements]
+
+fyi:
+- -----
+
+
+Return-Path: <@Score.stanford.edu:AS.BTH@forsythe.stanford.edu>
+Date: Mon, 28 Mar 88 14:52:05 PST
+From: <AS.BTH@forsythe.stanford.edu>
+To: nilsson@score.stanford.edu
+Subject: Funding Announcements
+
+
+                                           Date:  March 28, 1988
+
+To:       Distribution
+
+From:     Bonnie Hale, SPO
+
+Subject:  Funding Opportunities
+
+
+The following funding announcements have recently been received in
+the Sponsored Projects Office.  We are sending you a copy of those
+items relevant to Engineering.  Please post and distribute this
+information in your departments, in case the announcements were not
+seen in our Campus Report column.
+
+
+US Army Research Office Short Term Innovative Research Program-1988
+
+Innovative ideas in basic research are sought.  Proposed research
+which describes continuing efforts or natural, obvious outgrowths of
+experimental or theoretical explorations must be completed within
+six months of award of contract.  Approx. 50 contracts each in the
+amount of $20,000 or less will be awarded.  Proposals will be
+considered in the following areas: Biosciences; Chemistry;
+Electronics; Engineering; Geosciences; Materials; Mathematics;
+Physics.
+
+
+National Science Foundation Japan Initiative
+
+In an effort to increase the number of U.S. researchers doing work
+in Japan, the National Science Foundation (NSF) began implementing
+its "Japan Initiative" in 1988.
+
+The goals of the Initiative will be accomplished several ways:  1)
+NSF will provide funds for scientists and engineers to undertake
+long-term research stays (6-15 months) in Japan; 2) Provide
+fellowships for scientists and engineers at the graduate,
+post-graduate, and senior levels to study the Japanese language;
+help develop better curricula and course materials for teaching
+Japanese to such students; 3) Identify and secure opportunities for
+American researchers at Japanese research institutes, including
+corporate facilities; and 4) Fund survey teams to visit Japan, to
+report on the state of the art in specific disciplines, with an
+emphasis on opportunities offered in Japan for U.S.  researchers to
+advance their work.
+
+The 1988 budget for all four parts of the program is $800,000.
+The initial application deadline is May 15, 1988.
+
+
+NSF Emerging Technology Research Initiative
+
+The National Science Foundation's Division of Emerging Engineering
+Technologies has announced the Emerging Technology Research
+Initiative, to cultivate multidisciplinary research on selected
+emerging technologies with funding levels per research group of
+about $200,000 per year for up to three years.
+  Micromechanical Engineering--Research is needed to develop an
+engineering science base for the design, analysis, fabrication, and
+operation of devices typically less than 1 cubic millimeter in size.
+Current research interests include: phenomena, materials,
+characterization, modelling, systems, devices, and fabrication.
+Proposals will be due by May 1, 1988.
+
+
+DOD Defense University Research Instrumentation Program FY88
+
+This program provides funds for the acquisition of research
+equipment.  Congressional authorization and appropriation provided a
+one-time extension of this program at a level of $25 million for
+FY88.  These funds will be awarded via grants through the Army
+Research Office (ARO), the Office of Naval Research (ONR), the Air
+Force Office of Scientific Research (AFOSR), and the Defense
+Advanced Research Projects Agency (DARPA).  This has been an
+extremely competitive program.  Universities submitted about 5,900
+proposals between FY83 and FY87 and 1,065 awards were made.
+
+Proposals are sought for instrumentation in the $50,000 to
+$1,000,000 range.  Past awards have averaged $135,000; few proposals
+above $500,000 were funded.  For detailed information regarding
+research areas of interest to the DoD, contact SPO at the number
+above.  Proposals must be received not later than 5:00 pm, May 31,
+1988.
+
+
+Distribution:
+
+Department Chairs:
+Department        Name                  EM Address
+Aero/Astro     Prof. Cannon            Cannon@Sierra
+Chemical       Prof. Homsy             Homsy@Sierra
+Civil          Prof. Shah              Shah@Sierra
+Computer Sci.  Prof. Nilsson           Nilsson@Score
+Electrical     Prof. Goodman           Goodman@Sierra
+Engineering/
+Economic Sys.  Prof. Luenberger        Luenberger@Sierra
+Industrial     Prof. Hausman           Hausman@Sierra
+Materials Sci. Prof. Hagstrom          Hagstrom@Sierra
+Mechanical     Prof. Kruger            Kruger@Sierra
+Operations Res.Prof. Iglehart          Inglehart@Sierra
+
+Administrators:
+Department        Name                  EM Address
+Aero/Astro     Robert Diskin            NB.RDD
+Computer Sci.  Betty Scott              B.Scott@Score
+Electrical     Joe Jezukewicz           Jezukewicz@Sierra
+               Patti McCabe             AS.PMC
+Materials Sci. Jay Cross                HF.JJC
+Research Admin.Keith Chinn(Aero/Astro)  AS.KCC
+               Albert Cuisinot          NA.AMC
+               (Chemical, Engineering/
+               Economic Sys., Industrial,
+               Materials Science)
+               Kay Mahon (Mechanical)   HF.KXM
+               Rita Kuhn (Civil)        HF.RRK
+               Kay Walker               NA.KHW
+
+To:  LEVINTHAL@SIERRA
+cc:  CANNON@SIERRA, HOMSY@SIERRA, SHAH@SIERRA, NILSSON@SCORE,
+     GOODMAN@SIERRA, LUENBERGER@SIERRA, HAUSMAN@SIERRA, HAGSTROM@SIERRA,
+     KRUGER@SIERRA, INGLEHART@SIERRA, NB.RDD, B.SCOTT@SCORE,
+     JEZUKEWICZ@SIERRA, AS.PMC, HF.JJC, AS.KCC, NA.AMC, HF.KXM, HF.RRK,
+     NA.KHW, AS.CFB, AS.NON
+
+--
+From:  Chris Richardson <mcvax!harlqn.co.uk!chris@uunet.UU.NET>
+Subject:  X3J13
+Sender:  mcvax!harlqn.co.uk!chris@uunet.UU.NET
+Cc:  x3j13-request@sail.stanford.edu
+To:  mathis@a.isi.edu
+Message-Id:  <8806020837.AA06077@jung.harlqn.uucp>
+Date:  Thu, 2 Jun 88 09:37:30 BST
+Received:  by jung.harlqn.uucp (3.2/SMI-3.2)
+Via:   harlqn; 2 Jun 88 9:40 BST  (UK.AC.Cam.Cl.gnnt)
+
+
+Thankyou for your letter regarding X3j13.
+
+We would very much like to remain on the distribution list.
+
+I have been trying unsuccessfully for some months to find out more
+about the various subcommittees of x3j13 and I would be most grateful if 
+someone could mail me the relevant information.
+
+Thanks
+
+- -------------------------------------------------------------------------------
+chris richardson
+
+Email:	chris@harlqn.uucp, chris@uk.co.harlqn, ukc!harlqn!chris
+
+Post:	Harlequin Ltd, Barrington Hall, Barrington, Cambridge, CB2 5RG, England
+
+Phone:	0223 872522 (National),  +44-223-872522 (International)
+- -------------------------------------------------------------------------------
+
+"mcvax!harlqn.co.uk!chris"@uunet.UU.NET/su
+X3J13
+
+The subcommittees that are active as these:
+
+1. CLOS. The work on chapters 1 and 2 of the specification is nearly done.
+Chapter 3 is further behind, and the plan is for Chapter 3 to include only
+minimal meta-object stuff, with the hard parts saved for a Chapter 4 at
+least a year away. Bobrow.pa@xerox is chairman,
+common-lisp-object-system@sail is the list.
+
+2. Cleanup. Part way through a long list of alterations to CL. 
+Masinter.pa@xerox is the chairman and cl-cleanup@sail is the list.
+
+3. Error handling. Mostly agreed on a proposal by Pitman.
+KMP@stony-brook.scrc.symbolics.com is the chairman and
+cl-error-handling@sail is the list.
+
+4. International character sets. Not far along, but a proposal is in hand.
+Thom Linden (Baggins@ibm.com) is chairman, cl-characters@sail is the list.
+
+5. Editorial. Part way through very rough draft of standard. Kathy Chapman
+(chapman%aitg.DEC@decwrl.dec.com) is chairwoman, cl-editorial@sail is
+the list.
+
+6. Iteration. Several proposals, all optional at this point, in hand.
+Jonl White (jonl@lucid.com) is chairman, I don't know what the list is.
+
+7. Compiler semantics. No results to date. Steve Haflich is chairman
+smh%franz.uucp@berkeley.edu. cl-compiler@sail is the list.
+
+			-rpg-
+
+--
+From:  ihnp4!anvil!es!Paul_Green_office@ucbvax.Berkeley.EDU
+To:  x3j13-request@sail.stanford.edu
+Message-Id:  <8806022132.238001087808@es.office>
+Subject:  X3J13 Membership
+Date:  Thu,  2 Jun 88 17:32:48 EDT
+Received:  by es with OFFICE id 238001087808; Thu,  2 Jun 88 17:32:48 EDT
+
+
+
+
+
+Robert,
+
+I requested observer status on X3J13 from CBEMA some time ago.
+We are observers on many X3J* committees and we gladly pay the
+$100 yearly fee for this privilege.  We have been receiving
+X3J13 mailings for some time so I thought that my status was all
+set.  I consider the yearly mailing from CBEMA to be the
+definitive test for whether I'm an observer or not; I'm
+disappointed that you feel it necesary to establish a second
+test.
+
+I do not have a preference over physical mail versus electronic
+mail; however, I'd like to point out that the electronic mail
+also has a significant cost.  It just doesn't come out of your
+budget the same way that the postage does.
+
+If you would like to move me from the physical mailing list to
+the electronic mailing list, my electronic mailing address is:
+
+     ucbvax!ihnp4!anvil!es!Paul_Green
+or   harvard!anvil!es!Paul_Green
+
+If you receive this letter, would you kindly send me a reply so
+that I know you have received it.
+
+Thanks.
+
+     Paul Green
+     Stratus Computer Inc.
+     55 Fairbanks Blvd
+     Marlboro, MA  01752
+     (617) 460-2557
+     (508) 460-2557 after 7/16/88
+     harvard!anvil!es!Paul_Green
+
+--
+From:  MATHIS@A.ISI.EDU
+In-Reply-To:  The message of 03 Jun 88  0819 PDT from Dick Gabriel <RPG@SAIL.Stanford.EDU>
+Message-ID:  <[A.ISI.EDU] 4-Jun-88 10:52:54.MATHIS>
+Cc:  Mathis@A.ISI.EDU
+To:  RPG@SAIL.STANFORD.EDU
+Subject:  Re: X3J13 Membership    
+Sender:  MATHIS@A.ISI.EDU
+Date:  4 Jun 1988 10:52-EDT
+Received:  from A.ISI.EDU by SAIL.Stanford.EDU with TCP; 4 Jun 88  07:53:13 PDT
+
+Paul,
+
+There are over 175 people on the physical mailing list of X3J13.
+And there is always some confusion about who has paid (even DEC's
+account got confused).  If yoyu paid x3 ther is no danger of
+dropping you from the list and since you replied there is no
+danger either.
+
+ps.  x3 does not show you as having paid a service fee for x3j13,
+I'll check it out with them again since you have called it to my
+attention.
+
+- -- Bob
+
+--
+From:  <sail.stanford.edu!To:x3j13-request>
+Subject:  Please add me to the mailing list
+To:  x3j13-request@sail.stanford.edu
+Date:  Fri, 3 Jun 88 17:12:30 EDT
+Message-Id:  <8806052043.AA28199@hqda-ai.ARPA>
+Received:  by hqda-ai.ARPA; Sun Jun  5 16:43:46 1988
+
+
+I am a new member of the committee and would like to be added to
+the mailing list.
+
+     	  My address is: arbaugh@hqda-ai.arpa
+
+     	       Thank you,
+
+
+     	       Bill
+==========================================================
+Bill Arbaugh			   Phone:  (202) 694-6900
+UUCP:  *!uunet!cos!hqda-ai!arbaugh ARPA:  arbaugh@hqda-ai.arpa
+==========================================================
+
+--
+From:  Takayasu ITO <ito%ito.aoba.tohoku.junet@UTOKYO-RELAY.CSNET>
+To:  x3j13-request%sail.stanford.edu%RELAY.CS.NET%u-tokyo.junet@UTOKYO-RELAY.CSNET
+Message-Id:  <8806110336.AA00215@ito.aoba.tohoku.junet>
+Return-Path:  <ito@ito.aoba.tohoku.junet>
+Date:  Sat, 11 Jun 88 12:36:19 jst
+Received:  by ito.aoba.tohoku.junet (4.12/6.3Junet-1.0)
+Subject: (no subject)
+
+Subject: X3J13 mailing matter
+I received a physical letter from Bob Mathis but I haven't received any
+electronic mail.
+Would you enter my mail address into your mailing list?
+I also wish to be in the physical mail distribution list since e-mail is not
+reliable sometimes.
+Please send the bill for the membership and mailing to me.
+Sincerely,
+Takayasu Ito
+  e-mail address: ito@aoba.tohoku.junet
+  physical mail address: Professor Takayasu Ito
+                         Department of Information Engineering
+                         School of Engineering
+                         Tohoku University
+                         Sendai, JAPAN 980
+ (P.S.) I cannot attend Boston meeting,since I have just returned from Greece.
+
+--
+From:  kempf@Sun.COM
+Date:  Thu, 16 Jun 88 15:09:37 -0700
+Subject:  Didn't get letter
+To:  x3j13-request@sail.stanford.edu
+Message-Id:  <8806162209.AA17125@suntana.sun.com>
+Received:  from localhost by suntana.sun.com (3.2/SMI-3.2)
+
+
+I did not get an electronic copy of the reminder letter for the June
+meeting. Furthermore, the physical letter was delivered to the wrong
+address. Here are the new addresses;
+
+	jkempf@sun.com
+
+	James Kempf
+	Sun Microsystems, 12-40
+	2556 Garcia Ave.
+	Mountain View, CA
+	94043
+
+Thanx.
+
+		jak
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  RE: ISO Report
+To:  RPG@sail.stanford.edu
+Message-Id:  <8808221232.AA25103@decwrl.dec.com>
+Date:  Mon, 22 Aug 88 05:32:49 PDT
+Received:  by decwrl.dec.com (5.54.5/4.7.34)
+
+>Your answer about DEC's involvement with ISO is that DEC may ask me to let
+>a DEC representative attend the ISO meetings as part of the delegation,
+>and I will almost certainly agree. However, DEC (nor any other company) is
+>entitled to a spot on the delegation automatically, since this working group
+>is made of individuals not companies.
+That wasn't exactly my question. My management is counting on my advice
+concerning how long I should continue to be involved full-time in 
+standard-writing. If the ANSI work is going to lead directly into ISO,
+and if you need help putting it together, and if the process will terminate
+in our lifetimes, I can make a case, if necessary, for getting DEC to 
+continue to let me work on the ISO standard after the ANSI work begins
+to wind down. 
+
+>Generally, people simply repeat the same speech in different words over and
+>over. Statements about deadlines at this stage are mere posturing and machismo.
+I guess that makes that little speech I gave at ISO pretty ridiculous.
+
+kc
+
+chapman%aitg.DEC@decwrl.dec.com/su
+ISO
+
+Ok, I guess I misunderstood. I think there is a possibility of a compromise
+happening at the next meeting that will allow us to move forward with a 
+subset of CL. I think 2 years from now is the reasonable deadline, and
+I'd like you to help if you can.
+
+			-rpg-
+
+--
+From:  Gregor.pa@Xerox.COM
+Line-fold:  no
+Message-ID:  <19881102041618.6.GREGOR@PORTNOY.parc.xerox.com>
+Fcc:  BD:>Gregor>mail>outgoing-mail-4.text.newest
+cc:  CHaynes@iuvax.cd.indiana.edu, RPG@Sail.Stanford.edu,
+To:  Moon@Stony-Brook.SCRC.Symbolics.com, GLS@Think.com, Fahlman@cs.cmu.edu,
+Subject:  Friend of the Court Brief
+Date:  Tue, 1 Nov 88 20:16 PST
+Received:  from Semillon.ms by ArpaGateway.ms ; 01 NOV 88 20:16:34 PST
+
+
+I spent a little time working on a reply to Dick's proposed ISO position
+statement.  It supports what Dick says in his newest draft, but phrases
+some things in a different way.  I have talked to Dick about this
+message, and once it is finished I intend to send it to him and cc it to
+the X3J13 list.  (He is cc'd on this message).
+
+My reasoning is that we can help Dick deliver the message we have asked
+him to deliver by having publicly backed him on it.  Any mail sent to
+the to the X3J13 list will be seen by members of the ISO community.  A
+message which agrees with the thrust of Dick's position statement, but
+is from a different source and perspective has a desirable effect.  It
+indicates that it is not appropriate to try to read between the lines of
+Dick's statement, or to try and find loopholes in it.  In indicates a
+broad base of support for the position he is expressing.
+
+Danny has read this message and agreed to sign it.  I thought I would
+circulate this message to you all to see if you had any comments on it.
+If you feel it properly expresses the position you support, I would be
+happy if you also wanted to sign it.  If you feel it needs editing, I
+would also like to hear that.  If you would rather not sign it, I will
+not be at all offended.
+
+- ----------------
+
+We would like to comment on your proposed US position statement for ISO
+WG16.  We agree with much of what you say in your statement. Critically,
+we agree that the U.S. must seek a change in the current ISO direction.
+But we feel that your statement does not make sufficiently clear those
+responsibilities which lead the X3J13 committee to this position. X3J13
+is the committee we are most familiar with.  There is probably some
+overlap between the concerns mentioned in this note and those of the
+IEEE Scheme effort.  But we have largely confined our attention to the
+X3J13 Common Lisp process.
+
+The X3J13 effort is quite mature.  We have almost finished the standard
+we are chartered to develop.  Most technical decisions have been made,
+and the ones that remain to be made have already received significant
+discussion and study.  Editorial work to produce the standards document
+is already well underway.
+
+A number of individuals and companies have devoted significant time and
+resources to creating the X3J13 Common Lisp standard.  An even larger
+number of individuals, companies and government organizations have
+devoted resources to preparing themselves to use this standard.  The
+X3J13 committee has a significant committment to these individuals and
+companies; we must finish the language we set out to create, and we must
+ensure that it becomes an official standard.
+
+An important part of this committment is that we cannot at this point
+take any action which would diminish the value the standard we have
+worked so hard to create.  This responsibility constrains our options in
+working with the ISO standardization effort.  These constraints can be
+complex and difficult to understand.  This accounts in part for the time
+it has taken the U.S. delegation to develop this position statement.
+But one such constraint is now clear.  The X3J13 committee cannot
+endorse the development of an ISO standard which is similar but
+different from ANSI Common Lisp.
+
+To do so would significantly weaken the ANSI Common Lisp standard.  It
+can be argued that problems which might result from policies which
+mandate the use of ISO standards over ANSI standards could be resolved.
+But the resolution of those problems would take time.  It is precisely
+to avoid those kinds of problems that our "constituency" has chartered
+us to develop ANSI Common Lisp.
+
+In addition, there would be widespread confusion among educators,
+authors, application vendors and others about which Common Lisp was the
+"more" standard one.  The technical leaders of the X3J13 effort would be
+rightly criticized for not being committed to the language they created.
+
+The United States, is however part of the ISO Lisp standardization
+process.  As part of that process we must decide how to resolve our
+obligations to our X3J13 consituency with the obligations other
+delegations have to their constituency.  We would of course like to do
+this in the most generous and equitable way possible.  At this point, it
+appears that the idea of multiple ISO standards is the best option.
+
+One of these ISO standards would be the language currently being
+specified by the X3J13 committee.  This could be called ISO Common Lisp.
+We would of course be willing to allow last minute cleanup proposals to
+ensure that the language is in fact suitable for use as an international
+standard.  It is a sign of our committment to this that we are assigning
+a high priority to the character set proposal.
+
+Other ISO Lisp standards could be developed for other specific purposes.
+Those standards would of course have to be sufficiently different from
+ISO Common Lisp that they would not diminish it.   It may be possible to
+develop a reasonable subset of ISO Common Lisp, but we do not believe it
+is possible do so in a short timeframe.
+
+We understand, and we believe the entire X3J13 committee understands,
+that this position may be perceived as inflexible by certain other
+members of the ISO committee.  We would ask those members to consider
+the committment we have to the individuals and companies which have
+plans to use the language being specified by X3J13.  We simply cannot
+take an action which would compromise that committment.
+
+- -------
+
+--
+From:  masinter.pa@Xerox.COM
+Message-ID:  <881102-092426-1031@Xerox>
+cc:  Moon@Stony-Brook.SCRC.Symbolics.com, GLS@Think.com, Fahlman@cs.cmu.edu,
+To:  Gregor.pa@Xerox.COM
+In-reply-to:  Gregor.pa's message of Tue, 1 Nov 88 20:16 PST
+Subject:  Re: Friend of the Court Brief
+Date:  2 Nov 88 09:23 PST
+Received:  from Semillon.ms by ArpaGateway.ms ; 02 NOV 88 09:24:26 PST
+
+Change "willing to allow last minute cleanup proposals to ensure that the
+language is in fact suitable for use as an international
+standard" to "actively encourage additional cleanup proposals to ensure
+that the language is in fact suitable for use as an international
+standard" 
+
+If there are any cleanups that are necessary to ensure that the language is
+suitable for use as an international standard, we want to hear about them.
+
+--
+From:  masinter.pa@Xerox.COM
+Message-ID:  <881102-100158-1170@Xerox>
+cc:  Moon@Stony-Brook.SCRC.Symbolics.com, GLS@Think.com, Fahlman@cs.cmu.edu,
+To:  Gregor.pa@Xerox.COM
+In-reply-to:  Gregor.pa's message of Tue, 1 Nov 88 20:16 PST
+Subject:  Re: Friend of the Court Brief
+Date:  2 Nov 88 09:40 PST
+Received:  from Semillon.ms by ArpaGateway.ms ; 02 NOV 88 10:01:58 PST
+
+I would like to add something to the following effect (perhaps this can be
+said more briefly):
+
+Many of the items listed in "DRAFT REPORT OF THE SEECOND MEETING OF ISO/IEC
+JTC1/SC 22/WG 16 LISP", document number 26, are (a) not being directly
+addressed by X3J13 and (b) of great interest to many members of the US
+community. They include:
+
+Interface to other languages
+Stratification
+Semantics
+Window graphics
+Validation
+Conformance
+OS environment
+Logic programming
+Multi-processing
+Libraries
+Macros
+
+There  are no active subcommittees on those issues within X3J13. If ISO SC
+22 WG 16 were to make any significant progress in those areas, we would
+welcome it.
+
+--
+From:  Scott.Fahlman@B.GP.CS.CMU.EDU
+Date:  Wed, 02 Nov 88 14:48:36 EST
+In-reply-to:  Your message of Tue, 01 Nov 88 20:16:00 -0800.
+Subject:  Re: Friend of the Court Brief 
+cc:  Moon@Stony-Brook.SCRC.Symbolics.com, GLS@Think.com,
+To:  Gregor.pa@Xerox.COM
+Received:  from SEF1.SLISP.CS.CMU.EDU by SEF1.SLISP.CS.CMU.EDU;  2 Nov 88 14:50:30 EST
+
+
+I'm prepared to sign the statement as-is.  The changes proposed below are
+just suggestions to make the statement read a bit better and in some cases
+to make it sound a bit less confrontational.
+
+    We would like to comment on your proposed US position statement for ISO
+    WG16.  We agree with much of what you say in your statement. Critically,
+    we agree that the U.S. must seek a change in the current ISO direction.
+    But we feel that your statement does not make sufficiently clear those
+    responsibilities which lead the X3J13 committee to this position.
+
+X3J13 is the committee we are most familiar with.  There is probably some
+overlap between the concerns mentioned in this note and those of the IEEE
+Scheme effort.  But we have largely confined our attention to the X3J13
+Common Lisp process.
+==> 
+We believe that the IEEE group working standardization of Scheme may have
+similar concerns, but we do not presume to speak for them.
+    
+    The X3J13 effort is quite mature.  We have almost finished the standard
+    we are chartered to develop.  Most technical decisions have been made,
+    and the ones that remain to be made have already received significant
+    discussion and study.  Editorial work to produce the standards document
+    is already well underway.
+    
+    A number of individuals and companies have devoted significant time and
+    resources to creating the X3J13 Common Lisp standard.  An even larger
+    number of individuals, companies and government organizations have
+    devoted resources to preparing themselves to use this standard.  The
+    X3J13 committee has a significant committment to these individuals and
+    companies; we must finish the language we set out to create, and we must
+    ensure that it becomes an official standard.
+    
+"we must ensure" sounds like a threat.  How about "The participants in
+X3J13 feel very strongly that the Common Lisp standard produced by X3J13
+should be recognized the official standard for Common Lisp, both within the
+U.S. and internationally."                 ↑.italics.....↑
+
+    An important part of this committment is that we cannot at this point
+    take any action which would diminish the value the standard we have
+    worked so hard to create.  This responsibility constrains our options in
+    working with the ISO standardization effort.  These constraints can be
+    complex and difficult to understand.  This accounts in part for the time
+    it has taken the U.S. delegation to develop this position statement.
+    But one such constraint is now clear.  The X3J13 committee cannot
+    endorse the development of an ISO standard which is similar but
+    different from ANSI Common Lisp.
+
+"now clear.  The" ==> "now clear: The"
+"similar" ==> "similar to"
+    
+    To do so would significantly weaken the ANSI Common Lisp standard.  It
+    can be argued that problems which might result from policies which
+    mandate the use of ISO standards over ANSI standards could be resolved.
+    But the resolution of those problems would take time.  It is precisely
+    to avoid those kinds of problems that our "constituency" has chartered
+    us to develop ANSI Common Lisp.
+
+"To do so" ==> "The existence of a similar but separate ISO standard"
+"It can be aregued...take time" ==> "Problems would be caused by policies
+that mandate the use of ISO standards over ANSI standards; perhaps these
+problems could be resolved, but it would take time."
+    
+    In addition, there would be widespread confusion among educators,
+    authors, application vendors and others about which Common Lisp was the
+    "more" standard one.  The technical leaders of the X3J13 effort would be
+    rightly criticized for not being committed to the language they
+    created.
+
+Delete "more".
+    
+    The United States, is however part of the ISO Lisp standardization
+    process.  As part of that process we must decide how to resolve our
+    obligations to our X3J13 consituency with the obligations other
+    delegations have to their constituency.  We would of course like to do
+    this in the most generous and equitable way possible.  At this point, it
+    appears that the idea of multiple ISO standards is the best option.
+
+"United States, is however part" ==> "United States is, however, part"
+"their constituency" ==> "their constituencies"
+    
+    One of these ISO standards would be the language currently being
+    specified by the X3J13 committee.  This could be called ISO Common Lisp.
+    We would of course be willing to allow last minute cleanup proposals to
+    ensure that the language is in fact suitable for use as an international
+    standard.  It is a sign of our committment to this that we are assigning
+    a high priority to the character set proposal.
+
+I endorse the change proposed by Masinter.  We welcome cleanup proposals
+necessary for international use and acceptance.
+    
+    Other ISO Lisp standards could be developed for other specific purposes.
+    Those standards would of course have to be sufficiently different from
+    ISO Common Lisp that they would not diminish it.   It may be possible to
+    develop a reasonable subset of ISO Common Lisp, but we do not believe it
+    is possible do so in a short timeframe.
+
+    We understand, and we believe the entire X3J13 committee understands,
+    that this position may be perceived as inflexible by certain other
+    members of the ISO committee.  We would ask those members to consider
+    the committment we have to the individuals and companies which have
+    plans to use the language being specified by X3J13.  We simply cannot
+    take an action which would compromise that committment.
+    
+I think "cannot" is a bit strong.  I'd say "We feel that it would be wrong
+for us to compromise that commitment."  But I'll go along with "cannot" if
+the rest of you prefer it.
+
+Please run the result through spell.  I spotted some instances of
+"committment" and other minor glitches.
+
+- -- Scott
+
+--
+From:  Gregor.pa@Xerox.COM
+Line-fold:  no
+Message-ID:  <19881102220741.3.GREGOR@PORTNOY.parc.xerox.com>
+In-Reply-To:  <19881102041618.6.GREGOR@PORTNOY.parc.xerox.com>,
+Fcc:  BD:>Gregor>mail>outgoing-mail-4.text.newest
+cc:  Moon@Stony-Brook.SCRC.Symbolics.com, GLS@Think.com, Fahlman@cs.cmu.edu,
+To:  masinter.pa@Xerox.COM, Scott.Fahlman@B.GP.CS.CMU.EDU
+Subject:  Re: Friend of the Court Brief
+Date:  Wed, 2 Nov 88 14:07 PST
+Received:  from Semillon.ms by ArpaGateway.ms ; 02 NOV 88 14:07:53 PST
+
+
+OK, I made most of the changes you all recommended.  As requested by
+Dick, I will send this out this evening, so if anyone has more comments
+please send them now.
+
+    Date:  2 Nov 88 09:23 PST
+    From: masinter.pa
+
+    Change "willing to allow last minute cleanup proposals to ensure
+    that the language is in fact suitable for use as an international
+    standard" to "actively encourage additional cleanup proposals to
+    ensure that the language is in fact suitable for use as an
+    international standard" 
+
+Done.
+
+    Date:  2 Nov 88 09:40 PST
+    From: masinter.pa
+
+    I would like to add something to the following effect (perhaps this can be said more briefly):
+
+    Many of the items listed in "DRAFT REPORT OF THE SEECOND MEETING OF
+    ISO/IEC JTC1/SC 22/WG 16 LISP", document number 26, are (a) not
+    being directly addressed by X3J13 and (b) of great interest to many
+    members of the US community. They include: ...
+
+Not Done
+
+    Date: Wed, 02 Nov 88 14:48:36 EST
+    From: Scott.Fahlman@B.GP.CS.CMU.EDU
+
+    X3J13 is the committee we are most familiar with.  There is probably some
+    overlap between the concerns mentioned in this note and those of the IEEE
+    Scheme effort.  But we have largely confined our attention to the X3J13
+    Common Lisp process.
+    ==> 
+    We believe that the IEEE group working standardization of Scheme may have
+    similar concerns, but we do not presume to speak for them.
+
+Done.
+    
+    
+    "we must ensure" sounds like a threat.  How about "The participants in
+    X3J13 feel very strongly that the Common Lisp standard produced by X3J13
+    should be recognized the official standard for Common Lisp, both within the
+    U.S. and internationally."                 ↑.italics.....↑
+
+I changed it to:
+  "and must follow through on our commitment to making it an ANSI
+   standard."
+
+Because I felt it was more in line with the point of that part of the
+message.
+
+
+    "now clear.  The" ==> "now clear: The"
+    "similar" ==> "similar to"
+    
+Done
+
+    "To do so" ==> "The existence of a similar but separate ISO standard"
+    "It can be aregued...take time" ==> "Problems would be caused by policies
+    that mandate the use of ISO standards over ANSI standards; perhaps these
+    problems could be resolved, but it would take time."
+
+Done    
+
+    Delete "more".
+
+Done
+
+    "United States, is however part" ==> "United States is, however, part"
+    "their constituency" ==> "their constituencies"
+
+Done (once I figured it out)
+							     
+							     We simply cannot
+	take an action which would compromise that committment.
+    
+    I think "cannot" is a bit strong.  I'd say "We feel that it would be wrong
+    for us to compromise that commitment."  But I'll go along with "cannot" if
+    the rest of you prefer it.
+
+I strongly prefer "cannot" becuase it connotes this sense I have that to
+a large extent, members of X3J13 have no choice about this.  We must act
+to protect the investment in X3J13 Common Lisp.
+- -------
+
+--
+From:  David A. Moon <Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Line-fold:  No
+Message-ID:  <19881102231403.2.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <19881102220741.3.GREGOR@PORTNOY.parc.xerox.com>
+cc:  masinter.pa@XEROX.COM, Scott.Fahlman@B.GP.CS.CMU.EDU, GLS@Think.com,
+To:  Gregor.pa@XEROX.COM
+Subject:  Re: Friend of the Court Brief
+Date:  Wed, 2 Nov 88 18:14 EST
+Received:  from EUPHRATES.SCRC.Symbolics.COM by STONY-BROOK.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 486265; Wed 2-Nov-88 18:14:20 EST
+
+This looks very good to me.  The only thing I thought was questionable
+is that it does not make it very clear what specifically you mean
+by a language that is "similar to Common Lisp but different".  What
+I suspect you mean is that the user community is similar but the
+language is different; that is, a specific set of people would be
+asked to change from one language to another for no reason that
+makes any sense to them.  In contrast, what you're encouraging ISO
+to do is to have several languages, one for each distinguishable
+user community that clearly has distinct needs.  You don't want to
+have two competing languages for a single community, nor two
+communities with different needs forced to use the same language.
+If you can find a way to say this more clearly and in a way that is less
+subject to misinterpretation, I think that would be good.
+
+Rather than sign it, I think KMP and I will send a concurring message
+when it comes out publically.  That would have more of the air of
+multiple separate organizations all feeling the same attitude,
+rather than a behind the scenes conspiracy.
+
+KMP has not seen your brief at this point, but I doubt he would
+disagree with it (although one never knows, does one).
+
+--
+From:  Haruyuki Kawabe <kawabe@etl.jp>
+Subject:  Please add mlist%unisys.junet@uunet.uu.net to the X3J13 mailing list
+To:  x3j13-request@SAIL.STANFORD.EDU
+Date:  Mon, 26 Dec 88 14:25:42 JST
+Received:  by etlcom.etl.junet (3.2/6.3Junet-1.0)
+
+Please add mlist%unisys.junet@uunet.uu.net to the X3J13 mailing list
+if possible. Thanks in advance.
+
+	Haruyuki Kawabe
+	Knowledge Systems
+	Nihon Unisys, Ltd.
+	2-17-51 Akasaka, Minato-ku, 
+	Tokyo 107, JAPAN  
+	e-mail: kawabe%etl.jp@relay.cs.net
+
+--
+From:  cperdue@Sun.COM (Cris Perdue)
+Cc:  loop-group%clam@Sun.COM
+Subject:  Re:  revised ISO discussion, revised DRAFT Gegenda and Subcommittee meetings
+To:  jlz@lucid.com
+Message-Id:  <8901092234.AA12349@clam.sun.com>
+Date:  Mon, 9 Jan 89 14:34:53 PST
+Received:  by clam.sun.com (3.2/SMI-3.2)
+
+I was surprised to see no time set aside for subcommittee meetings.
+I guess the recesses provide some time for that, but the iteration
+committee is slated to report before any recess.  How about at
+least moving us to after 8PM Monday?
+
+I'm just checking now who in the iteration subcommittee will
+be at the Hawaii meetings.  That will do a lot to determine what
+an iteration meeting would be likely to accomplish.
+
+				-Cris
+
+cperdue@Sun.COM/su,jlz@lucid.com/cc,loop-group%clam@Sun.COM
+revised ISO discussion, revised DRAFT Gegenda and Subcommittee meetings
+
+As you recall, at the last X3J13 meeting Mathis commented that there would
+be no subcommittee meetings in Hawaii because this is the voting meeting,
+and subcommittees would all be perforce making their final reports, at least
+for the current version of the CL standard. If the iteration committee wants
+to continue working for the next go-round, that's great, or maybe someone will
+argue to keep the meetings going and the standard open for discussion.
+
+			-rpg-
+
+--
+From:  Dick Gabriel <RPG@SAIL.Stanford.EDU>
+Cc:  loop-group%clam@Sun.COM
+To:  cperdue@Sun.COM
+Subject:  Revised ISO discussion, revised DRAFT Gegenda and Subcommittee meetings    
+Date:  10 Jan 89  0009 PST
+Message-Id:  <dzP8T@SAIL.Stanford.EDU>
+Received:  from SAIL.Stanford.EDU by Sun.COM (4.1/SMI-4.0)
+
+I didn't keep a copy of the original message from Cris to which I was
+responding, but I think he was asking in it why no times had been set
+aside for subcommittee meetings in Hawaii. My response (since Jan was not
+around to answer) was simply to point out what I thought was the
+well-known fact that the Hawaii meeting has been long intended to be the
+last major technical meeting with most decisions being made at or before
+it.  Therefore, subcommittee meetings are not necessary unless they are to
+decide how to run voting on topics.
+
+This wasn't meant to disparage the work of any subcommittee, but there
+happen to be several that will not be able to contribute to the current
+draft standard.  If the iteration committee has hit upon *the* approach to
+iteration, that is wonderful, and maybe it is so wonderful that X3J13 will
+want to leave the draft open until the iteration work is done. Similarly,
+the compiler and cleanup committees may not be able to get all of their
+work completed for incorporation into the current draft. The character set
+subcommittee is possibly closer to a vote than Cris considers (at least, I
+hope it is).
+
+But this is, alas, how natural selection works: The specimen dies before
+progeny emerge.
+
+In any event, I meant simply to mention that it was long known that this
+meeting was the ultimate decision-making meeting, but that I didn't see
+why X3J13 couldn't vote to overrule that. And however badly I said it,
+that's all I meant.
+
+			-rpg-
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  x3j13
+Message-ID:  <890109.195912.baggins@IBM.com>
+To:  "Richard P. Gabriel" <rpg@sail.stanford.edu>
+Date:  Mon, 09 Jan 89 19:59:12 PST
+Received:  from IBM.COM by SAIL.Stanford.EDU with TCP; 10 Jan 89  07:57:06 PST
+
+Dick,
+  If possible, please add tucker at ibm.com to the x3j13 mailing list.
+
+Thanks,
+  Thom
+
+Baggins@IBM.COM/su
+Varia
+
+I added tucker. 
+
+The character stuff will pose a little problem at the next meeting
+because we will of course need to wait until it is ready to complete
+the draft, but people will argue that their change or addition to
+CL is as important as characters and will want a delay for them as
+well. In particular, the iteration group (minus Jonl) will want us to
+delay until they are ready.
+
+Is it possible we could mail ballot characters between this meeting and
+the next?
+
+			-rpg-
+
+--
+From:  David D. Loeffler <Loeffler@MCC.COM>
+Business-phone:  (512) 338-3666
+Postal-address:  3500 West Balcones Drive, Austin, Texas, 78759
+Reply-To:  Loeffler@MCC.COM
+Message-ID:  <19890112203403.4.LOEFFLER@MNEMOSYNE.ACA.MCC.COM>
+In-Reply-To:  <H#728@SAIL.Stanford.EDU>
+cc:  Loeffler@MCC.COM, Clive@MCC.COM
+To:  Dick Gabriel <RPG@SAIL.Stanford.EDU>
+Subject:  Lists
+Date:  Thu, 12 Jan 89 14:34 CST
+Received:  from MNEMOSYNE.ACA.MCC.COM by SAIL.Stanford.EDU with TCP; 12 Jan 89  13:17:25 PST
+
+    Date: 11 Jan 89  0800 PST
+    From: Dick Gabriel <RPG@SAIL.Stanford.EDU>
+
+    Dave, when would you like to take over the lists? I have been
+    away almost continually since mid-November. What I suggest is that
+    you take all but X3J13 for now. You establish the various addresses
+    like COMMON-LISP@MCC.COM, including X3J13@mcc.com (we'll get the names
+    right when we do it for real). I will cause the addresses here
+    like COMMON-LISP to point to yours, and the -REQUEST addresses to
+    point to whomever. Similarly, for X3J13 you can point here and at me.
+    This way, the old ...@SAIL... addresses work until people figure it
+    all out, but so will ...@MCC....
+
+			    -rpg-
+
+Dick,
+Where are the current mailing lists on Sail?  We are going to maintain
+the lists here but we would like to send a test message either today or
+tomorrow to see if we have any problems.  The reason I have delayed in
+responding to you is the problems that we have had lately with our
+continued connection to the ARPAnet which seem to have been resolved now
+(I will explain more at the meeting)  Could you send me pointers to the
+mailing lists on Sail and we will send a test message to the mailing
+list ASAP.
+
+  -- David D. Loeffler
+
+--
+From:  chapman%aitg.DEC@decwrl.dec.com
+Subject:  moved over a year ago
+To:  rpg@sail.stanford.edu
+Date:  14 Feb 89 13:32
+Message-Id:  <8902141844.AA02144@decwrl.dec.com>
+Received:  by decwrl.dec.com (5.54.5/4.7.34)
+
+>The address Jan had for you is nothing like what you sent.
+>Did you get chapter 2? It went to 77 Reed Road, Hudson.
+>Should I start tracing it?
+Got it no problem. In fact it's in the queue to be mailed back to
+you now (waiting for a copy of the whole standard that will be sent
+along with it).
+I'm sending it back so you can review what I've done with your comments
+and so that you're sure I incorporated your suggestions. I have a copy
+of your comments in case there's a problem. Thanks very much again for
+taking the time to review this. 
+
+Thanks for your comments. I take it from your lack of comments on the CLOS
+part of Chap 2 that you don't have any problem with its being a part of
+the 2/21 letter ballot?
+
+I haven't heard anything contrary from the rest of the edit committee 
+about meeting at 5 on Monday, but I don't have a conference room. Is
+Jan arranging for after-hours rooms, or should I just make reserves at
+a restaurant somewhere? (I'd prefer a conference room.)
+
+
+Current page count on the standard: Chapters 1-5: 188 pages (not bad)
+Chapters 6 and 7: ~1000 pages. We can reduce Chapters 6 and 7 to 780
+pages just by putting more than one function per page. I haven't
+completed the other similar studies yet (deleting blank fields,
+moving text to the same line as labels...), or any studies like
+moving the examples to an appendix. I suspect we could retain all
+the information and get down to between 500 and 600 pages, but don't
+know that for sure. That would be, best case, a standard of almost
+700 pages, which I'm sure is much too long for ISO, right? 
+Still no volunteer to formally write up this stuff. 
+
+kc
+
+--
+From:  sandra%defun@cs.utah.edu (Sandra J Loosemore)
+In-Reply-To:  masinter.pa@Xerox.COM, 16 Mar 89 07:02 PST
+Cc:  Dick Gabriel <RPG@SAIL.Stanford.EDU>, cl-compiler@SAIL.Stanford.EDU
+To:  masinter.pa@Xerox.COM
+Subject:  Re: Issue SAFE-CODE, version 1    
+Date:  Thu, 16 Mar 89 08:29:03 MST
+Message-Id:  <8903161529.AA05531@defun.utah.edu>
+Received:  by defun.utah.edu (5.61/utah-2.0-leaf)
+
+Hmmm.  I thought this would be the least controversial of any of our
+issues!
+
+Seriously folks, I believe the intent of this proposal was *only* to
+say that (OPTIMIZE (SAFETY 3)) is the only magic incantation you need
+to be guaranteed to get "safe code".  Some of the objections to the
+way it's stated seem valid to me, but let's not try to read more into
+the issue than was intended.
+
+If anybody wants to submit a new version which fixes the wording, feel
+free.
+
+-Sandra
+- -------
+
+sandra%defun@cs.utah.edu/su
+Safe Code
+
+Sandra, be careful what you say, my friend. 
+
+``If anybody wants to submit a new version which fixes the wording, feel
+free.''
+
+You didn't see Pitman's first writeup of this issue (I did). It ran on for
+around 300 lines, explaining this possibility and that possibility.  Oh,
+you could start out in a lower safety level by default, but then you had
+to pay attention to the safety declaration, unless you started at the
+highest level, or until you saw something at the highest level, and then
+you could ignore it, but if you didn't, there had to be a way to get back,
+and if you had only a compiler, you had to do this, but if you had only an
+interpreter, you had to do that, unless you had an unsafe interpreter, in
+which case you had to pay attention exactly like the other way, unless it
+was a delivery system, but then some delivery systems had to be safe,
+unless they didn't, but then....
+
+			-rpg-
+
+--

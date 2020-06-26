@@ -1,0 +1,58 @@
+--
+From: RPG  
+CC:    "#COMMON.MSG[COM,LSP]"@SU-AI
+To:    fahlman@CMU-CS-C
+Subject: RMS
+Date: 21 Jun 1983 23:26 EST
+
+Given his `tilt-at-windmills' attitude about many things, we must not
+get hung up on bringing him to Common Lisp. Even if he stated today he would
+support it, he would throw the sources open to anyone and everyone to change
+as they pleased. He would tinker and fiddle with it no end. Our hope with MIT
+is for the administrative levels to recognize folly when they see it.
+
+His role is gadfly and irritant. 
+
+			-rpg-
+
+--
+From: JMC  
+Subject: rms
+Date: 21 Jun 1983 23:41 EST
+
+While I suspect your characterization is correct, messages such as yours
+should not be part of the Common Lisp discussion file.  In the heat of
+a controversy such remarks may be reasonable, but remember that they'll
+still be in the file a year hence.  I would suggest that you edit it
+out.
+
+Well, you may not have noticed that that message was cc'ed to the file,
+not sent to the list. I've re-mailed many private messages to the file
+as a record. Perhaps, you're suggesting, I should do a global fork?
+			-rpg-
+
+--
+From:  Scott E. Fahlman <Fahlman@CMU-CS-C>
+In-reply-to:  Msg of 21 Jun 83  2326 PDT from Dick Gabriel <RPG at SU-AI>
+Subject:  RMS 
+To:    Dick Gabriel <RPG@SU-AI>
+Date:  Wed, 22 Jun 1983  02:56 EDT
+Received:  ID <FAHLMAN@CMU-CS-C>; 22 Jun 83 02:56:47 EDT
+
+
+As my recent mail showed, I'm not hung up on on keeping RMS aboard.  I
+just wanted him to know that we'd still like him aboard if he wants to
+come.  I share your belief that he would not, of his own accord, conform
+to any standard -- some of his stunts with the MIT mailers prove that --
+but it may be that he will be responsive to his users.
+
+As you say, in the long run it's irrelevant.  He can't keep up with
+Symbolics indefinitely, single handed.  Sooner or later, LMI will go
+under and Stallman's users at MIT will switch systems, but that's his
+problem, not ours.
+
+Well, back to real work...
+
+- -- Scott
+
+--

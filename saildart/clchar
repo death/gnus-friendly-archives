@@ -1,0 +1,1624 @@
+--
+From:  "Thomas Linden (Thom)" <baggins@ibm.com>
+Subject:  CLtl Natural Languages Subcommittee
+Message-ID:  <870810.232201.baggins@IBM.com>
+cc:  "Richard P. Gabriel" <rpg@sail.stanford.edu>
+To:  Common Lisp Natural Language Support mailing
+Date:  Mon, 10 Aug 87 23:22:01 PDT
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 10 Aug 87  23:22:29 PDT
+
+  Through the good graces of Dick Gabriel, we now have a mailing
+list set up at sail (see To: above) for the National Languages
+Subcommittee.  From the last ANSI meeting, I have down as
+committee members:
+
+        Thom Linden - baggins@ibm.com
+        Larry Masinter - Masinter.pa@xerox.com
+        Carl Hoffman - cwh@fuji.ila.dialnet.symbolics.com
+        Bob Kerns - rwk@scrc.symbolics.com
+        Duncan Missimer  -  (don't know netid)
+        Dave Mathews - dcm%hpfclp@hplabs.hp.com
+        Mike Beckerle - mike%acorn@oak.lcs.mit.edu
+
+  Send updates to the mailing list (eg. you're on the list
+and should'nt be) to Dick.  If anyone knows Duncan's netid,
+please pass it along so he can be added to the distribution.
+
+  Just as a check, please acknowledge this message.  Thus, I
+will have some confidence we are actually connected.
+
+  I suspect with vacations underway, our conversation on NLS
+won't begin until September (eg. I'll be out for the remainder of Aug).
+But, starting in Sept, I would like to see us in an active mode.
+The first order of business should be an acknowledgement note
+sent to JEIDA.  After that we need to agree on the scope of
+our effort and the protocols we wish to follow  ..  eg.
+we could follow the pattern set by the Cleanup Subcommittee
+status reports and documentation or by the CommonLoops group.
+
+  Perhaps the first thing we should decide is our name and what
+a proposal arising from our efforts would be called.  I start
+this off by suggesting:
+
+    National Languages Support (ie. NLS subcommittee) and
+    "Extensions to Common Lisp Character Handling"
+
+  Natural Languages is a nicer term as it doesn't seem to have
+a connection to political boundaries.  Unfortunately, it seems
+heavily used in the linguistics field.  Some folks use
+DBCS for Double Byte Character Support but that seems clearly
+tied to an implementation decision.
+
+  ...  well, these comments will hopefully test the networking.
+I'll see you in a few weeks.
+
+Regards,
+  Thom
+
+--
+From:  masinter.pa@Xerox.COM
+Message-ID:  <870811-172233-1210@Xerox>
+cc:  cl-natural-languages@sail.stanford.edu, rpg@sail.stanford.edu
+To:  baggins@ibm.com
+In-reply-to:  "Thomas Linden (Thom)" <baggins@ibm.com>'s message of Mon,
+Subject:  Re: CLtl Natural Languages Subcommittee
+Date:  11 Aug 87 15:16 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 11 AUG 87 17:22:33 PDT
+
+I had hoped that this committee could deal also with the issue of font
+and font attributes as well as character codes. I'd been filing things
+under the heading of "Common Lisp Characters", since that seemed to have
+the broader charter.  
+
+My comments at the last X3J13 committee is that, while there may still
+be important reasons for retaining a user-visible distinction between
+thin-simple-string and simple-string, there seemed to be little or no
+reason to have any visible distinction between thin-string and string,
+since the general string case, with displacement and the like, can be
+implemented as efficiently.
+
+This modification of the JEIDA proposal removes most of its complexity
+while retaining most of its benefits.
+
+--
+From:  masinter.pa@Xerox.COM
+Message-ID:  <870811-173929-1259@Xerox>
+cc:  cl-natural-languages@sail.stanford.edu, rpg@sail.stanford.edu
+To:  baggins@ibm.com
+In-reply-to:  "Thomas Linden (Thom)" <baggins@ibm.com>'s message of Mon,
+Subject:  Re: CLtl Natural Languages Subcommittee
+Date:  11 Aug 87 15:16 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 11 AUG 87 17:39:29 PDT
+
+I had hoped that this committee could deal also with the issue of font
+and font attributes as well as character codes. I'd been filing things
+under the heading of "Common Lisp Characters", since that seemed to have
+the broader charter.  
+
+My comments at the last X3J13 committee is that, while there may still
+be important reasons for retaining a user-visible distinction between
+thin-simple-string and simple-string, there seemed to be little or no
+reason to have any visible distinction between thin-string and string,
+since the general string case, with displacement and the like, can be
+implemented as efficiently.
+
+This modification of the JEIDA proposal removes most of its complexity
+while retaining most of its benefits.
+
+--
+From:  Dave Matthews   <dcm%hpfclp@hplabs.HP.COM>
+Date:  Fri, 14 Aug 87 13:01:48 MST
+In-Reply-To:  Your message of Mon, 10 Aug 87 23:22:01 -0700.
+X-Mailer:  mh6.5
+Subject:  Re: CLtl Natural Languages Subcommittee 
+Cc:  rpg@sail.stanford.edu
+To:  cl-natural-languages@sail.stanford.edu
+Message-Id:  <8708141901.AA04264@hpfcdcm.HP.COM>
+Return-Path:  <dcm@hpfcdcm>
+Received:  from hpfcdcm by hpfcdcm.HP.COM; Fri, 14 Aug 87 13:01:51 mdt
+
+
+Duncan Missimer's mail address is
+
+missimer%hpcldbm@hplabs.hp.com
+
+Please add him to the mailing list.
+
+At HP we use the acronym NLS for Native Language Support - the ability
+for a user to communicate with his/her machine in his/her native
+language.  This seemed more appropriate because there is not always a
+singular mapping of languages to nationalities.
+
+Dave Matthews
+
+--
+From:  Robert W. Kerns <RWK@YUKON.SCRC.Symbolics.COM>
+Message-ID:  <870814034421.9.RWK@WHITE-BIRD.SCRC.Symbolics.COM>
+In-Reply-To:  <870811-172233-1210@Xerox>
+cc:  baggins@ibm.com, cl-natural-languages@sail.stanford.edu
+To:  masinter.pa@Xerox.COM
+Subject:  Re: CLtl Natural Languages Subcommittee
+Date:  Fri, 14 Aug 87 03:44 EDT
+Received:  from WHITE-BIRD.SCRC.Symbolics.COM by YUKON.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 249013; Fri 14-Aug-87 03:44:20 EDT
+
+    Date: 11 Aug 87 15:16 PDT
+    From: masinter.pa@Xerox.COM
+    I had hoped that this committee could deal also with the issue of font
+    and font attributes as well as character codes. 
+Yup.  I plan to propose we delete 'em.  Details later.
+						    I'd been filing things
+    under the heading of "Common Lisp Characters", since that seemed to have
+    the broader charter.  
+
+    My comments at the last X3J13 committee is that, while there may still
+    be important reasons for retaining a user-visible distinction between
+    thin-simple-string and simple-string, there seemed to be little or no
+    reason to have any visible distinction between thin-string and string,
+    since the general string case, with displacement and the like, can be
+    implemented as efficiently.
+
+This is a lot easier for you or I to say, on our special Lisp engines,
+than it is for those on "stock" hardware.  But even for us, it's not
+really true.  Creating a large string of the wrong size, and then copying
+the whole thing when a "fat" character comes along, could prove quite
+expensive.  And on our system, once that was done, every reference to that
+string would be slowed down by an extra memory reference.  Everybody else
+would have to pay this price ALL the time, except when they can use simple
+strings.
+
+Don't forget that (AND STRING (NOT SIMPLE-STRING)) does NOT mean that
+the string is displaced.  It may be a non-displaced non-adjustable
+string with a fill-pointer.  What you're proposing really means changing
+this so that, on stock architectures, (AND STRING (NOT SIMPLE-STRING))
+implies that it's displaced, so that the data can be "fattened".
+
+    This modification of the JEIDA proposal removes most of its complexity
+    while retaining most of its benefits.
+
+I don't think it removes the complexity; it introduces complexities of
+its own.  Of course, it also has benefits of its own.  But I don't want
+to waste time designing it unless we have some assurance that it really
+isn't going to be a burden for the stock architectures, and the understanding
+I have from the conversations I've had is that it would be a burden for them.
+
+I'm about to leave until Labor Day.  I'll have lots more stuff to send when
+I get back.
+
+--
+From:  "Thomas Linden (Thom)" <baggins@ibm.com>
+Subject:  Subcommittee name, scope, JEIDA response
+Message-ID:  <870930.152835.baggins@IBM.com>
+To:  "Common Lisp Subcommittee" <cl-natural-languages@sail.stanford.edu>
+Date:  Wed, 30 Sep 87 15:28:35 PDT
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 30 Sep 87  15:46:57 PDT
+
+Greetings,
+  With my vacation and assignment change (Menlo to San Jose-Almaden)
+and home moving in the past, I would like to renew our
+conversatinos regarding our subcommittee.
+
+  I have seen notes on the net from Dave Matthews, Larry Masinter and
+Bob Kerns. Hopefully the rest of the committee is on the mailing
+list with a correct address  (Carl, Duncan and Mike
+please confirm you received a copy of this msg from
+cl-natural-languages).
+
+  In this note, I would like to discuss the committee name, scope
+and JEIDA response.  I felt that Larry's suggestion of a broader
+charter was a good one.  Clearly, we will be mucking about in
+data types, characters, strings and Input/Output with the character
+data type being of central interest.  Thus, we could name ourselves the
+CL Character Subcommittee.  Our scope would be to examine proposed
+modifications to CLtL relating to the Character data type.  This
+includes the appropriate subtypes, type specifiers, predicates and
+character and string functions as well as the roles of characters
+in reading and printing Lisp objects.
+
+  One of our most pressing items will certainly be the proposal to
+extend the CL character support to large character sets.  (By the
+way, I propose we call this ECS for extended character support and
+avoid confusion over National/Natural/Native.
+
+  I believe ECS is quite important due to the JEIDA and now ISO
+activities where the interest in this subject is high.  First, we need
+to send an acknowledgement to the Ida and the Kanji working group
+for initiating this subject (and our committee).  I have scratched
+out the following; please comment freely and quickly.  I would
+like to transmit our message within the next two weeks.
+
+
+- -----Start Scratchings-----------------------------------------
+
+To: JEIDA Kanji Working Group
+    Masayuki Ida
+    Takayasu Ito, chair, JEIDA Committee for Lisp Standardization
+    Taiichi Yuasa, chair, JEIDA Technical Working Group for Lisp
+                             Standardization
+
+From: ANSI X3J13 Character Subcommittee
+
+  The committee would like to acknowledge and applaud the efforts
+of the JEIDA Kanji WG.  The proposal, presented by Shiota-san at the
+X3J13 June meeting in Boston, was so well received it
+instigated the creation of our Subcommittee!
+
+  The subcommittee members are:
+         Thom Linden,chair (IBM Research)
+         Larry Masinter (XEROX Research)
+         Carl Hoffman (International Lisp Associates)
+         Bob Kerns (Symbolics)
+         Duncan Missimer (Hewlett-Packard)
+         Dave Matthews (Hewlett-Packard)
+         Mike Beckerle (Gold Hill)
+
+  Though, our committee will deal with various topics relating to
+Common Lisp character support, the primary current topic will be
+extensions to support the varied and multiple native character
+sets.  In particular, Common Lisp should be able to support
+Kanji, Hanja, Hanzi, Chinese, German, French, etc. monolingual and
+multilingual applications.
+
+  We look forward to working with the newly formed JEIDA and ISO
+committees on a language design which is supportive of the
+international community requirements and which provides
+for a consistency across varied implementations and machine
+architectures in the spirit of CLtL.
+
+
+
+- -----End Scratchings-------------------------------------------
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <871009-141909-1605@Xerox>
+cc:  cl-natural-languages@sail.stanford.edu
+To:  baggins@ibm.com
+In-reply-to:  "Thomas Linden (Thom)" <baggins@ibm.com>'s message of Wed,
+Subject:  Re: Subcommittee name, scope, JEIDA response
+Date:  9 Oct 87 14:19 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 09 OCT 87 14:19:09 PDT
+
+One of the things we should be aware of is the other work in ANSI and
+ISO on character encoding and character identification standards. I
+understand there is some work in X3L2 and SC2 on multi-byte standards. I
+don't think their work affects ours particularly, except that we should
+probably say that if and when there is a standard for encodings, an
+implementation should identify the character encoding used by an
+implementation in *features* so that char-int and int-char can follow
+the encoding.
+
+There is also a ANSI X3V1, ISO SC18 WG 8, which apparently deals with
+typography issues, but seems relatively irrelevant to the work at hand
+here.
+
+Are any members of JEIDA on cl-natural-languages@sail.stanford.edu? 
+
+I will forward in separate messages the cl-cleanup issues that interact
+with Common Lisp characters.
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <871009-142250-1623@Xerox>
+To:  cl-natural-languages@sail.stanford.edu
+Subject:  [Issue: SHARPSIGN-BACKSLASH-BITS]
+Date:  9 Oct 87 14:22 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 09 OCT 87 14:22:50 PDT
+
+This issue deals with characters in Common Lisp. There seems to be
+general consensus for removing the "font" attribute from characters, and
+some ambivalence about whether the "bits" attribute should remain in the
+standard rather than in an optional extension. (As specified, they do
+little harm, however.)
+
+
+     ----- Begin Forwarded Messages -----
+
+Return-Path: <@SAIL.STANFORD.EDU:KMP@YUKON.SCRC.Symbolics.COM>
+Received: from SAIL.STANFORD.EDU by Xerox.COM ; 27 FEB 87 16:53:21 PST
+Received: from SCRC-YUKON.ARPA by SAIL.STANFORD.EDU with TCP; 27 Feb 87
+16:51:39 PST
+Received: from RIO-DE-JANEIRO.SCRC.Symbolics.COM by
+YUKON.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 171Date: Fri, 27
+Feb 87 19:51 EST
+From: Kent M Pitman <KMP@STONY-BROOK.SCRC.Symbolics.COM>
+Subject: SHARPSIGN-BACKSLASH-BITS
+To: CL-Cleanup@SAIL.STANFORD.EDU
+cc: KMP@STONY-BROOK.SCRC.Symbolics.COM
+Message-ID: <870227195124.0.KMP@RIO-DE-JANEIRO.SCRC.Symbolics.COM>
+
+Issue:        SHARPSIGN-BACKSLASH-BITS
+References:   #\ (p354)
+Category:     CLARIFICATION
+Edit history: Revision 1 by KMP 02/27/87
+Problem Description:
+
+  The description of names for characters that has bits gives examples
+without
+  clearly specifying the meaning of the bit names.
+
+Proposal (SHARPSIGN-BACKSLASH-BITS:SHORT-AND-LONG):
+
+  It should be clearly stated at the appropriate point (currently on
+p354)
+  that the names "C" and "CONTROL" mean control, "M" and "META" mean
+meta,
+  "S" and "SUPER" mean "SUPER", and "H" and "HYPER" mean hyper. It
+should
+  further specified that these can be mixed and matched, as in
+"C-META-X".
+
+Rationale:
+
+  We give examples of both styles, so both styles should be
+well-defined.
+  If these are not going to be well-defined, there's no point in our
+giving
+  examples of them.
+
+Current Practice:
+
+  Most implementations support both short and long names to back up the
+bit
+  names that they allow.
+
+  Some implementations accept only the short name. Others only the long
+name.
+
+Adoption Cost:
+
+  The cost of this change is very small.
+
+Benefits:
+
+  If an input syntax is going to reliably exist, we need to say so.
+
+Conversion Cost:
+
+  User code is not likely to be adversely affected. Most users will
+likely
+  perceive this as a bug fix.
+
+Aesthetics:
+
+  This doesn't much affect aesthetics one way or the other.
+
+Discussion:
+
+  KMP thinks this is a good idea.
+
+
+
+     ----- Next Message -----
+
+Return-Path: <@SAIL.STANFORD.EDU:Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Received: from SAIL.STANFORD.EDU by Xerox.COM ; 02 MAR 87 21:46:09 PST
+Received: from SCRC-STONY-BROOK.ARPA by SAIL.STANFORD.EDU with TCP; 2
+Mar 87  21:43:46 PST
+Received: from EUPHRATES.SCRC.Symbolics.COM by
+STONY-BROOK.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 82Date: Tue,
+3 Mar 87 00:42 EST
+From: David A. Moon <Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Subject: SHARPSIGN-BACKSLASH-BITS
+To: CL-Cleanup@SAIL.STANFORD.EDU
+In-Reply-To: <FAHLMAN.12282824063.BABYL@C.CS.CMU.EDU>
+Message-ID: <870303004240.3.MOON@EUPHRATES.SCRC.Symbolics.COM>
+
+    Date: Sun, 1 Mar 1987  01:07 EST
+    From: "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+
+    I support this proposal.
+
+So do I.
+
+    I think that we should seriously consider flushing both the bit and
+the
+    font attribute characters as part of the language spec.  
+
+Of course if we did that, the SHARPSIGN-BACKSLASH-BITS proposal would be
+superseded, so you can't consistently support both.  That's okay, nobody
+is asking you to be consistent.
+
+Removing bits and fonts wouldn't bother Symbolics.  We don't use fonts,
+and we wouldn't mind calling the bits feature part of our extensions to
+Common Lisp rather than part of standard Common Lisp.  However, it would
+be a pity if all the people who have meta keys didn't get together and
+agree on how they will be handled.  I assume Common Lisp would not be
+changed in a way that made it impossible to continue to support the bits
+facility, for example, MAKE-CHAR would not be changed to add an optional
+second argument that wasn't the bits.
+
+Scott, perhaps you should write a formal cleanup proposal for this.  Or
+is not time yet.
+
+							     These would be
+    replaced by a character standard that would allow for both extended
+    character sets and for implementation-specific character attributes
+- --
+    maybe fonts and bits, maybe something else, but unportable in any
+event.
+    Any such wholesale re-thinking of characters must be coordinated
+with
+    the Kanji standard from Japan, so it may not happen soon.  KMP's
+    proposal is a useful patch in the meantime.
+
+I'm more concerned that adding a new thing (character sets) be done
+thoughtfully than I am about removing an old thing (fonts).
+
+
+
+     ----- Next Message -----
+
+Return-Path: <@SAIL.STANFORD.EDU:FAHLMAN@C.CS.CMU.EDU>
+Received: from SAIL.STANFORD.EDU by Xerox.COM ; 28 FEB 87 22:08:51 PST
+Received: from C.CS.CMU.EDU by SAIL.STANFORD.EDU with TCP; 28 Feb 87
+22:07:00 PST
+Received: ID <FAHLMAN@C.CS.CMU.EDU>; Sun 1 Mar 87 01:07:47-EST
+Date: Sun, 1 Mar 87 01:07 EST
+Message-ID: <FAHLMAN.12282824063.BABYL@C.CS.CMU.EDU>
+Sender: FAHLMAN@C.CS.CMU.EDU
+From: "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+To: Kent M Pitman <KMP@SCRC-STONY-BROOK.ARPA>
+Cc: CL-Cleanup@SAIL.STANFORD.EDU
+Subject: SHARPSIGN-BACKSLASH-BITS
+In-reply-to: Msg of 27 Feb 1987  19:51-EST from Kent M Pitman <KMP at
+STONY-BROOK.SCRC.Symbolics.COM>
+
+
+I support this proposal.
+
+I think that we should seriously consider flushing both the bit and the
+font attribute characters as part of the language spec.  These would be
+replaced by a character standard that would allow for both extended
+character sets and for implementation-specific character attributes --
+maybe fonts and bits, maybe something else, but unportable in any event.
+Any such wholesale re-thinking of characters must be coordinated with
+the Kanji standard from Japan, so it may not happen soon.  KMP's
+proposal is a useful patch in the meantime.
+
+Spice Lisp currently accepts both short and long names, with the obvious
+mapping, so we already comply with this proposal.
+
+
+
+     ----- Next Message -----
+
+Return-Path: <@SAIL.STANFORD.EDU:gls@Think.COM>
+Received: from SAIL.STANFORD.EDU by Xerox.COM ; 03 MAR 87 10:06:35 PST
+Received: from THINK.COM by SAIL.STANFORD.EDU with TCP; 3 Mar 87
+10:02:33 PST
+Received: from boethius by Think.COM via CHAOS; Tue, 3 Mar 87 12:56:59
+EST
+Date: Tue, 3 Mar 87 12:59 EST
+From: Guy Steele <gls@Think.COM>
+Subject: SHARPSIGN-BACKSLASH-BITS
+To: KMP@stony-brook.scrc.symbolics.com, CL-Cleanup@sail.stanford.edu
+Cc: gls@think.com
+In-Reply-To: <870227195124.0.KMP@RIO-DE-JANEIRO.SCRC.Symbolics.COM>
+Message-Id: <870303125900.6.GLS@BOETHIUS.THINK.COM>
+
+I support this proposal.
+
+
+     ----- End Forwarded Messages -----
+
+--
+From:  "Thomas Linden (Thom)" <baggins@IBM.com>
+Subject:  JEIDA on mailing list and JEIDA ack
+Message-ID:  <871013.111348.baggins@IBM.com>
+To:  "X3J13: Character Subcommittee"
+Sender:  baggins@IBM.com
+Date:  Tue, 13 Oct 87 11:13:48 PDT
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 13 Oct 87  11:52:51 PDT
+
+  In response to Larry's question, I believe there are no members
+of JEIDA on the cl-natural-languages mailing list.  In our
+ack note to them we should mention this node to them specifically
+as a contact point with our group.
+
+  Which reminds me, I wanted to send that message out.  Please
+provide any comments to my draft by end of day 15 Oct.  I will
+plan to send it on 16 Oct unless there are unresolved objections.
+
+Below is the draft I sent earlier modified to include our mailing
+node.  Perhaps we should get the mailing node changed to
+cl-character before advertising it?
+
+
+- -----Start Draft-----------------------------------------------
+
+To: JEIDA Kanji Working Group
+    Masayuki Ida
+    Takayasu Ito, chair, JEIDA Committee for Lisp Standardization
+    Taiichi Yuasa, chair, JEIDA Technical Working Group for Lisp
+                             Standardization
+
+From: ANSI X3J13 Character Subcommittee
+    <cl-natural-languages@sail.stanford.edu>
+
+  The committee would like to acknowledge and applaud the efforts
+of the JEIDA Kanji WG.  The proposal, presented by Shiota-san at the
+X3J13 June meeting in Boston, was so well received it
+instigated the creation of our Subcommittee!
+
+  The subcommittee members are:
+         Thom Linden,chair (IBM Research)
+         Larry Masinter (XEROX Research)
+         Carl Hoffman (International Lisp Associates)
+         Bob Kerns (Symbolics)
+         Duncan Missimer (Hewlett-Packard)
+         Dave Matthews (Hewlett-Packard)
+         Mike Beckerle (Gold Hill)
+
+  Though, our committee will deal with various topics relating to
+Common Lisp character support, the primary current topic will be
+extensions to support the varied and multiple native character
+sets.  In particular, Common Lisp should be able to support
+Kanji, Hanja, Hanzi, Chinese, German, French, etc. monolingual and
+multilingual applications.
+
+  We have established a network distribution point for our committee
+discussions: <cl-natural-languages@sail.stanford.edu>.  Correspondence
+from JEIDA and ISO on this subject area is invited.
+
+  We look forward to working with the newly formed JEIDA and ISO
+committees on a language design which is supportive of the
+international community requirements and which provides
+for a consistency across varied implementations and machine
+architectures in the spirit of CLtL.
+
+
+
+- -----End Draft-------------------------------------------------
+
+
+Regards,
+  Thom
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <871022-154330-5579@Xerox>
+cc:  cl-natural-languages@sail.stanford.edu
+To:  baggins@ibm.com
+In-reply-to:  "Thomas Linden (Thom)" <laggins@ibm.com>'s message of Wed,
+Subject:  Re: Subcommittee name, scope, JEIDA response
+Date:  22 Oct 87 15:42 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 22 OCT 87 15:43:30 PDT
+
+I dunno if I should have said so before, but it would be fine with me if
+you sent that note out.
+
+Is anybody else there besides us two?
+
+--
+From:  "Thomas Linden (Thom)" <baggins@IBM.com>
+Subject:  JEIDA note
+Message-ID:  <871022.160935.baggins@IBM.com>
+To:  Larry Masinter <masinter.pa@xerox.com>,
+Sender:  baggins@IBM.com
+Date:  Thu, 22 Oct 87 16:09:35 PDT
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 22 Oct 87  16:20:43 PDT
+
+  Larry, thanks for the response.  The netid's I had received for the
+JEIDA folks were incorrect (I sent a test msg).  Still working
+on getting the right ones.  It'll be sent asap.
+
+  Also, on a general committee note, I would like our group to
+meet on Monday 16 Nov (the day designated for such meetings).
+Please send your suggestions for a time as we need to ask for
+a meeting room.  I recommend we use the afternoon from 1:30 to
+3:30pm.  Does anyone have conflicts with other committee meetings
+or travel problems?
+
+
+Regards,
+  Thom
+
+--
+From:  Robert W. Kerns <RWK@YUKON.SCRC.Symbolics.COM>
+Message-ID:  <19871023151854.0.RWK@WHITE-BIRD.SCRC.Symbolics.COM>
+In-Reply-To:  <871022-154330-5579@Xerox>
+cc:  baggins@ibm.com, cl-natural-languages@sail.stanford.edu
+To:  Masinter.pa@Xerox.COM
+Subject:  Re: Subcommittee name, scope, JEIDA response
+Date:  Fri, 23 Oct 87 11:18 EDT
+Received:  from WHITE-BIRD.SCRC.Symbolics.COM by YUKON.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 281195; Fri 23-Oct-87 11:19:31 EDT
+
+    Date: 22 Oct 87 15:42 PDT
+    From: Masinter.pa@Xerox.COM
+
+    I dunno if I should have said so before, but it would be fine with me if
+    you sent that note out.
+
+    Is anybody else there besides us two?
+
+I'm here again.  I just got past a release deadline (with more work than
+I expected), so I'll be resuming work on my proposal.  Sorry for the
+delay.  I thought I had everything taken care of before I went on vacation,
+but you know how it goes.
+
+--
+From:  Carl W. Hoffman <CWH@FUJI.ILA.Dialnet.Symbolics.COM>
+Message-ID:  <871025212124.0.CWH@ARAPAHOE.ILA.Dialnet.Symbolics.COM>
+In-Reply-To:  <19871023151854.0.RWK@WHITE-BIRD.SCRC.Symbolics.COM>
+cc:  Moon@SYMBOLICS.COM
+To:  CL-Natural-Languages@SAIL.STANFORD.EDU
+Subject:  Re: Subcommittee name, scope, JEIDA response
+Date:  Sun, 25 Oct 87 21:21 EST
+Received:  from ARAPAHOE.ILA.Dialnet.Symbolics.COM (ARAPAHOE.ILA.Dialnet.Symbolics.COM) by F.ILA.Dialnet.Symbolics.COM via INTERNET with SMTP id 13648; 25 Oct 87 21:21:26 EST
+
+    Date: Fri, 23 Oct 87 11:18 EDT
+    From: Robert W. Kerns <RWK@YUKON.SCRC.Symbolics.COM>
+
+    I'm here again.  I just got past a release deadline (with more work than
+    I expected), so I'll be resuming work on my proposal.  Sorry for the
+    delay.  I thought I had everything taken care of before I went on vacation,
+    but you know how it goes.
+
+I'm here now also.  I had thought that this committee had not yet gotten
+started since I hadn't seen any of the mail sent to this list so far (as you
+might have guessed since I didn't repond to either of the two requests for an
+acknowledgement.)  Anyway, I just recently discovered that the master
+distribution list at SAIL contained a mail address for me which didn't work.
+For future reference, anyone wishing to send mail to me should use the
+following address:
+
+  CWH%ILA.Dialnet.Symbolics.COM@Symbolics.COM
+
+I just finished reading the archive of the mail to this list to date, so I'll
+respond to a few items.
+
+I will not be able to attend the Characters Committee meeting at the November
+X3J13 meeting since I will be in Tokyo for five weeks beginning November 9.
+However, I will be reading mail (including mail to this list) while in Tokyo.
+I also plan to meet with Prof. Ida, so if this group manages to form a
+concensus around the end of November or early December, I may be able to
+discuss it with him.
+
+The message to JEIDA looked fine.  I would have made a few minor changes, but
+there's no point in mentioning them now.
+
+There was some discussion of the issue of JEIDA members on the
+CL-Natural-Languages mailing list.  I can easily add Eiji Shiota to our local
+redistribution list if no one objects.
+
+I thought that Dave Moon was also going to be a member of the committee.  When
+I spoke with him briefly at the last X3J13 meeting, he outlined a radically
+different approach to solving some of the character problems than the ones
+I've seen presented so far.  I think we should give careful attention to it.
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <871028-161844-3603@Xerox>
+To:  cl-natural-languages@Sail.stanford.edu
+Subject:  Issues for international languages
+Date:  28 Oct 87 16:18 PST
+Received:  from Cabernet.ms by ArpaGateway.ms ; 28 OCT 87 16:18:44 PST
+
+Here are some character issues:
+
+What characters are alpha-char-p? graphic-char-p? 
+
+What does char-upcase do for non-Roman characters (Cyrillic? Greek? )
+
+What is the proper handling of accents and accented characters? (As far
+as I can tell, most standards treat the accent as a separate character.)
+
+Should we (can we) define some procedures that preserve
+language-dependent sort orders? (E.g., that German and Swedish sort
+order for O-umlaut are different?)
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  X3J13 Character Subcommittee formation
+Message-ID:  <871030.155152.baggins@IBM.com>
+cc:  "X3J13: Character Subcommittee"
+To:  "Dr. Masayuki Ida" <a37078%tansei.u-tokyo.junet@relay.cs.net>,
+Date:  Fri, 30 Oct 87 15:51:52 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 30 Oct 87  18:55:26 PST
+
+
+  The X3J13 committee would like to acknowledge and applaud the efforts
+of the JEIDA Kanji WG.  The proposal for multi-byte character extensions
+presented by Shiota-san at the X3J13 June meeting in Boston, was
+so well received it instigated the creation of a new subcommittee!
+
+  The subcommittee members are:
+         Thom Linden,chair (IBM Research)
+         Larry Masinter (XEROX Research)
+         Carl Hoffman (International Lisp Associates)
+         Bob Kerns (Symbolics)
+         Duncan Missimer (Hewlett-Packard)
+         Dave Matthews (Hewlett-Packard)
+         Mike Beckerle (Gold Hill)
+
+  Though our subcommittee will deal with various topics relating to
+Common Lisp character support, the primary current topic will be
+extensions to support the varied and multiple native character
+sets.  In particular, Common Lisp should be able to support
+Kanji, Hanja, Hanzi, Chinese, German, French, etc. monolingual and
+multilingual applications.
+
+  We have established a network distribution point for our subcommittee
+discussions: <cl-natural-languages@sail.stanford.edu>.  Correspondence
+from JEIDA and ISO on this subject area is invited.
+
+  We look forward to working with the newly formed JEIDA and ISO
+committees on a language design which is supportive of the
+international community requirements and which provides
+for a consistency across varied implementations and machine
+architectures in the spirit of CLtL.
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  16 Nov subcommittee meeting
+Message-ID:  <871030.155730.baggins@IBM.com>
+To:  "X3J13: Character Subcommittee"
+Date:  Fri, 30 Oct 87 15:57:30 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 30 Oct 87  18:56:00 PST
+
+  I've asked for a room to be reserved for our meeting from
+1:30 to 3:30 on 16 Nov.  As soon as I'm told of a room number,
+I'll pass it along.
+
+Regards,
+  Thom
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  Subcommittee report
+Message-ID:  <871030.171243.baggins@IBM.com>
+cc:  "X3J13: Character Subcommittee"
+To:  "Robert F. Mathis" <mathis@Ada20.isi.edu>
+Date:  Fri, 30 Oct 87 17:12:43 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 30 Oct 87  20:13:42 PST
+
+Bob,
+  Please reserve some time on your agenda at Fort Collins for
+our subcommittee report.  I expect 1/2 hr will be sufficient.
+
+Regards,
+  Thom
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  issues for international languages
+Message-ID:  <871110.174648.baggins@IBM.com>
+cc:  "X3J13: Character Subcommittee"
+To:  Larry Masinter <masinter.pa@xerox.com>
+Date:  Tue, 10 Nov 87 17:46:48 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 10 Nov 87  18:04:42 PST
+
+            What characters are alpha-char-p? graphic-char-p?
+            What does char-upcase do for non-Roman characters?
+
+  As these are all character set dependent, it suggests the need
+for a mechanism to define them (as well as string-downcase,
+string-capitalize,upper-case-p, etc.) for each unique character
+set in use.  For example, I believe it is correct that in Chinese
+(Hanzi) there are no alpha characters (ie. it has no alphabet).
+
+
+            Should we (can we) define some procedures that preserve...
+
+
+  This would seem to rest primarily (entirely?) in the string
+comparision function definition.  Currently, CltL states (p301) that
+"A string a is less than a string b if in the first position in
+which they differ the character of a is less than the corresponding
+character of b according to the function char<,  or..."
+
+In general, this is not sufficient:
+
+An example from German, the single character double-s is sorted as ss.
+
+An example from Czech., the combination ch is normally processed as
+  two characters except in sorting where they are considered one
+  character falling after h.
+
+Japanese kanji has multiple sorting orders: telephone, dictionary,
+  strokes and radicals.  So does the FRG.
+
+
+Thus,  either the string comp definition changes to say something
+less stringent or as you suggest, new comparision functions are
+needed.  Are there any examples of handling this in other
+programming languages?
+
+Regards,
+  Thom
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  agenda for monday subcommittee meeting
+Message-ID:  <871112.170843.baggins@IBM.com>
+To:  "X3J13: Character Subcommittee"
+Date:  Thu, 12 Nov 87 17:08:43 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 12 Nov 87  18:16:03 PST
+
+
+  Below is a preliminary agenda for our meeting consisting of some
+items which have come up over the network.  It is preliminary since
+you may have other items you wish to add (we'll do this at the
+meeting start).  I would like to reach agreement on the items on page
+one and begin discussion on page two items.
+
+
+  See you Monday!
+
+
+          +--------------------------------------------------------------+
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |               Agenda (1:30pm - 3:30pm, 16 Nov)               |
+                          ________________________________
+          |                                                              |
+          |                                                              |
+          | >  Committee Name and Scope                                  |
+          |                                                              |
+          |    *  Character Subcommittee                                 |
+          |                                                              |
+          |       o  Data Types, subtypes, type specifiers               |
+          |                                                              |
+          |       o  Predicates and Functions                            |
+          |                                                              |
+          |       o  Roles in reading and printing Lisp objects          |
+          |                                                              |
+          |       o  Native Languages Support                            |
+          |                                                              |
+          |       o  Codes, Bits and Fonts                               |
+          |                                                              |
+          |    *  ?                                                      |
+          |                                                              |
+          | >  Roster                                                    |
+          |                                                              |
+          | >  JEIDA Acknowledgement                                     |
+          |                                                              |
+          | >  JEIDA interaction (network)                               |
+          |                                                              |
+          | >  Proposal format, tracking (and finally voting)            |
+          |                                                              |
+          |    Cleanup committee format?                                 |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |   X3J13 subcommittee        -1-      11/87   (Thom Linden)   |
+          +--------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
+
+          +--------------------------------------------------------------+
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |               Agenda (1:30pm - 3:30pm, 16 Nov)               |
+                          ________________________________
+          |                                                              |
+          |                                                              |
+          | >  Native Languages Proposal(s)                              |
+          |                                                              |
+          |    *  JEIDA Proposal (Ida)                                   |
+          |                                                              |
+          |       Masinter variant                                       |
+          |                                                              |
+          |    *  IBM Proposal (Linden)                                  |
+          |                                                              |
+          |    *  ?                                                      |
+          |                                                              |
+          | >  What characters are alpha-char-p, graphic-char-p          |
+          |                                                              |
+          | >  Case distinctions for non-Standard characters             |
+          |                                                              |
+          | >  Sorting                                                   |
+          |                                                              |
+          | >  Accents and accented characters                           |
+          |                                                              |
+          | >  Bits                                                      |
+          |                                                              |
+          | >  Fonts                                                     |
+          |                                                              |
+          | >  SHARPSIGN-BACKSLASH-BITS                                  |
+          |                                                              |
+          | >  Other issues                                              |
+          |                                                              |
+          | >  ?                                                         |
+          |                                                              |
+          | >  ?                                                         |
+          |                                                              |
+          | >  Subcommittee Report                                       |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |                                                              |
+          |   X3J13 subcommittee        -2-      11/87   (Thom Linden)   |
+          +--------------------------------------------------------------+
+
+--
+From:  masinter.PA@Xerox.COM
+Message-ID:  <871112-225425-1590@Xerox>
+cc:  "X3J13: Character Subcommittee"
+To:  Thom Linden <baggins@ibm.com>
+In-reply-to:  baggins@ibm.com's message of Thu, 12 Nov 87 17:08:43 PST,
+Subject:  Re: agenda for monday subcommittee meeting
+Date:  12 Nov 87 22:50:39 PST
+Received:  from Chardonnay.ms by ArpaGateway.ms ; 12 NOV 87 22:54:25 PST
+
+I don't recall ever seeing an "IBM proposal", although you allude to one
+in your agenda. Did I miss it?
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  agenda
+Message-ID:  <871113.095345.baggins@IBM.com>
+To:  "X3J13: Character Subcommittee"
+Date:  Fri, 13 Nov 87 09:53:45 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 13 Nov 87  09:59:23 PST
+
+  Sorry, as Larry pointed out not all items on the agenda have
+been discussed on net.  In particular, there has been a fair
+amount of work within IBM this year on native language support in
+Lisp and I hope to introduce this into committee (there is a report
+but I wasn't able to get it out before next week).
+
+Regards,
+  Thom
+
+--
+From:  Thom Linden <baggins@ibm.com>
+Subject:  Ida response
+Message-ID:  <871113.100420.baggins@IBM.com>
+To:  "X3J13: Character Subcommittee"
+Date:  Fri, 13 Nov 87 10:04:20 PST
+Received:  from IBM.COM by SAIL.STANFORD.EDU with TCP; 13 Nov 87  10:11:39 PST
+
+  I don't think Ida's response was sent to our committee mailing
+address.  I have attached it below.
+
+Regards,
+  Thom
+- ---------------------------Ida response-----------------------
+
+Received: from  UTOKYO-RELAY.CSNET by IBM.COM on 11/12/87 at 22:29:34 PST
+Received: from relay2.cs.net by RELAY.CS.NET id aa02169; 13 Nov 87 1:12 EST
+Received: from utokyo-relay by RELAY.CS.NET id aa09076; 13 Nov 87 1:06 EST
+Received: by ccut.cc.u-tokyo.junet (5.51/6.2.9Junet)
+    id AA00116; Fri, 13 Nov 87 14:51:04 JST
+Received: by tansei.cc.u-tokyo.junet (4.12/6.2Junet)
+    id AA11516; Fri, 13 Nov 87 14:50:37+0900
+Date: Fri, 13 Nov 87 14:50:37+0900
+From: Masayuki Ida <a37078%tansei.cc.u-tokyo.junet%utokyo-relay.csnet@RELAY.CS.NET>
+Return-Path: <a37078@tansei.cc.u-tokyo.junet>
+Message-Id: <8711130550.AA11516@tansei.cc.u-tokyo.junet>
+To: baggins@ibm.com
+Subject: Re:  X3J13 Character Subcommittee formation
+Cc: ida%aoyama%utokyo-relay.csnet@RELAY.CS.NET,
+    mathis%ada20.isi.edu@RELAY.CS.NET
+
+
+Dear Thom Linden, the chairman of character subcomittee
+
+Sorry for my laziness to make a late reply to your kind mail.
+Since I have a university schedule during the next week,
+I cannot attend and join the next X3J13 meeting.
+I hope the next meeting will be blessed one.
+
+As you know, I have no official responsibility to carry JIS things.
+I returned to my desk at university, though many commercial companies
+asked me to head their common Lisp committee which is a different one
+from the official standardization committee and I continue to direct.
+
+As for the multi-byte character manipulation extension,
+I am very happy on hearing the subcommittee your headed was born.
+In Japan, several implementations already started the project for thier
+own impelementations of CL along this guide line.
+I feel my role for the kanji issue was over with a success as long as I know.
+The further real world is yours. It is my great pleasure to be in the future
+one of the large users who enjoy the facility you and japanese companies
+will decide.
+
+But,
+  If you have something to ask or settle, and if you feel I can assist you,
+please frankly tell me. I am young and I am not retired.
+
+Two comments,
+I will appreciate if you arrange the things on your committee are kept me
+informed.
+and I have a desire to attend on the Feb or March meeting if possible.
+
+Thank you
+Masayuki Ida
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <871113-103917-2158@Xerox>
+cc:  cl-natural-languages@sail.stanford.edu
+To:  baggins@ibm.com
+In-reply-to:  Thom Linden <baggins@ibm.com>'s message of Fri, 13 Nov 87
+Subject:  Re: agenda
+Date:  13 Nov 87 10:38 PST
+Received:  from Cabernet.ms by ArpaGateway.ms ; 13 NOV 87 10:39:17 PST
+
+Is it fair to characterize the IBM proposal as incompatible with the
+JEIDA proposal? Given this is an informal working group, could you give
+us some hints about the ways in which it might be incompatible?
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <871113-172244-2905@Xerox>
+cc:  masinter.pa@Xerox.COM
+Subject:  Proposed alternative to JEIDA proposal
+to: "X3J13: Character Subcommittee"
+Date:  13 Nov 87 17:22 PST
+Received:  from Cabernet.ms by ArpaGateway.ms ; 13 NOV 87 17:22:44 PST
+
+Since it will be up for discussion, I took the time to write up the
+variant I had envisioned for the JEIDA proposal. I started with the
+JEIDA proposal as forwarded by M.Ida  I've written this by editing the
+JEIDA proposal and adding a Q&A section at the end.
+
+I added several sections in {braces} which are my comments about what
+edits I did to the JEIDA proposal and why. 
+
+This is still very much a rough draft, and not a formal proposal, but I
+thought this might make clearer what I had in mind.
+
+- -------------------- Beginning of text --------------------
+1. Hierarcy of characters and strings
+
+Let the value of char-code-limit be large enough to include all
+characters.
+
+	char >= string-char >= standard-char
+
+{I removed the internal-string-char (which was probably intended to be
+internal-thin-char) and changed the > to >=, since we are not requiring
+there to be more char than string-char.}
+
+	string >= simple-string >= simple-standard-string
+
+	string = (or (vector standard-char) (vector string-char))
+
+{Rather than introduce a new type of "thin" character, merely use
+standard-char. Algorithms that want to assert that their elements are
+all "thin" can most likely also assert that they are all "standard".}
+
+Type (vector standard-char) and (vector string-char) aredisjoint or
+identical.
+
+simple-string = (or (simple-array standard-char (*))
+			     (simple-array string-char (*)))
+
+
+	notes:	A > B means B is a subtype of A,
+		A >= B means B is a subtype of A or B is equal to A.
+
+2. Print width
+
+Only standard characters are required to have fix-pitched print width. 
+
+{I removed WRITE-WIDTH; see notes below.}
+
+
+3. Functions
+
+Functions dealing with strings should work as before, except ones which
+change the contents of simple-standard-string to non standard-char's.
+
+{removed "internal-thin" terminology}
+
+Functions producing strings should create (vector string-char), rather
+than any more restricted type, unless they were explicitly specified.
+
+Funtions comparing strings should compare them elementwise. Therefore it
+is possible that a (vector string-char) is equal to a (vector
+standard-char).
+
+{revise terminology}
+
+
+1. A proposal for embedding multi-byte characters
+
+In order to decide on a final proposal, we chose essential and desirable
+characteristics of a working multi-byte character system. Chapter 2
+describes these characteristics in some detail.
+
+Chapter 3 describes additional features to Common Lisp which will be
+useful not just for multi-byte character, but also for many other kinds
+of character sets. This chapter describes internal data structures.  If
+this proposal is accepted in Common Lisp, it will be easy for countries
+to add original mechanisms.
+
+Chapters 4 describes proposed changes to @I[Common Lisp -- The Language]
+(CLtL).
+
+2. Additional features for embedding multi-byte characters.
+
+This chapter describes design principles which can be used to design
+multi-byte character language extensions to Common Lisp.
+
+There are many programming languages which can use multi-byte
+characters. Most of them can use multi-byte character as string
+character data but not as variables or function names. 
+
+It is necessary for programming languages like Lisp that use symbolic
+data to be able to process not only single-byte characters but also
+multi-byte characters. That is, it should be possible to use multi-byte
+characters in character string and symbols, and it must be possible to
+store both kinds of characters in them.
+
+Treating multi-byte characters just like other alpha-numeric characters
+means that multi-byte character must be treated as a single character
+object. Many of the present implementations of Lisp treat multi-byte
+character as pairs of bytes.  Alternatively, they use a different data
+type which doesn't permit multi-byte character to be mixed with standard
+characters. Such systems are not useful for user.
+
+Thus, the basic design principles for embedding multi-byte character to
+Common Lisp are:
+
+* Multi-byte character should be treated like single-byte character,
+that is,  a multi-byte character is one character object.
+
+* A program which was coded without explicit attention for multi-byte
+character should handle multi-byte character data as is.
+
+* The performance of the system in terms of CPU and memory utilization
+should not be consideraly affected in programs which do not use
+multi-byte characters.
+
+
+3.  Implementation notes:
+
+This section describes the implementation of multiple character sets in
+Common Lisp. 
+
+To treat multi-byte characters like single-byte characters, the
+multi-byte character must be included in the set of possible character
+codes.
+
+Add multi-byte characters by setting the variable char-code-limit to a
+large number.
+
+The single-byte character set and the multi-byte character set must be
+ordered into a single sequence of character codes. This means multi-byte
+character set must not overlap with the single-byte character set.  
+
+It is possible to use multi-byte characters with fonts in Common Lisp,
+and operations that work for single-byte character will also work for
+multi-byte character without any change.
+
+Alone, this implementation method could have problems with efficiency.
+If the value of character code is greater than size of 1 byte
+(multi-byte characters are in this category), memory utilization is
+affected.  A string containing only one single-byte character is 2 bytes
+long. The same problem would also occur with symbol p-names.  If we can
+solve the problem for strings, we can solve other problems, so we will
+start by considering only strings.
+
+To avoid this memory utilization problem, it is possible to optimize and
+make single-byte character strings by packing internally. In other
+words, to have two kinds of data types and not show it to user. There is
+only one type of data from the viewpoint of users, which means that
+every function which uses strings will continue to work as defined.
+
+This can be implemented in almost everywhere without high cost.  The
+only problem occurs when a function attempts to put a multi-byte
+character into an optimized and packed sigle-byte-only string.  To work
+according to the definition, the implementation must unpack the original
+packed string. This presents an implementation inefficiency which the
+user may find undesirable.
+
+For this reason, the implementation allows (array standard-char (*)) and
+(simple-array standard-char (*)) (along with simple-standard-string) as
+types so that users can construct and manipulate strings that are
+guaranteed not to require multiple bytes to represent.
+
+This proposal has only three named string types (Implementations may add
+other string types between these but they are implementation dependent.)
+In particular, since string = (or (array string-char (*)) (array
+standard-char (*))), implementations may have distinct representations
+for (array string-char (*)) and (array standard-char (*)), or those
+arrays may be the same. The named types are: 
+ 
+string (the most general)
+
+simple-string (cannot be displaced and does not have a fill pointer, but
+can contain multi-byte characters)
+
+simple-standard-string ("it is an error" to attempt to store a character
+that is not a standard-character in a simple-standard-string. These
+strings are thus guaranteed to require only one byte because there are
+not many standard characters.)
+
+The data type hierarchy for character remains unchanged. The type
+hierarchy for string is shown in figure 1.
+
+Fig-1.a  Structure of character type
+				character
+				    |
+			     string-char
+				    |
+			     standard-char
+
+
+Fig-1.b  Structure of string type:
+
+string = (or (array string-char (*)) (array standard-char (*)))
+  |
+simple-string = (or (simple-array string-char (*)) (simple-array
+standard-char (*)))
+  |
+simple-standard-string = (simple-array standard-char (*))
+
+
+either simple-string = simple-standard-string or they are disjoint.
+
+
+The same character is the same object regardless of whether it is found
+in an simple-standard-string or a normal string.
+
+Next we must discuss character input. The proposal does not discuss what
+is stored in files, nor what happens between the Lisp implementation and
+a terminal. Each system will implement this in its own way.  Instead,
+let us discuss the data as passed to lisp programs. We think that
+treating all input data as string is the safest possible course. Since a
+symbol's p-name string should not be modified, it can be optimized.
+
+For implementations or programs that know that they are only
+manipulating standard characters, the stream can be opened with an
+element-type of standard-character.
+
+{I removed *read-default-string-type*; it is poor design because it is a
+dynamic property rather than a stream property. Whether strings should
+be simple-standard-string or standard-string should depend on the
+element type of the stream you are reading from. If it is string-char,
+then read should can produce simple-string. If it  is standard-char,
+read can produce simple-standard-string.}
+
+4. Proposed changes to CLtL to support multiple character sets.
+
+This section lists proposed modifications to CLtL.  Only additional and
+modified parts are specified.  Those portions which are not mentioned
+are unchanged.
+
+Section 2.5.2 Strings:
+
+"a string is a specialized vector .... type string-char"
+		=>
+"a string is a specialized vector .... type string-char or
+@B[standard-char]"
+
+
+Section 2.15 Overlap,Inclusion and Disjointness of Types:
+
+{No longer need any changes to the character type descriptions.}
+
+Add the following :
+    
+Type simple-standard-string is a subtype of vector because
+simple-standard-string means (simple-array standard-char (*)).
+
+The description of type string is changed to:
+
+Type string is a subtype of vector because string means (or (vector
+string-char) (vector standard-char)).  Type (vector string-char) and
+@B(vector standard-char) are disjoint or equal.
+
+a description of type simple-vector, simple-string ... is changed to :
+  
+Type simple-vector, simple-string and simple-bit-vector are disjoint
+subtype of simple-array because each one means (simple-array t (*)), (or
+(simple-array string-char (*)),(or (simple-array standard-char (*)) and
+(simple-array bit (*)).
+
+add the following:
+
+Type simple-standard-string means (simple-array standard-char (*)). 
+
+Type (simple-array string-char (*)) and (simple-array standard-char (*))
+are disjoint or equal.
+
+Section 4.1 Type Specifier Symbols:
+
+add following to system defined type specifiers:
+
+simple-standard-string
+
+Section 4.5 Type Specifiers That Specialize
+
+"The specialized types (vector string-char) ... data types."
+					=>
+"The specialized types (or (vector standard-char) (vector string-char))
+and (vector bit) are so useful that they have the special names string
+and bit-vector.  Every implementation of Common Lisp must provide
+distinct representation for string and bit-vector as distinct
+specialized data types."
+
+Section 13.2 Predicates on Characters
+
+graphic-char-p char			[constant]
+
+"graphic characters of font 0 are all of the same width when printed" =>
+"standard-char without #\Newline of font 0 are all of the same width
+when printed".
+
+alpha-char-p char			[function]
+   only standard characters are alpha-char-p
+upper-case-p char			[function]
+   only standard characters are upper-case-p
+lower-case-p char			[function]
+   only standard-characters are lower-case-p
+
+both-case-p char			[function]
+   only standard characters are both-case-p
+
+digit-char-p char &optional (radix 10)			[function]
+   only standard characters are digit-char-p
+
+alphanumericp char			[function]
+   only standard characters are alphanumericp
+
+
+Chapter 18 Strings
+
+"the type string is identical ... (array string-char (*))."
+				=>
+"the type string is identical to the type(or (vector standard-char)
+(vector string-char)), which in turn is the same as (or (array
+standard-char (*)) (array string-char (*)))."
+
+Section 18.3 String Construction and Manipulation
+
+make-string size &key :initial-element			[function]
+
+add:
+
+To make an simple-standard-string, use make-array or make-sequence.
+
+
+   
+Section  22.2.1 Input from Character Stream
+
+Add a note that the stream-element-type of a stream is used to determine
+the element-type of string elements that are read. 
+
+Section 22.3.1 Output to Character Stream
+
+{Do not add write-width. This does not belong here. There are many
+"run-coded" external character representations where the write-width of
+a string or character depends on the characters that precede it. Note
+that the number of bytes written to a stream by write-char may vary on
+the system or the stream.}
+
+Appendix Proposed Extended character processing facilities for Common
+Lisp.
+
+{I've attempted to extend this section to include all languages and not
+just Japanese.}
+
+
+char-code-limit char 			[Function]
+
+The value of char-code-limit should be large enough to include all JIS
+and/or ISO TC97/SC18/WG8 and/or  ISO SC2/WG2 characters. char-code-limit
+= 65536 is large enough to meet these purposes currently.  Other
+character encodings are possible.
+
+13.2. Predicates on Characters
+
+standard-char-p char 			[Function]
+
+Return nil for all Japanese characters, all Cyrillic, Greek, etc.
+characters. (That is, only the characters in CLtL specified are
+standard-char-p.)
+	
+graphic-char-p char 			[Function]
+
+Return t for all characters that have a printable representation in the
+encoding in use, including Japanese characters, etc. The predicate
+depends only on the character encoding standard used, rather than the
+capabilities of any particular printer or output device. Implementations
+may chose to also provide additional functions which are able to query
+output devices to determine their character representation, but
+graphic-char-p has no such capability.
+
+
+alpha-char-p char 			[Function]
+
+Return NIL for all characters except the alpha-characters of
+standard-char. This means that alpha-char-p is portable, although of
+limited use in non-standard-char applications.
+
+@newpage
+
+{I removed jis-char-p from the proposal because it is encoding specific.
+I removed japanese-char-p temporarily because I didn't understand its
+use. Perhaps JIS WG can give an example of when japanese-char-p might be
+used? Similarly kanji-char-p? Part of the problem is that any one
+encoding might over time acquire additional kanji-char-p characters as
+part of internal use or representation of names. }
+ 
+
+kanji-char-p 			[Function]
+The argument char has to be character type object. kanji-char-p is true
+if the argument is a kanji character within the encoding of the system.
+
+hiragana-char-p char			[Function]
+The argument char has to be character type object.hiragana-char-p is
+true if the argument is one of the 83 hiragana characters in JIS
+C6226(3.1.4), the hiragana repeatsymbol, or dakuten for a total of 85
+characters.
+
+katakana-char-p char			[Function]
+
+The argument char has to be a character type object.katakana-char-p is
+true if the argument is one of the 86hiragana characters in JIS
+C6226(3.1.5), long-sound-symbol,katakana-repeat symbol, or
+katakana-dakuten for a total of 89 characters that also satisfy
+jis-char-p.
+
+kana-char-p char			[Function]
+equivalence (or (hiragana-char-p char) (katakana-char-p char))
+
+
+char= character &rest more-characters			[Function]
+char/= character &rest more-characters			[Function]
+char< character &rest more-characters			[Function]
+char> character &rest more-characters			[Function]
+char<= character &rest more-characters			[Function]
+char>= character &rest more-characters			[Function]
+
+The ordering of hiragana, katakana, kanji follows the ordering in the
+character encoding chosen, e.g. (char< x y) is exactly the same as (<
+(char-int x) (char-int y))
+   
+
+13.4 Character Conversions
+
+char-upcase char			[Function]
+char-downcase char			[Function]
+
+These return the argument if the argument does not satisfy alpha-char-p
+and are not standard-char.
+
+!
+Some questions and my answers:
+
+
+Q. Are characters with different codes always syntactically distinct?
+
+A. Yes.
+
+Q. Can the standard character #\( have two different codes,
+corresponding, for example, to two different external file system
+representations of that character?  
+
+A. No. READ and READ-CHAR translate the external file system
+representations into a single consistent internal character
+representation. A Common Lisp implementation can support multiple
+external file system representations either by additional stream
+properties (e.g., new keyword arguments to OPEN in addition to
+ELEMENT-TYPE) and by accessors on character streams.
+
+A lisp program can deal explicitly with character set conversions by
+using READ-BYTE and INT-CHAR or MAKE-CHAR.
+
+ 
+Q. Can two different string-chars to have the same print glyph, '(' for
+example, but different syntactical properties?
+
+A. Yes. This is consistent with other ISO character standards; for
+example, some character representations separate the hyphen, dash,
+em-dash and en-dash, yet in some printed representations they have the
+same print glyph.
+
+Q. Is it allowable to map both of these sets of codes into the one,
+internal Lisp character code set when inputting data to Lisp, and adopt
+our own conventions for translating output back to single and double
+byte? Is it possible for an with 2-byte codes, and to map some 2-byte
+character codes and some 1-byte character codes in system files onto the
+same set of 2-byte internal codes for the standard characters when read
+into Lisp?
+
+A. yes. READ-CHAR and WRITE-CHAR may do an arbitrary amount of
+processing to actually read or  write a character object onto a file.
+Explicit run-coding, two-byte codes, one-byte codes with an external map
+of coding schemes, etc. are all allowable and implementation dependent.
+The handling of external coding and the type of external coding used is
+recommended to be described by programmers in exta optional keywords to
+OPEN.
+	
+
+Q. if the character object print syntax "#\a" or "#\A" is read from a
+file, is alpha-char-p true
+
+          1. if the 'a' had been encoded as a single byte?
+          2. if the 'a' had been encoded as a double byte?
+          3. if the 'A' had been encoded as a single byte?
+          4. if the 'A' had been encoded as a double byte?
+
+A. #\ can be though of operating by performing READ-CHAR; READ-CHAR
+hides the encoding of the character, so that #\a and #\A have the same
+semantics no matter what the file encoding was.
+
+Q. Even if the Lisp system supports a large character set, only standard
+characters have, as a default, non-constituent syntax type, constituent
+character attributes relevant to parsing of numbers and symbols, or
+defined syntax within a format control string. Correct?
+
+A. False. readtables should allow any character of of type STRING-CHAR
+to have a syntax class, and format strings can contain any character of
+type STRING-CHAR. 
+
+Q. If a Lisp system supports a large character code set, need it allow
+every character of type string-char to have a non-constituent syntax
+type defined in the readtable, or is the proposal's default that only
+standard characters need be represented in the readtable?
+
+A. CLtL says (22.1.5 page  360):
+"every character of type string-char must be represented in the
+readtable." The members felt as we extended the definition of
+string-char to include japanese characters, as the results of a natual
+interpretation of CLtL, the readtable must have more than 64k 'logical'
+entries. A hash table works well.
+
+Q. A specific case related to the previous question: suppose #\% were a
+non-standard character, but still a string-char in some implementation
+of Lisp.  Is
+
+           (make-dispatch-macro-character #\%)
+
+necessarily permitted in every implementation that supports #\% as a
+string-char?
+
+A. Yes.
+
+
+Q. What about efficiency of standard non-simple strings. Don't they take
+too much space to represent? 
+
+A. This proposal allows users to write programs that create only strings
+that have only STANDARD-CHAR in them. These are the "thin" strings. It
+is quite possible that such strings might contain other character codes
+that are not standard-char, but these are not portably elements of a
+"thin" string.
+
+--

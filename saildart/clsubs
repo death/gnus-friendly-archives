@@ -1,0 +1,1142 @@
+--
+From: unknown
+Subject: (no subject)
+
+Introduction
+Welcome to the Common Lisp Subsets Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Subsets@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLSUBS.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Subsets-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Martin Griss		HP		griss.hplabs@csnet-relay (I hope)
+Beau Sheil		Xerox		sheil@xerox
+Dave Matthews		HP		matthews.hplabs@csnet-relay (I hope)
+Bob Kessler		Univ. of Utah	kessler@utah-20
+Jay Lark		Teknowledge	lark@sumex
+Carl Hewitt		MIT		hewitt-subsets@mc
+Govind Deshpande	JPL		deshpande@jpl-vlsi.arpa
+Gary Brown		DEC		gbrown@dec-marlboro
+Eric Benson		Lucid		eb@su-ai
+Jerry Barber		Gold Hill	jerryb@mc
+Jed Marti		Rand		marti@rand-unix
+Chris Schmidt		HPP		schmidt@sumex
+Alice Hartley		BBN		hartley@bbn
+Gordon Novak		Univ. of Texas	novak@utexas-20
+Guy Steele		Tartan		steele@tl-20a
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Jim Meehan		Cognitive Sys.	meehan@yale
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-subsets@SU-AI.ARPA 
+Subject: Introduction
+Date: 23 Sep 1984 16:24 EST
+
+Welcome to the Common Lisp Subsets Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Subsets@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLSUBS.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Subsets-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Martin Griss		HP		griss.hplabs@csnet-relay (I hope)
+Beau Sheil		Xerox		sheil@xerox
+Dave Matthews		HP		matthews.hplabs@csnet-relay (I hope)
+Bob Kessler		Univ. of Utah	kessler@utah-20
+Jay Lark		Teknowledge	lark@sumex
+Carl Hewitt		MIT		hewitt-subsets@mc
+Govind Deshpande	JPL		deshpande@jpl-vlsi.arpa
+Gary Brown		DEC		gbrown@dec-marlboro
+Eric Benson		Lucid		eb@su-ai
+Jerry Barber		Gold Hill	jerryb@mc
+Jed Marti		Rand		marti@rand-unix
+Chris Schmidt		HPP		schmidt@sumex
+Alice Hartley		BBN		hartley@bbn
+Gordon Novak		Univ. of Texas	novak@utexas-20
+Guy Steele		Tartan		steele@tl-20a
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Jim Meehan		Cognitive Sys.	meehan@yale
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From:  Jerry Duggan <duggan@UTAH-20.ARPA>
+To:  cl-object-oriented-programming@SU-AI.ARPA, cl-subsets@SU-AI.ARPA
+Subject:  Please add me ty your group
+Date:  Thu 27 Sep 84 08:39:01-MDT
+Received:  from UTAH-20.ARPA by SU-AI.ARPA with TCP; 27 Sep 84  07:37:16 PDT
+
+I work with Bob Kessler at the University of Utah.
+
+Jerry Duggan
+- -------
+
+--
+From: RPG  
+To:    cl-subsets@SU-AI.ARPA 
+Subject: Chairman
+Date: 02 Oct 1984 13:16 EST
+
+Now that we've basically got most everyone who is interested on the mailing
+list, let's pick a chairman. I suggest that people volunteer for chairman.
+
+The duties are to keep the discussion going, to gather proposals and review
+them, and to otherwise administer the needs of the mailing list. I will
+retain the duties of maintaining the list itself and the archives, but
+otherwise the chairman will be running the show. 
+
+Any takers?
+			-rpg-
+
+--
+From:  Martin <GRISS%hplabs.csnet@csnet-relay.arpa>
+Source-Info:   From (or Sender) name not authenticated.
+Cc:  GRISS@hplabs.CSNET
+To:  cl-subsets%su-ai.arpa@csnet-relay.arpa
+Subject:  Chairman
+Date:  Wed 3 Oct 84 06:38:36-PDT
+Message-Id:  <8410031338.AA16508@HP-VENUS>
+Received:  by HP-VENUS id AA16508; Wed, 3 Oct 84 06:38:31 pdt
+
+I am willing to act as chairman/co-ordinator of the cl-subsets group.
+
+I am currently exploring to what degree PSL (with appropriate
+modifications) could be viewed as a CL subset. The version of PSL we
+use at HP and some universities, has a significant CL compatibility
+module (package system, pathnames, new reader, etc.).  With some
+changes, and the installation of this module in the basic system, a
+useful and fast "PSL strength" subset could be evolved. We are writing
+a simple translator to aid the transition from "old" PSL to "new" PSL.
+
+I will first submit an initial proposal to the PSL and Standard LISP
+communities for discussion, and then share the revised versions and
+comments with the rest of our working group.
+
+Are there any other subset proposals/partial compatibility packages or
+translators (from subset to subset) being "brewed" out there?
+
+Martin Griss
+- -------
+
+--
+From: RPG  
+To:    cl-subsets@SU-AI.ARPA 
+Subject: Chairman
+Date: 13 Oct 1984 14:47 EST
+
+No one has been nominated as chairman of the Subsets subgroup.  I will
+need either a volunteer or a nomination.  Please respond by October 24. At
+the end of this month I want to see some ideas and proposals coming in on
+this mailing list.
+
+			-rpg-
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1984.10.17.15.52.41.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  Re: Chairman 
+cc:  cl-subsets@su-ai.arpa
+To:  Dick Gabriel <RPG@su-ai.arpa>
+Date:  Wednesday, 17 October 1984 11:53:23 EDT
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 17 Oct 84  11:38:33 PDT
+
+I thought Martin Griss volunteered for this.  Did he not?
+
+- --Joe
+
+--
+From:  Skef Wholey <Wholey@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 17 Oct 1984  11:53-EDT from Joseph.Ginder at cmu-cs-spice.arpa
+Subject:  Chairman 
+CC:    Joseph.Ginder@CMU-CS-SPICE.ARPA
+To:    cl-subsets@SU-AI.ARPA, Dick Gabriel <RPG@SU-AI.ARPA>
+Sender:  WHOLEY@CMU-CS-C.ARPA
+Message-ID:  <WHOLEY.12056214685.BABYL@CMU-CS-C.ARPA>
+Date:  Wed, 17 Oct 1984  15:25 EDT
+Received:  ID <WHOLEY@CMU-CS-C.ARPA>; Wed 17 Oct 84 15:52:39-EDT
+
+Joe's right.  The following is in the archives...
+- -------------------------------------------------------------------------------
+    Date: Wed 3 Oct 84 06:38:36-PDT
+    From: Martin <GRISS%hplabs.csnet@csnet-relay.arpa>
+    Subject: Chairman
+    To: cl-subsets%su-ai.arpa@csnet-relay.arpa
+    Cc: GRISS@hplabs.CSNET
+    Source-Info:  From (or Sender) name not authenticated.
+
+    I am willing to act as chairman/co-ordinator of the cl-subsets group.
+
+    I am currently exploring to what degree PSL (with appropriate
+    modifications) could be viewed as a CL subset. The version of PSL we
+    use at HP and some universities, has a significant CL compatibility
+    module (package system, pathnames, new reader, etc.).  With some
+    changes, and the installation of this module in the basic system, a
+    useful and fast "PSL strength" subset could be evolved. We are writing
+    a simple translator to aid the transition from "old" PSL to "new" PSL.
+
+    I will first submit an initial proposal to the PSL and Standard LISP
+    communities for discussion, and then share the revised versions and
+    comments with the rest of our working group.
+
+    Are there any other subset proposals/partial compatibility packages or
+    translators (from subset to subset) being "brewed" out there?
+
+    Martin Griss
+- -------------------------------------------------------------------------------
+
+--
+From:  Jed Marti <marti@randgr>
+Subject:  Re: Chairman
+To:  cl-subsets@su-ai
+Date:  17 Oct 84 14:09:35 PDT (Wed)
+Message-Id:  <8410172109.AA13976@randgr.ARPA>
+Received:  by randgr.ARPA; Wed, 17 Oct 84 14:09:40 pdt
+
+  Martin Griss has volunteered to act as chairman. If there needs to be a
+formal nomination, then:
+
+  I nominate Martin Griss to the job of acting chairman of the Common Lisp
+Subset Committee.
+
+Jed Marti
+
+--
+From:  Joseph.Ginder@cmu-cs-spice.arpa
+Message-ID:  <1984.10.23.12.56.30.Joseph.Ginder@cmu-cs-spice.arpa>
+Subject:  Re: Import and Export
+cc:  Tom Kaczmarek <KACZMAREK@usc-isif.arpa>, cl-subsets@su-ai.arpa
+To:  cl-foreign-function-call@su-ai.arpa
+Date:  Tuesday, 23 October 1984 09:25:42 EDT
+Received:  from CMU-CS-SPICE.ARPA by SU-AI.ARPA with TCP; 23 Oct 84  06:32:27 PDT
+
+The CMU approach does allow other languages to make remote procedure calls
+to Common Lisp.  I don't see that the issue of a minimal kernel is
+particularly relevant to this.  For a foreign language to make calls on
+Common Lisp does not require that the Lisp it is calling have some specific
+functionality more than that it is there and can be called.  I certainly
+don't expect to define what functions are avaliable in fortran libraries in
+order to define a foreign funcall mechanism for Common Lisp; I don't see how
+anything different is implied by the reverse situation.
+
+When we are concerned about supplying a minimal lisp for some application at
+Perq (and CMU), we just load whatever application stuff there is into a lisp
+and disembowel the lisp in such a way as to make all of the Common Lisp stuff
+that isn't used available for GC.  We then force a GC and save the new,
+application-specific lisp core.  The real problem then, becomes knowing what
+minimal stuff the foreign language will call in order not to disembowel too
+much.  I don't really have much of a feel for how important such minimal
+lisps are; I think this a task of the subset committee.  
+
+To the subset committee: I can imagine applications where the delivery
+vehicle for a lisp application is a fairly limited piece of hardware; is a
+subset appropriate or would the method described above be acceptable?  We've
+found that very straightforward methods of reducing a lisp core's size
+result in dramatic space reductions; more thoughtful approaches should
+result in really small lisps for delivery of applications without requiring
+a specific minimal subset (although a "kernel" subset might be useful for
+other reasons).
+
+- --Joe
+
+--
+From:  Doug <Faunt%hplabs.csnet@csnet-relay.arpa>
+Source-Info:   From (or Sender) name not authenticated.
+To:  cl-foreign-function-call%su-ai.arpa@csnet-relay.arpa, 
+Subject:  removal form list
+Date:  Tue 23 Oct 84 13:32:54-PDT
+Message-Id:  <8410232033.AA29013@HP-VENUS>
+Received:  by HP-VENUS id AA29013; Tue, 23 Oct 84 13:33:08 pdt
+
+Please remove dcm%hplabs@csnet-relay (or other equivalent address)
+from your list, since this user doesn't exist here by that name,
+and I'm tired of looking at the error messages.
+- -------
+
+--
+From:  Bill <WWHITE@SRI-KL.ARPA>
+To:  cl-subsets@SU-AI.ARPA
+Subject:  ad-hoc vs. planned subsets.
+Date:  Wed 24 Oct 84 20:36:45-PDT
+Received:  from SRI-KL.ARPA by SU-AI.ARPA with TCP; 24 Oct 84  20:36:47 PDT
+
+When we are concerned about supplying a minimal lisp for some application at
+Perq (and CMU), we just load whatever application stuff there is into a lisp
+and disembowel the lisp in such a way as to make all of the Common Lisp stuff
+that isn't used available for GC.  We then force a GC and save the new,
+application-specific lisp core.  The real problem then, becomes knowing what
+minimal stuff the foreign language will call in order not to disembowel too
+much.  I don't really have much of a feel for how important such minimal
+lisps are; I think this a task of the subset committee.  
+
+	The problem I see with this approach is that it is ad-hoc for
+	each individual application. In all likelyhood, trying to combine
+	programs developed separately, will produce less and less savings
+	as the number of independent pieces goes up.
+
+To the subset committee: I can imagine applications where the delivery
+vehicle for a lisp application is a fairly limited piece of hardware; is a
+subset appropriate or would the method described above be acceptable?  We've
+found that very straightforward methods of reducing a lisp core's size
+result in dramatic space reductions; more thoughtful approaches should
+result in really small lisps for delivery of applications without requiring
+a specific minimal subset (although a "kernel" subset might be useful for
+other reasons).
+
+	As I see it, the real reason for having well defined subsets is
+	to increase the ability to intgrate work from many places successfully.
+
+Bill White
+- -------
+
+--
+From:  Jed Marti <marti@randgr>
+In-Reply-To:  Your message of Wed 24 Oct 84 20:36:45-PDT.
+Subject:  Re: ad-hoc vs. planned subsets.
+Cc:  randgr!hearn@randgr
+To:  cl-subsets@su-ai.ARPA
+Date:  25 Oct 84 10:24:47 PDT (Thu)
+Message-Id:  <8410251724.AA11533@randgr.ARPA>
+Received:  by randgr.ARPA; Thu, 25 Oct 84 10:24:51 pdt
+
+Reasons for CL subsets:
+   Another reason for subsets is the efficiency issue. Many of our application
+programs are incredibly slow, to the point where the programs are being
+rewritten in other languages. We spent two frustrating man years
+converting a large Interlisp program into C (still not complete), the sole
+reason being speed. I cannot justify the view that once an application is 
+developed it should be converted into a static procedural language for 
+efficiency. It is too costly and fosters the conviction that it should have 
+been written in that medium in the first place. 
+
+   I believe that a CL subset designed for speed is one that best serves 
+embedded applications:
+  1) a fast subset has fewer function calls to a smaller "library"
+  2) it has a better chance of being CONSless than a system with hidden
+     mechanisms
+  3) the human interface can be isolated and extracted when not needed
+
+Jed Marti   MARTI@RAND-UNIX
+
+--
+From:  Skef Wholey <Wholey@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 25 Oct 1984  13:24-EDT from Jed Marti <marti at randgr>
+Subject:  ad-hoc vs. planned subsets.
+Cc:    cl-subsets@SU-AI.ARPA, randgr!hearn@RANDGR.ARPA
+To:    Jed Marti <marti@RANDGR.ARPA>
+Sender:  WHOLEY@CMU-CS-C.ARPA
+Message-ID:  <WHOLEY.12058345878.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 25 Oct 1984  18:32 EDT
+Received:  ID <WHOLEY@CMU-CS-C.ARPA>; Thu 25 Oct 84 18:32:17-EDT
+
+One of the properties of Lisp is that it is VERY easy to write VERY inefficient
+programs by choosing inappropriate data structures.  In older Lisps,
+programmers were forced to use inappropriate data structures because things
+like strings and vectors weren't around.  In addition to the good old Lisp
+objects like symbols and conses, Common Lisp provides the data structures that
+any other modern programming language provides, and a few useful high-level
+data structures (such as hash tables).
+
+A Lisp programmer must choose his data structures well, as must any programmer.
+I think it is the burden of the implementor to prevent the "primitives" from
+incuring any non-obvious runtime penalties.  I am an implementor, and I live
+with that burden.
+
+Given a good choice of data structures and algorithms, there is no real reason
+why a Common Lisp program should run significantly slower than an equivalent
+program written in a procedural language.  A case in point: The Spice Lisp text
+editor, Hemlock, is significantly faster (doing things like text modification
+and redisplay) than Oil, a text editor written in Pascal running on the same
+machine -- a machine designed to run Pascal!  A lot of careful planning went
+into Hemlock, and that planning payed off.  Hemlock does much more than Oil,
+and is easily extensible because it is written in Lisp.
+
+A member of our user community here wrote a number of useful CAD tools in Perq
+Pascal, and has since been turned-on to Common Lisp.  He tells me that he can
+develop programs many times quicker than he could in Pascal, and that the
+performance lost by running them in Lisp instead of Pascal is less than 30%,
+and sometimes 0%.
+
+By limiting yourself to a subset with a "fast library" and few primitives, you
+risk omitting a language feature that might be exactly right for some
+application.  I'm willing to bet that a good Common Lisp implementation will
+provide that feature more efficiently than a subset with that feature kludged
+on as an afterthought.
+
+I can't help thinking that a good deal of the "incredible" slowness of the
+application programs you mentioned is due partly to the Interlisp language,
+which has been known to provide features at the expense of efficiency -- a fine
+thing if you've got a Dorado in your office.  Common Lisp claims heritage to
+MacLisp, which put greater emphasis on efficiency.
+
+I don't see how that fact that program X runs slowly in Lisp Y has anything to
+do with making subsets of Lisp Z.  There are a lot of free variables there.
+
+- --Skef
+
+--
+From: RPG  
+To:    cl-subsets@SU-AI.ARPA 
+Subject: Hello folks
+Date: 27 Oct 1984 21:55 EST
+
+We now have a chairman of the subsets subgroup:  Martin Griss
+of HP.  I think he will make an excellent chairman.  For your
+information I am including the current members of the mailing list.
+
+I will now let Martin take over responsibility for the discussion.
+
+Dave Matthews		HP		"hpfclp!subsets%hplabs"@csnet-relay
+Stan Shebs		Utah		shebs@utah-20
+John Foderaro		Berkeley	jkf@ucbmike.arpa
+Jerry Duggan		Univ of Utah	duggan@utah-20
+Rod Brooks		MIT		"brooks%oz"@mc
+Skef Wholey		CMU		Wholey@cmuc
+Martin Griss		HP		griss.hplabs@csnet-relay 
+Beau Sheil		Xerox		sheil@xerox
+Bob Kessler		Univ. of Utah	kessler@utah-20
+Bill White		Teknowledge	WWhite@sri-kl
+Carl Hewitt		MIT		hewitt-subsets@mc
+Govind Deshpande	JPL		deshpande@jpl-vlsi.arpa
+Gary Brown		DEC		brown@dec-hudson
+Eric Benson		Lucid		eb@su-ai
+Jerry Barber		Gold Hill	jerryb@mc
+Jed Marti		Rand		marti@rand-unix
+Chris Schmidt		HPP		schmidt@sumex
+Alice Hartley		BBN		hartley@bbn
+Gordon Novak		Univ. of Texas	novak@utexas-20
+Guy Steele		Tartan		steele@tl-20a
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Jim Meehan		Cognitive Sys.	meehan@yale
+Jonl White		Xerox		jonl@xerox
+Neal Feinberg		Symbolics	feinberg@scrc-stony-brook
+
+--
+From:  Martin <GRISS%hplabs.csnet@csnet-relay.arpa>
+Source-Info:   From (or Sender) name not authenticated.
+Cc:  GRISS@hplabs.CSNET
+To:  cl-subsets@su-ai.ARPA
+Subject:  Anybody there?
+Date:  Sun 11 Nov 84 09:15:59-PST
+Message-Id:  <8411111719.AA17087@HP-VENUS>
+Received:  by HP-VENUS id AA17087; Sun, 11 Nov 84 09:19:58 pst
+
+This mailing list has been rather quiet the last few weeks, and I am
+curious as to whether this reflects lack of interest, confusion as to
+the next step, or distraction due to other things (e.g., elections,
+cl-object-oriented-programming discussions, or ....).
+
+We have a range of interests represented by people on this mailing
+list, and I'd like to ask a few questions to get things rolling again.
+
+1. What LISP or LISPs do you currently use?
+
+2. Are you primarily a user or an implementor?
+
+3. For those of you who are currently using non-common LISP's, such as
+InterLISP, FranzLISP, PSL, etc, what is your plan for Common LISP?
+
+	a. Ignore it
+	b. Hand translate code to CL and switch to some implementation
+	c. Develop a compatibility module for (a subset of) Common LISP
+           in your LISP.
+	d. Develop a translator for your LISP to Common LISP.
+	e. Convert or extend your LISP to include a significant
+           Common LISP subset.
+	f. Begin an implementation of CL on your hardware.
+	g. Other (?)
+
+4. If you are a common LISP user or implementor, do you have a plan to
+   provide a compatibility route for "foreign" LISPS, such as by
+   mechanical translation, or compatibility module?
+
+5. If your plan includes the identification of a subset CL
+   (perhaps because you only need or can only afford to implement
+    a subset on your machine, in your compatibility module, or
+    your translator), 
+   could you summarize what criteria you are using to define your subset?
+
+6. Some of the previous messages indicated that subsets were important for:
+	
+	a. Small (weak, "unreal", "obselete") machines
+	b. Efficiency
+	c. Ease of implementatation
+	d. Interchange of code between workers who do not yet have a full CL
+        e. Export subsets for canned applications; some people
+           suggested a mechanical "disemboweling" would suffice,
+           but others felt this would make combining applications difficult.
+        f. Other (?)
+
+   For what reasons might you consider a subset?
+
+7. Do you see a single subset as sufficient, or do you envision a family
+   of subsets, appropriate for different reasons?
+
+8. Do you have a subset proposal ready to present to this group, or are
+   you working on one?
+
+
+- ------------------------------------------------------------------------
+
+I will send my own detailed responses to these questions shortly. I am
+involved in examining CL subsetting issues with members of the
+Standard LISP and PSL communities, here at Hewlett-Packard and
+elsewhere.
+
+Martin.
+
+- ------------------------------------------------------------------------
+- -------
+
+--
+From:  brown@DEC-HUDSON
+To:  cl-subsets@su-ai
+Subject:  Martin's questions
+Date:  Thu, 15 Nov 84 08:37:23 EST
+Received:  from DEC-HUDSON.ARPA by SU-AI.ARPA with TCP; 15 Nov 84  05:37:08 PST
+
+
+1. What LISP or LISPs do you currently use?
+     Vax Lisp (Dec Common Lisp) on a 780.
+
+2. Are you primarily a user or an implementor?
+     Implementor
+
+4. If you are a common LISP user or implementor, do you have a plan to
+   provide a compatibility route for "foreign" LISPS, such as by
+   mechanical translation, or compatibility module?
+     Not currently, we hope that such packages find their way into
+     the Yellow Pages (and might even be willing to help fund the
+     generation of these packages).
+
+5. If your plan includes the identification of a subset CL
+   (perhaps because you only need or can only afford to implement
+    a subset on your machine, in your compatibility module, or
+    your translator), 
+   could you summarize what criteria you are using to define your subset?
+     We currently have no plans to produce a subset of Common Lisp.
+     We distinguish between a subset and a self-contained program written
+     in Common Lisp which does not include all the language.  We are
+     considering various mechanism which would allow a user to create
+     an executable program which would require less resource (memory)
+     than the full system.
+
+
+7. Do you see a single subset as sufficient, or do you envision a family
+   of subsets, appropriate for different reasons?
+     I hope that, at least initially, one subset would be sufficient.
+     Any implementation could say "we implement Subset Common Lisp 
+     plus ratios."
+
+
+8. Do you have a subset proposal ready to present to this group, or are
+   you working on one?
+     The main thing I think is that the subset should be a true subset;
+     i.e. a program that is written purely in the subset is gaurenteed
+     to work in an implementation of full language.  I believe this
+     requires that the subset be lexically scoped.
+
+-Gary Brown
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Martin's questions
+To:    cl-subsets@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12063776476.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 15 Nov 1984  10:43 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Thu 15 Nov 84 10:43:26-EST
+
+
+1. What LISP or LISPs do you currently use?
+
+Common Lisp (Spice Lisp) on a Perq.  Occasionally also use Zetalisp on
+3600 and Maclisp on Dec-20.
+
+2. Are you primarily a user or an implementor?
+
+Implementor
+
+4. If you are a common LISP user or implementor, do you have a plan to
+   provide a compatibility route for "foreign" LISPS, such as by
+   mechanical translation, or compatibility module?
+
+No serious plans at present.  Several people here at CMU have converted
+large Franz Lisp programs to Common Lisp, and we might be able to
+package up the things they found they needed.  We're working on a
+portable flavor system, which could be viewed as a part of a Zetalisp
+compatibility package or as an extension to Common Lisp.
+
+5. If your plan includes the identification of a subset CL
+   (perhaps because you only need or can only afford to implement
+    a subset on your machine, in your compatibility module, or
+    your translator), 
+   could you summarize what criteria you are using to define your subset?
+
+We have no need for a subset.  Rob Maclachlan has already developed a
+technique for flushing any unused code from a Perq core image, giving a
+dramatic size reduction for delivered stand-alone products.
+
+
+7. Do you see a single subset as sufficient, or do you envision a family
+   of subsets, appropriate for different reasons?
+
+The only need I see for a true subset is for small machines without
+virtual memory, and even there they might get something approximating
+the full language by a sort of autoload technique.  In any event, such
+system will be so tight that the builders will want to put in exactly
+what their users need, and not some standard mix.  For small expert
+systems, you need one mix, for education you need another, if your
+machine supports mouse-type graphics, another, if you want to build in
+an Emacs, yet another.  The speed-space tradeoffs are tricky, and
+will be different for each tiny machine and each market.  Maybe here and
+there we will find cases enough alike that several manufacturers want to
+agree on a common subset, or someone will set a de facto standard by
+getting there first and doing a good job.
+
+A different issue is the identification of a small kernel that, if you
+can support it, you can load the rest of Common Lisp as portable code.
+This is an interesting implementation technique, and we will be happy to
+help people identify such kernels, but again the
+time/space/coding-effort tradoff will be different for every machine,
+depending on its constraints and whether it is trying to sit on top of
+PSL, Interlisp, the raw hardware, or something else.  Fortunately, no
+standard is needed here, since on the surface all of these langauges
+will look like real Common Lisp.
+
+8. Do you have a subset proposal ready to present to this group, or are
+   you working on one?
+
+Yes: no official subsets, but let's divide Common Lisp into standard
+chunks so that people can say what it is that they do or do not
+implement.  (The validation suite should reflect these chunks.)  Somone
+might support "full Common Lisp minus floating point and complex
+numbers, and with only partial support for packages" or something like
+that.
+
+- -- Scott
+
+--
+From:  Jed Marti <marti@randgr>
+Subject:  Martins Questions
+To:  cl-subsets@su-ai
+Date:  20 Nov 84 09:25:20 PST (Tue)
+Message-Id:  <8411201725.AA10594@randgr.ARPA>
+Received:  by randgr.ARPA; Tue, 20 Nov 84 09:25:27 pst
+
+1. What LISP or LISPs do you currently use?
+|   PSL mainly, some Franz and Interlisp.
+
+2. Are you primarily a user or an implementor? 
+|   User.
+
+3. For those of you who are currently using non-common LISP's, such as
+InterLISP, FranzLISP, PSL, etc, what is your plan for Common LISP?
+|  For some projects where speed is of the essence, ignore it, unless
+|  something is done about efficiency. We plan simulations with large
+|  numbers of objects (like 10,000) and need the utmost in efficiency
+|  out of our small machines (SUN's).
+
+4. If you are a common LISP user or implementor, do you have a plan to
+   provide a compatibility route for "foreign" LISPS, such as by
+   mechanical translation, or compatibility module?
+|  We have a machanical translator which currently operates between
+|  Interlisp, Franz Lisp, and PSL, as well as one under construction
+|  from Standard Lisp '79 to Common Lisp.
+
+5. If your plan includes the identification of a subset CL
+   (perhaps because you only need or can only afford to implement
+    a subset on your machine, in your compatibility module, or
+    your translator), 
+   could you summarize what criteria you are using to define your subset?
+| Implementors Hat: Efficiency and speed of compilation. Features which
+| slow down the generated object code will be looked at very carefully. 
+| Initially this includes the extendable arrays, and the four different
+| floating point representations. A second criteria is frequency of use.
+| The address space of the 8086, precludes a large library of seldom
+| used functions. To this end we propose to make the complex and rational
+| data structures part of a "load on call" library. 
+
+
+6. For what reasons might you consider a subset?
+|  Three reasons: small, weak, and obsolete machines such as the IBM PC, and
+|  the Apple MacIntosh. Efficiency! Efficiency!
+
+7. Do you see a single subset as sufficient, or do you envision a family
+   of subsets, appropriate for different reasons?
+|  Possibly two subsets: An efficient subset, and an educational subset
+|  (maybe this should be a superset).
+
+8. Do you have a subset proposal ready to present to this group, or are
+   you working on one?
+|  As part of the Standard Lisp user group, I have done some work in
+|  identifying problems with Standard Lisp to Common Lisp translation.
+
+Jed Marti  MARTI@RAND-UNIX
+
+--
+From: REM
+To:    CL-SUBSETS@SU-AI.ARPA 
+Subject: (no subject)
+Date: 08 Dec 1984 21:56 EST
+
+[In reply to Griss's set of questions for members to answer:]
+We have a range of interests represented by people on this mailing
+list, and I'd like to ask a few questions to get things rolling again.
+
+1. What LISP or LISPs do you currently use?
+[My favorite among those I've used is MacLISP at MIT-MC, but since Stanford
+ no longer provides 1200-baud dialup access into the Arpanet I'm back at
+ 300 baud to MIT-MC and I haven't used it much lately. I'm actively using
+ and developing PSL at IMSSS (Tenex) and PASC (VM/CMS). Long ago I used
+ Stanford LISP 1.6 and UCI-LISP, but gave them up long ago.]
+
+2. Are you primarily a user or an implementor?
+[Both. LISP is my language of choice for any task it can handle if I'm
+ on a machine that has it, although I occasionally have to write some
+ utility program in SAIL if LISP is too inefficient (the SCAN function
+ in SAIL is handy and very fast, I wish PSL had something like it) or if
+ I just happen to know how to write a one-shot task quickly in SAIL but
+ would have to do a lot of figuring to get it written in LISP. But for any
+ largescale program I always write in LISP, so I'm a major LISP user.
+ I write application software and general support utilities, but lately
+ at IMSSS for pay I'm getting into implementation of the kernel.]
+
+3. For those of you who are currently using non-common LISP's, such as
+InterLISP, FranzLISP, PSL, etc, what is your plan for Common LISP?
+[Wait until CL is available on a machine I have access to, then give it
+ a try to see if it can do what I want at similar speed. If it takes twice
+ as long to run a program in CL as in PSL, I'll stay with PSL, otherwise
+ I'll probably try switching to CL. If I can get my hands on a translator
+ that works, I'll use it, else I'll manually do it with EMACS macros and
+ backwards-compatibility functions. (I already have such functions for
+ supporting various MacLISP, Standard-LISP, and personal functions in
+ terms of PSL primitives, such as ML-LET which is like LET in MacLISP
+ with destructuring which I use all over the place. I wish CL had
+ destructuring available. In any case I will keep programming in some
+ form of LISP until something better comes along, which is unlikely.]
+
+5. If your plan includes the identification of a subset CL
+   (perhaps because you only need or can only afford to implement
+    a subset on your machine, in your compatibility module, or
+    your translator), 
+   could you summarize what criteria you are using to define your subset?
+[The mimimal subset should run on an Altair 8800a (8080 cpu) with 28k bytes
+ of RAM. A little more reasonable subset should run on an IBM PC with the
+ minimum memory configuration that starting computer users might already
+ have bought. A really decent subset should run on a PDP-10 under Tenex.]
+
+6. Some of the previous messages indicated that subsets were important for:
+   For what reasons might you consider a subset?
+[For running on small machines, and to simplify bootstrapping on a new machine.]
+
+7. Do you see a single subset as sufficient, or do you envision a family
+   of subsets, appropriate for different reasons?
+[Mostly I see a heirarchy of subsets, from bare-minimum to whole ball of
+ wax and can of worms, with possible branches like bare-minimum with
+ floating point but not packages, or packages but not floating point, etc.]
+
+8. Do you have a subset proposal ready to present to this group, or are
+   you working on one?
+[I have no formal proposal at this time, but a while back I went through a
+ LISP manual identifying those functions which were absolutely essential to
+ get any LISP running at all, versus those which had their uses but weren't
+ essential in every program. I think fewer than a hundred functions were
+ in the former category. If somebody is interested I can fish out my notes
+ and send my DRASTIC-TEENSY-TINY-LISP subset proposal as a starting point
+ for very-minimal subset discussions.]
+
+--
+From:  brown@DEC-HUDSON
+To:    CL-SUBSETS@SU-AI.ARPA 
+Subject: (no subject)
+Date: 08 Dec 1984 22:25 EST
+
+[I disagree with that conclusion. There are several ways that one LISP
+ can be a subset of another: (1) it can be missing some of the functions,
+ (2) it can be missing some of the datatypes, (3) some of the functions
+ can know about and be able to handle fewer of the kinds of situations,
+ be less flexible, have fewer options, (4) some of the overall mechanisms
+ can be less capable.
+
+These are mostly but not totally orthogonal. ACOSH and ASINH can be missing
+ even if floating point and complex values are available, thus having
+ the datatype doesn't imply all the functions to handle it are around.
+ The converse, ASINH and ACOSH are available but they don't handle floating
+ point, is probably impossible in CL. Thus they are orthogonal in one
+ direction. Ratios might not be implemented, which would mean that READ
+ would have to bomb out if it encountered the syntax for a ratio, and
+ division of integers couldn't be implemented in all cases either. Thus
+ there is some linkage between datatypes available and case that READ and
+ / are equipped to handle. Finally, to rebut the assertion claimed above,
+ a subset of CL might not have lexical closures implemented and might work
+ correctly only on programs that have no undeclared free variables, it might
+ even have no optional or rest arguments. A program written in this restricted
+ subset would work fine in full blown CL, with identical semantics. Thus a
+ subset needn't have lexical scoping. -- For the mathematicians, the null
+ language that has no functions and no datatypes, is a subset of CL, and
+ is an obvious counterexample to the claim that any subset of CL must have
+ lexical scoping. But I think there could be reasonable non-null subsets that
+ are easy to implement on small machines or to define in existing systems
+ such as PSL, which don't have lexical scoping yet are true subsets.
+
+I think we should be aware of the several dimensions of subsetting, some
+ of which I listed above, and consider all those dimensions when defining
+ a subset, not just what functions are defined. When we define a subset,
+ we should clearly document what functions aren't there at all, what functions
+ are implemented in lesser ways, what datatypes are missing, what features
+ of general code writing are missing (implicit PROGNs, lexical closures, ...),
+ any other differences. Alternately for really drastic subsets just say what
+ the subset is and indicate explicitly in the rare cases when the fullblown
+ version of some function is defined.  Anyone agree or disagree or amend?]
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 9 Dec 1984  01:25-EST from Robert Maas <REM at SU-AI.ARPA>
+Cc:    CL-SUBSETS@SU-AI.ARPA
+To:    Robert Maas <REM@SU-AI.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12070071698.BABYL@CMU-CS-C.ARPA>
+Date:  Sun, 9 Dec 1984  11:04 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sun 9 Dec 84 11:04:08-EST
+Subject: (no subject)
+
+
+REM makes a useful point, I think: a dynamically scoped implementation
+can be a "true subset" of Common Lisp as long as the cases where the
+diference can be seen are not allowed (or are not used in portable
+code).  This could be as simple as requiring Special declarations around
+any variable used free.
+
+Enumerating the ways in which one language can be a subset of another is
+useful, but I think it's important to keep the definition of "true
+subset" in mind: if you're writing code in a true subset of Common Lisp,
+your code will run in any full implementation of Common Lisp without
+modification.  One can also envision "near subsets" in which the code
+has to be modified in order to run in Common Lisp, but in which the
+modifications are straightforward and perhaps can be done automatically.
+
+My suggestion to DARPA has been that they should not bless any
+particular subset, but that where code from many different systems must
+ultimately run together (as in some parts of the Strategic Computing
+program) they simply require that the code ultimately produced must run
+in any full implementation of Common Lisp.  Researchers would be free to
+write in a full Common Lisp, any "true subset", or a "near subset" if
+they are willing to periodically do that translation.  They could even
+do their research in some very diferent Lisp and then hand-translate the
+result, though that is obviously doing it the hard way.  This way we do
+not penalize people working in full Common Lisp (that would be
+counter-productive to the goal of moving toward Common Lisp as a
+standard), while providing the maximum flexibility for people who are
+working in other implementations.
+
+The only reason I can see for blessing some particular subset is so that
+people working in this subset can trade code among themselves, though
+they could not in general run code written in unrestricted Common Lisp,
+of which there will be an ever-increasing amount.  A very minimal
+"interchange subset" that can easily be implemented on top of PSL,
+Interlisp, Franz, and maybe T would be of some value, but only if it is
+not TOO much more restricted than the intersection of any one of these
+languages with full Common Lisp.  My guess is that whenever a full
+Common Lisp appears on any family of machines, people will start using
+that and stop using the interchange subset.
+
+- -- Scott
+
+--
+From: REM
+To:    CL-SUBSETS-REQUEST    
+Subject: (no subject)
+Date: 08 Dec 1984 21:04 EST
+
+Please put REM@IMSSS on the list. I don't think IMSSS is currently in
+any name domain, or if it is I don't know what it would be, but mail
+can be forwarded via SU-SCORE.ARPA by using this address from the
+Arpanet:  REM%IMSSS@SCORE.ARPA  from SU-AI it's a little harder because @
+is reserved as a command to read text from an indirect file, so you
+have to say "REM%IMSSS"%SCORE from here.
+
+I think Common LISP as defined has a plethoria of seldom-used functions
+and defining a workable subset for tiny machines (8080/z80 with 2↑16
+bytes of memory or less) and small machines (PDP-10 with 2↑18 36-bit words)
+is necessary if this is to be a truly common implementation instead of
+a snob language for those with 68000 or LISPM or VAX or IBM-4033
+that won't run on any smaller machine.
+
+--
+From:  fkunze%ucbopal.CC@Berkeley (Fritz Kunze)
+Subject:  Please add the following names to the subset list
+To:  CL-subsets@su-ai.ARPA
+Message-Id:  <8502180221.AA03905@ucbopal.CC.Berkeley.ARPA>
+Date:  Sun, 17 Feb 85 18:21:44 pst
+Received:  by ucbopal.CC.Berkeley.ARPA (4.19/4.33)
+
+Fritz Kunze     fkunze%franz.uucp@ucbkim.arpa
+John Foderaro   jkf%franz.uucp@ucbkim.arpa
+Both people are from Franz Inc.
+Thanks.
+- --Fritz Kunze
+
+--
+From:  Stan Shebs <SHEBS@UTAH-20.ARPA>
+To:  cl-subsets@SU-AI.ARPA
+Subject:  A Modest (Subset) Proposal
+Date:  Tue 9 Apr 85 08:56:29-MST
+Received:  from UTAH-20.ARPA by SU-AI.ARPA with TCP; 9 Apr 85  07:57:48 PST
+
+Chapter 1. Introduction
+
+This is a very small subset of CL, intended for research and
+teaching purposes.  Except where specified, or where the subset
+would be inconsistently extended, the text is assumed to be
+exactly that in the CLM.
+
+Chapter 2. Data Types
+
+The subset has two data types: atom and cons, which partition
+the data space.  No other data types are necessary.
+
+Chapter 3. Scope and Extent
+
+Variables are always lexically scoped.  No specials are allowed.
+
+Chapter 4. Type Specifiers
+
+Since the set of types is fixed, type specifiers are not necessary.
+
+Chapter 5. Program Structure
+
+The special forms are QUOTE and IF.
+While lambda expressions are allowed, they may not use any of the
+keywords.
+
+Chapter 6. Predicates
+
+ATOM object						Function
+
+EQ x y							Function
+
+All atoms of the same print name are eq.
+
+Chapter 7. Control Structure
+
+QUOTE object						Special form
+
+APPLY function arglist					Function
+
+The function may be a lambda-expression only.
+
+IF test then [else]					Special form
+
+Chapter 8. Macros
+
+This subset includes no macros, since they are hard to write properly.
+
+Chapter 9. Declarations
+
+Since CL declarations are optional, they are not necessary.
+
+Chapter 10. Symbols
+
+Symbols have print names only.
+
+Chapter 11. Packages
+
+Properly written Lisp programs are always small; therefore, a
+package system would encourage sloppy programming and thus is
+not included.
+
+Chapter 12. Numbers
+
+Since numbers can be modelled using lists, they do not need to be
+defined as separate datatypes.
+
+[Implementors Note: any sufficiently good compiler should be able
+to transform list code into numeric machine code.]
+
+Chapter 13. Characters
+
+Since characters can be modelled using numbers (cf. Chapter 12),
+they need not be defined as separate datatypes.
+
+Chapter 14. Sequences
+
+Nobody likes the sequence functions, so they have been removed.
+
+Chapter 15. Lists
+
+CAR list						Function
+
+CDR list						Function
+
+CONS x y						Function
+
+Chapter 16. Hash Tables
+
+Nobody likes hash tables.
+
+Chapter 17. Arrays
+
+Nobody likes the arrays either.
+
+Chapter 18. Strings
+
+Since strings can be modelled as lists of characters (cf. Chap. 13),
+they need not be included in the language.
+
+Chapter 19. Defstructs
+
+Defstruct can be easily defined using the subset,
+therefore its definition is left to the chromatic pages.
+
+Chapter 20. The Evaluator
+
+Everything in this chapter of the CLM is either hackery or irrelevant.
+
+Chapter 21. Streams
+
+Streams are only useful for I/O, therefore they are not included.
+
+Chapter 22. Input/Output
+
+[Implementors Note: if this is not provided, users will never
+be able to complain about incorrect results.]
+
+Chapter 23. File System Interface
+
+Nothing in this chapter of the CLM has even a remote chance
+of being portable, therefore it was left out.
+
+Chapter 24.
+
+Errors cause an immediate cessation of computation.
+
+Chapter 25. Miscellaneous
+
+If any of this stuff was *really* useful, it could have gotten
+its own chapter.
+
+
+						stan shebs
+- -------
+
+--
+From:  Robert Elton Maas <REM@IMSSS.SU.EDU>
+Reply-to:  REM%IMSSS@SU-SCORE.ARPA (temporary until nameservers up)
+Sender:  REM%IMSSS@SU-SCORE.ARPA (for undeliverable-mail notifications)
+SUBJECT: Why no activity? Here's a serious immediate proposal
+To: CL-SUBSETS@SU-AI.ARPA
+Message-id:  SU-IMSSS.REM.A132234164132.G0353
+Date:  1985 June 20 08:06:28 PST (=GMT-8hr)
+Sent:  to SU-AI.ARPA by IMSSS.? via ETHERNET with PUPFTP; 1985-Jun-20 08:31:22 PST (=GMT-8hr)
+Subject: Why no activity? Here's a serious immediate proposal
+
+I think the number one most important CL working group is the one
+concerned with with setting up a formal organization for establishing
+official policy, arbitrating disputes, dispensing official
+information, etc. (I forget what it's called.) Unfortunately there's
+not much I can do worthwhile there, so I joined what I considered the
+second most important working group, this one, CL-SUBSETS. But I've
+been very dissappointed. This group seems to be another stillbirth.
+I've seen no activity for months. (Or did I get inadvertantly omitted
+from the list?? I guess if I get a copy of this message come back,
+I'll know I'm still on the list.) Anyway, why is this, doesn't anybody
+give a s**t if CL subsets come into existance soon? Or is everybody
+waiting for the other working group, on formal organization, to get
+their act together, before any of the other working groups do anything?
+
+Anyway, in the light of the past several months of heated discussion
+on the main mailing list about &ENVIRONMENT objects, :PROBE arguments
+to I/O functions, heirarchial namespaces, illogical or contradictory
+specifications for mathematical functions, etc., it now appears there
+is one very important subset of CL that we urgently need to define at
+this time: THAT PART OF CL WHICH IS SPECIFIED CORRECTLY IN THE MANUAL
+AND AGREED UPON BY VIRTUALLY EVERYONE AS SOMETHING WE'RE NOT GOING TO
+CHANGE IN THE NEXT EDITION. I suggest we should make a list of those
+parts of the current manual which are incorrect in some sense and
+can't be fixed by a simple typographic correction, and then state
+formally that everything else in the manual is in our
+CORRECTLY-SPECIFIED subset of Common LISP.
+
+Feedback from the rest of you??
+
+--
+From:  Martin <GRISS%hplabs.csnet@csnet-relay.arpa>
+Source-Info:   From (or Sender) name not authenticated.
+Cc:  GRISS@hplabs.CSNET
+To:  cl-subsets@su-ai.ARPA
+Subject:  Meet at IJCAI
+Date:  Tue 13 Aug 85 05:50:46-PDT
+Message-Id:  <8508131250.AA27123@HP-VENUS>
+Received:  by HP-VENUS id AA27123; Tue, 13 Aug 85 05:50:09 pdt
+
+While this mailing list has been rather quiet for some time, I know a
+number of us are still concerned about the need for export subsets,
+and visible layering of (validation levels?) of Common LISP.
+
+A number of us will be at IJACI. Is there any interest in meeting to
+discuss what we should do next. I expect to meet some of you
+informally, but choosing a time and finding a room might be a good
+idea for broader discussion.
+
+
+Martin
+- -------
+
+--
+From:  kessler%utah-orion@utah-cs (Robert Kessler)
+Cc:  GRISS.hplabs@csnet-relay.ARPA
+Subject:  Re:  Meet at IJCAI
+To:  GRISS%hplabs.csnet@csnet-relay.arpa, cl-subsets@su-ai.arpa
+Message-Id:  <8508131732.AA05957@utah-orion.ARPA>
+Date:  Tue, 13 Aug 85 11:32:11 MDT
+Received:  by utah-orion.ARPA (5.5/4.40.2)
+
+Sounds good to us.  How about arranging for a couple of hours on Thursday
+before the objects meeting (which is scheduled for 4 until 6).  Thursday
+afternoon is free anyway.
+
+Bob.
+
+--

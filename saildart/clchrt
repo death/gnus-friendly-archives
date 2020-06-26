@@ -1,0 +1,3136 @@
+--
+From: unknown
+Subject: (no subject)
+
+Introduction
+Welcome to the Common Lisp Charter Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Charter@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLCHRT.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Charter-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Gary Brown		DEC		gbrown@dec-marlboro
+Martin Griss		HP		griss.hplabs@csnet-relay (I hope)
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Dick Gabriel		Stanford/Lucid	rpg@sail
+Steve Ford		TI		Ford.ti-csl@csnet-relay
+Carl Hewitt		MIT		Hewitt-charter@mc
+Mark Hatch		Apollo		hatch@aerospace
+Dan Weinreb		Symbolics	DLW@scrc-stonybrook
+Rick Hudson		UMass		hudson.umass-cs@csnet-relay
+Govind Deshpande	JPL		deshpande@jpl-vlsi.arpa
+Beau Sheil		Xerox		sheil@xerox
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Introduction
+Date: 23 Sep 1984 16:37 EST
+
+Welcome to the Common Lisp Charter Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Charter@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLCHRT.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Charter-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Gary Brown		DEC		gbrown@dec-marlboro
+Martin Griss		HP		griss.hplabs@csnet-relay (I hope)
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Dick Gabriel		Stanford/Lucid	rpg@sail
+Steve Ford		TI		Ford.ti-csl@csnet-relay
+Carl Hewitt		MIT		Hewitt-charter@mc
+Mark Hatch		Apollo		hatch@aerospace
+Dan Weinreb		Symbolics	DLW@scrc-stonybrook
+Rick Hudson		UMass		hudson.umass-cs@csnet-relay
+Govind Deshpande	JPL		deshpande@jpl-vlsi.arpa
+Beau Sheil		Xerox		sheil@xerox
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Chairman
+Date: 02 Oct 1984 13:19 EST
+
+Now that we've basically got most everyone who is interested on the mailing
+list, let's pick a chairman. I suggest that people volunteer for chairman.
+
+The duties are to keep the discussion going, to gather proposals and review
+them, and to otherwise administer the needs of the mailing list. I will
+retain the duties of maintaining the list itself and the archives, but
+otherwise the chairman will be running the show. 
+
+Any takers?
+			-rpg-
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  An idea
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12054894948.BABYL@CMU-CS-C.ARPA>
+Date:  Fri, 12 Oct 1984  14:35 EDT
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Fri 12 Oct 84 14:35:46-EDT
+
+
+Raj Reddy suggested an idea that may or may not be what we want to do,
+but is certainly worth thinking about: instead of setting up yet anotehr
+non-profit organization to protect our common interests in Common Lisp,
+perhaps AAAI would be willing and able to handle this.  The Common Lisp
+organization could be set up as a subcommittee or some such.
+
+On the plus side, they are already incorporated and widely recognized,
+have some financial and administrative resources that could help to
+grease the wheels, and they certainly would help to promote the
+user-oriented perspective that some people have found lacking in our
+effort to date.  A stable and coherent Common Lisp would certainly help
+to promote AI, which is their reason for existing.
+
+On the negative side, it could be argued that Common Lisp and AAAI do
+not have identical interests.  Common Lisp is a general purpose
+language, not just for AI, and there are plenty of people who believe
+that AI in the future will be done in Prolog or in some other dialect of
+Lisp.  Also, there might be a problem with tying Common Lisp to a
+strictly American organization.  And, of course, AAAI might not want to
+touch a politically charged situation like this with a ten-foot pole.
+
+I think that from our side the advantges probably outweigh the
+disadvantages, and maybe we should explore this with the current AAAI
+management.  Opinions?
+
+- -- Scott
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Chairman
+Date: 13 Oct 1984 14:48 EST
+
+No one has been nominated as chairman of the Charter subgroup.  I will
+need either a volunteer or a nomination.  Please respond by October 24. At
+the end of this month I want to see some ideas and proposals coming in on
+this mailing list.
+
+			-rpg-
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Chairman
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12055223548.BABYL@CMU-CS-C.ARPA>
+Date:  Sat, 13 Oct 1984  20:40 EDT
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sat 13 Oct 84 20:40:49-EDT
+
+
+I am interested in the political future of this effort and would be
+happy to serve as the chairman of the Charter subcommittee.  I am
+currently acting as chairman of the interim executive committee (a.k.a.
+the Gang of Five), so I would be glad to step aside if some other
+well-qualified candidate steps forward for this.  (By "well qualified",
+I mean well-connected to the ARPANET and interested enough to be active
+in this role.)  But if nobody else wants this post, I'll do it, since this
+particular problem HAS to be solved successfully.
+
+- -- Scott
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Hello folks
+Date: 27 Oct 1984 21:56 EST
+
+We now have a chairman of the charter:  Scott Fahlman
+of CMU.  I think he will make an excellent chairman.  For your
+information I am including the current members of the mailing list.
+
+I will now let Scott take over responsibility for the discussion.
+
+Scott Fahlman		CMU		Fahlman@cmuc
+Dave Matthews		HP		"hpfclp!charter%hplabs"@csnet-relay
+John Foderaro		Berkeley	jkf@ucbmike.arpa
+Gary Brown		DEC		brown@dec-huson
+Richard Fateman		Berekely	fateman@berkeley
+Martin Griss		HP		griss.hplabs@csnet-relay (I hope)
+Joe Ginder		PERQ		Joseph.Ginder@cmu-cs-spice
+Dick Gabriel		Stanford/Lucid	rpg@sail
+Steve Ford		TI		Ford.ti-csl@csnet-relay
+Carl Hewitt		MIT		Hewitt-charter@mc
+Mark Hatch		Apollo		hatch@aerospace
+Dan Weinreb		Symbolics	DLW@scrc-stonybrook
+Rick Hudson		UMass		hudson.umass-cs@csnet-relay
+Govind Deshpande	JPL		deshpande@jpl-vlsi.arpa
+Beau Sheil		Xerox		sheil@xerox
+Neal Feinberg		Symbolics	feinberg@scrc-stony-brook
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Getting started
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12064687113.BABYL@CMU-CS-C.ARPA>
+Date:  Sun, 18 Nov 1984  22:05 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sun 18 Nov 84 22:05:44-EST
+
+
+I guess we had better begin discussing what sort of charter or
+organization we want to set up for future control of Common Lisp.  In
+fact, I'm already a little late ins ending this out.  Here are some
+issues on which I would like to hear your opinions:
+
+1. Do we really need some formal, legal organization to control the
+formal definition of Common Lisp, or can we just muddle along as we
+have been?
+
+2. If we need a formal organization, what functions should it perform?
+A partial list might be: maintain and distribute the "official" langauge
+definition and validation suite, be the legal owner of any trademarks or
+copyrights that pertain to the language, resolve questions that arise
+about the spec, actually perform the valiadations, maintain and
+distribute any public-domain libraries or implementor's kits, publish
+some sort of newsletter.  Any additions to this list?  Any deletions?
+
+3. Would we be better off setting this up as a separate non-profit
+corporation (with all the administrative overhead that this implies), or
+is there some existing organization that could handle this.  I pased
+along Raj Reddy's suggestion that AAAI might do this.  Should we
+investigate that?  Are there other candidates?
+
+4. How would the necessary administrative services be paid for?  DAPRA
+has expressed a willingness to provide seed money for Common Lisp
+standardization, if necessary, but not to pay for this standardization
+forever.  This won't cost much and the companies benefitting from Common
+Lisp standardization would probably be willing to pay, but what would be
+a fair method of taxation.
+
+5. Here's the hard one: Who has the final say on language-definition
+issues?  In most cases, these things can be settled by debate,
+compromise, and consensus, but it's important to know what the ultimate
+authority is.  Who gets a vote?  How do we divide the power between big
+companies, small companies, universities, DOD, random individuals, major
+contributors to the original design, users, and so on?  Who, if anyone,
+has a veto?  Should this change over time as Common Lisp goes from a
+good idea to a widely-used language in which many companies have a major
+economic interest?
+
+6. Related to issue 5: Once we know who has ultimate authority, how
+should we handle the day-to-day decision-making, both for technical
+issues and for administrative issues?  Should we try for a truly
+democratic system, or should there be a few elected representatives with
+authority to make decisions, subject to review?  Or should we continue
+the practice of leaving most decisions to the self-selected group of
+people who care enough to participate actively?
+
+Remember: in the end it matters less whether Common Lisp is good
+(meaning just the way you want it to be) than that it is standardized
+and widely used.  That's where the leverage and the value comes from.
+All of you on this mailing list have an interest in these issues, and
+many of you represent companies that have a major interest in the
+emergence of Common Lisp as a widely-accepted and stable standard.
+Please contribute your ideas.  All of us on the "ad hoc interim
+executive committee" want to see this language succeed, but at least
+some of us are looking forward to retirement (from this role) once the
+language is in good hands.
+
+- -- Scott
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Hello?
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12066772996.BABYL@CMU-CS-C.ARPA>
+Date:  Mon, 26 Nov 1984  21:03 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Mon 26 Nov 84 21:03:49-EST
+
+
+There has been *no* response to my message asking for input on the
+general shape of a charter.  Is anyone out there?  Have I asked all the
+wrong questions?  Or are these issues just too complex to get started
+on?  If I hear nothing more, I'll start work on a proposal matching *MY*
+view of how things should work, but I thought that at least a few of you
+would like to express some ideas before we get down to debugging a
+specific proposal.
+
+At least pop up and say hello, so that I'll know the mailing list is
+working.
+
+Your obedient chaircreature,
+Scott
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  [fateman%ucbdali: Hello?]
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12066903975.BABYL@CMU-CS-C.ARPA>
+Date:  Tue, 27 Nov 1984  09:03 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Tue 27 Nov 84 09:03:18-EST
+
+
+If I read the following correctly, Fateman believes that there is no
+point in trying to set up a standards organization for Common Lisp until
+(a) we change the name to something over which we have legal control
+(with a year-number in it) and (b) someone settles the issue of
+delivery-oriented subsets.  Opinions?
+
+- ---------------------------------------------------------------------------
+Date: Monday, 26 November 1984  22:52-EST
+From: fateman%ucbdali at Berkeley (Richard Fateman)
+To:   Fahlman
+Re:   Hello?
+
+yeah, the mailing list works.  Any of us who have been involved
+in standardization are undoubtedly sour on the idea.  I have already
+voiced my objection to the name Common Lisp, which has, in my opinion,
+been applied to so many deficient implementations, that the name
+has a bogus ring to it.  I vote we start a CL-85 specification,
+and encourage DARPA to come up with a Strategic Computing CL-85
+specification for a subset strategy.  
+You may forward this.
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Charters
+Date: 27 Nov 1984 10:28 EST
+
+1. I'm not sure I'm ready to see a formal, legal organization take
+over Common Lisp yet. I would be persuadable if there were adequate
+checks and balances against random changes. Let me give an example. As you
+all know, Rod Brooks and I put together a critique of Common Lisp. In it
+we presented some possible criticisms of Common Lisp. The paper was
+meant to stimulate thought about the resulting Common Lisp design and
+about the design process. I believe that there are people who would take
+that paper as a bible and proceed to implement an aggressive subset
+strategy, perhaps as a means of making their old stand-by Lisp system
+the `real' common Lisp. I would be the first one at the parapets to
+fight against that, and perhaps Brooks would be the second. 
+
+Therefore, I want to pursue a conservative strategy in which the current
+Common Lisp committee and the members of this subgroup create a strong
+document outlining how the language changes and under which circumstances
+subsets are allowed  to be called `Common Lisp subsets.'
+
+2. I believe Common Lisp will only succeed if there are excellent
+implementations of it. If there are to be public-domain implementor's
+kits, I want them to be high quality. I have not seen any Lisp
+implementor's kit that I believe satisfies my standards. In order to
+get such a kit, I think serious money will need to be thrown at the problem.
+
+I think that one of the Universities - Stanford or CMU - could be funded
+to maintain the validation suite.  I think that such an organization is the
+perfect place for this role.
+
+On the question of calling a spade a spade, why not get together a minimal
+fund or assurances of free advertising which can be used to publish
+notices from the Common Lisp watchdog committee about non-Common Lisps.
+The idea would be this: The constitution of the CL watchdog committee would
+specifiy procedures for confronting a suspected CL bootlegger. The bootlegger
+would get an opportunity to explain his plans for getting a real CL together,
+or else he would explain in what ways his Lisp is a subset. If he is moving
+with due dilligence towards conforming, nothing would happen, except a pat
+on the back and the offer of a shoulder to cry on. If the answers are
+unsatisfactory, then the watchdog group would simply put an ad in the
+AI magazine, SIGART, The Wall Street Journal, etc. stating: Warning,
+Megabucks Inc's Lisp is not a common Lisp, it is just Lisp 1.5 with arrays.
+
+3. Lisp's affiliation with AI is touching, but I'm not sure I would want
+an AI organization as the watchdog over CL. Especially AAAI. Do you remember
+the last Lisp conference? AAAI gave us many assurances that AAAI would not
+overlap the Lisp conference. AAAI started their session on tuesday morning,
+I believe. They avoided overlapping by having their opening session on
+thursday morning. (As an aside, as chairman of the next Lisp conference,
+I considered two alternatives: 1) the Lisp conference could hold its
+closing ceremonies immediately after the opening ceremonies or 2)
+the Lisp conference could be separate. I chose the latter).
+
+Perhaps a non-profit corporation could be set up to do it to help pay for
+administrative matters, but, again, I would not support it until there
+was a strong CL constitution.
+
+4. I think that the government and the companies should pay for the
+adminstration of the CL watchdog. 
+
+5. I think that the CL constitution ought to state the CL design
+principles.  For example, the constitution ought to state that CL is a
+lexical, multiple-value, etc. Lisp. Then, there ought to be procedures for
+undoing those decisions, but doing that ought to be very hard. The minor
+points - like EQL instead of EQ for CATCH tags - can be left up to the normal
+functions of the watchdog group.
+
+I am, frankly, worried about the power politics involved in all of this.
+I know it might sound silly, but I tend to want to model the organization
+of the CL world after organization of the US government, *but* only to
+the extent of the idealization of a constitutional republic. 
+
+Let me illustrate my concerns.  We could easily posit that companies would
+get representation proportional to their size, the size of their
+investments, or the percentage of their capital devoted to Common Lisp
+activities.
+
+Under any of these schemes, some group would get an unfair amount of
+power. Under the first scheme, IBM probably (or Futjitsu) gets the most,
+under the second, probably TI gets it, and under the third Lucid gets it.
+Now I don't mind other people calling shots, but I do mind if one those
+groups, say Lucid, called the shots and it was fundamentally wedged in its
+judgement on some point.  How could that group be prevented from forcing
+its will on the rest of us? A strong statement of what must remain in CL,
+at least in principle, would go a long ways towards that. A second way to
+go a long way is to have a distinguished panel of Lisp wizards as a court
+of appeal or advice.
+
+6. I don't advocate democracy, and my model reflects that.
+
+			-rpg-
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Subject:  Re:  Charters
+To:  RPG@SU-AI.ARPA, cl-charter@SU-AI.ARPA
+Message-Id:  <8411280412.AA28002@ucbdali.ARPA>
+Date:  Tue, 27 Nov 84 20:12:18 pst
+Received:  by ucbdali.ARPA (4.24/4.39)
+
+I think the SIGSAM Bulletin might be an appropriate forum for CL activity
+(Symbolic and Algebraic Manipulation); though its circulation is not
+as large as SIGART.
+As the current chairman of SIGSAM, I would encourage this.
+
+Certainly the same problems about proportional representation have occurred
+in other standardization efforts, and the same solutions might be appropriate.
+
+--
+From:      Rick Hudson <hudson%umass-cs.csnet@csnet-relay.arpa>
+Subject:   Some ideas.
+To:        cl-charter@su-ai.ARPA
+Date:      Thu, 29 Nov 84 15:40 EST
+Received:  from umass-cs by csnet-relay.csnet id ao06573; 30 Nov 84 12:54 EST
+
+
+Still here and interested in the charter. In response to your questions
+
+1. Only ANSI and ISO can provide real international legal protection.
+   The only argument against using them and a formal standardization
+   is the large amount of work required. The amount of protection
+   we need could come from our own organization. However, if an
+   ISO committee is formed to standardize LISP we would  have to   
+   join it to protect our interests. One more note of interest -
+   whichever country forms the ISO committee holds the chair
+   of that committee.
+ 
+2. The list of organizational duties seems good.
+
+3. The answer of which is more expensive, interfaceing with AAAI or
+   going it alone isn't apparent to me. We might have to break
+   with AAAI sometime in the future. I think we should go it alone.
+
+4. Lets get seed money from DARPA. Once we have a validation suite lets
+   charge companies to be validated. If companies are interested in
+   Common Lisp enough to get a system running then they should be able
+   to pay for the validation.
+
+5. Tough decisions should be made by voting. A committee could be created
+   with a one organization/one (or two?) members. Members would be sent
+   from each organization. The rules of the charter should make it clear
+   that the members vote as individuals not as companies. This will
+   protect both the individuals from problems when they return home
+   as well as companies from having company policies set at the meetings.
+   It also allows individuals to make decisions without having to
+   clear it with the home office. I think such an organization could
+   stand the test of time. Noone would have a veto.
+   
+6. From the above body we could elect (assign on a rotating basis, or
+   make it a duty of membership) a small panel to deal with the day to day
+   administrative issues. The technical issues could be handled by
+   self selected individuals. The voting committee in 5 could OK these
+   decisions, turn them down or put them back into the self selected 
+   committee, I assume that if someone wants an issue back in committee they
+   will want to become part of the committee.
+
+One advantage of this type of set up is that it is simple. Most of the
+work will be done by the self appointed committee and just Oked 
+by the voting group discussed in 5.
+
+Rick
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 29 Nov 1984  15:40-EST from Rick Hudson <hudson%umass-cs.csnet at csnet-relay.arpa>
+Subject:  Some ideas.
+Cc:    cl-charter@SU-AI.ARPA
+To:    Rick Hudson <hudson%umass-cs.csnet@CSNET-RELAY.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12067813293.BABYL@CMU-CS-C.ARPA>
+Date:  Fri, 30 Nov 1984  20:18 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Fri 30 Nov 84 20:18:21-EST
+
+
+Rick,
+
+Just some reactions to a couple of your comments:
+
+1. I'm not sure what sort of "real international legal protection" you
+think ISO and ANSI provides.  Can you elaborate?  Certainly these
+organizations lend a certain aura of credibility to any standard, and
+credibility is what standards are all about.  On the other hand, I think
+most of us have heard enough horror stories about endless, mindless
+bureaucracy that we wouldn't touch either of these organizations with
+with a ten-foot simple bit-vector.
+
+4. I'm not sure that trying to support this organization through
+validation fees is a good idea.  Validation should pay for its own
+expenses, but adding a lot of extra cost to the process might deter
+companies from getting formal validation.  We don't want a lot of
+companies running around saying that their systems are perfect Common
+Lisp but that they skipped the formal validation because they couldn't
+see paying the extra $30K or whatever.  Besides, it seems unfair to make
+the providers of Common Lisp systems shoulder the whole burden while
+providers of applications and assorted users get a free ride (but
+still want to have a say in the decisions).  I'd be more inclined to
+favor a dues system for institutional members, with maybe a couple of
+tiers so that little startup companies are not deterred from
+participating.
+
+- -- Scott
+
+--
+From:      Rick Hudson <hudson%umass-cs.csnet@csnet-relay.arpa>
+Subject:   Legal Protection
+To:        cl-charter@su-ai.ARPA
+Date:      Tue, 4 Dec 84 11:31 EST
+Received:  from umass-cs by csnet-relay.csnet id aj28943; 5 Dec 84 1:08 EST
+
+Scott,
+
+By 'international legal protection' I just meant that if an ISO standard
+is ever done we would be best protected if the chair of the
+ISO Lisp standards committee were held by the U.S. As far as I know
+the only agreements we have with other countries is that if an ISO standard
+exists for something then we will not create an ANSI standard for the same
+thing. 
+
+I just talked to the chair of the APL standardization
+committee and heard war stories that have convinced me not to want
+to be involved with ANSI or ISO. 
+
+ Rick
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Subject:  Re:  Legal Protection
+To:  cl-charter@su-ai.ARPA
+Message-Id:  <8412050645.AA28156@ucbdali.ARPA>
+Date:  Tue, 4 Dec 84 22:45:12 pst
+Received:  by ucbdali.ARPA (4.24/4.39)
+
+Say,  Did we ever find out about the Digital Press copyright on the
+manual?
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Cc:  cl-charter@su-ai.ARPA, ohlander@usc-isi
+Subject:  CL the copyright
+To:  steele@cmuc
+Message-Id:  <8412070636.AA26142@ucbdali.ARPA>
+Date:  Thu, 6 Dec 84 22:36:22 pst
+Received:  by ucbdali.ARPA (4.24/4.39)
+
+Has anything happened with this?  In particular, a CL implementation
+reference manual for a particular machine would probably benefit from
+following the organization of the book (so far as possible), chapter &
+verse, stating choices where they were made, providing more specifics
+on errors, extensions, etc.
+  If Digital Equipment Corp., through its ownership of Digital Press,
+were made uniquely able to do this, it would seem unfortunate.
+  Is perhaps an earlier version that was GLS copyrighted, more
+available?  Is there an on-line copy?
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 7 Dec 1984  01:36-EST from fateman%ucbdali at Berkeley (Richard Fateman)
+Subject:  CL the copyright
+Cc:    cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA, steele@TL-20B.ARPA
+To:    fateman%ucbdali@λBerkeley (Richard Fateman)λ
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12069533951.BABYL@CMU-CS-C.ARPA>
+Date:  Fri, 7 Dec 1984  09:50 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Fri 7 Dec 84 09:50:15-EST
+
+
+The last I heard, about a month ago, the people at DARPA (along with
+Guy) were negotiating with Digital Press to reclaim the copyright so
+that the licensing of online versions, implementation-specific manuals,
+etc. would be in more neutral hands.  Digital Press seemed willing to do
+something like that as long as they retained some sort of exclusive
+rights for publication of the manual in implementation-independent book
+form -- they would be giving up a bunch of other rights which they now
+have by contract.  DARPA has some legal claim to rights to earlier
+versions of the manual, but as long as Digital Press is willing to
+cooperate, nobody wants to make it a battle of lawyers.
+
+I haven't heard lately how these negotiations are going, however.
+
+- -- Scott
+
+--
+From:  Ohlander
+In-Reply-To:  <8412070636.AA26142@ucbdali.ARPA>
+Message-ID:  <[USC-ISI.ARPA]10-Dec-84 08:57:25.OHLANDER>
+Cc:  steele@CMU-CS-C.ARPA, cl-charter@SU-AI.ARPA
+To:  fateman%ucbdali@UCB-VAX.ARPA
+Subject:  Re: CL the copyright
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  10 Dec 1984 08:57-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 10 Dec 84  05:57:46 PST
+
+Steve Squires and I have talked to Sam Fuller at DEC about this
+issue and I think we have closure.  After Guy Steele had sent a
+letter to John Osborne of Digital Press, Sam Fuller got together
+the Digital Press people and also explained the problem.  As a
+result, there is some tentative agreement that DEC will allow
+other companies to reproduce the Common Lisp manual for a
+reasonable fee.  In addition they won't have to go through all
+this format nonsense.  It was also agreed that DEC would have
+commercial rights while the Common Lisp group maintains rights to
+the Common Lisp specification.  DEC will also accomodate any
+changes in the specification made by the Common Lisp group.  This
+has yet to be ratified with John Osborne but I don't think there
+will be any major difficulty.
+
+Ron Ohlander
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 18 Dec 1984  14:27-EST from Daniel L. Weinreb <DLW at SCRC-QUABBIN.ARPA>
+Subject:  One idea.
+Cc:    cl-charter@SU-AI.ARPA
+To:    "Daniel L. Weinreb" <DLW@SCRC-QUABBIN.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12072813587.BABYL@CMU-CS-C.ARPA>
+Date:  Wed, 19 Dec 1984  22:05 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Wed 19 Dec 84 22:05:51-EST
+
+
+I agree more or less with Weinreb's suggestion.  It's too late to get
+control of the name "Common Lisp", even if this were clearly desirable.
+What we can do is come up with some sort of trademark associated with
+"Validated Common Lisp 84" or whatever, and protect that carefully.
+
+If we do it this way, companies will be able to use the name "Common
+Lisp" meaning that they aspire to produce something that is Common Lisp
+compatible, much as companies use variations on the name "Unix" to
+indicate what kind of operating system they are providing.  If someone
+claims that their product is Common Lisp, it will be fair for the
+community and for reviewers to evaluate it on how close it comes to
+meeting the spec.  But companies will only be able to sue the trademark
+for Validated Common Lisp if they in fact have been officially
+validated.
+
+- -- Scott
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Charter
+Date: 26 Dec 1984 15:33 EST
+
+After reading Scott's message, which hinted at a potential charter
+proposal he may write, I was thinking further about my loathing
+of democracies and the possible dangers to Common Lisp if we go for
+such a system.
+
+But first, some other comments.
+
+1) Why do we need a non-profit organization that needs ARPANET access?  We
+possibly need such an organization to shield us as individuals from
+lawsuits.  And I can almost see that we might need such an organization to
+provide dollars for travel to meeting places. But why ARPANET access? Will that
+organization be manned? (!) And what will the person who mans the organization
+do every day? I presume that what we'll need is an organization in a city
+where one of the permanently interested Common Lisp people can have a 
+post office box and a bank account.
+
+2) We've always dealt with issues by ARPANET before; why can't we do that now?
+The number of new accounts that are needed for people who do not now have
+ARPANET access is pretty small, and the bulk of the costs of those accounts
+can be paid for either by the companies involved or by DARPA for the individuals
+involved.
+
+3) Validation could form the basis of a `company,' and for that we should
+possibly charge a validation fee, and DARPA can pay for the rest of the
+validation activities. Perhaps we could study how ADA is validated (or
+not validated) to understand how to win (or how to not lose).
+
+Now on to voting.
+
+When we were doing the original design, we relied on consensus, not on voting.
+We voted from time to time, but we accepted the results of the vote as binding
+in those cases in which we had agreed by consensus to accept them.  We didn't
+trust voting then, and I don't think we should trust it now. We ought to
+allow voting for getting the sense of how people feel, and for simple
+decisions voting is ok, but for any sort of major decisions I think
+we would be nuts to use it.
+
+If companies are paying to send members to a standards meeting, then you
+can bet that it will be tough for some people to dissociate themselves from
+their companies. It is nice to think that people will be able to put themselves
+in the larger context to vote on the issues qua issues, but I'd rather have the 
+structure set up to enforce this.
+
+There are two ways I can think of, and they are similar to each other. The first
+is a statement of principles, which states exactly what it is that makes
+Common Lisp a Common Lisp. In some sense we want that definition to change
+is needed, but we want to guarantee that the rate of change will be small for
+most of the language. And we want some parts to move very slowly indeed.
+
+The principles would state that Common Lisp is a lexical Lisp and, for example,
+that a dynamic Lisp is not to be interpretted as a subset of Common Lisp.
+Similarly it would also talk about multiple values, lambda-lists, and the
+general principles, which Steele stated in the Common Lisp book.
+
+There would then be a body that would decide for every change made to
+Common Lisp whether that change followed the principles. If not, then the
+change would not go into effect. This body could also serve an advisory
+role with respect to other Common Lisp activities.
+
+The second way is a simplification of this, which is to have an oligarchy.
+The members of the oligarchy would be chosen for their `stature' and 
+`Lisp wisedom.' A second body would be a suggestion-generator. This second
+body would come up with proposals, and the oligarchy would decide what to do.
+This is almost the same as the first suggestion, but there is no set of 
+principles that form the basis of the decisions made by the oligarchic
+body.
+
+On the subject of dues, it might be the case that some small startups cannot
+afford, say, $20k right off the bat. These companies might like to offer
+services rather than dollars in order to `belong' to the Common Lisp Group.
+That is, they could run mailing lists, work on validation suites, or something
+until their ship comes in.
+
+			-rpg-
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Subject:  Re:  Charter
+To:  RPG@SU-AI.ARPA, cl-charter@SU-AI.ARPA
+Message-Id:  <8412280424.AA07636@ucbdali.ARPA>
+Date:  Thu, 27 Dec 84 20:24:22 pst
+Received:  by ucbdali.ARPA (4.24/4.40)
+
+1. I will point out that being rigid on what 
+is or is not a common lisp subset is perhaps not to our benefit.
+
+2. Do you want to tackle Gold Hill and Symbolics regarding lexical
+scoping?  What about flavors? How about a standard editor? I doubt that any of
+us want someone (else) dictating, retroactively, what should be in or out 
+of a CL implementation, especially after ours has been released. I'd bet
+there would some delicate legal issues, and I would expect that
+anyone who cared to make a fuss about a rejection from the CL club
+would sue the pants off the organization.
+
+3. It was my impression that the "Strategic Computing"
+Common Lisp subset would probably be a subset of several already existing
+lisps, including Maclisp and Interlisp.
+
+4. What would happen if we just stopped at this point?  It would be as though
+people had a new "lisp 1.5" model on which to base their lisp systems.
+This is a good thing:
+Just as the lisps between 1959 and (more or less) 1984 could be said to
+be based on lisp 1.5 (more or less), the lisps after 1984 could be said
+to be based on common lisp (more or less).
+
+5. Should we really go further?
+Is there an important role for the CL charter group (or validation group?)
+to play in the de-validation of purported common lisps? Or the stomping on
+professed non-common lisps (e.g. Maclisp, Interlisp)?  If DARPA has expressed
+a need for this service, they should provide specs and offer to pay for
+it.  Otherwise, our work here seems to be done!
+
+6. As we continue to muddle around for a while longer while
+a few more alleged CL implementations appear, we will be even more likely
+to fall into this position.  It might not be a bad situation as I indicated
+in paragraph 4.
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 27 Dec 1984  23:24-EST from fateman%ucbdali at Berkeley (Richard Fateman)
+Subject:  Charter
+Cc:    cl-charter@SU-AI.ARPA
+To:    fateman%ucbdali@λBerkeley (Richard Fateman)λ
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12075028504.BABYL@CMU-CS-C.ARPA>
+Date:  Fri, 28 Dec 1984  08:52 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Fri 28 Dec 84 08:52:41-EST
+
+
+As tempting as your suggestion is -- I would love to declare a victory
+and go home -- I don't think that Common Lisp will solve the problems we
+want it to solve if we just let it float free from now on, in the manner
+of Lisp 1.5.  While that did give the world a rough idea of what was
+meant by the word "Lisp", it also left room for a major schism and
+enough chaos in the Lisp world to effectively prevent most people in
+industry and government from embracing Lisp as a usable language.
+That's what we're trying to get away from.  So we've got to be tighter
+than that if Common Lisp is to be "industrial strength".
+
+As for companies getting upset when we finally have a validation suite
+for what's in the book and their Lisp doesn't make it, well, they
+shouldn't be surprised.  They can probably still call themselves "Common
+Lisp", but they just won't be able to claim that they're fully validated
+or to sell their systems to people who require that.  If an organization
+forms, sets some standards, offers to validate conformance with those
+standards, and if other organizations decide to require conformance to
+that particular set of standards, I don't see any grounds for a lawsuit
+(which is not to say that there won't be any, given the unreasonable
+nature of lawyers).
+
+As for Symbolics and Gold Hill, I believe that Symbolics plans to come
+into full compliance, including lexical scoping, and that Gold Hill
+clearly understands that as long as they are a subset they are not going
+to get validated as a full Common Lisp anyway.  My guess is that they
+will move to lexical scoping sometime soon -- it's not THAT hard.
+Flavors and standard editors and such are not part of the language spec
+proper, though they may someday have specs of their own which companies
+can meet or reject, as they choose.
+
+- -- Scott
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  A proposal
+Cc:    quinquevirate@SU-AI.ARPA, ohlander@USC-ISI.ARPA, squires@USC-ISI.ARPA
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12081472823.BABYL@CMU-CS-C.ARPA>
+Date:  Mon, 21 Jan 1985  22:52 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Mon 21 Jan 85 22:52:33-EST
+
+
+OK, we've got to get this charter business settled.  The status quo is
+untenable in the long run.  I guess we need a specific proposal to focus
+our discussions.  There seem to be three possible models:
+
+1. A separate organization for Common Lisp.
+
+2. Setting up a subcommittee of AAAI or some other existing organization
+   to handle Common Lisp activities.
+
+3. Trying to get by without any formal organization.  Guy would put
+   whatever he wants into future editions of the book, DARPA would
+   specify whatever they want as a standard (with a validation suite
+   owned by them), CMU and others might produce some public domain code
+   if they feel like it, manufacturers do whatever they want to and call
+   it Common Lisp if they feel like it, and the rest of us kibitz and
+   try to offer good but informal advice to all of the above.
+
+I think that most of us prefer plan 1, a separate organization, if such
+an organization can be set up in some way that makes it viable.
+Therefore, I propose to explore in this document what such an
+organization might look like.  If we can't find a satisfactory solution
+of this form, then it is time to look at the other options.
+
+I share the concern expressed by Dick Gabriel (and by James Madison and
+Alexander Hamilton) that raw democracy is not the best way to decide
+complex technical issues.  The traditional fix is to set up a
+representative system in which the decisions are made by a small group
+of people who are elected by, and derive their legitimacy from, the
+community as a whole.  We also need some constitutional checks and
+balances to prevent any sudden and disruptive lurches in the design.
+All of us have our own axes to grind, but I think that most of us feel
+that overall stability of the language is of over-riding importance.
+
+The following proposal is just a sketch.  Random comments and queries
+are in square brackets.  Obviously it will take a certain amount of
+work, by someone with experience in such organizational matters, to turn
+this outline into a proper set of bylaws.  Since there is significant
+money involved, as well as a number of liability and antitrust issues,
+we're going to need good legal advice on this BEFORE we start signing up
+members.  That's one place where the DARPA seed money comes in, I hope.
+
+Let me know what you think about this.  I'm not particularly attached to
+any of the details of this plan.  Alternative plans are welcome.  Keep
+in mind that we've got to do SOMETHING about an organization, so vague
+objections that are not accompanied by reasonable counter-proposals
+won't be taken very seriously.
+
+- -- Scott
+
+- ---------------------------------------------------------------------------
+
+1. OVERVIEW
+
+The proposal is to create a non-profit corporation to be called the
+"Common Lisp Association".  The purpose of this organization is to
+promote the standardization and orderly evolution of the Common Lisp
+language and to support efforts to enhance the usefulness of all Common
+Lisp implementations.
+
+This organization will have both individual and corporate members.  The
+dues from the corporate members will be its principal source of income.
+
+2. FUNCTIONS OF THE ASSOCIATION
+
+2.1 To maintain and distribute the official language definition and a
+matching validation suite.  This involves a certain amount of
+decision-making to resolve ambiguities in the manual, consider proposed
+changes and extensions and perhaps adopt them, and to create related
+standards in areas outside the language proper.  All decisions must be
+carefully recorded and communicated to all interested parties.
+
+2.2 To serve as the legal entity that acts on behalf of the Common Lisp
+community.  In this capacity, the organization would be the holder of
+any trademarks or copyrights that are under control of "the Common Lisp
+community" and not of any single company or group.  In particular, the
+organization will obtain a trademark for "Validated Common Lisp", and
+will control its use.
+
+2.3 To perform official validation of Common Lisp implementations.  Only
+those implementations that have passed an official validation test at
+some level will be authorized to use the "Validated Common Lisp"
+trademark.  From time to time, new validation suites will be produced,
+and anyone using the trademark will be required to include an
+appropriate explanation, such as "Complies fully with the 1986 Common
+Lisp Standard, minus complex numbers".
+
+2.4 To maintain and distribute any software libraries, implementor's
+kits, or other materials whose authors want them to be generally
+available without cost to the Common Lisp community.  If the resources
+of the organization are sufficient, the organization may help to fund
+the production of new materials (programs, documentation, training
+materials, etc.) whose existence would be of benefit to the Common Lisp
+community as a whole.
+
+2.5 To disseminate news of general interest to the Common Lisp
+community, normally by electronic mail, but with hardcopy service
+available for those members who need this.
+
+2.6 To organize meetings whenever these are necessary.  The organization
+may pay the travel expenses of officers and members of the executive
+council and technical committee to attend these meetings.
+
+In order to perform these functions, the organization will require a
+certain amount of technically competent clerical help.  It will also
+need good access to the Arpanet and CSnet, a substantial amount of
+online storage for records, code, and documents, and some facilities for
+producing hardcopy documents and mag tapes.  There is probably not
+enough clerical and administrative work at present to keep a full-time
+office staff busy; on the other hand, I can state from personal
+experience that to do this administrative work right requires more time
+than we can count on getting from random volunteers, especially if they
+are busy Lisp wizards with projects and deadlines of their own.  So, for
+the near future, it seems best to have the organization contract with
+someone else to provide the necessary equipment and administrative
+services for a fee -- perhaps one of the universities or some company
+like Lucid.
+
+3. CLASSES OF MEMBERSHIP
+
+3.1 Individual Members
+
+An individual may join the association as an individual member by
+payment of the annual dues.  The amount of dues will be set by the
+executive council, but I propose $25/year as the initial amount.  The
+idea is that the individual dues should be just high enough to pay for
+the administrative costs of communicating with the users.
+
+[ Would we get a higher percentage of "serious" Lisp people if the
+individual dues were higher?  Does it matter?  On the one hand we want
+to popularize the language; on the other hand, a lot of damage could be
+done if the organization were flooded by people whose main interest is
+how well Common Lisp runs on their Commodore 64's.  Maybe the checks and
+balances described below will suffice to keep the design reasonably
+stable.  If not, one nasty trick would be to charge a low price for people
+reachable by Arpanet or CSnet, and a higher price for those reachable
+only by physical mail. ]
+
+Individual members have certain voting rights, as described below.  They
+receive all communications that are sent to the membership at large
+(either by electronic mail or, if they so request, by physical mail).
+They also may obtain libraries, implementor's kits, and any other
+public-domain information maintained by the association for only the
+cost of preparing and shipping the media to them.  Finally, there will
+occasionally be meetings of the membership (though it may be necessary
+to charge an additional registration fee for these meetings to cover
+expenses).
+
+3.2 Corporate Members
+
+Any corporation or other organization can join the association as a
+corporate member by paying the annual dues.  Membership by a corporation
+does not necessarily imply that the corporation favors the use of Common
+Lisp over other Lisp dialects or other programming languages, but merely
+that the corporation favors the standardization of Common Lisp and wishes
+to support that effort and to participate in it.
+
+[ Do we allow foreign companies to join?  I hope so.  If possible, we
+want Common Lisp to be a worldwide standard, not just a U.S. standard.
+Universities and U. S. government agencies would probably not want to be
+corporate members, but would just have some people join up as
+individuals. ]
+
+It is the dues of the corporate members that support the organization
+and its activities, so these dues are significant.  Again, it is the
+executive council that sets the dues, but I believe that the initial
+level should be $10,000/year for each corporate member.  Assuming that
+we get at least ten such members and can obtain the necessary services
+at favorable rates, the organization should be on a reasonably secure
+financial footing.  There would presumably be some DARPA money keeping
+the organization afloat at the start, and once it's running well there
+might be many more than ten corporate members -- there certainly are
+more than twenty companies working on Common Lisp or closely related
+products.
+
+Corporate members receive the following benefits:
+
+* Certain special voting rights, as described below.  Each corporation
+  will designate one person to act as its representative in such votes.
+  This person will receive all the rights of individual membership,
+  whether or not he or she is an individual member.
+
+* Free access to the Common Lisp materials maintained by the
+  association, and assistance of the administrative staff in obtaining
+  these items.
+
+* Official validation of any Common Lisp product they might produce for
+  only the cost of running the tests.
+
+* Free use of the Validated Common Lisp trademark in advertising for
+  products that have been duly validated.
+
+* The list of current corporate members will be included in some
+  materials released by the association, so that we can all be grateful
+  to those companies who have paid their fair share.
+
+If a company that is not a corporate member of the association wants to
+have an implementation validated and to use the trademark, the fee is
+$11,000 per year, plus costs.  This fee may be waived for any
+implementation that is distributed for free or for a price that only
+covers the distribution costs.
+
+[OK, how many out there believe that your companies would join up as
+corporate members under the scheme described here?  How sensitive is
+this decision to the amount of the dues?]
+
+4. GOVERNANCE
+
+[ All of this needs to be polished up.  Does anyone have a copy of some
+similar association's bylaws?  We may as well copy some existing model
+rather than reinventing the wheel. ]
+
+The basic idea is that the organization will require the usual
+complement of officers (president, vice-president, and
+secretary-treasurer), along with an executive council of six [?]
+members.  Administrative issues and any major expenditures of the
+organization's funds will be decided by majority vote of this group
+(officers plus councillors).  No more than two of the executive
+councillors may be employed by any one company, university, or other
+organization.
+
+The officers are elected annually; the council members serve
+two-year terms, with half the members being elected each year.  These
+officers and councilors are elected by the individual members.  The
+balloting will be done by electronic and physical mail, according to the
+preference of each member.  Prior to the election, the existing
+executive council and officers will nominate at least one candidate for
+each opening; any corporate member or any group of five [?] individual
+members may put forth additional nominees whose names will be included
+on the ballots.
+
+Technical issues relating to the Common Lisp specification or related
+specifications are decided by the seven-member Technical Committee, as
+described below.  The members of this committee serve two-year terms,
+with half being elected each year.  [The number seven is arbitrary, but
+it wants to be an odd number and does NOT want to be five.]  No more
+than two members of the Technical Committee may be employed by any one
+company, university, or other organization.  Technical Committee members
+may also be officers of the association, but no one may serve on both
+the technical committee and the executive council at once.  The
+nomination and balloting procedures are the same for the technical
+committee as for the executive council.
+
+It is essential that the organization do whatever is necessary to
+protect the councillors, committee members, and officers from any legal
+actions that might arise in relation to their activities on behalf of
+the organization.  Unless this protection can be made fairly airtight,
+it's going to be awfully hard to find volunteers.
+
+5. TECHNICAL DECISIONS
+
+We begin by accepting the language description in "Common Lisp: The
+Language" by Guy L. Steele Jr., in the first edition as published by
+Digital Press, as the initial authoritative language definition for
+Common Lisp.  The "current definition" of Common Lisp is this book, as
+modified by any duly approved amendments or clarifications, until such
+time as a new comprehensive document is approved.  At any given time,
+the association will make available to members all those documents
+which, taken together, constitute the current official definition of the
+language.  Any validation tests approved by the association will (try
+to) conform to this official language definition.
+
+The issues to be considered by the technical committee will be
+classified into four categories, as follows:
+
+1. Proposed changes and extensions to the current official Common Lisp
+   definition.
+
+2. Clarifications, where in the opinion of the the technical committee
+   the current definition is ambiguous, inconsistent, or clearly
+   unworkable.
+
+3. Validation issues, concerning whether the validation tests properly
+   reflect the current language definition.
+
+4. Related standards, not part of the Common Lisp definition itself.
+
+The decision process is as follows: 
+
+First, the issue is raised by the technical committee and is
+communicated to the membership.  A recommendation may be sent out at
+this time as well.  All members are invited to express their views on
+the issue, but the decision is made by the technical committee.
+
+After a discussion period of at least fourteen days, the technical
+committee, by majority vote, will make a decision, and the result will
+be communicated to the members.
+
+Any corporate member may challenge a decision by the technical committee
+by calling for a vote of the corporate members.  This challenge must
+occur within two weeks of the announcement of that decision.  If a
+majority of the corporate members vote to veto the decision, it is set
+aside.  In the case of a proposed change, extension, or related
+standard, the status quo prevails; in the case of a clarification or
+validation issue, the decision is, in effect sent back into committee.
+If a decision is not challenged within two weeks, or if it is not vetoed
+by a majority of the corporate members, it is adopted.
+
+--
+From:  fateman%ucbdali@UCB-VAX (Richard Fateman)
+Cc:  ohlander@USC-ISI.ARPA, quinquevirate@SU-AI.ARPA, squires@USC-ISI.ARPA
+Subject:  Re:  A proposal
+To:  Fahlman@CMU-CS-C.ARPA, cl-charter@SU-AI.ARPA
+Message-Id:  <8501220517.AA23652@ucbdali.ARPA>
+Date:  Mon, 21 Jan 85 21:17:42 pst
+Received:  by ucbdali.ARPA (4.24/4.40)
+
+actually, (3) seems much simpler; (2) could evolve in an orderly fashion
+over a long period of time into an ANSI Standard Common Lisp committee
+under the auspices of IEEE; and (1), the proposal you favor, would probably
+cost $50k in legal fees just to start up. That's not even counting the
+legal fees of the companies outside CL Inc. who must analyze the rules
+before joining.
+  I think that unless CL Inc owns the copyright to GLS's book, the exercise
+is totally at the mercy of Digital Press.  Would D.P. sell the copyright
+to CL Inc.?  If so, the royalties accruing might support a small staff.
+
+   Why, after all this, is (3) not so bad?  Well, look at what happened
+to Lisp 1.5, and the little MIT press blue&white book describing it.
+Was that so bad?  Did anyone ever validate a lisp 1.5 implementation?
+If DARPA wants to specify to contractors that their application deliverables 
+must be "Common Lisp compatible", or "Strategic-Computing Lisp compatible",
+then they need not be written in a full "Validated Common Lisp", but
+could (for example) be written in any subset, or any Lisp whatsoever that
+by Turing-equivalence could be simulated in a CL system.
+
+IF you continue to try for plan (1) and include this corporate thing
+then the current group of interested people will quite certainly lose control
+of CL to the extent that it becomes commercially important. Imagine the
+vetoes from Hughes, Lockheed, Boeing, General Dynamics, GE, Aerospace, Ford,
+GM, Chrysler, United Industries, Fujitsu, Mitsubishi... in addition to
+the more cost-conscious of the computer vendors.
+
+  I suggest that only individuals be allowed to vote, as is the case with
+IEEE standards committees.
+
+--
+From:  STEELE@TL-20A.ARPA
+In-Reply-To:  Message from ""Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>" of Mon 21 Jan 85 23:18:13-EST
+cc:  cl-charter@SU-AI.ARPA, quinquevirate@SU-AI.ARPA, ohlander@USC-ISI.ARPA,
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: A proposal
+Date:  Tue 22 Jan 85 13:15:38-EST
+Received:  ID <STEELE@TL-20A.ARPA.#Internet>; Tue 22 Jan 85 13:15:46-EST
+
+While stability is well and good, I am also concerned that the natural
+conservatism of the corporate interests may stifle necessary improvements,
+particularly clarifications and resolutions of contradictions, in the
+long run.  I would like to suggest either of two modifications for
+consideration:
+(1) Corporate veto requires a two-thirds majority of corporate members.
+(2) Corporate veto requires only simple majority, but the veto can be
+    overridden by unanimous vote of the technical committee.
+I thought of (1) first, but I slightly favor (2), the point being that
+that involves an extra step and therefore gives the technical committee
+feedback on how corporate members feel before making the final decision.
+(Perhaps the word "unanimous" should be changed to "three-quarters
+majority" in (2), especially if the technical committee is larger than
+ten people.  Three-quarters majorities for odd numbers of people are:
+6 of 7; 7 of 9; 9 of 11; 10 of 13; 12 of 15.  But this is premature
+fine-tuning.)
+- -------
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  A proposal
+To:    cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA, quinquevirate@SU-AI.ARPA,
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12082785776.BABYL@CMU-CS-C.ARPA>
+Date:  Sat, 26 Jan 1985  23:04 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sat 26 Jan 85 23:04:42-EST
+
+
+So far, I've only received two replies to my charter proposal, one from
+Guy Steele and one from Richard Fateman.  That means either that (a) all
+the rest of you agree with my proposal in all its details, (b) all of
+you find it so hopelessly wrong that it's not worth commenting on, (c)
+none of you give a damn about these issues, or (d) you people out in
+companies only read your mail once a month.  At least let me know which
+of these is really the case.
+
+Fateman favors going with no formal organization at all, in part because
+he believes that the legal fees will be overwhelming if we try to start
+such a thing.  Does anyone have some hard data on the legal costs for
+similar efforts?
+
+To answer another of Fateman's queries, I think that Digital Press would
+be quite willing to turn the copyright over to the organization, once it
+is up and running, as long as they retain the exclusive rights to
+publish the manual in commercial book form.  They have suggested as much
+in preliminary discussions, though there are a large number of details
+to be worked out.  We can't proceed with anything like this until there
+is some entity with whom they can make the deal.
+
+We come finally, to the central point:
+
+     Why, after all this, is (3) not so bad?  Well, look at what happened
+  to Lisp 1.5, and the little MIT press blue&white book describing it.
+  Was that so bad?  Did anyone ever validate a lisp 1.5 implementation?
+
+In my opinion, it was "so bad".  The lack of a usable standard
+for Lisp 1.5, and some way of updating that standard as Lisp evolved
+into something whose relation to Lisp 1.5 was almost unrecognizable, was
+responsible for a couple of major schisms and a huge amount of duplicated
+effort.  The resulting chaotic situation probably set the
+commercialization of AI back by 5 years or so.
+
+Finally, Fateman argues that a separate organization would make it
+inevitable that the original group of Common Lisp people would lose
+control of the language as more and more companies develop a strong
+commercial interest in it.  That seems like a desirable evolution to me.
+Who better to control the language than those who have a stake in it?
+If the language becomes too stable over time, we researchers will just
+have to call our wild new languages something else.
+
+Both Fateman and Steele have expressed some uneasiness over the veto
+power that I proposed for the industrial members, on the grounds that
+such companies would tend to be too conservative.  I think that both of
+you are selling the companies short.  I have not noticed any tendency of
+the companies involved in this process to be more conservative than
+anyone else.  On a lot of issues I've been the conservative, or Gabriel
+has, or Hedrick or Fateman -- academics all (at the time).  Where people
+from the stock-hardware companies have felt that they lacked expertise
+on some issue, they have generally kept quiet.  I see no reason to
+believe that this would change.  Of course the companies will resist any
+expensive changes for which there is not a clear benefit to be gained,
+but so will the rest of us -- that's what stability is all about.
+
+Note that I am NOT proposing that any single company, or small group of
+them, be given a veto.  That would be disastrous.  But if the technical
+committee cannot persuade at least half of the companies that some change
+is worthwhile, it seems to me that the change should not go through.
+Note also that even a majority of the companies could not force through
+a lot of changes that would ruin the existing language, unless they also
+gain control of the technical committee.  The pressure to come up with
+subsets and compromises will evaporate after a year or two; by then,
+most companies will be offering full Common Lisp implementations and
+will no longer have much interest in reverting to dynamic scoping or
+flushing all of the sequence functions.
+
+The reason for including this veto provision in the first place is that,
+when I try to look at this organization from the point of view of the
+companies who want to invest heavily in Common Lisp, I see a need for
+some protection against the technical committee (a small group of
+people, after all) going crazy and changing the language beyond all
+recognition, destroying my investment.  To spin out just one disturbing
+fantasy, some company that does not want to see Common Lisp succeed
+might try to pack the association with its employees as individual
+members, elect a technical committee of its own liking, and hijack the
+language definition machinery.  The mere existence of a veto power by
+the other corporate members would eliminate this threat, I think.
+
+For those reasons, I would oppose giving the technical committee the
+final word by giving them the power to over-ride vetos.  It wouldn't
+bother me to require a 2/3 majority of corporate members for a veto, but
+I prefer a simple majority.  As a practical matter, I think that any
+technical committee would be mad to shove through any change that is not
+acceptable to a majority of the companies, even if they had the power to
+do so.
+
+- -- Scott
+
+--
+From:  David A. Moon <Moon@SCRC-RIVERSIDE.ARPA>
+Message-ID:  <850127004201.8.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <FAHLMAN.12082785776.BABYL@CMU-CS-C.ARPA>
+cc:  cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA,
+To:  Scott E. Fahlman <Fahlman@CMU-CS-C.ARPA>
+Subject:  A proposal
+Date:  Sun, 27 Jan 85 00:42 EST
+Received:  from SCRC-EUPHRATES by SCRC-STONY-BROOK via CHAOS with CHAOS-MAIL id 166927; Sun 27-Jan-85 00:42:42-EST
+
+    Date: Sat, 26 Jan 1985  23:04 EST
+    From: "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+
+    So far, I've only received two replies to my charter proposal, one from
+    Guy Steele and one from Richard Fateman.  That means either that (a) all
+    the rest of you agree with my proposal in all its details, (b) all of
+    you find it so hopelessly wrong that it's not worth commenting on, (c)
+    none of you give a damn about these issues, or (d) you people out in
+    companies only read your mail once a month.  At least let me know which
+    of these is really the case.
+
+(c).  Note that I am not on the CL-Charter mailing list.  Other people at
+Symbolics are on that mailing list, perhaps they will speak up.  Some of
+them are extremely busy this month trying to get out a software release
+on time and with an acceptable level of bugs, so maybe that explains the
+delay.  I am sure the "official" position of Symbolics is not (c).
+
+The rest of your message seems reasonable to me.
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Subject:  Re:  A proposal
+To:  Fahlman@CMU-CS-C.ARPA, cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA,
+Message-Id:  <8501270741.AA26395@ucbdali.ARPA>
+Date:  Sat, 26 Jan 85 23:41:09 pst
+Received:  by ucbdali.ARPA (4.24/4.40)
+
+	Fateman favors going with no formal organization at all, in part because
+	he believes that the legal fees will be overwhelming if we try to start
+	such a thing.  Does anyone have some hard data on the legal costs for
+	similar efforts?
+I am sure that the costs would be higher for anything "original" 
+(as opposed to what has been done with Fortran, COBOL, Basic, Pascal, MUMPS).
+I wonder if the extra cost would buy much.
+	
+	To answer another of Fateman's queries, I think that Digital Press would
+	be quite willing to turn the copyright over to the organization, once it
+	is up and running, as long as they retain the exclusive rights to
+	publish the manual in commercial book form.
+Whose manual?  CommonLisptheLanguage is not a reference manual.  Where, for
+example, are the error messages? The debugger?  It is an incomplete work.
+I agree that there are a large number of details to be worked out, but there
+are some major issues, too.  To what extent does DEC own all "composite" works?
+Would DEC permit a "composite" to remove sections or paragraphs ... e.g.
+to change the meaning of a function ..  or to use dynamic rather than
+lexical scope? Or would DEC be the de facto standard setter by saying that
+if you alter anything you must write the manual from scratch?
+	
+	The lack of a usable standard
+	for Lisp 1.5, and some way of updating that standard as Lisp evolved
+	into something whose relation to Lisp 1.5 was almost unrecognizable, was
+	responsible for a couple of major schisms and a huge amount of duplicated
+	effort.  The resulting chaotic situation probably set the
+	commercialization of AI back by 5 years or so.
+I guess I disagree.  The effort to make an Interlisp program run in a
+Maclisp system, or vice versa strikes me as not so great.  Few people
+have wanted to use other people's "magnum opus" programs as components in 
+their systems.  The fact that some were Interlisp and others Maclisp
+is irrelevant.  The smaller programs... tools like the BBN/Interlisp/CMU-Franz
+structure editor or flavors .. have been moved.  In spite of the biennial
+Crisis-in-Lisp meetings, I am not sure anyone can point to any great
+waste of human effort in retargeting.  It's been mostly religion, and
+all we see now is Maclisp is in the ascendancy.
+
+Perhaps this is not the place to discuss the question, but do you have
+in mind some "commercial AI program of today" that might have been out
+5 years earlier? Certainly Macsyma would not have been affected by this
+issue.  I doubt that KEE would have been.
+I think hardware has been much more critical.
+	
+	The pressure to come up with
+	subsets and compromises will evaporate after a year or two; by then,
+	most companies will be offering full Common Lisp implementations and
+	will no longer have much interest in reverting to dynamic scoping or
+	flushing all of the sequence functions.
+I doubt it. Do you think IBM PCs and Macintoshes will evaporate in 2 years?
+	
+	To spin out just one disturbing
+	fantasy, some company that does not want to see Common Lisp succeed
+	might try to pack the association with its employees as individual
+	members, elect a technical committee of its own liking, and hijack the
+	language definition machinery.
+How has this been avoided in Fortran or ... committees?  Why are you assuming
+we must break new ground?
+	
+I too would like to hear from the others..
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  A proposal
+Cc:    cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA, quinquevirate@SU-AI.ARPA,
+To:    fateman%ucbdali@λBerkeley (Richard Fateman)λ
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12082936705.BABYL@CMU-CS-C.ARPA>
+Date:  Sun, 27 Jan 1985  12:53 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sun 27 Jan 85 12:53:47-EST
+
+
+Richard,
+
+  I am sure that the costs would be higher for anything "original" 
+  (as opposed to what has been done with Fortran, COBOL, Basic, Pascal, MUMPS).
+  I wonder if the extra cost would buy much.
+
+Well, our situation is unique in some ways, I think, but I certainly
+don't want to invent any more of this than is necessary.  One reason I'm
+uneasy about chairing this group is that I've carefully avoided
+standardization committees and other such political groups in the past,
+so I'm not very well acquainted with some of these earlier efforts.  All
+that I've heard about them have been a lot of horror stories.  If anyone
+can point to an existing model that they think is worth emulating, and
+to some way of getting the details on it, I'd love to copy something
+successful. 
+
+On the manual issue, the Common Lisp organization would control the
+content and any additions.  Digital Press has never wanted to control
+the content of they manual; they have tried to faithfully follow our
+request that nobody be allowed to reprint the manual with random
+mutations of their own choosing.  I think that Digital Press would be
+satisfied with any arrangement in which, if some composite work is to be
+published as a commercial book, they either do the publishing or get a
+roylaty on the part of the work they now control.  The problem with
+licensing legitimate derivitive works has been the low bandwidth of our
+interations with Digital Press, the slow pace at which Digital Press
+does anything, and some confusion about who speaks for the Common Lisp
+community.  If the organization were to gain control of the copyright,
+these problems would be greatly alleviated.  In fact, that's one of the
+biggest reasons why we ought to move fast on this charter business and
+not let it sit for a year.
+
+As for the "5 years earlier" issue, I wasn't terribly close to Macsyma,
+but it is probably a good example of a program that would have found its
+way into industry many years ago if the Lisp that it ran on was stable,
+well-documented, and ran more or less compatibly on a variety of
+machines.  When I was at MIT, eight or so years ago, I heard many rumors
+of industrial groups looking into Macsyma and other early Maclisp-based
+systems and giving up when they saw what kind of shape Maclisp was in.
+(Some of them probably were driven away by MIT's lawyers instead, but
+that's another problem.)
+
+I don't think that Macintoshes and IBM PC's will have disappeared in two
+years, but I am quite sure that virtual-memory PC's, capable of running
+a full Common Lisp with editor and compiler, will exist within that time
+frame at prices comparable to today's Macintoshes and PC's.  There will
+be plenty of non-VM personal computers still running -- older machines
+or super-cheap ones -- but there will be plenty of clean,
+well-considered subsets of Common Lisp running on these machines.
+
+Right now, most of the pressure for substantially altering Common Lisp
+comes not from the small-machine people, but from those trying to turn
+some already-existing Lisp into Common Lisp by bending it a little.
+This is the game that I think will be over within a year or two.  By
+then, these people will either have succeeded in developing a legal
+Common Lisp from wherever they are starting, or will have been blown
+away by some from-scratch Common Lisp implementation for the same
+machine.
+
+- -- Scott
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Cc:  cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA, quinquevirate@SU-AI.ARPA,
+Subject:  Re:  A proposal
+To:  Fahlman@CMU-CS-C.ARPA, fateman%ucbdali%λBerkeleyλ@Berkeley
+Message-Id:  <8501280106.AA00855@ucbdali.ARPA>
+Date:  Sun, 27 Jan 85 17:06:25 pst
+Received:  by ucbdali.ARPA (4.24/4.40)
+
+Is it your intention to forbid a lisp manual to use the CL chapter
+on packages [paying suitable royalties], if the lisp in question
+neglects to adopt the string chapter? How about lexical scoping?  
+Is this DEC's intention too?  I guess I would be happier if the manual
+were put in the public domain, and the imprimateur of the CL committee
+was separate.
+
+P.S...apologies for the tangent...but...
+Macsyma's distribution problems have been caused by
+hardware and legal issues, not divisiveness in languages. Had Macsyma
+run in Interlisp and PSL, nothing would have changed. Had anyone really
+wanted either of these, they could have been done, technically speaking,
+without much effort.  
+
+The VAX solved the hardware issues. The MC68000 and cheap memory
+made the solution more realistic.
+Few people realize that Macsyma has been run routinely FOR 2 YEARS on numerous
+(different) 68000-based workstations at UCB. 
+MIT and Symbolics have maintained legal barriers to its distribution.
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 27 Jan 1985  20:06-EST from fateman%ucbdali at Berkeley (Richard Fateman)
+Subject:  A proposal
+Cc:    cl-charter@SU-AI.ARPA, ohlander@USC-ISI.ARPA, quinquevirate@SU-AI.ARPA,
+To:    fateman%ucbdali@λBerkeley (Richard Fateman)λ
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12083019346.BABYL@CMU-CS-C.ARPA>
+Date:  Sun, 27 Jan 1985  20:27 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sun 27 Jan 85 20:27:45-EST
+
+
+    Is it your intention to forbid a lisp manual to use the CL chapter
+    on packages [paying suitable royalties], if the lisp in question
+    neglects to adopt the string chapter? How about lexical scoping?  
+    Is this DEC's intention too?  I guess I would be happier if the manual
+    were put in the public domain, and the imprimateur of the CL committee
+    was separate.
+
+I see two issues here.  First, the manual is at present the sole written
+form of the Common Lisp standard, and the whole community has an
+interest in preventing random mutations in that standard, or confusion
+as to what the standard really is.  So I believe that if anyone wants to
+use parts of this manual and not other parts, this should only be
+allowed if there is a firm agreement that the new version clearly label
+itself as not a Common Lisp, but is a distinct dialect that happens to
+use a package system identical to that in Common Lisp (or whatever).
+That's very important.  Putting the manual in the public domain would
+allow the publication of many nearly-identical versions of the manual,
+all claiming to be Common Lisp, and some of them "improved" in various
+ways by irresponsible or incompetent editors.
+
+The other issue is simply makign sure that the original author and/or
+the current copyright holder is appropriately compensated if commercial
+use is made of significant parts of the original work.  That can be a
+private matter between the parties concerned.
+
+- -- Scott
+
+--
+From: RPG  
+To:    cl-charter@SU-AI.ARPA 
+Subject: Varia
+Date: 27 Jan 1985 21:15 EST
+
+Before I get on to serious flaming, there are a few announcements
+I'd like to make:
+
+1. I have included on CL-CHARTER all of the people to whom messages
+addressed to CL-CHARTER@SAIL,QUINQUEVIRATE@SAIL,SQUIRES@ISI,OHLANDER@ISI,
+FATEMAN@BERKELEY go. So from now on you'll simply need to mail to 
+CL-CHARTER@SAIL to get all of these guys.
+
+2. I talked to Ron Ohlander on Friday, and he mentioned that DARPA will
+probably put up some money for a lawyer in the form of asking a
+government lawyer to provide some counsel for us on the legal issues that
+have been raised. It sounds like we should get together a list of precisely
+defined issues to present to this fellow when his time becomes available.
+
+Now on to the discussion. Fateman asks whether we intend to require that
+implementors who choose to implement exactly Common Lisp packages also be
+forced to also `include' the string features. Certainly we wouldn't want
+to require that the implementors implement them, but we certainly do not
+want to require that their documentation document all of Common Lisp to
+simply document this one convenience.
+
+I believe an acceptable solution would be for the documentor to state that
+the package system is identical to that described in Chapter 11 and to
+duplicate, in his own words, what that chapter contains.
+
+What we wish to avoid is the case of the document being in the public
+domain with people able to spread near misses or deliberate fakes.
+There was a company (a bank) in San Francisco that decided it wanted to
+call itself CityBank of San Francisco. Their attorneys (who are Lucid's
+attorneys) recommended strongly against it, but the bank insisted. 
+The out-of-court settlement cost `CityBank' $5megs.
+
+If we end up with a world where there can be a silver and green book
+entitled `Common Lizp: The Language' by Guy L. Steal Jr., defining dynamic
+binding on odd days, the `consumer,' aka the programmer, would be justified
+in worrying about false advertising. Imagine what it would be like if
+every implementation had its own version of Common Lisp a little different
+from the others, and this difference was only noticeable in running code and
+by a detailed examintation of the manual (which was otherwise identical to
+the Digital Press version).
+
+Look at it this way, when I right a set of macros that I expect a group of
+programmers to use in a joint program, I don't give them copies of the
+code, I give them pointers to it. The same should be true of the manual.
+
+About the organization, I would like to see a separate organization
+established. The organization would be be broken into several parts:
+a technical review board, a representative, voting body to discuss issues,
+and a `constitution.' The constitution would be the first part of the
+Common Lisp book, which discusses the overall principles of Common Lisp.
+It would also identify a set of features of Common Lisp that must be
+held fixed except by unanimous consent of all. I expect this would be
+lexical scoping, multiple values, NIL versus (), closures, MacLisp-likeness,
+sequences, packages, and arrays.
+
+The technical board would probably start out being the same old people for
+a while, with some additions, until there are a number of implementations
+in the field. The voting body would be self-selected from the
+community, with a sliding scale of dues paid by individuals, companies,
+and possibly universities. DARPA and Digital Press would pay dues or otherwise
+provide a level of support.
+
+Companies and individuals might be offered compensation towards dues for
+civic duty, such as writing validation code or validating the validation
+code.
+
+The organization would hold the copyright to CL-85..., so that validation
+would give an implementation the right to display this banner. As a person
+who now sees how the common man thinks about Lisp, I now understand that
+the consumer may not know enough to know he's getting a poor substitute to
+Common Lisp. Soon the absence of `validated' as part of the title of
+a Common Lisp will be the tip off to a fake.
+
+I believe that the organization should be located near some major university,
+perhaps CMU, MIT, USC (ISI), or SU. It should be viewed as an 
+academically-oriented organization.
+
+			-rpg-
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  <FAHLMAN.12082785776.BABYL@CMU-CS-C.ARPA>
+Message-ID:  <[USC-ISI.ARPA]28-Jan-85 08:11:50.OHLANDER>
+Cc:  squires@USC-ISI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: A proposal
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  28 Jan 1985 08:11-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 28 Jan 85  05:11:34 PST
+
+Scott, 
+	I have not expressed an opinion yet, not because I am not
+vitally interested, but because I have been on travel and am now
+just catching up with correspondence.  Personnaly, I think the
+charter issue is the most vital thing that has to happen if the a
+users group is going to materialize.  I am overjoyed that you
+have taken some steps to get issues on the table and a draft
+going.
+
+I agree with Scott in that we need some form of formal
+organization.  In terms of what it costs to get going, we might
+be able to gain some idea of what it takes from some of the
+original organizers of the AAAI.
+
+We need a formal organization because it is essential to
+"institutionalize" Common Lisp in order to make provision for its
+continuance after key people disappear from the scene and also in
+order to retain some kind of control over its instantiation and
+continued refinement.  An informal group can lose interest and
+not feel committed in the long run to the health of Common Lisp.
+Organizations outlive its individual members, have more stature,
+and have a stronger commitment to its objectives.
+
+The veto issue is a key one.  On the one hand, we have all seen
+vendors who are reluctant to make changes to a language and only
+issue new releases under the strongest pressure.  However, as
+Scott points out the vendors will have a vested interest and tend
+to act as counterbalance to academics who might want to run a
+little wild.  I believe the essential problem is to come up with
+a mechanism that permits a balance of viewpoints to prevail.  I
+think I lean towards a 2/3 vote to veto recommendations of the
+technical community.
+
+Ron
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  <FAHLMAN.12082936705.BABYL@CMU-CS-C.ARPA>
+Message-ID:  <[USC-ISI.ARPA]28-Jan-85 08:23:21.OHLANDER>
+Cc:  squires@USC-ISI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: A proposal
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  28 Jan 1985 08:23-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 28 Jan 85  07:38:59 PST
+
+I gorgot to mention that I have talked to Osbourne at Digital
+Press and Fuller at Dec.  I believe that they would be willing to
+stipulate that the Common Lisp Users group would own all reights
+to the Common Lisp specification.  Furthermore, they have both
+said that they look upon their contribution to the establishment
+of Common Lisp as a public service and would be willing to
+contibute some share of profits to the users group.  I think we
+have to get some sort of agreement in writing and am going to see
+if I can get government lawyers involved.
+
+I should also point out that Digital Press's claim to a
+copywright is questionable.  What do they have a copyright for?
+There were a number of organizations and individuals that
+contributed to the overall effort.  I think they may have a valid
+claim to the manual, as written, but how can they have a clear
+claim for the specification.  to complicate the problem, how do
+you diambiguate the two?
+
+I believe that we can reach a reasonable written agreement after
+we (or in conjunction with) getting a users group established.
+By the way, this is another reason for formal status of the users
+group.  We have to get a written agreement because players will
+change over the years.
+
+Ron
+
+--
+From:  marick@GSWD-VMS
+Cc:  marick
+To:  cl-charter@su-ai
+Subject:  Re:  A proposal
+Date:  Mon, 28 Jan 85 11:15:56 CST
+Received:  from GSWD-VMS.ARPA by SU-AI.ARPA with TCP; 28 Jan 85  09:15:03 PST
+
+I read my mail daily, but I don't have authority to make policy for Gould,
+either explicitly or implicitly.  It takes more than a couple of days to
+get such things decided, anyway.
+
+However,
+
+1.  I'm sure we want to see some reasonable standards organization.
+
+2.  It appears we could swing a $10,000 membership fee.
+
+3.  The development people, at least, are a little leery of making
+    a corporate veto too easy.  We're worried that an easy veto
+    would lead to a specification that cannot be extended to cover,
+    for example, object-oriented programming.
+
+				Brian Marick
+				Gould
+
+--
+From:  "Daniel L. Weinreb" <DLW@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <850128162856.5.DLW@CHICOPEE.SCRC.Symbolics.COM>
+In-Reply-To:  <FAHLMAN.12082785776.BABYL@CMU-CS-C.ARPA>
+To:  Fahlman@CMU-CS-C.ARPA, cl-charter@SU-AI.ARPA
+Subject:  A proposal
+Date:  Mon, 28 Jan 85 16:28 EST
+Received:  from SCRC-CHICOPEE by SCRC-STONY-BROOK via CHAOS with CHAOS-MAIL id 167550; Mon 28-Jan-85 16:30:06-EST
+
+I've been following all the mail.  Your proposal, in broad outline,
+looks good to me.  I consider myself too inexperienced with
+organizations of this kind to have any strong opinions about the
+details, such as the nature and composition of comittees, voting
+by-laws, and so forth; what you have proposed certainly looks reasonable
+to me, for what that's worth.  I am adequately satisfied by your
+responses to the objections that have been raised.
+
+I would guess that the next steps would be to run this by some people
+who you feel have some expertise, or at least experience, with such
+organizations, and see whether they suggest changes.  Also, it's
+probably time to find out the details of legal help that DARPA might
+supply, and discuss this all with the lawyer(s).
+
+Based on what I know so far, I think it's quite likely that Symbolics
+will be happy to participate in this organization.  The corporate dues
+seem reasonable to me.  I haven't consulted my management or the
+Symbolics corporate counsel yet (it seems too early for that), so I
+can't speak unequivocally on behalf of the company, but I don't forsee
+any problems.
+
+Thank you very much for putting so much time and effort into this!
+
+--
+From:  brown@DEC-HUDSON
+Cc:  Brown@dec-hudson
+To:  cl-charter@su-ai
+Subject:  Charter
+Date:  Mon, 28 Jan 85 16:33:43 EST
+Received:  from DEC-HUDSON.ARPA by SU-AI.ARPA with TCP; 28 Jan 85  13:32:49 PST
+
+For those who don't know me, I am Gary Brown and manage the Lisp development
+group at DEC.  In that capacity, I suppose I have some; but certainly
+not complete; responsibilities associated with Digital's position on
+the content and evolution of the Common Lisp language.  However, I have no
+authority to speak about (and frankly no first hand knowledge of) Digital
+Press's position on the manual.  So, whatever I say with respect
+to the DEC Press/copyright issue is my personal opinion.
+
+Basically, I think that DEC Press would be willing to do whatever was
+requested of them with respect to the manual.  I believe that their
+honest desire is to be thought of as a respected technical publishing company
+and that they strenuously avoid association with any marketing strategies
+of the corporation.  I believe that the fact that they hold the copyright
+to the manual is simply standard practice in the publishing industry.
+It gives them some amount of protection for their investment and also gives
+the author some amount of protection.  I imagine that DEC Press would
+rather give up all rights to the manual than acquire a bad reputation
+with this group (which surely represents lots of future authors).
+
+In my opinion, the fact that the manual is only available in a hardcopy,
+implementation independent form is fine.   We should perhaps allow
+random excerpts for the purpose of creating doc strings and allow
+the entire volume to be printed with other covers and formats so vendors
+could create consistent packaging for their entire doc sets.  I don't
+think we are doing anyone (particularly users) any favors by:
+ 1) Allowing the whole thing (or even major parts) to be distributed
+    in an on-line form.  The manual is simply not appropriately
+    organized for this purpose.
+ 2) Allowing sections or chapters to be included in other works.  At
+    a minimum, someone would need to administer this process and
+    probably proofread the final product.  I imagine it is not worth it.
+
+We distribute the manual with another volume which describes how we differ
+from it.  This is not perfect, but it works out.  However, there are
+some risks with this approach:
+ 1) What happens if the publisher goes out of business or decides
+    not to continue printing the book?  I don't worry about this
+    very much but the Common Lisp community needs to insure that
+    should this happen, the right to republish the book immediately
+    is clearly available.
+ 2) What happens if a vendor runs out of copies of the manual at the
+    same time that the publisher runs out of copies?  This is simply
+    a matter of inventory control and in my opinion, primarily the
+    responsibility of the vendor.  I suppose that we might want
+    to insure the publisher will rapidly reprint the book when necessary.
+ 3) What happens when the community wants to print a new version of
+    the manual including new features which a particular implementation
+    does not support?  In the second manual, we point out which parts
+    of the language we don't implement but this isn't reasonable if
+    there is a long list or if the differences are widely spread
+    throughout the manual.   I am sure that vendors who ship the manual
+    with their doc sets, will want assurance that major changes to
+    the manual are announced well in advance of the publication of a
+    new version of the manual.
+
+An interesting issue is what becomes of the royalties from the publication
+of the book if more a group effort than the result of Guy's labor.  I think
+this is a topic for private discussion between Guy and whatever organization
+gets set up.
+
+As for Scott's charter proposals, I prefer plan 1 - it sounds like the most
+fun.  My main concern is that we not underestimate the amount of work that
+will be involved in the administration of the Association, at least initially.
+I would not be surprised if we need at least  one full time, non-clerical
+employee.  So, perhaps we should consider an organization where the president
+of the association is a salaried employee and reports to the board of directors
+(the executive committee).  The Association would either lease its own 
+equipment (we ought to be able to get a good deal from someone) or rent 
+time depending on what makes the most sense.  [I suspect that there are
+a host of business decisions which need to be considered - we should probably
+develop a "model" of the association's first few years and see what kind
+of time and money investment we are talking about.  If that seems reasonable,
+I'll try to pull something together.]
+
+Here are other random comments on the Scott's proposal:
+ 2.1  I assume that the "official language definition" that the association
+      maintains is Guy's manual.  Can we assume that Guy is willing to
+      give what rights he has to the manual to the association?
+
+ 2.3  Validation of implementations is one of the most visible and valuable
+      functions the Association can perform.  The validation committee
+      has been silent recently but I think it is time for some serious
+      recommendations from them.  If we cannot acquire an initial set
+      of validation programs for free from the current community, we need to
+      think about subcontracting its creation or having the association
+      create one.
+
+ 2.5  Association members which do not have access to electronic mail
+      are going to be a big headache.   It is easy enough to bundle up
+      a month's worth of communications and U.S.Mail them to everyone,
+      but we also need to distribute the mail which comes from them
+      with their comments.  Perhaps clever things can now be done
+      with optical character readers but it seems unlikely.  Is there
+      anyway we can require electronic access for all voting members?
+      Perhaps the answer is some kind of "bulletin board" system where
+      a member dials into the Association's data base.
+
+ 3.0  The basic membership scheme relies on the corporate members
+      to financially support the Association.  Although I don't
+      think that large corporations, such as DEC, would balk at 
+      $10,000 per year, are there enough of these to get us going
+      and is this a sufficiently secure financial foundation?
+      Perhaps what we want to do, is decrease the corporate dues to, say,
+      $2,000 in hopes of gaining a wider base.  For example, software
+      houses producing code in Common Lisp, have less at stake than
+      system vendors and may not feel membership is worth $10K.
+      We could make up the difference by charging a substantial fee
+      for validation/use of the "Validated Common Lisp" trademark.
+      This seems fairer, since access to the validation suite and
+      the validation process has a tangible value to a vendor.
+
+ 3.1  The individual membership fees seem about right.  Perhaps
+      individual members should get a secret decoder ring also.
+
+ 3.2  I am certain that DEC would join up for $10,000 and probably
+      somewhat more.
+
+      If we accept ARPA seed money, will there (are there already)
+      export limitations on what the Association "produces"?
+
+      Another benefit we might want to consider for corporate members
+      is the right to redistribute (not for profit) the "yellow pages".
+      (If the vendors ship it with their product, it probably saves the
+      Association money).
+
+ 5.0  The technical decision process starts with an issue being raised
+      by the technical committee.  I think that many issues will
+      be initiated by the general membership.  In particular, implementors
+      will have lots of clarification requests.  Do we commit to answer
+      this type of question?  Can this be another benefit of corporate
+      membership?
+
+      Even if we require that everyone have electronic access to the
+      communications, fourteen days is perhaps insufficient time for the
+      technical committee to make a decision and surely insufficient
+      time for the corporate members to challenge a decision (I have been
+      told that many people take two week vacations).  I think twenty-eight
+      days is more like it.
+
+      There seems to be a general objection to the power given to the
+      corporate members in Scott's proposal.  I suppose I am biased,
+      but I really don't see that much danger.  I think that corporations
+      will, within reason, be more concerned about the timing of changes
+      than they are with their content.   We ought to address the rules
+      on manual/validation suite update.  I suggest something like:
+
+         * Plans to publish new editions of the manual will be announced
+           at least three months prior to the date of publication.
+           An accurate list of changes will be distributed free to corporate
+           members and for some nominal fee to other members (or maybe
+           free to everyone, except that this might involve hard copy.)
+
+         * Changes and extensions will not be published in the manual
+           or required by the validation suite for at least six months
+           after their approval.
+
+         * Each new version of the validation suite will be made available
+           to corporate members for six months prior to it becoming an
+           official suite.  During this period, the standard (TBS) validation
+           objection handling mechanism will be available to correct
+           errors in the suite.
+           
+         * Clarifications become part of the language definition 
+           immediately (but we need a mechanism to allow something initailly
+           declared to be a clarification to have its rating changed
+           to extension).
+
+-Gary
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Varia    
+Cc:    cl-charter@SU-AI.ARPA
+To:    Dick Gabriel <RPG@SU-AI.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12083304381.BABYL@CMU-CS-C.ARPA>
+Date:  Mon, 28 Jan 1985  22:33 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Mon 28 Jan 85 22:33:26-EST
+
+
+I have finally received a bunch of responses to the charter proposal.
+Thanks!  I'll respond to these individually.  Gabriel is first.
+
+I don't think we have too much disagreement on the manual.  I would
+allow some use of passages from the manual under carefully controlled
+conditions; RPG would apparently make people reference or paraphrase the
+relevant passages and not use them verbatim.  We're both after the same
+kind of control over small mutations, whether accidental or deliberate.
+The tactics can be worked out later.
+
+Since RPG did not relate his comments on the organization to my
+proposal, and did not present a detailed proposal of his own, it's hard
+to know for sure where we agree and disagree.  What I will do here is to
+try to list those disagreements that I can spot in looking over his
+message, and then respond to each.  Dick, if I miss anything you
+consider important, let me know.
+
+1. RPG wants a constitution, written and approved in advance, that would
+forbid any changes in certain parts of the language (lexical scoping,
+multiple values, etc.) except by unanimous consent.
+
+I consider this totally unworkable.  If RPG thinks that such a
+constitution (with the associated interpreter) can be made workable, I'd
+like to see the details.  How are we going to define "Maclisp-likeness",
+and who is going to rule on whether a proposed change alters this?  I
+don't really think that this is any safer than the checks and balances
+in the system I proposed, except that it would make it easier for
+disgruntled companies to sue the organization, which is certainly not
+what we want.
+
+And do we really want to rule out any change in packages or arrays?  I
+don't.  Stability is one thing; fossilization is quite another.  I think
+that proposed system with a technical committee and a veto by the
+companies gives us about as much stability as we want.  If the initial
+technical committe turns out to be mostly "the same old people" (sigh!),
+then all of the features you listed are safe for two years, and after
+that nobody will want to change them.
+
+2. RPG speaks of a "sliding scale" of dues paid by individuals, companies,
+and maybe universities, with DARPA and Digital Press possibly being
+special cases.  Also he speaks of giving companies credit against their
+dues for various services performed for the organization.
+
+Do you have a specific proposal?  After thinking a bit about how the
+scale might slide, I decided that all the companies ought to pay the
+same amount.  That way nobody feels discriminated against, and
+everything stays as simple as possible.  As soon as you make the scheme
+more complex, everyone starts maneuvering for the best deal and the hard
+feelings begin.  I really don't think that the $10K would be an
+excessive burden for any of the major companies, even small-ish ones
+like Lucid.  If some 2-person software house can't afford $10K, they can
+just join up as individual members until they crack the Fortune 500.
+
+I also think that it is a mistake to accept services in lieu of dues.
+Again, this leads to all sorts of unpleasantness about why the
+organization would accept certain machines or services and would not
+accept others on the same terms.  It is much simpler, I think, to charge
+dues at a fixed rate and then to contract for the services the
+organization needs.  If the services happen to be bought from members of
+the association, so be it.
+
+3. RPG suggests that the organizaiton should be viewed as "academically
+oriented".  I'm not sure what that means, in practice.  I certainly
+agree that it should be set up on or very near to one of the
+universities that have played a role in this process, if only because
+that makes it easier to obtain ARPANET access.
+
+- -- Scott
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 28 Jan 1985  08:11-EST from OHLANDER at USC-ISI.ARPA
+Subject:  A proposal
+Cc:    cl-charter@SU-AI.ARPA
+To:    OHLANDER@USC-ISI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12083307643.BABYL@CMU-CS-C.ARPA>
+Date:  Mon, 28 Jan 1985  22:51 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Mon 28 Jan 85 22:51:22-EST
+
+
+Well, that's two people arguing explicitly for requiring a 2/3 vote of
+corporate members to veto the technical committee's decisions, and a
+couple of others who feel that vetos shouldn't be "too easy".  I'm happy
+to go with 2/3 instead of a simple majority (assuming that we go with
+this framework at all).  As I said earlier, I don't think this makes a lot of
+difference, though I believe that the existence of some sort of veto is
+a useful mechanism.
+
+If I hear no dissenting voices, I will modify the proposal to require a
+2/3 vote of corporate members for a veto.
+
+- -- Scott
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Message from Gary Brown
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12083324276.BABYL@CMU-CS-C.ARPA>
+Date:  Tue, 29 Jan 1985  00:22 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Tue 29 Jan 85 00:22:45-EST
+
+
+Gary,
+
+Thanks for your insights into the workings of Digital Press.  It is in
+accord with everything else I've heard.  I think that as a working
+assumption we should assume that those folks are going to be totally
+reasonable unless they give us some reason to believe otherwise.  So far
+their only sin has been that they have taken a very long time to come to
+any agreement with Data General, and that seems mostly due to a desire
+on their part to clear everything with all interested parties at each
+step, since precendents are being set.
+
+I think that it is important to make the manual available in online
+form.  Granted, the format is not optimal for online use, but it would
+still be nice to be able to reference the definitive text on my machine,
+perhaps with some sort of online index that will zap me to the right
+page.
+
+I think that we probably will need a good fraction of someone's time to
+keep this all running smoothly, and agree that that person should be
+paid by the association for this work.  Probably it is not the president
+of the association who does this stuff (and is on salary) but rather
+some sort of technically competent administrative assistant.  Whether
+the organization employs this person directly or whether it contracts
+with someone to provide such services is an issue we can face later on,
+I think.  Contracting with someone would give the organization more
+flexibility, I think, since we don't know in advance whether we will
+need .4 people or 1.1 people.  Similarly, it probably makes sense
+to buy time on some Arpanet-connected time-sharing machine (so that
+members can access files and libraries), rather than having the
+association buy its own equipment.
+
+I would be happy for you to work out some alternative plans for how the
+business end of this would run.  Probably this should wait until (a) we
+have settled on a charter, in rough outline, at least, and (b) we have a
+list of porspective members whom we can poll about how they would use
+the services of the association.
+
+     2.1  I assume that the "official language definition" that the association
+          maintains is Guy's manual.  Can we assume that Guy is willing to
+          give what rights he has to the manual to the association?
+
+The "official definition" at any time would consist of the most recent
+authorized version of the manual plus a document listing any amendments
+that have been adopted since the last manual came out.  I think that we
+can assume that Guy will agree to any reasonable proposal for producing
+updated versions of the manual, conforming to the association's
+decisions on technical issues.
+
+     2.3  Validation of implementations is one of the most visible and valuable
+          functions the Association can perform.  The validation committee
+          has been silent recently but I think it is time for some serious
+          recommendations from them.  If we cannot acquire an initial set
+          of validation programs for free from the current community, we need to
+          think about subcontracting its creation or having the association
+          create one.
+
+I'm not worried about this.  We don't need recommendations, just some
+action.  Someday soon, if nobody beats me to it, I will ask everyone to
+send me all the validation code that they're willing to make public and
+will put it all in a public place on CMUC.  Then we'll see what's
+missing, divide it into little chunks, ask for volunteers for those
+chunks, and be done in no time.  Well...then there's the problem of
+resolving any disputes, but that's the fun part.
+
+     2.5  Association members which do not have access to electronic mail
+          are going to be a big headache.   It is easy enough to bundle up
+          a month's worth of communications and U.S.Mail them to everyone,
+          but we also need to distribute the mail which comes from them
+          with their comments...
+
+Hmmm...well, it's tempting to say that people out in paper land don't
+get to participate, but some of them may be in Japan or someplace.  I
+guess one of the tasks of the office person will be to type hardcopy
+letters into some machine and mail them out electronically to the rest
+of the membership.
+
+     3.0  The basic membership scheme relies on the corporate members
+          to financially support the Association.  Although I don't
+          think that large corporations, such as DEC, would balk at 
+          $10,000 per year, are there enough of these to get us going
+          and is this a sufficiently secure financial foundation?
+          Perhaps what we want to do, is decrease the corporate dues to, say,
+          $2,000 in hopes of gaining a wider base...
+
+My guess is that we'll get 30 corporate members at $10K, and can count
+on getting 10.  I don't think we'd get many more members at $2K.  I just
+don't think that $10K is a big enough sum to worry any reasonably big
+company that is in the Common Lisp game in any way.  I would prefer to
+go with nice, simple, uniform dues rather than trying to support the
+organization through validation fees, but I could probably be talked out
+of this.
+
+     3.1  The individual membership fees seem about right.  Perhaps
+          individual members should get a secret decoder ring also.
+
+Or a micro-Vax?
+
+          If we accept ARPA seed money, will there (are there already)
+          export limitations on what the Association "produces"?
+
+It is important that we try to avoid any export restrictions, especially
+if we accept foreign corporate members (and I think we should).  I don't
+think that DARPA money will affect this one way or the other.  The
+problem, if any, is with other parts of DOD, with the Department of
+Commerce, and with Congress.
+
+          Another benefit we might want to consider for corporate members
+          is the right to redistribute (not for profit) the "yellow pages".
+          (If the vendors ship it with their product, it probably saves the
+          Association money).
+
+I would assume that even individual members get this.  It would be
+easier to put most of this stuff in the public domain than to try to
+control who can use it for what.  (I think.)
+
+     5.0  The technical decision process starts with an issue being raised
+          by the technical committee.  I think that many issues will
+          be initiated by the general membership.  In particular, implementors
+          will have lots of clarification requests.  Do we commit to answer
+          this type of question?  Can this be another benefit of corporate
+          membership?
+
+We commit to doing the best we can to provide timely answers.  I would
+be uneasy with any guarantees, since the members of the technical
+committee are presumably volunteers with real jobs on the side.  I would
+certainly hope that the technical committee could do a bit better than
+the quiquevirate has done in the recent past.  Having someone to do the
+bookkeeping on this would help some.
+
+          Even if we require that everyone have electronic access to the
+          communications, fourteen days is perhaps insufficient time for the
+          technical committee to make a decision and surely insufficient
+          time for the corporate members to challenge a decision (I have been
+          told that many people take two week vacations).  I think twenty-eight
+          days is more like it.
+
+OK.
+
+          There seems to be a general objection to the power given to the
+          corporate members in Scott's proposal.  I suppose I am biased,
+          but I really don't see that much danger.  I think that corporations
+          will, within reason, be more concerned about the timing of changes
+          than they are with their content.   We ought to address the rules
+          on manual/validation suite update.  I suggest something like:
+
+             * Plans to publish new editions of the manual will be announced
+               at least three months prior to the date of publication.
+               An accurate list of changes will be distributed free to corporate
+               members and for some nominal fee to other members (or maybe
+               free to everyone, except that this might involve hard copy.)
+
+             * Changes and extensions will not be published in the manual
+               or required by the validation suite for at least six months
+               after their approval.
+
+             * Each new version of the validation suite will be made available
+               to corporate members for six months prior to it becoming an
+               official suite.  During this period, the standard (TBS) validation
+               objection handling mechanism will be available to correct
+               errors in the suite.
+               
+             * Clarifications become part of the language definition 
+               immediately (but we need a mechanism to allow something initailly
+               declared to be a clarification to have its rating changed
+               to extension).
+
+Sounds pretty good to me.  Does anyone have any problems with this?
+
+- -- Scott
+
+--
+From:  Steve <Ford%ti-csl.csnet@csnet-relay.arpa>
+Received:  from csl60 by ti-csl; Tue, 29 Jan 85 18:31 CST
+cc:  FORD%ti-csl.csnet@csnet-relay.arpa
+To:  cl-charter@su-ai.ARPA
+Subject:  Re:  A proposal
+Date:  29 Jan 1985 1817-CST
+
+I support Scott's proposal and am in the process of discussing the subject
+with other implementers, users and managers at TI.  I don't anticipate any
+problems.  There has been some concern here that the $10K figure was plucked
+from the air, which, I guess, it was.  But there should be no problem with the
+amount if people are convinced that they receive their fair share of value,
+which I think they will.  Things can always be fine-tuned once we get going
+and see what our needs really are.  An excellent first cut.
+
+The manual is not a concern here; TI is doing its own with, I think, the
+cooperation of Digital Press.
+
+A 2/3 majority sounds reasonable for corporate veto, but I doubt that it would
+ever be used.
+
+No use trading validation suites for membership, most companies will be
+donating theirs, as is TI.  Its in their own best interest.
+
+I'll forward the "official" TI position whenever its available.
+
+Steve Ford 
+Computer Science Laboratory
+Texas Instruments
+- -------
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 29 Jan 1985  19:17-EST from Steve <Ford%ti-csl.csnet at csnet-relay.arpa>
+Subject:  A proposal
+Cc:    cl-charter@SU-AI.ARPA
+To:    Steve <Ford%ti-csl.csnet@CSNET-RELAY.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12083699419.BABYL@CMU-CS-C.ARPA>
+Date:  Wed, 30 Jan 1985  10:43 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Wed 30 Jan 85 10:43:27-EST
+
+
+Steve,
+
+Thanks for your support on this.
+
+The $10K figure was indeed an arbitrary choice.  The problem is that
+it's very hard to tell how much the administrative services
+are going to cost until we get down to negotiating these services with
+various possible providers.  And it's even harder to tell in advance how
+many companies will join up.  It seemed foolish to set the dues too low
+and then have to scrape and sweat for money to keep the organization
+afloat.  I initially thought about proposing $20K, just to stay well on
+the safe side, but when I added things up that seemed too conservative,
+and for some companies $20K requires many more levels of approval than
+$10K -- there's a magic threshold in there somewhere.
+
+I looked around and counted about 30 companies that I thought would
+probably join up, and about 10 that I felt certain of -- companies that
+have already spent much, much more than $10K in producing Common Lisp
+implementations or products that depend critically on Common Lisp for
+portability.  So that gives us a worst-case floor of $100K on the
+organization's income, and I thought that was enough to pay for the
+services of one office person, computer time purchased from a major
+university, and a moderate level of lawyer's fees.
+
+If we discover that we have to pay some large amount for some kind of
+liability insurance, or if the lawyers' fees to get this started exceed
+the available seed money, and if the membership is only 10 companies,
+then we may have to increase the dues or ask for an additional one-time
+contribution.  More likely, I think, we will end up with more than
+enough corporate members, and will have a surplus.  Once a comfortable
+reserve has built up, we would either decrease the dues to the
+break-even point, or spend the extra money on providing additional
+services to the Common Lisp community.  This would be decided by the
+executive committee, but we would certainly follow the wishes of the
+corporate members in making such decisions.
+
+- -- Scott
+
+--
+From:      Rick Hudson <hudson%umass-cs.csnet@csnet-relay.arpa>
+Subject:   Proposal response.
+To:        cl-charter@SU-AI.ARPA
+Date:      Wed, 30 Jan 85 11:17 EST
+Received:  from umass-cs by csnet-relay.csnet id ah05629; 31 Jan 85 1:05 EST
+
+
+
+
+Scott,
+
+Thanks for the proposal. My feeling is to go with number 1.
+
+The section 2.4 discussing funding of the production of new materials
+bothers me a bit. I think it is fine to produce such materials as long
+as they are not of a research nature. I don't want this thing to be a
+funding agency.
+
+One other job of the organization is  make it known who we are and
+possible provide joint advertising for Common Lisp in the CACM.
+(or the Wall Street Journal?)
+
+I suspect we should keep the Executive branch at 5 and the technical at
+7. The low number is to make sure we have active members. It is
+easier to increase than decrease down the road somewhere.
+
+As far as who has final say the corporation or the technical committee, 
+I would go with the more conservative corporation.  We are looking for
+compatiblity as the primary goal. I think coporate final control will never
+be used but will temper radical swings.
+
+- --Rick
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 30 Jan 1985  11:17-EST from Rick Hudson <hudson%umass-cs.csnet at csnet-relay.arpa>
+Subject:  Proposal response.
+Cc:    cl-charter@SU-AI.ARPA
+To:    Rick Hudson <hudson%umass-cs.csnet@CSNET-RELAY.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12083961960.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 31 Jan 1985  10:45 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Thu 31 Jan 85 10:45:38-EST
+
+
+Rick,
+
+What I had in mind with the stuff in section 2.4 was not to do research,
+but rather to sponsor the creation of some little conveniences that
+ought to be in the public domain.  Some things that come to mind are
+various number-crunching libraries that would be nice to have available,
+portable code for a Loop macro or infix syntax, code-analysis tools,
+some sort of very simple natural-language parser, translation aids
+to/from Franz, PSL, or Interlisp, and maybe even a game or two.
+Projects that are too implementation-specific would not be appropriate.
+It probably WOULD be appropriate to fund the conversion of large systems
+from other languages into Common Lisp if the result can be either
+public-domain or would be readily and cheaply available so that lots of
+us benefit from the translation having been done.  None of this would be
+undertaken unless the organization finds itself with a surplus and
+decides to fund such things rather than reducing the dues.
+
+I agree that some small amount of publicity will be needed, including
+perhaps some paid ads.  It will be essential to publicize the "Validated
+Common Lisp" trademark, and to let people not on the grapevine know that
+there is an organizaiton they can join. 
+
+- -- Scott
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Where we stand
+Cc:    fahlman@CMU-CS-C.ARPA
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12087705084.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 14 Feb 1985  17:27 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Thu 14 Feb 85 17:27:15-EST
+
+
+Comment on my original charter proposal seems to have simmered down.
+On the substance of the proposal, there have been two suggestions, both
+of which I now favor:
+
+1. Require a 2/3 majority of corporate members to veto a decision by the
+executive committee, not just a simple majority.
+
+2. Say something specific in the charter about making changes and new
+test suites available to the community well before such changes become
+official.
+
+I would say that about half of the people I've heard from favor the
+proposal, more or less, and feel that their companies would also favor
+it and probably would join up.  The other half have expressed some
+fundamental reservations with the whole idea.  Some think that we can
+get by without such a big bureacratic organization.  Others have said
+that their companies would be more inclined to pay someone for specific
+services (validation, library tapes, etc.) than to pay dues to some
+organization from which they might or might not derive any real benefit.
+For some of these companies, it is evidently much easier to authorize
+$20K to validate a given product than to authorize $10K to support an
+organization that does free validation for members.  Weird, but true.
+
+One other thing has been on my mind of late.  The more I talk to people
+who have helped to found organizations like this in the past, the more I
+believe that it won't happen unless someone is willing to jump in and
+give it a year, full-time.  Just because it's a good idea that everyone
+supports doesn't mean that an organization can get rolling without a
+serious effort on someone's part.  For the record, I am not willing to
+be that person, and I don't see anyone around who is any more inclined
+to do this than I am.  AAAI went out and hired some professionals to do
+this stuff, be even so it took a *LOT* of work on the part of some of
+the founders to get the turkey airborne.
+
+Given that, I've started to play around with another option: having no
+central organization at all.  Under this model, similar to the Ada model
+in some ways, DOD would have a much larger role in promoting the
+standardization/validation effort and perhaps supporting certain other
+services for the next couple of years.  The disadvantage is that the
+checks and balances are gone and we all have to trust whatever part of
+DOD it is to keep the "approved" language reasonably stable.  The
+advantage is that we don't waste valuable time and energy trying to
+launch this big clanking bureacracy, whose existence will be much less
+important a couple of years from now -- just about the time it is
+finally running smoothly.
+
+Once I get my thoughts collected on this, I'll send something out to
+this list and then we can see which of the two models we think is most
+likely to fly.
+
+- -- Scott
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  <FAHLMAN.12087705084.BABYL@CMU-CS-C.ARPA>
+Message-ID:  <[USC-ISI.ARPA]15-Feb-85 08:09:12.OHLANDER>
+Cc:  cl-charter@SU-AI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: Where we stand
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  15 Feb 1985 08:09-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 15 Feb 85  05:08:31 PST
+
+Scott, 
+	You are absolutely right when you say it will require some
+substantial effort to make this whole thing happen.  A number of
+people have to be committed to it.  I don't think that we need a
+person to give a full year of his time; a group of people can
+share the responsibility, although someone will have to be in
+charge.  To support this position, I'll just point to your own
+example, i.e., the AAAI.  This is why I have pointed out that it
+might be beneficial to do this under their aegis.  They are
+already a bureaucracy in place and have many of the mechanisms to
+make it happen.  The IEEE may be even a better option since they
+already have standards committees.
+
+As far as the Ada model is concerned, forget it.  It is not that
+the government is opposed to such an idea for Common Lisp, but
+rather that the manpower doesn't exist to do it.  To support Ada,
+the Ada Joint Projects Office was established.  There is no
+counterpart for Lisp.  However, if all else fails, DARPA might be
+able to take it on by first establishing Common Lisp as a DoD
+standard and then paying someone to maintain it for a while.  We
+might use ISI to do this.  If this route was taken, the whole
+thing would still be dependent upon the continuing support of
+people like yourself to help review proposed changes, etc.  I
+would also point out that this is not something that DARPA likes
+to do, but would rather have the community support.  However, I
+think that Common Lisp is important enough that we would step in
+to prevent the whole effort from becoming stillborn.  If that happens,
+we would also look for some way to get some other organization,
+e.g., IEEE, to eventually take over the role of support.
+
+Ron
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Minimalist model
+Cc:    fahlman@CMU-CS-C.ARPA
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12088832826.BABYL@CMU-CS-C.ARPA>
+Date:  Tue, 19 Feb 1985  00:42 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Tue 19 Feb 85 00:42:07-EST
+
+
+My earlier proposal described one scheme for an organization that would
+help to foster and promote Common Lisp.  Some advantages of that scheme:
+
+1. It provides a broad range of services to the community, all from a
+single source.
+
+2. These services are paid for by the companies that stand to benefit
+directly from the standardization of Common Lisp.
+
+3. There is a clear legal entity with authority over the Common Lisp
+definition, with mechanisms for evolution of the language.
+
+4. Through a system of checks and balances, we have some degree of
+assurance that the language definition will not evolve in ways that most
+of the current Common Lisp community would find unacceptable.
+
+On the other hand, there are some serious problems:
+
+1. There is a lot of overhead cost in setting up such an organization: a
+lot of someone's time, and a lot of money for legal fees and
+administrative costs.  It would be much better if these resources went
+into projects that are of real value to the Common Lisp community.
+
+2. Some companies don't like this scheme.  In some companies, the
+lawyers might object, in others the $10K dues would be too much, and in
+others there is an aversion to spending money on things whose benefits
+are not easily quatifiable.
+
+3. Despite our best efforts, the definition process might be hijacked by
+groups whose interests do not coincide with those of the people
+currently involved.
+
+4. Some of the services are needed right away, and will be much less
+important as time goes on.  The organization, on the other hand, will
+probably not be functioning smoothly for six months or a year.
+
+So, for the sake of comparison, let's see how some of the things that
+need to be done might get done if there were no separate organization.
+
+Some services, essential for the health of Common Lisp, don't require
+any real authority, but do require a non-trivial level of clerical and
+low-grade technical support.  At present, these things either are not
+getting done, or are being done in an inadequate way as bootleg projects
+without any real funding.  Among these services are the following:
+
+* Writing (or collecting), maintaining, and distributing a validation
+  suite.
+
+* Collecting, organizing, and distributing the yellow pages (libraries
+  of public-domain code), with associated documentation.
+
+* Distributing and polishing the CMU Common Lisp code, and any other
+  public-domain code that might be of value to implementation efforts.
+
+* Writing and distributing new pieces of code that are needed as new
+  standards are adopted (e.g. code for some sort of iteration macro).
+
+* Where it says "distributing", that means making and shipping tapes or
+  moving the files by network, depending on who the recipient is.  It
+  also means answering a lot of questions on the phone about what is
+  available and how it all fits together.
+
+A Common Lisp organization could do all of those things, but that's not
+the only way.  DARPA could give some university group (or other neutral
+organization) a contract to do this stuff, for the next couple of years
+at least.  After that, maybe the service wouldn't be needed or maybe
+industry could take over.  To do this stuff right would require one
+full-time administrative assistant who is not afraid of machines and one
+full-time programmer (or several part-timers) who are funded explicitly
+to do this work, plus a small slice of some high-level technical person
+as PI.  CMU has been doing some of this stuff informally, but without
+the level of support described above.  (The clerical person in this case
+is usually me, and I like to think that I have better things to do.)
+Stanford has also done some of this.
+
+DARPA may or may not think that this is a good investment.  It may in
+the end cost less to fund these services directly (for awhile) than to
+pay a lot of lawyers to help set up an organization that would get
+industry to pay for the services.
+
+The other big set of issues is who decides what the "official" Common
+Lisp is, who determines whether a given implementation meets these
+standards, and how do we keep implmentations from claiming to be a
+Common Lisp when they do not meet these standards.
+
+Well, if DOD wants to require Common Lisp as the vehicle in certain
+contracts, perhaps they should be the ones to define what they mean by
+"Common Lisp".  Other companies would very likely follow DOD's lead, as
+long as it is reasonable.  Perhaps this is naive, but I don't see why
+this should take a lot of staff support within DOD.  Consider the
+following model:
+
+1. DOD obtains the right to reprint the existing language specification,
+to make modifications to it, and to authorize others to print it.
+Either they obtain these rights from Digital Press, or they get someone
+to come up with an independent language spec.  (It doesn't have to be as
+readable as the current book, which is both spec and programmer's
+manual.)  There is no reason that Digital Press cannot continue to
+produce the book, but DOD needs to have some language spec that they can
+alter unilaterally, without getting anyone's permission, and they need
+the right to disseminate the result.  This version, and not the book,
+becomes the official Common Lisp spec as far as DOD and their
+contractors are concerned.
+
+2. An outside panel of experts is set up to consider questions, proposed
+extensions, and so on, in consultation with people in the companies and
+the user community.  This group closely parallels the technical
+committee proposed earlier (and the ad hoc group that has been doing
+this so far), except that they are chosen by someone in DOD and they
+technically just recommend changes and clarifications.  Such
+recommendations would normally be "rubber stamped" by the DOD people
+with formal responsibility, unless there is a lot of objection from some
+quarter; in the rare case that the community splits badly on some
+critical issue, a more formal review process might have to be set up.
+It would be essential to set things up so that the members of the
+advisory committee are protected from lawsuits.  I hope that this can be
+done without setting up a huge government bureaucracy to carefully
+review and get comments on every decision, but maybe that hope is naive.
+
+3. An up-to-date language spec is always available from DOD.  Whoever is
+under contract to do the validation suites would be required to track
+any officially-adopted changes.
+
+4. Given a validation suite officially blessed by the U.S. government,
+it should be easy to get some organization to go around and do official
+validations using that suite.  The companies would pay for this service.
+This group would keep a list of who is validated, for which year's
+test suite, and to what level of compliance.  This should be a totally
+mindless operation -- no discretionary powers -- so it shouldn't be hard
+to set up.
+
+5. DOD gets a trademark for "Official GI Joe Common Lisp" or whatever,
+and allows companies to use this if and only if they are properly
+validated.  This is maybe not too important, since if the validation
+suites are generally available, everyone will know which implementations
+work and which ones don't, and it is fraud if you claim in advertising
+that you can run some particular validation program when you really
+can't.
+
+It looks to me like this whole thing could be done with very little
+staff support inside DOD.  In fact, a large staff working on this would
+just cause a lot of trouble, unless they were all very good -- they'd
+want to review all of the decisions themselves, etc.  This would work
+best if the DOD people, while retaining the formal authority, are too
+busy to exercise it.  Maybe the office that controls the Ada trademark
+and validation could handle this as well, as long as they don't develop
+an interest in making Common Lisp resemble Ada.
+
+This model has none of the formal checks and balances that the separate
+organization would have.  In principle, whoever runs this at DOD could
+suddenly decide that "Official GI Joe Common Lisp" is really Ada or
+Basic or Interlisp.  That gives them a lot of power, but it's hard to
+see any motivation for them to use it in ways that would go against the
+wishes of the community.  If they did anything too bizarre, the
+companies could decide to go their own way on this and DOD would almost
+certainly have to follow.  I'm not saying there's no way this could go
+wrong, but I don't see any way in which it is LIKELY to go wrong.
+
+Well, that's the "minimalist" model.  Let me know how you think it
+stacks up against the "Common Lisp Association" model.  The minimalist
+model depends critically on DARPA's approval, since their role in it is
+pivotal; the CLA model depends on being able to find someone who can
+put in the time to get the organization set up and running.
+
+Any other ideas?
+
+- -- Scott
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  <FAHLMAN.12088832826.BABYL@CMU-CS-C.ARPA>
+Message-ID:  <[USC-ISI.ARPA]20-Feb-85 12:35:09.OHLANDER>
+Cc:  cl-charter@SU-AI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: Minimalist model
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  20 Feb 1985 12:35-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 20 Feb 85  09:34:33 PST
+
+Scott et. al.,
+	Steve and I have formed the conjecture that it will be hard to
+get a Common Lisp User's group going in any short amount of time.
+We have also come to believe that getting AAAI or IEEE to sponsor
+a standard will take too long.  Therefore, to provide some
+initial standing for Common Lisp, we plan to go through the process
+of setting it up as an official DoD language.  We also plan to 
+trademark the language, probably using the name "Common Lisp 84."
+If there are any objections to this course of action, let us know
+right away.  We are also open to using some other name.
+
+ROn
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 20 Feb 1985  12:35-EST from OHLANDER at USC-ISI.ARPA
+Subject:  Minimalist model
+Cc:    cl-charter@SU-AI.ARPA
+To:    OHLANDER@USC-ISI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12089273010.BABYL@CMU-CS-C.ARPA>
+Date:  Wed, 20 Feb 1985  17:00 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Wed 20 Feb 85 17:00:08-EST
+
+
+I think that those two steps would be good ones, though they are kind of
+meaningless unless coupled with other steps, such as the existence of a
+DOD-approved validation suite.  I been assuming that it is too late to
+trademark "Common Lisp 84", but if you can do it, that would be a useful
+step.  Then you would have control over people using this exact name,
+but people with more generic or un-validated products could still call
+them "Common Lisp".  If "Common Lisp 84" is deemed to be unavailable,
+then "DOD Common Lisp" or "DOD Approved Common Lisp" might fly for the
+version on the DOD approved languages list.
+
+- -- Scott
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  <FAHLMAN.12089273010.BABYL@CMU-CS-C.ARPA>
+Message-ID:  <[USC-ISI.ARPA]21-Feb-85 07:43:33.OHLANDER>
+Cc:  cl-charter@SU-AI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: Minimalist model
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  21 Feb 1985 07:43-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 21 Feb 85  04:42:54 PST
+
+Scott,
+	I agree that those "other things" have to be done.
+I am not so concerned about the validation suite.  The thing that really 
+concerns me is to how to keep the language viable.  This will require the 
+volunteer work of interested users, e.g., to extend the specification for 
+new features.
+
+Ron
+
+--
+From:  brown@DEC-HUDSON
+Cc:  cl-charter@su-ai
+To:  ohlander@usc-isi
+Subject:  DoD language
+Date:  Thu, 21 Feb 85 08:50:36 EST
+Received:  from DEC-HUDSON.ARPA by SU-AI.ARPA with TCP; 21 Feb 85  05:47:54 PST
+
+Ron,
+What does it mean to be an "official DoD" language?  Does this
+mean we are accepting and implementing Scott's second model?
+-Gary
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  The message of Thu, 21 Feb 85 08:50:35 EST from brown@DEC-HUDSON
+Message-ID:  <[USC-ISI.ARPA]21-Feb-85 09:46:52.OHLANDER>
+Cc:  cl-charter@SU-AI.ARPA
+To:  brown@DEC-HUDSON.ARPA
+Subject:  Re: DoD language
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  21 Feb 1985 09:46-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 21 Feb 85  06:46:27 PST
+
+It just means that it will be the language that DoD uses for government
+programs that incorporate Lisp.  We can also set up validation procedures.
+
+Ron
+
+--
+From:      Rick Hudson <hudson%umass-cs.csnet@csnet-relay.arpa>
+Subject:   Minimalist model.
+To:        cl-charter@su-ai.ARPA
+Date:      Fri, 22 Feb 85 17:43 EST
+Received:  from umass-cs by csnet-relay.csnet id al02005; 23 Feb 85 2:42 EST
+
+Scott,
+I like the idea of a DOD sponsored language better than a seperate
+organization. It seems to get the most done for the least
+work and would be palatable to most corporations.
+Rick
+
+--
+From:  fateman%ucbdali@Berkeley (Richard Fateman)
+Subject:  DOD sponsored language
+To:  cl-charter@su-ai
+Message-Id:  <8502231739.AA11012@ucbdali.ARPA>
+Date:  Sat, 23 Feb 85 09:39:29 pst
+Received:  by ucbdali.ARPA (4.24/4.40)
+
+DOD rather than Digital Press
+should probably own the definitive document on Common Lisp 84.
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 23 Feb 1985  12:39-EST from fateman%ucbdali at Berkeley (Richard Fateman)
+Subject:  DOD sponsored language
+Cc:    cl-charter@SU-AI.ARPA
+To:    fateman%ucbdali@λBerkeley (Richard Fateman)λ
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12090051001.BABYL@CMU-CS-C.ARPA>
+Date:  Sat, 23 Feb 1985  16:13 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Sat 23 Feb 85 16:13:44-EST
+
+
+    DOD rather than Digital Press
+    should probably own the definitive document on Common Lisp 84.
+
+Yeah, whoever onws the trademark should also own the document, so that
+these thing stay in sync.  I suppose it wold be possible to say "Common
+Lisp 84 is defined as everything in the Digital Press manual, modulo the
+following changes...", but that would be awkward at best.
+
+- -- Scott
+
+--
+From:  Martin <GRISS%hplabs.csnet@csnet-relay.arpa>
+Source-Info:   From (or Sender) name not authenticated.
+Cc:  GRISS@hplabs.CSNET
+To:  cl-charter@su-ai.ARPA
+Subject:  HP response to charter discussion
+Date:  Thu 28 Mar 85 06:27:00-PST
+Message-Id:  <8503281424.AA24405@HP-VENUS>
+Received:  by HP-VENUS id AA24405; Thu, 28 Mar 85 06:24:33 pst
+
+Sorry for the delay in sending this, though I havent seen much action
+on the list lately (barring the usual mail lossages that strike us all
+at the most annoying times...)
+
+I have been asked to respond to the Common LISP charter proposal as
+Hewlett-Packard's representative. Since Hewlett-Packard is strongly
+supportive of industry standards, our position is as follows:
+
+We are in favor of a formal Common LISP Association (independent or
+preferably related to some international society) to act as a visible
+entity responsible for the current Common LISP definition (CL-84,
+CL-85, etc.), the evolution of a precise standard and compatible
+validation suite, and the resolution of issues related to change in
+the definition.
+
+We will contribute an appropriate corporate membership fee (around
+$10,000/year) to be able to participate in the organization, and
+obtain the benefits of representation, validation and free access to
+distributed materials.
+
+The model of an elected technical committee (of no more than 7),
+responsible to the appropriate majority corporate veto, is acceptable.
+
+Given our committment to a range of machines and applications for
+which we expect (production quality) LISP and AI based systems to be
+important components, we are concerned that the Common LISP charter
+might include a definition of Common LISP that excludes potentially
+interesting subsets. We do not believe enough experience with
+practical applications of mature Common LISP implementations has yet
+accumulated to permit the inclusion of a "strict" definition of Common
+LISP in the charter; rather, the issue of levels of validation, and
+compatible subsets, is a technical matter to be raised before the
+Technical sub-committee.
+
+
+Martin L. Griss
+
+Manager
+Programming Technology Department
+Application Technology Center
+Hewlett-Packard Laboratories
+1501 Page Mill Road
+Palo Alto, CA 94304
+- -------
+
+--
+From:  Guy Steele <gls%AQUINAS@Think>
+In-Reply-To:  The message of 8 Apr 85 11:46-EST from Mail Delivery Subsystem <MAILER-DAEMON at GODOT>
+Cc:  gls%AQUINAS@Think
+To:  cl-charter%sail@Think
+Subject:  Returned mail: User unknown
+Date:  Tuesday, 9 April 1985, 09:55-EST
+Received:  by Think.ARPA with CHAOS id AA22179; Tue, 9 Apr 85 09:51:52 est
+
+
+Last week Digital Press and I signed an agreement about licensing of
+the Common Lisp manual to manufacturers.  The burden of it is that I
+give Digital Press the necessary permission to set aside money for the
+Common Lisp Committee.  Specifically, for every licensing agreement of
+this type (the one with Data General being the first), where a
+manufacturer republishes the manual itself, possibly with annotations,
+$5000 is taken off the top and set aside for the use of the Common
+Lisp Committee for such purposes as subsidizing travel, distributing
+copies of 400-page drafts for the next revision cycle, and so on.
+
+For now, this money is being placed in a special escrow account.  The
+agreement states that if by December 30, 1986, no Common Lisp
+Committee has been formed as a legal entity to which the money may be
+transferred, then the escrow account will be closed, and Digital Press
+gets half and sends the other half to me.
+
+Very soon that account will have $5000 in it, with more to come.  It
+behooves us, therefore, to get cracking so that this money may be put
+to good use.  I think we should put out a revised edition of the
+manual in 1986, which means that starting this summer I would like to
+begin systematic resolution of the issues that have arisen, and be
+able to distribute draft revisions this fall.  This will be a lot
+easier if we have a charter.
+
+- --Guy
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Status
+To:    cl-charter@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12101864378.BABYL@CMU-CS-C.ARPA>
+Date:  Tue, 9 Apr 1985  17:46 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Tue 9 Apr 85 17:46:34-EST
+
+
+Just to update people on where things stand at my end:
+
+The DARPA folks indicated to me that they would probably be giving ISI a
+contract to perform some of the support activities that are needed by
+the Common Lisp community.  This would allow us to proceed with either a
+small, low-cost organiztion devoted entirely to standardization stuff,
+or perhaps to get by with no formal organization.  A lot depends on just
+when the ISI effort will start (assuming that DARPA does indeed go that
+way) and what the scope of the support services might be under this
+contract.  I have attempted to contact the relevant people at ISI to
+discuss these issues, but have had no luck so far.  So until I
+understand what's happening there, it's hard to know how to proceed.
+
+The Digital Press fund seems like a reasonable way to fund a low-cost
+standards organization, and $5K per year or so might be sufficient to
+cover the miscellaneous costs of such a group without getting into the
+heavy corporate dues that I suggested earlier.  There remains the issue
+of who has control over such a group.  That's a tough one.
+
+- -- Scott
+
+--
+From:  OHLANDER@USC-ISI.ARPA
+In-Reply-To:  <FAHLMAN.12101864378.BABYL@CMU-CS-C.ARPA>
+Message-ID:  <[USC-ISI.ARPA]10-Apr-85 08:41:04.OHLANDER>
+Cc:  cl-charter@SU-AI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+Subject:  Re: Status
+Sender:  OHLANDER@USC-ISI.ARPA
+Date:  10 Apr 1985 08:41-EST
+Received:  from USC-ISI.ARPA by SU-AI.ARPA with TCP; 10 Apr 85  05:42:09 PST
+
+As of now, Steve Squires does intend to get some support from ISI in keeping
+the practical end of things going.  However, ISI will not take the place of 
+intellectual leadership provided by a Common Lisp Users group.  The intent,
+rather, is to use ISI to alleviate some of the burden from that group to
+allow them to focus on issues that are more central to the continued
+viability of the language.  The core problem still remains one of getting
+a charter and instantiating a representative body.
+
+Ron Ohlander
+
+--
+From: unknown
+Subject: (no subject)
+
+CL-Charter/su
+Summary of Issues about the Charter
+
+In this message I will try to summarize what seem be to the
+issues discussed so far on this mailing list. I do this to
+remind people of what has gone before in the hope that our December
+meeting will go well.
+
+1. On January 21, 1985, Scott Fahlman proposed a charter for Common Lisp.
+It's main features were that it had corporate and individual memberships,
+a 7 member technical committee, and control of validation and the CL-86,
+CL-87, etc. trademarks. It proposed a legal, separate entity. The technical
+committee made technical decisions regarding the language and validation
+suite. The corporate and individuals members could override these decisions
+with a 2/3 majority. 
+
+There was considerable discussion of this proposal. The 2/3 majority
+was an outcome of these discussions, a simple majority being originally
+proposed. I can re-mail this proposal if people wish.
+
+2. An earlier proposal was to make the Common Lisp organization part of AAAI,
+because the cost of starting an new organization is high.
+
+3. Should the names CL-86 etc. be trademarked and grante to validated Common
+Lisps.
+
+4. There is some evidence that there is an ISO Lisp proposal on the
+horizon, or at least a proposal to propose such a Lisp. Should the
+Common Lisp Group respond? It seems to matter who runs the ISO committee
+as to whether the committee is effective.
+
+5. Should the Common Lisp Group do validation, or should some other
+mechanism, like a contract house, do the actual work?  How shall this
+validation suite be gathered?
+
+6. Should the Common Lisp manual copyright be wrested or bought from
+Digital Press?
+
+7. Should there be a statement of Common Lisp principles that the CLG
+(Common Lisp Group) cannot easily change?
+
+8. Many of the discussions mix up the original goal of defining a Common Lisp
+specification that various Lisps could satisfy with the current situation
+of Lisps being written to specifically be a Common Lisp (and perhaps more).
+That is, the state of affairs seems to have shifted from existing Lisps
+trying to become Common Lisps to implementation groups setting out to
+create a Common Lisp. Does this situation imply that the Common Lisp
+specification should become more of a language definition rather than
+a minimal specification? A language definition would remove many
+of the famous Common Lisp Ambiguities.
+
+9. Should Fahlman's proposal be amended so that there is a larger
+corporate/individual technical body with the 7-member technical
+committee being a court of appeals and advice? That is, should the
+body that proposes technical changes and clarifications be larger
+than 7?
+
+10. How should electronic mail be distributed to the various members?
+Will a caste system arise because CSNET is slower than the ARPANET?
+
+11. On February 18, 1985, Scott Fahlman proposed a minimalist charter
+as competition to the longer January 21 document. I can re-mail
+this if people wish.
+
+			-rpg-
+
+--
+From: RPG  
+To:    CL-Charter@SU-AI.ARPA 
+Subject: Summary of Issues about the Charter
+Date: 23 Nov 1985 13:52 EST
+
+In this message I will try to summarize what seem be to the
+issues discussed so far on this mailing list. I do this to
+remind people of what has gone before in the hope that our December
+meeting will go well.
+
+1. On January 21, 1985, Scott Fahlman proposed a charter for Common Lisp.
+It's main features were that it had corporate and individual memberships,
+a 7 member technical committee, and control of validation and the CL-86,
+CL-87, etc. trademarks. It proposed a legal, separate entity. The technical
+committee made technical decisions regarding the language and validation
+suite. The corporate and individuals members could override these decisions
+with a 2/3 majority. 
+
+There was considerable discussion of this proposal. The 2/3 majority
+was an outcome of these discussions, a simple majority being originally
+proposed. I can re-mail this proposal if people wish.
+
+2. An earlier proposal was to make the Common Lisp organization part of AAAI,
+because the cost of starting an new organization is high.
+
+3. Should the names CL-86 etc. be trademarked and grante to validated Common
+Lisps.
+
+4. There is some evidence that there is an ISO Lisp proposal on the
+horizon, or at least a proposal to propose such a Lisp. Should the
+Common Lisp Group respond? It seems to matter who runs the ISO committee
+as to whether the committee is effective.
+
+5. Should the Common Lisp Group do validation, or should some other
+mechanism, like a contract house, do the actual work?  How shall this
+validation suite be gathered?
+
+6. Should the Common Lisp manual copyright be wrested or bought from
+Digital Press?
+
+7. Should there be a statement of Common Lisp principles that the CLG
+(Common Lisp Group) cannot easily change?
+
+8. Many of the discussions mix up the original goal of defining a Common Lisp
+specification that various Lisps could satisfy with the current situation
+of Lisps being written to specifically be a Common Lisp (and perhaps more).
+That is, the state of affairs seems to have shifted from existing Lisps
+trying to become Common Lisps to implementation groups setting out to
+create a Common Lisp. Does this situation imply that the Common Lisp
+specification should become more of a language definition rather than
+a minimal specification? A language definition would remove many
+of the famous Common Lisp Ambiguities.
+
+9. Should Fahlman's proposal be amended so that there is a larger
+corporate/individual technical body with the 7-member technical
+committee being a court of appeals and advice? That is, should the
+body that proposes technical changes and clarifications be larger
+than 7?
+
+10. How should electronic mail be distributed to the various members?
+Will a caste system arise because CSNET is slower than the ARPANET?
+
+11. On February 18, 1985, Scott Fahlman proposed a minimalist charter
+as competition to the longer January 21 document. I can re-mail
+this if people wish.
+
+			-rpg-
+
+--
+From:  Hewitt@MIT-MC.ARPA
+Message-ID:  <851123180556.7.HEWITT@DUE-PROCESS.AI.MIT.EDU>
+In-Reply-To:  The message of 23 Nov 85 16:52-EST from Dick Gabriel <RPG@SU-AI.ARPA>
+cc:  CL-Charter@SU-AI.ARPA, Hewitt@MIT-MC.ARPA
+To:  Dick Gabriel <RPG@SU-AI.ARPA>
+Subject:  Summary of Issues about the Charter    
+Date:  Sat, 23 Nov 85 18:05 EST
+Received:  from MIT-DUE-PROCESS by MIT-OZ via Chaosnet; 23 Nov 85 18:05-EST
+
+Dick,
+
+I am rather dubious about this matter of a 7 member technical committee.
+Could you please forward the minimalist charter that Scott sent out on
+February 18?  I don't seem to have a copy.
+
+Thanks,
+
+Carl
+
+--
+From:  Kahn.pa@Xerox.ARPA
+Message-ID:  <851125-115037-2739@Xerox>
+cc:  CL-Charter@SU-AI.ARPA
+To:  RPG@SU-AI.ARPA
+In-reply-to:  Dick Gabriel <RPG@SU-AI.ARPA>'s message of 23 Nov 85 13:52
+Subject:  Re: Summary of Issues about the Charter    
+Date:  25 Nov 85 11:41 PST
+Received:  from Salvador.ms by ArpaGateway.ms ; 25 NOV 85 11:50:37 PST
+
+I'd like copies of those proposal you mentioned.
+
+Thanks
+ -ken kahn
+
+--

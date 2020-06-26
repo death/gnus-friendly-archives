@@ -1,0 +1,1142 @@
+--
+From:  Bill Rozas <JINX%MIT-OZ@MIT-MC.ARPA>
+In-reply-to:  Msg of 27 Nov 1984  23:00-EST from Kent Dybvig <dyb%unc.csnet at csnet-relay.arpa>
+Subject:  Comments on the Preliminary Report
+Cc:    scheme@MIT-MC.ARPA, willc%indiana.csnet@CSNET-RELAY.ARPA
+To:    Kent Dybvig <dyb%unc.csnet@CSNET-RELAY.ARPA>
+Message-ID:  <JINX.12067218536.BABYL@MIT-OZ>
+Date:  28 Nov 1984  13:51 EST (Wed)
+Received:  from MIT-MC.ARPA by SU-AI.ARPA with TCP; 28 Nov 84  10:52:19 PST
+
+A) Special forms:
+
+1)	In our system (MIT-Scheme) named lambdas can be obtained by
+using the special form NAMED-LAMBDA with the following syntax:
+
+(named-lambda <formals> <body>)
+
+where <formals> is a pair whose car is the name and whose cdr is a
+normal formal parameter specification for a lambda.  Thus
+
+(NAMED-LAMBDA (FOO . ALL) <body>)
+
+evaluates to a procedure internally named FOO, which accepts any
+number of arguments which will be collected into a list named ALL.
+
+	In the internals of the implementation all lambdas are named.
+The special form LAMBDA is actually a macro which expands into
+NAMED-LAMBDA with an unreadable name.  This syntax matches the syntax
+we use for definitions of procedures, and the DEFINE macro expands
+the implicit lambda into a NAMED-LAMBDA:
+
+(DEFINE (FOO ARG) <body>) = (DEFINE FOO (NAMED-LAMBDA (FOO ARG) <body>))
+
+	Named lambda appears explicitely only rarely in our code.
+I therefore feel that forcing all lambdas to be named by the
+programmer is very inconvenient and not justified by need.
+
+	I think that we should not modify the syntax for LAMBDA, and
+optionally add the special form NAMED-LAMBDA with the syntax specified
+above.
+
+2)	I don't like BEGIN myself and voted against it, but I don't
+think BLOCK is a good name either.  The special form LET corresponds
+more closely to a block in a block-structured language than BEGIN
+does.  I would much rather use a name which indicates the
+sequentiality and therefore the meaning of the special form, but BEGIN
+was found to be the least unacceptable of the alternatives.
+
+B) Procedures:
+
+1)	The default name of a procedure should be meaningful and is
+otherwise irrelevant.  I don't think that call/cc is a good default
+name since it is not meaningful.  I agree that
+call-with-current-continuation is very long, but anyone who is really
+attached to any other name (I like catch, which is just as
+inappropriate) can always define it to be the value of
+call-with-current-continuation.  The names of special forms are
+terribly important, however, since we have not agreed on a way for
+defining new ones.
+
+3)	While making the length procedure be generic may be
+reasonable, I think we should not go the Common Lisp way and make
+everything generic until we come up with an efficient and elegant way
+for incrementally extending the domain of procedures.  The same
+argument that would make length generic would make first (car) and
+rest (cdr) generic, but this is too inefficient.  Choosing only some
+data-structure functions to be generic and not others would be
+inconsistent.
+
+C) Lexical matters:
+
+	I disagree.  It is terribly confusing to have Length and
+length functions that do different things.  Uninterned symbols or
+strings can be used when case matters.  When implementing a Prolog in
+Scheme, a new parser must be written.  This parser can easily avoid
+the case-insensitivity of Scheme by not canonicalizing the case before
+interning the symbols.
+	
+	An entirely different matter is which way case is
+canonicalized.  I think that Scheme parsers should coerce to lowercase
+before interning.
+
+--
+From:  CPH%MIT-OZ@MIT-MC.ARPA
+In-reply-to:  Msg of 28 Nov 1984  13:51-EST from Bill Rozas <JINX>
+Subject:  Comments on the Preliminary Report
+Cc:    Kent Dybvig <dyb%unc.csnet@CSNET-RELAY.ARPA>, scheme@MIT-MC.ARPA,
+To:    Bill Rozas <JINX%MIT-OZ@MIT-MC.ARPA>
+Message-ID:  <CPH.12067229588.BABYL@MIT-OZ>
+Date:  Wed, 28 Nov 1984  14:51 EST
+Received:  from MIT-MC.ARPA by SU-AI.ARPA with TCP; 28 Nov 84  11:53:04 PST
+
+As I recall, the stated reason for preferring
+CALL-WITH-CURRENT-CONTINUATION over CALL/CC was both for clarity, and,
+precisely because it is much harder to type.  It was felt that making
+it incredibly hard to use would prevent it from being overused.
+
+If only the designers of the Flavor system had possessed such insight!
+
+--
+From:  Kent Dybvig <dyb%unc.csnet@csnet-relay.arpa>
+Cc:  bts%unc.csnet@csnet-relay.arpa, scheme@mit-mc.ARPA
+Subject:  Re:  Comments on the Preliminary Report
+To:  JINX%MIT-OZ@mit-mc.ARPA
+Message-Id:  <8411290538.AA09766@unc>
+Date:  Thu, 29 Nov 84 00:38:00 est
+Received:  by unc (4.12/4.7) id AA09766; Thu, 29 Nov 84 00:38:00 est
+
+Lambda:
+
+I don't wonder that "named-lambda" is seldom used explicitly in
+code.  The syntax is too clumsy.  What I'm looking for is a way
+to add a name to any lambda expression, without changing the
+expression fundamentally (like giving it a new name).  I think
+people should be encouraged to name their functions in this
+manner since it produces more robust, efficient, and readable
+code.
+
+Named lambda isn't likely to be used much in mit-scheme anyway
+because of the "(define (foo ...) ...)" syntax.  For those of
+us who wish to see our lambdas explicit, named lambda is quite
+convenient.
+
+
+List-length:
+
+If we don't have a generic length function, we should call the
+function that returns the length of a list "list-length".  This
+would be consistent with the names of other length functions and
+leave the name length open for future genericization.
+
+
+Case sensitivity:
+
+I agree that having two different functions Length and length would
+be confusing.  Why not make lexical identifier resolution case
+insensitive but have a way to tell apart two symbols that differ only
+in case?
+
+	(let ((x 3)) X)                         => 3
+	(eq 'x 'X)                              => #!false
+	(eqv 'x 'X)				=> #!true
+	(string->list (symbol->string 'X))      => (#\X)
+	(string->List (symbol->string 'x))      => (#\x)
+
+--
+From:  Will Clinger <willc%indiana.csnet@csnet-relay.arpa>
+Cc:  scheme@mit-mc.ARPA
+Subject:  Re: Kent Dybvig's comments (long message)
+To:  dyb%UNC%indiana.csnet@csnet-relay.arpa
+Date:  Wed, 28 Nov 84 23:48:00 est
+Received:  by iuvax.UUCP (4.12/4.7)
+
+Thank you for your comments on the preliminary draft.  I see you have
+received responses from Bill Rothas and from Chris Hanson.  My remarks
+below were complete in draft form before I saw their remarks.  I wish
+you had been able to attend the workshop, because your points of view
+would have enriched some of the discussions.
+
+Lambda Syntax
+
+Your (lambda name formals . body) syntax is equivalent to the optional
+(named-lambda (name . formals) . body) syntax.  As you observe, your syntax
+conflicts with the (lambda x ...) syntax, which together with the
+(lambda (x y . z) ...) syntax has been in MIT Scheme for perhaps five years,
+and has been used in T for three years.  The named-lambda syntax has
+been in MIT Scheme for at least two years.
+
+The named-lambda syntax was not very controversial at the workshop, since of
+the implementations represented there only MIT Scheme uses it.  I feel that
+(rec name (lambda formals . body)) is better because it is more general, but
+named-lambda was made an optional feature as a concession to MIT Scheme and
+to simple compilers that might not be able to compile the rec form as well
+as the named-lambda.
+
+The syntax for rest arguments was opposed vigorously by one person, who
+argued for (mulambda x . body) as the only way to obtain rest arguments.
+His proposal would have been compatible with your syntax, but he was unable
+to muster additional support for his position even though he argued the
+matter at length.  One of his arguments was that destructuring was a can of
+worms that we shouldn't get into; apparently he was the only one at the
+workshop who thought of the dotted pair syntax as indicating a
+destructuring, however -- the rest of us viewed it as syntax pure and simple.
+
+The &rest syntax was mentioned once but no one at the workshop felt like
+arguing in its favor.  I think most people at the workshop are repelled by
+the complexity of Common Lisp's formal argument lists, and don't want to
+have anything that even looks like them.  In addition the &rest is less
+visible than a period because it looks so much like an identifier.
+
+As for requiring that all lambdas be named, I think you'd have about as much
+luck convincing people of that as you would convincing people that all
+integer constants should be named.  Much of the beauty of functional
+programming derives from anonymous procedures.
+
+Other Special Forms
+
+1.  When programming imperatively, if statements without else parts are
+convenient.  We made sure that implementations are free to perform sanity
+checks by declaring it a mistake to use the result of an if that doesn't
+have an else part (when the test evaluates false; I think that restriction
+was an oversight and will be changed so that it is always a mistake to use
+the result of such an if).
+
+2.  The use of "block" rather than "begin" conflicts with standard
+programming language terminology dating back to the Algol 60 report.
+In Algol 60, a block necessarily contains declarations at its head.
+The "begin" expressions of Scheme correspond to Algol 60 compound
+statements, not to Algol 60 blocks, and this has been a significant
+source of confusion.  (Note that even Pascal blocks, which do not
+necessarily contain declarations, are distinct from Pascal compound
+statements.)
+
+At the workshop there was a consensus that "block" had to go.  The main
+suggestions to replace it were "progn" and "begin", neither of which was
+judged particularly wonderful.  The argument in favor of "progn" was
+tradition; the argument against "progn" was that it was utterly and
+irredeemably random.  Several votes were taken comparing the various
+candidates head to head with other candidates, asking how many people could
+live with the various candidates, and so on.  "begin" was the winner.
+
+It was at one point remarked that (let() ...) was equivalent to (begin ...)
+and required the same number of keystrokes.  We took this seriously but
+decided to have a special form for it anyway.
+
+3.  Many implementations will allow single keys in case expressions, as an
+extended feature.  Several people wanted the single key idea to be optional
+rather than extended, but there were objections and the feature didn't seem
+important enough to justify a long discussion.  Please remember that complete
+unanimity was required to adopt even optional features.
+
+Procedures
+
+1.  "call/cc" is nonsense to the uninitiated, and even
+"call-with-current-continuation" is a bit random.  As for the number of
+keystrokes, most of us felt that it was appropriate to discourage people
+from using call-with-current-continuation so often that their fingers
+wear out; if there is a common need for it in a program, the programmer
+should encapsulate it in his/her own routine, with as short a name as
+he/she desires.  In short, if you prefer call/cc you can simply say
+(define call/cc call-with-current-continuation) and forget about it.
+
+2.  Your point about transcendental functions is well taken.  There was a
+consensus that the transcendental functions should be essential, but two of
+us argued the irrelevance of transcendental functions to certain kinds of
+systems programming.  The wording in the preliminary report was deliberate
+- -- I wanted to avoid the problem that Common Lisp has, in which the
+implementation strategies are dictated in large part by the language
+definition.  The workshop's decision was worded as you want, however --
+"implementations with floats must support" the transcendentals.  I don't know
+how to say that without talking about implementation strategies, so I said
+it the way I said it.  I'm very open to suggestions here.
+
+3.  I disagree about the length function.  It seems that the programmer
+almost always knows the type of the object whose length is to be calculated,
+so a generic length function doesn't seem that helpful.  The real question
+is whether everything should be as generic as possible.  I think the
+workshop participants felt that Common Lisp had gone overboard in the
+direction of genericity, and didn't want to follow; once you get started on
+genericity it's hard to stop, so we didn't start.
+
+One exception has to do with numbers.  The rationale is that the programmer
+wants real numbers -- of which the integers are a subset -- but has to
+settle for rational numbers.  What is an integer but a rational whose
+denominator divides the numerator?  What is a floating point number but a
+rational with the additional information that it probably isn't very
+accurate?
+
+With vectors, strings, and lists, however, the programmer wants the
+distinctions, because they are conceptually different data structures.
+
+I suspect that this issue will continue to come up, but my current feeling
+is that we're doing it right.  Anyone that wants a generic length-of
+procedure can write it themselves; if we see a lot of programmers doing
+that, we'll move it into the manual, but not before.
+
+Lexical Matters
+
+I prefer case-sensitive symbols myself, but I have to agree with the position
+of the workshop that when case is important the programmer probably should be
+using strings instead.  I don't follow your argument about Prolog-like
+variables at all -- why should they be difficult to implement in Scheme?
+In some languages case is important but not in others; all this means is
+that you can't use the same lexical analyzer for all languages.  Some
+people will be implementing Common Lisp on top of Scheme, but there's
+little hope that the same parser can be used both for Common Lisp and for
+Scheme, let alone for both APL and Scheme.
+
+I had forgotten that some terminals work only with upper case.  That
+certainly was not a consideration at the workshop.
+
+The string->symbol procedure doesn't change case; the preliminary report did
+not say so explicitly, but it should have.
+
+				Peace, Will
+
+--
+From:  Will Clinger <willc%indiana.csnet@csnet-relay.arpa>
+Subject:  preliminary report of workshop
+To:  scheme@mit-mc.ARPA
+Message-Id:  <8411120256.AA05811@iuvax.UUCP>
+Date:  Sun, 11 Nov 84 21:56:06 est
+Received:  from indiana by csnet-relay.csnet id ad04907; 11 Nov 84 23:38 EST
+
+Greater standardization of the Scheme programming language was
+the object of a workshop held at Brandeis University on 22-23
+October 1984.  The participants were Hal Abelson (MIT), Norman
+Adams (Yale), David Bartley (TI), Gary Brooks (TI, IU), William
+Clinger (IU), Dan Friedman (IU), Robert Halstead (MIT), Chris
+Hanson (MIT), Chris Haynes (IU), Eugene Kohlbecker (IU), Don
+Oxley (TI), Jonathan Rees (MIT), Bill Rozas (MIT), Gerald Sussman
+(MIT), and Mitchell Wand (IU, Brandeis).  Kent Pitman (MIT)
+contributed to the agenda but was unable to attend the sessions.
+
+The participants, through some compromises, were able to reach
+unanimous agreement on an essential core language and on the
+syntax and semantics of a number of optional features that most
+implementations will want to support.  A few issues were deferred
+to committees:  input/output, additional operations on strings,
+and the gruesome details of numbers and arithmetic.
+
+This preliminary report is intended for implementors that need to
+know the results of the workshop now in order to conform to the
+standards that were agreed upon.  Comments are solicited as well.
+The final report is being written by William Clinger and is
+expected by 1 March 1985.
+
+- ----------------------------------------------------------------
+
+    Preliminary Report of the October 1984 Workshop on Scheme
+
+
+Essential features must be supported by every implementation of
+Scheme.  Programs written in Essential Scheme will run on any
+implementation of Scheme worthy of the name.
+
+Optional features may not be supported by every implementation,
+but those that do support a feature will use the same syntax and
+semantics for the feature.  Hence code that makes use of optional
+features will run on any implementation of Scheme that supplies
+the optional features.
+
+Optional features are indicated in this preliminary report by
+prefixing them with "Optionally, ".
+
+An implementation may extend the language in any way whatsoever,
+but code that makes use of extended features is not portable.
+
+This preliminary report is divided into the following sections:
+
+	lexical features
+	special constants and variables
+	special forms
+	data types
+	procedures
+
+- ----------------------------------------------------------------
+
+			Lexical features
+
+
+The following characters are whitespace characters:
+
+    The space character.
+    The tab character.
+    The newline character.
+    The carriage return character.
+    The line feed character.
+    The form feed character.
+
+The following characters are delimiters that terminate symbols:
+
+    Any whitespace character is a delimiter.
+    Left parenthesis is a delimiter.
+    Right parenthesis is a delimiter.
+    Left square bracket is a delimiter.
+    Right square bracket is a delimiter.
+    Left curly brace is a delimiter.
+    Right curly brace is a delimiter.
+    Semicolon is a delimiter.
+    Double quote is a delimiter.
+    End of file is a delimiter.
+
+Left and right square brackets and left and right curly braces
+have not yet been assigned any meaning but they are reserved for
+future use.
+
+The period is not a delimiter that terminates symbols.
+
+Optionally, the following characters may be delimiters that
+terminate symbols:
+
+    Single quote.
+    Backquote.
+    Sharp sign.
+
+It is not specified whether or not the vertical bar is a
+delimiter that terminates symbols.
+
+No escape character is specified for use in symbols.  (There is
+widespread agreement that "slashification" of characters within
+symbols is a relic that ought to be abandoned.)
+
+Lists may be notated in the traditional way using an opening left
+parentheses and a closing right parentheses.  Whitespace may
+follow the opening parenthesis and precede the closing
+parenthesis.  The empty list may be notated as ().  Conses may be
+notated as (x . y), where x and y are any notations for an
+object.  Whitespace is required on each side of the period.
+Possibly improper lists may be notated in the traditional way as
+(... x . y).  (foo . ()) reads the same as (foo), but (foo . nil)
+does not.
+
+Strings are delimited by double quotes.  Double quotes may be
+included inside strings by escaping them with backslash
+characters.  Backslashes may be included inside strings by
+escaping them with backslashes.
+
+'x reads as (quote x) .
+
+Optionally, backquote, comma, and comma at-sign (",@") work in
+the traditional way to one level of nesting.  (Implementations
+that support this feature may in fact allow arbitrary levels of
+nesting, but the workshop chose not to take the time to determine
+the right semantics for deeper levels of nesting.  It appears
+that at least one major implementation of Lisp has gotten it
+wrong in the past.)
+
+Comments are opened by semicolons and closed by end of line or
+end of file characters.
+
+Optionally, sharp sign macros are introduced by a sharp sign.
+Implementations that don't have sharp sign macros must still
+support #!true, #!false, and the #(...) notation for vectors.
+
+The workshop chose not to specify a notation for unreadable
+objects.  (Hal Abelson suggested that the machine should
+pronounce them rather than print them.)
+
+Vectors may be written using #(...) notation.
+
+The default input radix is decimal.
+
+Optionally, binary numbers may be written using the #b notation.
+Optionally, octal numbers may be written using the #o notation.
+Optionally, decimal numbers may be written using the #d notation.
+Optionally, hexadecimal numbers may be written using the #x
+notation.
+
+Optionally, special characters may be written using the #\
+notation.  If this feature is supported, then the Common Lisp
+names for special characters must be supported.
+
+#!true reads as a true object, and #!false reads as a false object.
+
+Integers may be written in the usual way, with or without signs.
+
+Optionally, numbers may be written using decimal points and/or
+exponents.  The precise notations and semantics were deferred to
+the numbers committee.
+
+Symbols may be written as sequences of characters that contain no
+special characters and begin with a character that cannot begin a
+number.  (This is not to imply that there are no other symbols;
+in particular +, -, *, /, 1+, and -1+ should be symbols.)  The
+precise language for symbols is not otherwise specified.
+
+When the 26 letters of the alphabet are used to write a symbol,
+case is immaterial unless overridden by slashification.  (This is
+not to say that slashification is an essential or optional
+feature, but rather to allow for implementations that have
+slashification as an extended feature.)
+
+- ----------------------------------------------------------------
+
+		 Special variables and constants
+
+
+The empty list counts as false in conditional expressions. (There
+may be other false values as well.)  The empty list is not the
+same as the symbol NIL.  (This is incompatible with most other
+Lisps.)
+
+#!false reads as a false value that evaluates to itself.  #!true
+reads as a true value that evaluates to itself.  Case is
+immaterial.
+
+Optionally, #!null reads as the empty list.  Case is immaterial.
+
+Optionally, the symbol NIL evaluates to the empty list.
+Optionally, NIL evaluates to some false value.
+Optionally, T evaluates to some true value.
+
+- ----------------------------------------------------------------
+
+			  Special forms
+
+
+The order of evaluation within an application is not specified.
+
+
+(QUOTE object) evaluates to object.
+
+
+(LAMBDA varspec expr ...) evaluates to a procedure.  varspec may
+be a proper list of symbols, a symbol, or an improper list of
+symbols.  The body of the LAMBDA is an implicit BEGIN.  The
+semantics associated with the various possibilities for varspec
+are as described in the MIT Scheme manual and the T manual.
+
+
+(LET ((id1 expr1) ...) expr ...) is equivalent to
+
+    ((LAMBDA (id1 ...) expr ...) expr1 ...)
+
+
+(LETREC ((i1 expr1) ...) expr ...) binds i1... to fresh
+locations holding unspecified values, evaluates expr1... in some
+unspecified order in the resulting environment, and then
+evaluates expr... .  The expr1... expressions do not have to be
+lambda expressions, but they must be evaluable without referring
+to any of i1... .  If this restriction is violated, the effect of
+the LETREC is unspecified, and some implementations may signal an
+error.  The body of the LETREC is an implicit BEGIN.
+
+
+(IF test consequent alternative) is an if-then-else expression as
+described in the Revised Report on Scheme.  The alternative may
+be omitted when evaluation is for effect rather than for value.
+It is a mistake for a program to make use of the value returned
+by an (IF test consequent) expression, and some implementations
+may signal an error if the value is used when test evaluates
+false.  [Should implementations be allowed to signal an error
+when the value of (IF test consequent) is used and test evaluates
+true?]
+
+
+(COND clause1 ...) is similar to the COND expressions of Common
+Lisp.  Each clause is a list of one or more forms, and the
+semantics is as described by cases below:
+
+    (COND (form) ...) is equivalent to
+
+        (OR form (COND ...)) where OR is the optional special
+            form described below.
+
+    (COND (form1 form2 ...) ...) is equivalent to
+
+        (IF form1
+            (BEGIN form2 ...)
+            (COND ...))
+
+    (COND) returns an unspecified value; it is a mistake to use
+    that value, and some implementations may signal an error if
+    it is used.
+
+Also, in each implementation either ELSE must be a standard
+variable whose value is initially true or else
+
+    (COND (ELSE form2 ...)) must be equivalent to
+
+        (BEGIN form2 ...) .
+
+
+(SET! id expr) evaluates expr and stores the result in the
+location denoted by the identifier id.  If id is does not denote
+a location, as would happen for example if id were unbound, then
+the effect of the SET! is not specified, and some implementations
+may signal an error.  SET! forms should be evaluated for effect,
+for they return an unspecified value; it is a mistake for a
+program to use the value returned by a SET! expression, and some
+implementations may signal an error if it is used.
+
+
+(DEFINE id expr) allows top-level definitions of variables.  Its
+semantics at top level are similar to the semantics of
+(SET! id expr).  The difference is that if id is not already
+bound to a location, then the DEFINE form binds id before
+performing the assignment, whereas it would be a mistake to
+perform a SET! on an unbound identifier.  The value returned by a
+DEFINE form is not specified.
+
+
+(BEGIN form1 ...) evaluates form1... sequentially, returning the
+value of the last form.  There should be at least one form in the
+body of the BEGIN.
+
+
+Optionally, (LET name ((id1 expr1) ...) expr ...) is like the LET
+described earlier except that it also binds name to the procedure
+resulting from (LAMBDA (id1 ...) expr ...) .  This optional
+feature supersedes the ITERATE special form described in the
+Revised Report on Scheme.
+
+
+Optionally, (LET* ((id1 expr1) ...) expr ...) is as described in
+the T manual.
+
+
+Optionally, (REC id expr) is equivalent to
+
+    (LETREC ((id expr)) id).
+
+
+Optionally, (NAMED-LAMBDA (name var1 ...) expr ...) is equivalent
+to
+    (REC name (LAMBDA (var1 ...) expr ...))
+
+where REC is as above.  (Some implementations may provide better
+debugging information when the NAMED-LAMBDA form is used,
+however.)
+
+
+Optionally, the DO special form is as in Common Lisp, except that
+it does not bind the identifier RETURN.  [The final report will
+give a more careful account of the syntax and semantics of DO.]
+
+
+Optionally,
+
+    (COND (form1 => form2) ...) is equivalent to
+
+        (LET ((form1←result form1)
+              (thunk2 (lambda () form2))
+              (thunk3 (lambda () (COND ...))))
+          (IF form1←result
+              ((thunk2) form1←result)
+              (thunk3)))
+
+
+Optionally, the CASE special form performs a dispatch.  In
+
+    (CASE expr0
+          (selector1 form1 ...)
+          (selector2 form2 ...)
+          ...
+          (ELSE else←form1 ...))
+
+each selector should be a list of values.  The selectors are not
+evaluated.  When the CASE expression is evaluated, expr0 is
+evaluated and its result is compared against successive selectors
+using the MEMV procedure until a match is found.  When a match is
+found the forms associated with the matching selector are
+evaluated in an implicit BEGIN and the result of that BEGIN is
+returned as the value of the entire CASE expression.  If none of
+the selectors yield a match, then the else←forms are evaluated in
+an implicit BEGIN and the result returned as the value of the
+CASE expression.  The ELSE clause may also be omitted, in which
+case the value of the CASE expression is unspecified when none of
+the selectors match; it is a mistake to use the result of the CASE
+expression when that happens, and some implementations may signal
+an error if the result is used.
+
+
+Optionally, the special form (AND form1 ...) is as described in
+the Revised Report on Scheme.  (This special form goes by the
+name of CONJUNCTION in the Abelson & Sussman book.)
+
+
+Optionally, the special form (OR form1 ...) is as described in
+the Revised Report on Scheme.  (This special form goes by the
+name of DISJUNCTION in the Abelson & Sussman book.)
+
+
+Optionally, DEFINE may be used for internal definitions as in MIT
+Scheme and in the book by Abelson and Sussman.  If allowed at
+all, internal definitions are permitted only in the bodies of
+LAMBDA, LET, LETREC, and similar binding constructs.  Furthermore
+they must precede the rest of the body.  With these restrictions,
+the semantics of internal definitions can be explained in terms
+of LETREC.  For example,
+
+    (LAMBDA (x)
+      (DEFINE foo ...)
+      (DEFINE bar ...)
+      ...)
+
+is equivalent to
+
+    (LAMBDA (x)
+      (LETREC ((foo ...)
+               (bar ...))
+        ...))
+
+Also
+
+    (LAMBDA (...)
+      (BEGIN (DEFINE ...)
+             (DEFINE ...))
+      ...)
+
+must be treated the same as
+
+    (LAMBDA (...)
+      (DEFINE ...)
+      (DEFINE ...)
+      ...)
+
+and so on.
+
+
+Optionally, DEFINE forms may permit MIT's extended syntax in
+which
+
+    (DEFINE (foo ...) ...) is equivalent to
+
+    (DEFINE foo (REC foo (LAMBDA (...) ...)))
+
+where REC is the optional special form described above, and
+
+    (DEFINE ((foo ...) ...) ...) is equivalent to
+
+    (DEFINE (foo ...) (LAMBDA (...) ...)),
+
+and so on.
+
+
+Optionally, (DEFINE! id expr) is equivalent to (DEFINE id expr)
+when typed at the top level.  Within code, (DEFINE! id expr) is
+equivalent to (SET! id expr) unless id is unbound, in which case
+the DEFINE! form creates a new top level binding for id before
+performing the assignment.  The value returned by a DEFINE! form
+is not specified, and it is a mistake to use it.
+
+
+Optionally, (DEFREC! id expr) is equivalent to
+(DEFINE! id (REC id expr)).
+
+
+Optionally, SEQUENCE is synonymous with BEGIN.  (SEQUENCE is for
+compatibility with the Abelson and Sussman text, and should not
+be used in new code.)
+
+- ----------------------------------------------------------------
+
+			   Data types
+
+
+All Scheme objects have unlimited extent.
+
+(The workshop did not require that any data types be disjoint.
+In theory, therefore, strings could be indistinguishable from
+lists of numbers, and would therefore be printed as lists of
+numbers by the standard printer.  Until we can agree on a better
+standard, we have to rely on the good judgement of implementors
+to avoid such problems.)
+
+There is an object that represents both false and the empty list.
+
+Procedures are a kind of object.
+
+Numbers are a kind of object.  (So far, every essential or
+optional operation on numbers is generic, although some
+operations have domain restrictions.)
+
+Symbols are a kind of object.
+
+Pairs are a kind of object.  Pairs are heterogenous mutable
+records with two fields, known as the CAR and CDR fields.
+
+Characters are a kind of object, but they need not be
+distinguishable from certain other kinds of objects.  (This is to
+allow characters to be implemented as small integers or as
+strings of a single character.)
+
+Strings are a kind of object.
+
+Vectors are a kind of object.  Vectors are simple heterogenous
+mutable structures indexed by integers, with 0 as the least
+index.
+
+[The question of whether streams should be a kind of object was
+deferred to the I/O committee.]
+
+- ----------------------------------------------------------------
+
+			   Procedures
+
+
+The unary predicate NULL? is true of the empty list and false of
+everything else.
+
+The unary procedure NOT returns a true value if its argument is
+false and a false value if its argument is true.
+
+
+The binary procedure APPLY takes a procedure f and a list l, and
+returns the result of f applied to l (considered as a list of
+arguments.)  Optionally, APPLY may be extended as described in
+the T manual.
+
+The unary procedure CALL-WITH-CURRENT-CONTINUATION takes a
+procedure f, and applies f to an escape procedure of one argument
+corresponding to the current continuation.  The escape procedure
+has unlimited extent.
+
+
+The unary predicate NUMBER? is true of numbers and false of
+everything else.  The unary predicate INTEGER? is true of
+integers and false of everything else.  Every integer is a
+number.  (For the sake of stripped-down Scheme implementations
+intended for systems programming, it is not essential that there
+be numbers other than integers.  It is expected, however, that
+almost all implementations will approximate the behavior of real
+numbers as well as does the IEEE 32-bit floating-point standard,
+and many implementations will do better through the use of
+bignums, ratios, and whatnot.)
+
+The binary procedures +, -, *, and / take two numbers and return
+the sum, difference, product, and quotient of their arguments, or
+at least the best approximation thereto that an implementation
+can reasonably provide.  (Thus (/ 2 9) may return a ratio in one
+implementation, a floating point number in another, and may even
+return 0 in a minimal implementation that approximates all
+numbers by integers.)  Optionally, they may be generalized to
+arbitrary arity as in Common Lisp.  (Hence unary negation is
+optional.)
+
+Optionally, the unary procedures 1+ and -1+ take a number and
+return its successor and predecessor, where the successor of x is
+defined as x + 1 and the predecessor as x - 1.  (The names make
+sense if read as infix notation.)
+
+The binary procedures QUOTIENT and REMAINDER take two integers
+and return the quotient and remainder.  The second argument must
+not be zero.  Precisely:  if the two arguments are x and y, and x
+= qy + r where q and r are integers, ry >= 0, and 0 <= abs(r) <
+abs(y), then the quotient is q and the remainder is r.  [Did I
+get this right?]
+
+Optionally, the binary procedure MOD is as in Common Lisp.  [The
+numbers committee should confirm this.]
+
+The unary procedure ABS takes a number and returns its absolute
+value.
+
+Optionally, the binary procedure GCD takes two integers and
+returns their greatest common divisor.  [Can one of the two
+arguments be zero?  Can the arguments be negative?  Is the result
+always positive?]
+
+The binary procedures MIN and MAX take two numbers and return the
+minimum and maximum.  Optionally, they may be generalized to
+arity >= 1.
+
+The unary procedure RANDOM takes a positive integer n and returns
+a nonnegative integer less than n.  (The intent is that RANDOM
+should implement a random number generator using a high quality
+algorithm.)
+
+The binary predicates =, =?, <, <?, >, >?, >=, >=?, <=, and <=?
+take two numbers and return true iff the first argument bears the
+named relationship to the second.  (Despite the convention that
+the names of true predicates end with a question mark, some
+people prefer these names without the question mark, hence the
+redundant names.)
+
+The unary predicates ZERO?, NEGATIVE?, and POSITIVE? take a
+number and return true if the argument is zero, negative, and
+positive.
+
+EXPT takes two numbers x and y and returns x raised to the y-th
+power.
+
+Optionally, there exist numbers that are not integers.  (Almost
+all implementations will support this option!)  If there are
+numbers other than integers, then the following procedures must
+be supported:
+
+    (EXP x)	  returns e to the x-th power.
+    (LOG x)	  returns the natural logarithm of x.
+    (SQRT x)	  returns the square root of x.
+    (SIN x)	  returns the sine of x, where x is in radians.
+    (COS x)	  returns the cosine of x, where x is in radians.
+    (TAN x)	  returns the tangent of x, where x is in radians.
+    (ASIN x)	  returns the arcsine of x in radians.
+    (ACOS x)	  returns the arccosine of x in radians.
+    (ATAN y x)	  returns the arctangent of y/x in radians.
+    (FLOOR x)	  returns the largest integer <= x.
+    (CEILING x)   returns the least integer >= x.
+    (TRUNCATE x)  returns the integer of the same sign as x whose
+                  magnitude is greatest among all such integers
+                  with magnitude less than the magnitude of x.
+    (ROUND x)	  returns the integer nearest to x.
+		  [Stable rounding?]
+
+[The details of the above operations on numbers are to be
+formulated by the numbers committee.  We expect to conform with
+Common Lisp and APL in most respects.]
+
+
+The binary predicate EQ? is the most discriminating of the
+standard equivalence predicates.  It is true iff its arguments
+are "iso-ontic".  That is, if there is any way at all for a user
+to distinguish the two arguments, then EQ? will return false.
+This specification would allow EQ? to return false in all cases,
+however, so there is one more condition: if x is a bound
+variable, then (EQ? x x) returns true.
+
+The binary predicate EQV? is a slightly less discriminating
+equivalence predicate that abstracts away from some of the
+implementation idiosyncrasies associated with numbers.  It is true
+iff its arguments are EQ? or both arguments are numbers having
+the same numeric value.  (It is a mistake to ask if two numbers
+are EQV? when one of the numbers has lost precision through
+approximation, however, and there is no telling what the result
+will be in such a case.) [EQV? is incompatible with T and MIT
+Scheme because (EQV? "abc" "abc") can be false.  Was that
+intended?]
+
+The binary predicate EQUAL? is the least discriminating of the
+standard equivalence predicates.  It is true of its arguments x
+and y iff
+
+        its arguments are EQV?
+    or  both x and y are strings and are STRING-EQUAL?
+    or  both x and y are pairs and their CARs and CDRs are EQUAL?
+    or  both x and y are vectors of the same length and they are
+        EQUAL? element-wise
+    or  both x and y are of some other type and are EQUAL?
+        component-wise in some reasonable sense.
+
+EQUAL? may not terminate on some arguments.  (EQUAL? is a
+blunderbuss of a predicate and should not be used when a less
+liberal predicate will suffice.)
+
+
+The unary predicate SYMBOL? is true iff its argument is a symbol.
+The unary procedure SYMBOL->STRING takes a symbol as argument and
+returns its name as a string.  The unary procedure STRING->SYMBOL
+takes a string as argument and returns a symbol having the string
+as its name.  (The result of STRING->SYMBOL is an interned
+symbol, which is the only kind of symbol required by this
+report.)  [This report defines no destructive operations on
+symbols or strings, so there is now no compelling reason to
+distinguish between a string and a copy thereof.]
+
+Optionally, the unary procedure STRING->UNINTERNED-SYMBOL takes a
+string and returns an uninterned symbol having the string as its
+name.
+
+
+The unary procedure PAIR? returns true iff its argument is a
+pair.  (Scheme has traditionally had a predicate known as ATOM?,
+but this predicate has been superseded by PAIR?)  [Pairs,
+formerly known as conses or dotted pairs, may be
+indistinguishable from vectors of length 2.]
+
+The binary procedure CONS creates a pair whose CAR field is
+initialized to the first argument and whose CDR field is
+initialized to the second argument.  It is guaranteed that the
+new pair is not EQ? to any existing object.  The n-ary procedure
+LIST returns a freshly consed list of its arguments.  The unary
+procedures CAR and CDR take a pair and return the contents of its
+CAR or CDR field.  It is a mistake to apply CAR or CDR to any
+object other than a pair, and some implementations will signal an
+error if the mistake is made.  [This is incompatible with many if
+not most Lisps.]  The binary procedures SET-CAR! and SET-CDR!
+take a pair x as first argument and an object y as second
+argument, and store y in the CAR or CDR field of x.  The value
+returned by SET-CAR! and SET-CDR! is unspecified, and it is a
+mistake to use it; some implementations may signal an error if
+the value is used.  [This also is incompatible with many if not
+most Lisps.]
+
+The unary procedures
+
+    CAAR    CADR    CDAR    CDDR    CAAAR   CAADR   CADAR   CADDR
+    CDAAR   CDADR   CDDAR   CDDDR   CAAAAR  CAAADR  CAADAR  CAADDR
+    CADAAR  CADADR  CADDAR  CADDDR  CDAAAR  CDAADR  CDADAR  CDADDR
+    CDDAAR  CDDADR  CDDDAR  CDDDDR
+
+are compositions of CAR and CDR, where for example CADDR is
+(LAMBDA (X) (CAR (CDR (CDR X)))).
+
+The following descriptions use the notion of a proper list.  The
+set of proper lists is the smallest set satisfying:
+
+    the empty list is a proper list
+    a pair x whose CDR is a proper list is a proper list,
+        provided (MEMQ x (CDR x)) is false.
+
+The unary procedure LENGTH takes a proper list as argument, and
+returns its length, defined as the least integer k such that CDR
+composed with itself k times and applied to the argument yields
+the empty list.
+
+The binary procedure APPEND takes two proper lists as arguments.
+It could be defined by
+
+    (DEFINE APPEND
+        (LAMBDA (X Y)
+          (IF (NULL? X)
+              Y
+              (CONS (CAR X) (APPEND (CDR X) Y)))))
+
+but while APPEND will return a result that is EQUAL? to the
+result returned by the procedure coded above, and will do so
+without side effects, there is no guarantee that APPEND will
+create any new pairs.  (For example, if either argument to APPEND
+is the empty list, then APPEND may simply return the other
+argument without copying it.  For that matter, APPEND may copy
+both arguments.)  Optionally, APPEND may be generalized to
+arbitrary arity.
+
+Optionally, APPEND! is like APPEND except that it may side effect
+either or both of its arguments.
+
+Optionally, REVERSE takes a proper list as argument and returns a
+proper list containing the elements of the argument in reverse
+order.  REVERSE could be defined by
+
+    (DEFINE REVERSE
+      (LETREC ((LOOP (LAMBDA (X Y)
+                       (IF (NULL? X)
+                           Y
+                           (LOOP (CDR X) (CONS (CAR X) Y))))))
+        (LAMBDA (X)
+          (LOOP X '()))))
+
+but while REVERSE will return a result that is EQUAL? to the
+result returned by the procedure coded above, and will do so
+without side effects, there is no guarantee that REVERSE will
+create any new pairs.  (There is no need to create new pairs when
+the argument to REVERSE has length 1, for example.)
+
+Optionally, LIST-REF and LIST-TAIL take a list and a nonnegative
+integer as arguments, and return the values returned by the
+procedures defined below:
+
+    (DEFINE LIST-REF
+      (LAMBDA (X N)
+        (CAR (LIST-TAIL X N))))
+
+    (DEFINE LIST-TAIL
+      (LAMBDA (X N)
+        (IF (ZERO? N)
+            X
+            (LIST-TAIL (CDR X) (- N 1)))))
+
+Optionally, LAST-PAIR takes a non-empty list and returns the
+value returned by the procedure defined below:
+
+    (DEFINE LAST-PAIR
+      (LAMBDA (X)
+        (IF (PAIR? (CDR X))
+            (LAST-PAIR (CDR X))
+            X)))
+
+The binary procedures MEMQ, MEMV, and MEMBER take an object x and
+a proper list y and return the first sub-list of y beginning with
+an object that is EQ?, EQV?, or EQUAL? (respectively) to x. If no
+such element of y exists, then MEMQ, MEMV, and MEMBER return
+false.  (This is slightly incompatible with most Lisps, which
+return the empty list instead of false; for now, of course, the
+empty list must be false in Scheme.)  (The reason the names of
+these procedures do not end with question marks is that they
+return useful values rather than just true or false.)
+
+The binary procedures ASSQ, ASSV, and ASSOC take an object x and
+a proper list of pairs y and return the first element of y whose
+CAR is EQ?, EQV?, or EQUAL? (respectively) to x.  If no such
+element of y exists, the ASSQ, ASSV, and ASSOC return false. (See
+notes for MEMQ, MEMV, and MEMBER above.)
+
+The binary procedure MAPCAR takes a unary procedure and a proper
+list and returns a list of the results obtained from applying the
+procedure element-wise to the proper list.  (No order of
+evaluation is specified.)  Optionally, MAPCAR may be generalized
+to >= 2 arguments.
+
+The binary procedure MAPC takes a unary procedure f and a proper
+list x and applies f element-wise to x, in order from the first
+element of x to the last.  The value returned by MAPC is not
+specified, and it is a mistake to use it; some implementations
+may signal an error if it is used.
+
+
+The string procedures below have no side effects and are always
+sensitive to case.  No collating sequence whatsoever is
+specified.
+
+The unary predicate STRING? is true iff its argument is a string.
+The binary predicate STRING-EQUAL? takes two strings and returns
+true iff the strings are the same length and have the same
+characters in the same positions.  The binary predicate
+STRING-LESS? is an irreflexive total ordering on strings.  The
+binary procedure STRING-APPEND takes two strings and returns the
+catenation of the two strings.  Optionally, STRING-APPEND may be
+generalized to arbitrary arity.
+
+The unary procedure LIST->STRING takes a list of characters and
+returns a string composed of those characters in order.  The
+unary procedure STRING->LIST is a two-sided inverse to
+LIST->STRING so far as STRING-EQUAL? is concerned.
+
+The unary procedure STRING-LENGTH takes a string s and returns
+(LENGTH (STRING->LIST s)).  The binary procedure STRING-REF takes
+a string s and a nonnegative integer n and returns
+(LIST-REF (STRING->LIST s) n), where LIST-REF is the optional
+procedure described above.
+
+
+The unary predicate VECTOR? is true iff its argument is a vector.
+The unary procedure MAKE-VECTOR takes a nonnegative integer n as
+argument and returns an uninitialized vector of length n.
+Optionally, MAKE-VECTOR can be a binary procedure as well, in
+which case the second argument is an object to be stored in every
+element of the newly created vector.
+
+The n-ary procedure VECTOR returns a vector of its arguments, by
+analogy with LIST.
+
+The unary procedure LIST->VECTOR takes a proper list and returns
+a vector whose elements are the elements of the list.  The unary
+procedure VECTOR->LIST takes a vector and returns a proper list
+of its elements.  [Should the result of either be guaranteed to
+be a new object?  What about vectors of length 0?]  The binary
+procedure VECTOR-REF takes a vector v and a nonnegative integer n
+and returns element n of v, where the first element of v is
+element 0.  The ternary procedure VECTOR-SET! takes a vector v, a
+nonnegative integer n, and an object x, and stores x in element n
+of v.  The value returned by VECTOR-SET! is not specified.  It is
+a mistake to use it, and some implementations may signal an error
+if it is used.  The unary procedure VECTOR-LENGTH takes a vector
+v and returns the number of elements in v, which is one greater
+than the largest index acceptable to VECTOR-REF and VECTOR-SET!
+for v.  Optionally, VECTOR-FILL! takes a vector v and an object x
+and stores x in every element of v.
+
+
+Optionally, the unary procedure OBJECT-HASH takes an object and
+associates an integer with that object, returning the object.
+OBJECT-HASH must guarantee that objects that are not EQ? are
+associated with distinct integers.  Optionally, OBJECT-UNHASH
+takes an integer and returns the object associated with that
+integer if there is one, returning false otherwise.  (OBJECT-HASH
+and OBJECT-UNHASH can be implemented using association lists and
+ASSQ, but the intent is that they be efficient hash functions for
+objects.)
+
+--

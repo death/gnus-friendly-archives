@@ -1,0 +1,126 @@
+--
+From: unknown
+Subject: (no subject)
+
+Introduction
+Welcome to the Common Lisp Multiprocessing Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Multiprocessing@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLMULT.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Multiprocessing-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Dick Gabriel		Stanford/Lucid	rpg@sail
+Carl Hewitt		MIT		Hewitt-multiprocessing@mc
+Kent Pitman		MIT		kmp@mc
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-multiprocessing@SU-AI.ARPA   
+Subject: Introduction
+Date: 23 Sep 1984 16:38 EST
+
+Welcome to the Common Lisp Multiprocessing Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Multiprocessing@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLMULT.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Multiprocessing-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Dick Gabriel		Stanford/Lucid	rpg@sail
+Carl Hewitt		MIT		Hewitt-multiprocessing@mc
+Kent Pitman		MIT		kmp@mc
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-multiprocessing@SU-AI.ARPA   
+Subject: Chairman
+Date: 02 Oct 1984 13:20 EST
+
+Now that we've basically got most everyone who is interested on the mailing
+list, let's pick a chairman. I suggest that people volunteer for chairman.
+
+The duties are to keep the discussion going, to gather proposals and review
+them, and to otherwise administer the needs of the mailing list. I will
+retain the duties of maintaining the list itself and the archives, but
+otherwise the chairman will be running the show. 
+
+Any takers?
+			-rpg-
+
+--
+From: RPG  
+To:    cl-multiprocessing@SU-AI.ARPA   
+Subject: Chairman
+Date: 13 Oct 1984 14:52 EST
+
+I have been nominated to be chairman of the multiprocessing mailing list.
+If there are no objections, I agree to be chairman of the subgroup.
+
+			-rpg-
+
+--
+From: RPG  
+To:    cl-multiprocessing@SU-AI.ARPA   
+Subject: Hello folks
+Date: 27 Oct 1984 22:03 EST
+
+We now have a chairman of the multiprocessing:  Me, Dick Gabriel of Stanford.
+I will be an ok chairman.  For your information I am including
+the current members of the mailing list.
+
+Dick Gabriel		Stanford/Lucid	rpg@sail
+Carl Hewitt		MIT		Hewitt-multiprocessing@mc
+Kent Pitman		MIT		kmp@mc
+Ben Zorn		UC Berkeley	zorn@berkeley
+Richard Zippel		MIT		rz@mc
+Bert Halstead		MIT		rhh@mit-mc
+Don Allen		BBN		allen@bbnf
+Jim Larus		Berkeley	larus@berkeley
+Neal Feinberg		Symbolics	feinberg@srcr-stony-brook
+John Foderaro		Berkeley	jkf@ucbmike.arpa
+David Wood		Berkeley	"david%ucbkim"@Berkeley
+
+--

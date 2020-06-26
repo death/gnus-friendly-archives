@@ -1,0 +1,127 @@
+--
+From: unknown
+Subject: (no subject)
+
+Scherlis@c.cs.cmu.edu/su
+Mathis
+
+Bill, this message contains a synopsis of why I think Mathis cannot
+remain as chairman of X3J13. None of the reasons by themselves is
+compelling, but together I think they might be.
+
+1. There is a question about his global role and his motives
+for doing what he does. It appears he earns his living being a
+convenor. Therefore, he is possibly more interested in furthering
+his career than doing the right thing by the language communities
+he represents.
+
+2. There is a question about his local role. The only theory I have
+for his support of the Digital Press motion in the face of almost
+total disfavor by the community is that Squires probably asked him to
+try to wrestle the copyright away from Digital Press. Some people
+might believe he is DARPA's dupe.
+
+3. There is some question about his agenda. Why did he postpone discussion
+of the scope of the committee until there was less than 40 minutes
+left in the meeting and when he result of that discussion was to
+be a letter to ISO? Did he want to set the scope? He avoided this
+discussion by letting the Digital Press discussion go on for 45 minutes.
+
+4. There is a question about his ability to act in the international
+community, especially the Lisp community. 
+
+	a) In Boston last December, he discussed how the French have always
+	   screwed things up when they head standards committees.  One
+	   Frenchman and 2 British were in the audience. They were not
+	   amused.
+
+	b) He has mostly pissed off the American Lisp community with
+	   his behavior. Can he be doing less in the international
+	   scene? He is seen as representing the US; therefore, the
+	   US is probably pissing off the European Lisp community.
+
+	c) He has an agenda of messages and letters he sends to ISO etc.
+	   He tries to bully us into agreeing to his ideas on the topic,
+	   and so those messages do not represent the US position. Do messages
+	   he brings us represent the European position?
+
+5. There is a question of his ability to run a fair meeting. 
+
+	a) He interjects his opinion between speakers; he changes the topic
+	   during his interjections.  He calls on his friends out of order
+	   (such as Squires, Scherlis, and Gabriel).
+
+	b) He refuses to hear motions. He knows Robert's rules and uses them
+	   or not to his own purpose - he did not let the motion to drop the
+	   Digital Press motion be heard and said he was ignoring protocol to
+	   do that. He finally put Hewitt and some random in charge of
+	   drafting the letter to be considered for delivery to Digital Press.
+
+	c) He listens to commentary and summarizes the comments in such a way
+	   that shows that he either did not understand what was said or had
+	   decided beforehand `the position of the committee' on that topic.
+	   This can be seen by recalling how often after his summary hands
+	   shot into the air.
+
+	d) Kent Pitman felt compelled to state that even Gabriel ran better
+	   meetings than Mathis.
+
+6. There is a question about him understanding the dynamics of the Lisp
+community.  Although one can argue that X3 means that every random on
+earth is equal to all others, there is a sense in which the leaders of
+the community will lead the randoms, and courting the right people *at
+the right time* is crucial. I've not seen this ability demonstrated.
+
+7. He does not know anything about the technology. He cannot judge when
+discussion is lengthy because there is a deep issue at hand as contrasted
+with when it is lengthy because of infinite nitpicking. The discussions
+under his control, then, will seem random and pointless to many, causing
+discouragement - this has happened already.
+
+8. A number of people are alarmed enough to have come to me to see whether
+there is a remedy. These are Kent Pitman, Alan Wexler, Mark Wegman, and
+Will Clinger. Dave Matthews, Gregor Kiczales, and Gary Brown expressed
+concern. (The first group asked for a plan of remedy; the second group
+groaned about him.)
+
+9. Mathis probably knows he is in jeopardy and acts on it. Steele noticed
+and I am sure that he is very nervous about my role. He knows I know the
+entire community; he sees me caucussing with many people, stepping in and
+out of the room; he sees my use of humor and sarcasm to bend the committee;
+he sees my use of body language. 
+
+He blocked my desire to communicate with the European community when
+there was no point in blocking it, when there was only positive possible
+effects of it. He asserted that only he knew the correct people with
+whom to meet, and he hinted that only he was in a position to so meet.
+
+He has strengths, though. He knows the ins and outs of the ISO process.
+He is free to travel to Europe on a whim and seems to like to do it.
+He knows the ins and outs of X3.
+
+I propose that someone else be chairman of X3J13 and that he either be
+made vice chairman or international representative (or both). I propose
+that the chair be someone in the Lisp community, that his role be one of
+a leader with a burning desire to see things through and meeting
+helmsman.  I propose Mathis's role be as an administrator and emmissary
+to ISO.  That is, Mathis does what he is doing now, but the meeting
+leader and nominal head be someone else, with Mathis standing as
+executive officer.
+
+I propose that Mathis himself make this suggestion. If not, I am
+seriously considering wrestling control from him myself, using people
+like Steele, Bobrow, Matthews, Pitman, Fahlman, Weinreb, Brown, Wegman,
+and Clinger to plead my case for me.
+
+Bill, you can bring the contents of this message to Squires's attention,
+but you may not bring the existence of this message to his attention;
+nor may you bring my disgruntlement to his attention any more than
+it already has been brought.
+
+The only other theory I have is that he sets himself up as the
+target of hatred and distrust to cement the community into a
+common bond against him. If so, he is a real pro.
+
+			-rpg-
+
+--

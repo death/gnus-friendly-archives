@@ -1,0 +1,3267 @@
+--
+From: unknown
+Subject: (no subject)
+
+Introduction
+Welcome to the Common Lisp Iteration Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Iteration@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLITER.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Iteration-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Kent Pitman		MIT		kmp@mc
+David Wile		ISI		Wile@ISI-VAXA
+Eric Benson		Lucid		eb@su-ai
+Bob Kessler		Univ. of Utah	kessler@utah-20
+Bob Kerns		Symbolics	rwk@mc
+David Moon		Symbolics	moon@scrc-stonybrook
+Guy Steele		Tartan		steele@tl-20a
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    CL-iteration@SU-AI.ARPA    
+Subject: Introduction
+Date: 23 Sep 1984 16:13 EST
+
+Welcome to the Common Lisp Iteration Subgroup.
+In order to mail to this group, send to the address:
+
+		CL-Iteration@su-ai.arpa
+
+Capitalization is not necessary, and if you are directly on the ARPANET,
+you can nickname SU-AI.ARPA as SAIL. An archive of messages is kept on
+SAIL in the file:
+
+			   CLITER.MSG[COM,LSP]
+
+You can read this file or FTP it away without logging in to SAIL.
+
+To communicate with the moderator, send to the address:
+
+		CL-Iteration-request@su-ai.arpa
+
+Here is a list of the people who are currently on the mailing list:
+
+Person			Affiliation	Net Address
+
+Kent Pitman		MIT		kmp@mc
+David Wile		ISI		Wile@ISI-VAXA
+Eric Benson		Lucid		eb@su-ai
+Bob Kessler		Univ. of Utah	kessler@utah-20
+Bob Kerns		Symbolics	rwk@mc
+David Moon		Symbolics	moon@scrc-stonybrook
+Guy Steele		Tartan		steele@tl-20a
+
+The first order of business is for each of us to ask people we know who may
+be interested in this subgroup if they would like to be added to this list.
+
+Next, we ought to consider who might wish to be the chairman of this subgroup.
+Before this happens, I think we ought to wait until the list is more nearly
+complete.
+
+--
+From: RPG  
+To:    cl-iteration@SU-AI.ARPA    
+Subject: Chairman
+Date: 02 Oct 1984 13:13 EST
+
+Now that we've basically got most everyone who is interested on the mailing
+list, let's pick a chairman. I suggest that people volunteer for chairman.
+
+The duties are to keep the discussion going, to gather proposals and review
+them, and to otherwise administer the needs of the mailing list. I will
+retain the duties of maintaining the list itself and the archives, but
+otherwise the chairman will be running the show. 
+
+Any takers?
+			-rpg-
+
+--
+From: RPG  
+To:    cl-iteration@SU-AI.ARPA    
+Subject: Chairman
+Date: 13 Oct 1984 14:43 EST
+
+Guy Steele has been nominated as chairman of the Iteration
+subgroup.  If he is willing, and no one else volunteers, he will
+become chairman. Please respond by October 24. At the end of this month
+I want to see some ideas and proposals coming in on this mailing list.
+			-rpg-
+
+--
+From:  STEELE@TL-20A.ARPA
+In-Reply-To:  Message from "Dick Gabriel <RPG@SU-AI.ARPA>" of Sat 27 Oct 84 22:03:00-EDT
+cc:  STEELE@TL-20A.ARPA
+To:  RPG@SU-AI.ARPA
+Subject:  Re: Iteration
+Date:  Mon 29 Oct 84 09:32:36-EST
+Received:  ID <STEELE@TL-20A.ARPA.#Internet>; Mon 29 Oct 84 09:32:39-EST
+
+I suppose I could chair the iteration subgroup, but here is my position.
+I don't feel that any additional peculiar iteration syntax is needed.
+If no one else feels the need for it strongly enough to want to chair
+the subgroup, then the whole thing might as well quietly disappear by
+reason of apathy.
+- --Q
+- -------
+
+--
+From:  STEELE@TL-20A.ARPA
+To:  cl-iteration@SU-AI.ARPA
+Subject:  [CL.BOYER@UTEXAS-20.ARPA: loop & defmacro]
+Date:  Mon 10 Dec 84 10:54:51-EST
+Received:  ID <STEELE@TL-20A.ARPA.#Internet>; Mon 10 Dec 84 10:54:52-EST
+
+Return-Path: <@TL-20B.ARPA:CL.BOYER@UTEXAS-20.ARPA>
+Received: from TL-20B.ARPA by TL-20A.ARPA with TCP; Sun 9 Dec 84 17:41:26-EST
+Received: from UTEXAS-20.ARPA by TL-20B.ARPA with TCP; Sun 9 Dec 84 17:40:40-EST
+Date: Sun, 9 Dec 1984  16:38 CST
+From: CL.BOYER@UTEXAS-20.ARPA
+To:   steele@tartan
+Cc:   rpg@su-ai, hedrick@rutgers
+Subject: loop & defmacro
+
+Since RPG named you as moderator of the "iteration/loop" subgroup
+I haven't seen any mail on the subject.  Has there been any?
+
+In my opinion, LOOP is pretty good as it is and should be
+adopted as part of Common Lisp.  If I had my way, I would
+add to it something that was subtracted from the Interlisp
+I.S.OPR when LOOP was coded, namely the ability to add more
+I.S.OPRS.  For example, I now write in Zetalisp:
+
+     (loop for x in l with ans = 0
+	   do (setq ans (logor x ans))
+	   finally (return ans))
+
+where I would like to write
+
+     (loop for x in l logor x).  
+
+I used to be able to write something like that in Interlisp,
+which has a facility for defining the initial, iterative,
+and final action of a new "quantifier" such as logor.
+Anyway, that's my 2-bits worth.
+
+Finally, and totally unrelatedly, is it true that
+
+     (defmacro foo x ...)
+
+is not permited in Common Lisp and that
+I need to write
+
+     (defmacro foo (&whole x) ...)?
+
+I'm trying to find some common ground with psl and the maclisp
+dialects, but it doesn't look like there is a general
+purpose intersection.  As I read it, a lambda list has
+to be a list, and that excludes a symbolp.
+
+P.S. Hedrick's 2060 Common Lisp permits (defmacro foo x ...).
+
+Thanks,
+
+Bob
+- -------
+
+--
+From:  STEELE@TL-20A.ARPA
+To:  cl-iteration@SU-AI.ARPA
+Subject:  Reply to Boyer
+Date:  Mon 10 Dec 84 11:05:59-EST
+Received:  ID <STEELE@TL-20A.ARPA.#Internet>; Mon 10 Dec 84 11:06:02-EST
+
+I was nominated to moderate the iteration subgroup, but declined the
+nomination, on the following grounds: my own preference is for the
+status quo, as I have not yet seen any LOOP syntax I can comfortably
+endorse.  Therefore I am waiting for another to step forward to
+moderate; and if no one does, that would indicate to me that no one
+else really wants the LOOP syntax either.
+
+What you would write as
+	(for x in l logor x)
+I would write as
+	(reduce #'logor l)
+This is of course not a general argument against LOOP, but the existence
+of general mapping and reduction operators in Common LISP should not
+be overlooked.
+
+You are correct in stating that Common Lisp does not permit
+	(defmacro foo x ...)
+More precisely, a valid Common LISP program may not use such
+a construct and expect to be portable.  A Common LISP implementation
+may, if it wished, support that syntax as a (non-portable)
+extension.
+- --Guy
+- -------
+
+--
+From:  Stan Shebs <SHEBS@UTAH-20.ARPA>
+To:  cl-iteration@SU-AI.ARPA
+Subject:  Misc
+Date:  Mon 10 Dec 84 11:11:17-MST
+Received:  from UTAH-20.ARPA by SU-AI.ARPA with TCP; 10 Dec 84  10:10:11 PST
+
+I would volunteer to moderate if my stature weren't so low...
+
+First off, I don't believe that the status quo is necessarily desirable.
+Personally, I like the PSL FOR macro with its more Lispy syntax - the
+more complex iterations are easier to read when there's lots of parens.
+Editors that understand parens also do a better job of formatting.
+Unfortunately, The Book appears to exclude such a format by requiring
+that LOOP keywords be atoms (although perhaps one could have a single
+atom that indicates that all the succeeding lists are to be interpreted
+as clauses rather than expressions).
+
+Furthermore, what exactly *is* the status quo?  Is Symbolics going to
+be nice and let us use their version of LOOP, which has some differences
+from the standard?  What about the NAMED keyword?  I don't believe that's
+available everywhere, but it seems like something better done with
+CATCH and THROW anyway.  Is dependence on forms being processed "in order"
+so deep that no one wants to make it optional (say for the compiler's
+benefit)?  Perhaps somebody could give the official definition of the
+"status quo" and then we could react to it...
+
+							stan shebs
+- -------
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 10 Dec 1984  13:11-EST from Stan Shebs <SHEBS at UTAH-20.ARPA>
+Subject:  Misc
+Cc:    cl-iteration@SU-AI.ARPA
+To:    Stan Shebs <SHEBS@UTAH-20.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12070366478.BABYL@CMU-CS-C.ARPA>
+Date:  Mon, 10 Dec 1984  14:03 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Mon 10 Dec 84 14:03:26-EST
+
+
+Good network connections and some time to devote to this are more
+important qualifications than "status", whatever that means.  The
+chairpersons of these groups are not responsible for imposing solutions
+on people, just for keeping the discussion lubricated and coherent.  So
+if you want to volunteer and nobody else does, I think that gives you
+sufficient status.
+
+I think that what Guy meant by "the status quo" was that there is no
+high-level looping construct in the white pages, just DO and friends,
+along with the sequence functions.  I think most of us would like to see
+a really good standard iteration facility, but DO is suficient until a
+sufficiently good proposal comes along.
+
+I think that if most of us can agree that some proposal is "the right
+thing", any minor incompatibility with the current manual could be
+fixed.  We want the language to be reasonably stable from now on, but
+a minor change in the syntax of LOOP is not going to kill anyone.  In
+any event, an easy fix is just not to call the new thing LOOP, but to
+give it some other name.
+
+I haven't studied the issue extensively, but my hunch is that I would
+like something similar to the current Lisp Machine LOOP facility, but
+with a more Lispy syntax -- parentheses replacing some of the
+pseudo-english.  This PSL facility sounds like that.  Is a description
+of it available online so that we could all take a look at it?
+
+- -- Scott
+
+--
+From:  Stan Shebs <SHEBS@UTAH-20.ARPA>
+To:  cl-iteration@SU-AI.ARPA
+Subject:  PSL's FOR Macro
+Date:  Mon 10 Dec 84 17:44:55-MST
+Received:  from UTAH-20.ARPA by SU-AI.ARPA with TCP; 10 Dec 84  16:43:48 PST
+
+The PSL FOR macro description is not very long, so here it is:
+
+
+(FOR . S:forms): any                                                      Macro
+
+The arguments to FOR are clauses; each clause is itself a list of a keyword and
+one or more arguments.  The clauses  may  introduce  local  variables,  specify
+return  values  and  when the iteration should cease, have side-effects, and so
+on.  Before going further, it is probably best to give some examples.
+
+    (FOR (FROM I 1 10 2) (DO (PRINT I)))
+            Prints the numbers 1 3 5 7 9
+
+    (FOR (IN U '(A B C)) (DO (PRINT U)))
+            Prints the letters A B C
+
+    (FOR (ON U '(A B C)) (DO (PRINT U)))
+            Prints the lists (A B C) (B C) and (C)
+
+    Finally, the function
+    (DE ZIP (X Y)
+      (FOR (IN U X) (IN V Y)
+            (COLLECT (LIST U V))))
+
+produces a list of 2 element lists, each consisting of  the  the  corresponding
+elements of the three lists X, Y and Z. For example, 
+
+    (ZIP '(1 2 3 4) '(A B C) )
+
+produces 
+
+    ((1 a)(2 b)(3 c))
+
+The iteration terminates as soon as one of the (IN ..) clauses is exhausted.
+
+Note  that  the  (IN  ...  ),  (ON  ...) and (FROM ...) clauses introduce local
+variables U, V or I, that are referred to in the action clause.
+
+All the possible  clauses  are  described  below.    The  first  few  introduce
+iteration  variables.    Most  of these also give some means of indicating when
+iteration should cease.  For example, if a list being  mapped  over  by  an  IN
+clause  is  exhausted, iteration must cease.  If several such clauses are given
+in a FOR expression, iteration ceases when one  of  the  clauses  indicates  it
+should, whether or not the other clauses indicate that it should cease.
+
+(IN V1 V2)      assigns the variable V1 successive elements of the list V2.
+
+                This  may  take an additional, optional argument: a function to
+                be applied to the extracted element or  sublist  before  it  is
+                assigned to the variable.  The following returns the sum of the
+                lengths of all the elements of L. [Rather a kludge -- not  sure
+                why this is here.  Perhaps it should come out again.]
+
+                    (DE LENGTHS (L)
+                      (FOR (IN N L LENGTH)
+                    (COLLECT (LIST N N)))
+
+                    is the same as
+
+                    (DE LENGTHS (L)
+                      (FOR (IN N L)
+                         (COLLECT
+                          (LIST (LENGTH N) (LENGTH N))))
+                    )
+
+                but  only  calls  LENGTH  once.  Using  the  (WITH  ..) form to
+                introduce a local LN may be clearer.
+
+                    For example,
+                    (SUMLENGTHS
+                     '((1 2 3 4 5)(a b c)(x y)))
+                    is
+                    ((5 5) (3 3) (2 2))
+
+(ON V1 V2)      assigns the variable V1 successive CDRs of the list V2.
+
+(FROM VAR INIT FINAL STEP)
+                is  a numeric iteration clause.  The variable is first assigned
+                INIT, and then incremented by step  until  it  is  larger  than
+                FINAL.  INIT, FINAL, and STEP are optional.  INIT and STEP both
+                default to 1, and if FINAL is omitted the  iteration  continues
+                until stopped by some other means.  To specify a STEP with INIT
+                or FINAL omitted, or a FINAL with INIT omitted, place NIL  (the
+                constant -- it cannot be an expression) in the appropriate slot
+                to be omitted.  FINAL and STEP are only evaluated once.
+
+(FOR VAR INIT NEXT)
+                assigns  the variable INIT first, and subsequently the value of
+                the expression NEXT.  INIT and NEXT may be omitted.  Note  that
+                this is identical to the behavior of iterators in a DO.
+
+(WITH V1 V2 ... Vn)
+                introduces N locals, initialized to NIL.  In addition, each  Vi
+                may  also  be  of  the  form  (VAR  INIT),  in which case it is
+                initialized to INIT.
+
+(DO S1 S2 ... Sn)
+                causes the Si's to be evaluated at each iteration.
+
+There  are  two  clauses  which  allow arbitrary code to be executed before the
+first iteration, and after the last.
+
+(INITIALLY S1 S2 ... Sn)
+                causes  the  Si's  to be evaluated in the new environment (i.e.
+                with the iteration variables bound  to  their  initial  values)
+                before the first iteration.
+
+(FINALLY S1 S2 ... Sn)
+                causes the Si's  to  be  evaluated  just  before  the  function
+                returns.
+
+The  next  few clauses build up return types.  Except for the RETURNS/RETURNING
+clause, they may each take an additional argument which specifies that  instead
+of  returning  the  appropriate  value,  it  is  accumulated  in  the specified
+variable.  For example, an unzipper might be defined as 
+
+    (DE UNZIP (L)
+      (FOR (IN U L) (WITH X Y)
+        (COLLECT (FIRST U) X)
+        (COLLECT (SECOND U) Y)
+        (RETURNS (LIST X Y))))
+
+This is essentially the opposite of ZIP.  Given a list of 2 element  lists,  it
+unzips  them  into  2 lists, and returns a list of those 2 lists.  For example,
+(unzip '((1 a)(2 b)(3 c))) returns is ((1 2 3)(a b c)).
+
+(RETURNS EXP)   causes the given  expression  to  be  the  value  of  the  FOR.
+                Returning  is  synonymous  with  returns.    It  may  be  given
+                additional arguments, in which case they are evaluated in order
+                and the value of the last is returned (implicit PROGN).
+
+(COLLECT EXP)   causes  the successive values of the expression to be collected
+                into a list.  Each value is APPENDed to the end of the list.
+
+(ADJOIN EXP), (ADJOINQ EXP)
+                are similar to COLLECT, but a value is added to the result only
+                if it is not already in the list.   ADJOIN  tests  with  EQUAL,
+                ADJOINQ tests with EQ.
+
+(CONC EXP)      causes the successive values to be NCONC'd together.
+
+(JOIN EXP)      causes them to be appended.
+
+(UNION EXP), (UNIONQ EXP)
+                are similar to JOIN, but only add an element to the list if  it
+                is  not  already  there.   UNION tests with EQUAL, UNIONQ tests
+                with EQ.
+
+(INTERSECTION EXP), (INTERSECTIONQ EXP)
+                compute  the  set of elements that are in all the sets iterated
+                over.  With INTERSECTION, elements are the same if EQUAL,  with
+                INTERSECTIONQ they are the same if EQ.
+
+(COUNT EXP)     returns the number of times EXP was non-NIL.
+
+(SUM EXP), (PRODUCT EXP), (MAXIMIZE EXP), and (MINIMIZE EXP)
+                do  the  obvious.    Synonyms  are  summing,  maximizing,   and
+                minimizing.
+
+(MAXIMAL EXP1 EXP2), (MINIMAL EXP1 EXP2)
+                are  more  general  than  maximize  and  minimize.      MAXIMAL
+                determines  the  greatest  value  for  EXP2 over the iteration,
+                returning the value of EXP1 rather than the value of EXP2.   As
+                a  particular  case  it  is  possible to return the value of an
+                iteration variable for which some function  attains  a  maximum
+                (or  minimum)  value,  e.g.  (MAXIMAL  x (f x)).  As with other
+                kinds of clauses, the user may "accumulate" the value  of  EXP1
+                into  a  variable  by supplying a third expression which is the
+                name of a variable.
+
+(ALWAYS EXP)    returns T if EXP is non-NIL on each iteration.  If EXP is  ever
+                NIL, the loop terminates immediately, no epilogue code, such as
+                that introduced by finally is run, and NIL is returned.
+
+(NEVER EXP)     is equivalent to (ALWAYS (NOT EXP)).
+
+(WHILE EXP) and (UNTIL EXP)
+                Explicit  tests  for  the  end  of  the loop may be given using
+                (WHILE EXP).  The loop terminates if EXP  becomes  NIL  at  the
+                beginning  of  an  iteration.    (UNTIL EXP)  is  equivalent to
+                (WHILE (NOT EXP)).    Both  WHILE  and  UNTIL  may   be   given
+                additional  arguments;  (WHILE E1 E2 ... En)  is  equivalent to
+                (WHILE (AND E1 E2 ... En))    and    (UNTIL E1 E2 ... En)    is
+                equivalent to (UNTIL (OR E1 E2 ... En)).
+
+(WHEN EXP)      causes a jump to the next iteration if EXP is NIL.
+
+(UNLESS EXP)    is equivalent to (WHEN (NOT EXP)).
+
+FOR  is  a general iteration construct similar in many ways to the Lisp Machine
+and  MACLISP  LOOP  construct,  and  the  earlier  Interlisp  CLISP   iteration
+construct.    FOR,  however,  is  considerably  simpler,  far more "lispy", and
+somewhat less powerful.
+
+All variable binding/updating still precedes any tests or  other  code.    Also
+note  that  all  WHEN  or  UNLESS clauses apply to all action clauses, not just
+subsequent ones.  This fixed order of evaluation makes FOR less  powerful  than
+LOOP, but also keeps it considerably simpler.  The basic order of evaluation is
+
+   1. bind variables to initial values (computed in the outer environment)
+
+   2. execute prologue (i.e., INITIALLY clauses)
+
+   3. while none of the termination conditions are satisfied:
+
+         a. check  conditionalization clauses (WHEN and UNLESS), and start
+            next iteration if all are not satisfied.
+
+         b. perform body, collecting into variables as necessary
+
+         c. next iteration
+
+   4. (after a termination condition is satisfied)  execute  the  epilogue
+      (i.e., FINALLY clauses)
+
+FOR  does all variable binding/updating in parallel.  There is a similar macro,
+FOR*, which does it sequentially.
+
+(FOR* . S:forms): any                                                     Macro
+- -------
+
+--
+From:  JonL.pa@XEROX.ARPA
+cc:  cl-iteration@SU-AI.ARPA
+To:  STEELE@TL-20A.ARPA
+In-reply-to:  STEELE@TL-20A.ARPA's message of Mon, 10 Dec 84 11:05:59 EST
+Subject:  Re: LOOP and Reply to Boyer
+Date:  10 Dec 84 20:06 PST
+Received:  from Semillon.ms by ArpaGateway.ms ; 10 DEC 84 20:06:52 PST
+
+Having used Interlisp's I.S.OPRS at length now, I want to re-confirm my
+original support for the so-calld LOOP macro.  By the way, I thought one
+of the versions did have a user-extensible syntax; has that been taken
+out?
+
+Regarding Bob's simplified example -- the fact that it could be written
+with other CL constructs shouldn't be allow to occlude the very powerful
+mechanism in user-extensibility, nor in the somewhat broader scope of
+LOOP (as opposed to reduction operators).  
+
+E.g.,  I once wrote an I.S.OPRS form called "inpname", which could be
+very efficient on strings (works on all things -- just super-efficient
+on strings):
+   (for C inpname <mumble> do <look-for-something> 
+      finally <break-if-get-here>)
+A big "win" was to encapsulate in only one place the schema for how to
+iterate over pnames -- I don't have to do it in a lot of little places
+simply because there is some exception to the control structure of the
+client code (in this case, the exception is what to do if you actually
+reach the end!).  In the normal case, a function call on each character
+would drastically impair performance.
+
+Also the symmetric ability to mix iteration schema simplifies things;
+consider the following Interlisp form:
+   (during 300 timerUnits 'SECONDS 
+    find MATRIX in L               ;"find" is like "for", but the 
+    as I from 0 by 2               ; return value is implicitly MATRIX
+    while (SunSetsInTheWest)
+    suchthat (AREF MATRIX K I))
+This loop has 4 different termination criteria, most of which would have
+to be programmed separately in a functional-style program, and which
+possibly would have to be programmed slightly differently depending on
+context; but the I.S.OPRS mechanism, whether user-extensible  or not,
+gives a feel not unlike a rule-based system -- you specify details and
+order-of-execution only when it matters.  The macro (or DWIM in
+Interlisp) figures out how to put the schema together.
+
+- -- JonL --
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  Lispy vs Pseudo-English Syntax
+Cc:    fahlman@CMU-CS-C.ARPA
+To:    cl-iteration@SU-AI.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12070715969.BABYL@CMU-CS-C.ARPA>
+Date:  Tue, 11 Dec 1984  22:03 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Tue 11 Dec 84 22:03:15-EST
+
+
+I think the biggest problem we're going to have in coming up with a
+standard iteration syntax is in finding some syntax that most of us can
+live with.  Many of us deeply dislike the cutesy psuedo-English style of
+the Zetalisp/Maclisp LOOP macro, yet the proponents of this style seem
+to regard it as sacred.  I don't have my Chine Nual handy, but I recall
+a sentence in there that says, more or less, the following: "Some may
+feel that this English-like style is verbose and unsightly.  These
+people are invited to use DO instead."  Well, I'm one of those people,
+and I've been using DO instead.  I don't even like to read that other
+stuff, let alone try to write it.  Still, I can see the desirability of
+having facilities like COLLECT and MAXIMIZE built into Common Lisp, so
+that people don't have do such things in ad hoc ways inside of DO loops.
+
+The kind of syntax in the PSL FOR macro (as described in the recent note
+by Shebs) looks much better to me: a free mixture of clauses, each
+introduced by a keyword and each one in a sublist of its own.  I think
+that this question of syntax is orthogonal to the other differences
+between FOR and LOOP; whatever we decide to do about such issues as
+order-of-evaluation constraints, user extensibility, which forms to
+include, and so on, it should be possible to implement these decisions
+in either syntax.
+
+The lispy syntax of FOR seems better to me for a number of reasons:
+
+1. I don't like pseudo-English in those business-oriented langauges that
+try to dupe businessmen into believing that they can program their
+IBM-PC in raw English, and I like pseudo-English even less in Lisp
+(whose power would make such claims more plausible but no more true).
+We are dealing here with a very restricted, very precise formal language
+with a simple, dumb parser.  It is a cruel hoax to pretend that this is
+English and that the resulting code means just what the corresponding
+English sentence would mean.  You must carefully understand and memorize
+what each of the keywords means in each context -- you cannot just write
+a sentence and expect the Lisp system to do the right thing.  I find
+such pseudo-English to be more confusing than an obviously artificial
+language, not less.
+
+2. I believe that the parenthesized form is easier to read quickly, at
+least for people used to Lisp syntax.  The grouping of operators and
+their arguments is visually evident; it is much harder for me to
+immediately grasp what some run-on pseudo-sentence, with chunks of
+undigested Lisp code floating around in it, is going to do.
+
+3. The unusual syntax of LOOP makes life difficult for various
+components of the programming environment.  The difficulty of parsing
+the pseudo-English in the LOOP macro itself is not really an issue,
+since that code only needs to be written once and prototypes already
+exist, but a lot of other tools such as pretty printers would have to be
+modified to understand which keywords want to cause line breaks, etc.
+
+4. Where a clause takes more than one argument-like form, the lispy
+syntax is more flexible.  An explictly delimited clause can take any
+number of by-position arguments, while the LOOP syntax requires that
+each of the additional arguments either be recognizable as a non-keyword
+or that it be introduced by some marker, usually an English preposition
+like "by" or "to".  I find it very difficult to remember which of these
+little syntactic markers go with which clauses and perform which
+operations.
+
+5. The conceit that a LOOP expression should read like a grammatical
+English sentence (though one that is unlikely to come up in polite
+converstion) leads to some poor choices of keywords.  In order to get
+the pseudo-sentences to sound right when pronounced, you need to define
+lots of synonyms, so that both the singular and plural forms, or both
+plain and "ing" forms, are allowed.  Keywords are chosen so that the
+sentences sound natural, rather than on the basis of how clearly they
+will convey the precise meaning of the operation.
+
+As far as number of keystrokes are concerned, I think it's about even.
+The parentheses add up, but often a couple of parentheses can eliminate
+two or three little connecting words.  It seems to me that the principal
+advantages of the LOOP syntax are that some people are used to it
+already and that some small number of people think that it is cute.
+
+Comments?
+
+Two additional thoughts:
+
+The labelled clauses in the FOR syntax look too much like Lisp
+expressions, since some of the labels are identical to built-in Lisp
+functions and special forms.  I can imagine some Emacs character macro
+being screwed by trying to find all the (unless ...) expressions and not
+realizing that the ones inside a FOR construct are different from the
+ones outside.  Maybe these labels should be keywords, as in (:unless
+expression) ?  One more character to type, but it would make it very
+easy to distinguish the clauses of an iteration from random functions
+and special forms.
+
+I suppose that one possibility would be sanction both the Lisp-like and
+pseudo-English types of syntax, with a simple one-to-one correspondence.
+Then people could write in whichever surface style they choose, and they
+could even convert programs written by others into their own preferred
+syntax before trying to understand them.  I don't much like this kind of
+solution, but if there is an irreconcilable division over this issue of
+syntax, this might be better than no solution at all.
+
+- -- Scott
+
+--
+From:  JonL.pa@XEROX.ARPA
+cc:  cl-iteration@SU-AI.ARPA
+To:  Fahlman@CMU-CS-C.ARPA
+In-reply-to:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>'s message of
+Subject:  Re: Lispy vs Pseudo-English Syntax
+Date:  11 Dec 84 20:49 PST
+Received:  from Burger.ms by ArpaGateway.ms ; 11 DEC 84 20:51:24 PST
+
+I'd say that a strong argument for LOOP, in addition to its use by some
+current MacLisp/LispM people, is that it reflects quite well the
+capabilities and syntax of Interlisp's I.S.OPRS; and those potential
+CommonLisp users with some Interlisp experience will find it quite
+comfortable.  Not to be overlooked is the fact that I.S.OPRS has had
+over a decade of life in the Interlisp community, and is "dearly loved"
+there; many other CLISPisms have not passed the test of time so well.
+
+This brings up another point -- your suggestion to support both
+syntaxes.  I don't think there is any technical conflict to doing so.
+In fact, I'd rather see such a mandate broadened to treat IF in the same
+way that Franz did; namely:
+    (if (test) A B)
+is expressed in Interlisp form as
+    (if (test) 
+        then A
+      else B)
+What the Franz folks noticed is that the only conflict between the two
+is when one wants to return a variable whose name is "then" or "else".
+So their IF macro accepts both forms, presumably just "biting the
+bullet" on "then" and "else".  I personally find "elseif" useful too:
+   (cond (p1 ...e1) (p2 ...e2) . . . (pn ...en))
+becomes
+   (if p1
+       then ...e1
+     elseif p2
+       then ...e2
+    . . . 
+     elseif pn
+       then ...en)
+
+As to one's personal stylistic preference for syntax -- well, one man's
+meat is another's poison.  But in defense of the expanded "if" over
+"cond", more 2-dimensional prettyprinting as opposed to "dense" code,
+and keyword-driven parsing ocasionally dispensing with parentheses, one
+can point to many vanilla computer languages that take on these more
+"familiar" names and styles *without making any pretensions to being
+'english-like'*.  (C comes to mind, even though is is probably the worst
+of all such examples!).
+
+- -- JonL --
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 11 Dec 1984  23:49-EST from JonL.pa at XEROX.ARPA
+Subject:  Lispy vs Pseudo-English Syntax
+Cc:    cl-iteration@SU-AI.ARPA
+To:    JonL.pa@XEROX.ARPA
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12070850046.BABYL@CMU-CS-C.ARPA>
+Date:  Wed, 12 Dec 1984  10:19 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Wed 12 Dec 84 10:19:43-EST
+
+
+Well, if the overwhelming majority of people who have used LOOP or
+I.S.OPRS for a year or two think that it's a truly winning syntax, I'd
+have to take that as evidence that I'm wrong about all this.  That is
+especially true if people like the iteration syntax in CLISP, but don't
+like the rest of CLISP; anyone who likes ALL of CLISP should be
+programming in Algol rather than Lisp and doesn't belong in this
+sample.
+
+As for the IF/ELSEIF business, that can be handled easily by a macro for
+those who like this sort of thing, and I don't think that having
+aternative forms in the standard language is very useful.  I once saw,
+in some code by Joe Ginder, a very simple extension for IF that gives
+you some of the same effect: just define (THEN forms) and (ELSE forms)
+as macros that turn into (PROGN forms).  So you end up with something
+that looks like the following:
+
+(if (foop)
+    (then (clause1)
+          (clause2)
+          (clause3))
+    (else (mumble1)
+          (mumble2)))
+
+I almost proposed this for incorporation into standard Common Lisp, but
+that was back when we thought the language was going to be small and
+elegant, so I didn't bring it up.
+
+- -- Scott
+
+--
+From:  CL.BOYER@UTEXAS-20.ARPA
+In-reply-to:  Msg of 13 Dec 1984  15:43-CST from "David A. Moon" <Moon at SCRC-QUABBIN.ARPA>
+Subject:  [CL.BOYER@UTEXAS-20: defmacro]
+Cc:    cl-iteration@SU-AI, STEELE@TL-20A
+To:    "David A. Moon" <Moon@SCRC-QUABBIN>
+Date:  Thu, 13 Dec 1984  22:16 CST
+Received:  from UTEXAS-20.ARPA by SU-AI.ARPA with TCP; 13 Dec 84  20:20:52 PST
+
+I should have said &rest instead of &whole.  Sorry for the
+slip.
+
+--
+From:  "David A. Moon" <Moon@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <841220173112.3.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  The message of 10 Dec 84 10:54-EST from STEELE@TL-20A.ARPA
+To:  cl-iteration%SU-AI@MIT-XX.ARPA
+Subject:  [CL.BOYER@UTEXAS-20.ARPA: defmacro]
+Date:  Thu, 20 Dec 84 17:31 EST
+Received:  from SCRC-EUPHRATES by SCRC-STONY-BROOK via CHAOS with CHAOS-MAIL id 147354; Thu 20-Dec-84 17:33:22-EST
+
+I don't know why cl-iteration is the right group on which to discuss this,
+but let that pass.
+
+    Date: Mon 10 Dec 84 10:54:51-EST
+    From: STEELE@TL-20A.ARPA
+
+    Date: Sun, 9 Dec 1984  16:38 CST
+    From: CL.BOYER@UTEXAS-20.ARPA
+
+    Finally, and totally unrelatedly, is it true that
+
+	 (defmacro foo x ...)
+
+    is not permited in Common Lisp and that
+    I need to write
+
+	 (defmacro foo (&whole x) ...)?
+
+    I'm trying to find some common ground with psl and the maclisp
+    dialects, but it doesn't look like there is a general
+    purpose intersection.  As I read it, a lambda list has
+    to be a list, and that excludes a symbolp.
+
+    P.S. Hedrick's 2060 Common Lisp permits (defmacro foo x ...).
+
+Our defmacro treats (defmacro foo x ...) as equivalent to
+(defmacro foo (&rest x) ...) rather than (defmacro foo (&whole x) ...).
+Which interpretation does Hedrick's use?
+
+I guess this ambiguity makes it quite clear why Common Lisp doesn't allow it.
+
+--
+From:  "David A. Moon" <Moon@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <841220203024.4.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <841220173112.3.MOON@EUPHRATES.SCRC.Symbolics.COM>
+To:  cl-iteration%SU-AI@MIT-XX.ARPA
+Subject:  [CL.BOYER@UTEXAS-20.ARPA: defmacro]
+Date:  Thu, 20 Dec 84 20:30 EST
+Received:  from SCRC-EUPHRATES by SCRC-STONY-BROOK via CHAOS with CHAOS-MAIL id 147498; Thu 20-Dec-84 20:32:41-EST
+
+    Date: Thu, 20 Dec 84 17:31 EST
+    From: "David A. Moon" <Moon@SCRC-STONY-BROOK.ARPA>
+
+    I don't know why cl-iteration is the right group on which to discuss this,
+    but let that pass.
+
+	Date: Mon 10 Dec 84 10:54:51-EST
+	From: STEELE@TL-20A.ARPA
+
+	Date: Sun, 9 Dec 1984  16:38 CST
+	From: CL.BOYER@UTEXAS-20.ARPA
+
+	Finally, and totally unrelatedly, is it true that
+
+	     (defmacro foo x ...)
+
+	is not permited in Common Lisp and that
+	I need to write
+
+	     (defmacro foo (&whole x) ...)?
+
+	I'm trying to find some common ground with psl and the maclisp
+	dialects, but it doesn't look like there is a general
+	purpose intersection.  As I read it, a lambda list has
+	to be a list, and that excludes a symbolp.
+
+	P.S. Hedrick's 2060 Common Lisp permits (defmacro foo x ...).
+
+    Our defmacro treats (defmacro foo x ...) as equivalent to
+    (defmacro foo (&rest x) ...) rather than (defmacro foo (&whole x) ...).
+    Which interpretation does Hedrick's use?
+
+    I guess this ambiguity makes it quite clear why Common Lisp doesn't allow it.
+
+Since Boyer later explained that his &WHOLE was a typo for &REST, it seems that
+there is only one proposed meaning for (defmacro foo x ...).  Furthermore, the
+generalization from (defmacro foo ((&rest x)) ...) = (defmacro foo (x) ...)
+to (defmacro foo (&rest x) ...) = (defmacro foo x ...) seems like a natural one
+for users to assume.
+
+Should this be moved off of cl-iteration and proposed to common-lisp at large?
+I don't care much, personally.
+
+--
+From:  Postmaster at SCRC-STONY-BROOK
+Resent-Message-ID:  <841221164942.0.MOON@EUPHRATES.SCRC.Symbolics.COM>
+Resent-Date:  Fri, 21 Dec 84 16:49 EST
+Resent-From:  Moon@SCRC-STONY-BROOK.ARPA
+Resent-To:  cl-iteration%su-ai@MIT-XX.ARPA
+To:  Moon at SCRC-STONY-BROOK
+Subject:  Unable to deliver letter
+Date:  Friday, 21 December 1984, 16:47-EST
+Received:  from SCRC-STONY-BROOK by SCRC-TENEX with CHAOS; Fri 21-Dec-84 16:49:30-EST
+Return-path:  <Postmaster@SCRC-STONY-BROOK>
+
+Unable to deliver letter to the following recipient:
+  cl-iteration at SU-AI: Host not responding.
+
+- ----- Text of letter follows -----
+Received: from SCRC-EUPHRATES by SCRC-STONY-BROOK via CHAOS with CHAOS-MAIL id 145892; Tue 18-Dec-84 16:02:59-EST
+Date: Tue, 18 Dec 84 16:02 EST
+From: "David A. Moon" <Moon@SCRC-STONY-BROOK.ARPA>
+Subject: PSL's FOR Macro
+To: Stan Shebs <SHEBS@UTAH-20.ARPA>
+cc: cl-iteration@SU-AI.ARPA
+In-Reply-To: The message of 10 Dec 84 19:44-EST from Stan Shebs <SHEBS@UTAH-20.ARPA>
+Message-ID: <841218160257.9.MOON@EUPHRATES.SCRC.Symbolics.COM>
+
+I think it would be great if a Common Lisp version of PSL's FOR macro were
+written and submitted to the Yellow Pages.  I also think it would be great
+if there were a Yellow Pages at all!
+
+I personally would never use this macro if I had an alternative, primarily
+because of the fixed order of evaluation, which means that you can write code
+that looks like it will be evaluated in a certain order, but actually it
+will be evaluated in a different order, causing subtle bugs.  I also find the
+syntax less readable than the syntax of LOOP, but that of course is more a
+matter of personal taste than of anything that a group could agree on.
+
+--
+From:  MOON at SCRC-TENEX
+Subject:  PSL's FOR Macro
+To:    cl-iteration%su-ai at mit-mc
+Date:  Wednesday, 2 January 1985  20:13-EST
+Received:  from MIT-MC.ARPA by SU-AI.ARPA with TCP; 2 Jan 85  17:11:41 PST
+
+I've been trying for two weeks now to get this message through.
+This is the fifth attempt; maybe this route to SU-AI will work.
+
+Date: Tue, 18 Dec 84 16:02 EST
+From: Moon@SCRC-STONY-BROOK.ARPA
+Subject: PSL's FOR Macro
+To: SHEBS@UTAH-20.ARPA
+cc: cl-iteration@SU-AI.ARPA
+In-Reply-To: The message of 10 Dec 84 19:44-EST from SHEBS at UTAH-20
+Message-ID: <841218160257.9.MOON@EUPHRATES.SCRC.Symbolics.COM>
+
+I think it would be great if a Common Lisp version of PSL's FOR macro were
+written and submitted to the Yellow Pages.  I also think it would be great
+if there were a Yellow Pages at all!
+
+I personally would never use this macro if I had an alternative, primarily
+because of the fixed order of evaluation, which means that you can write code
+that looks like it will be evaluated in a certain order, but actually it
+will be evaluated in a different order, causing subtle bugs.  I also find the
+syntax less readable than the syntax of LOOP, but that of course is more a
+matter of personal taste than of anything that a group could agree on.
+
+--
+From:  Stanley Shebs <shebs%utah-orion@utah-cs>
+In-Reply-To:  Moon's message of Tue, 18 Dec 84 16:02 EST
+Subject:  Re: PSL's FOR Macro
+To:  cl-iteration@su-ai.ARPA
+Date:  10 Apr 85 13:52 MST
+Message-Id:  <8504102131.AA22516@utah-orion.ARPA>
+Received:  by utah-orion.ARPA (4.42/4.40.2)
+
+In the hopes of reviving some discussion, here's the last message
+I saw and my long-delayed(I hate classes...) response:
+
+>I think it would be great if a Common Lisp version of PSL's FOR macro were
+>written and submitted to the Yellow Pages.  I also think it would be great
+>if there were a Yellow Pages at all!
+
+How will we know when a Yellow Pages exists?  Presumably it's not enough
+for a random person to declare that it exists and that contributions are
+encouraged and will be made available to the world...
+
+>I personally would never use this macro if I had an alternative, primarily
+>because of the fixed order of evaluation, which means that you can write code
+>that looks like it will be evaluated in a certain order, but actually it
+>will be evaluated in a different order, causing subtle bugs.
+
+PSL's FOR macro is definitely too limited to inflict on the world.
+The fixed order of evaluation does not seem to cause bugs (at least
+it never has for me) - in fact you might get more subtle bugs when
+two clauses interact in different ways depending on their relative
+order.  Fixed order of evaluation just means you have to *know* how
+it will be expanded.  Once upon a time I thought that having a
+fixed processing order for LOOP might help a compiler, but I've
+never been able to think of a real example.  Making LOOP process
+clauses in the order specified in the source is fine with me (assuming
+the clauses can be defined not to have really bizarre effects when
+in unexpected relations).
+
+>I also find the
+>syntax less readable than the syntax of LOOP, but that of course is more a
+>matter of personal taste than of anything that a group could agree on.
+
+The most important consideration for LOOP syntax should be consistency, the
+second most important, readability.  LOOP is in a rather anomalous
+position.  Its syntax, while keyword-based, cannot be the same as that
+used for function keywords - (loop :with foo bar baz ...) associates 
+three "arguments" with a single keyword. The alternative of having a
+single keyword used normally several times as in (loop :with foo :with bar ...)
+is also inconsistent with function keywords (not to mention ugly).
+Keywords plus parens seems unnecessarily redundant, but there is 
+precedent;  the defstruct options are done this way (just for the
+options taking args).  Presumably we could do this for LOOP also.
+
+Question:  would the existing LOOP with hacked syntax be acceptable
+as a standard?  Are there any clauses that are retained for historical
+reasons only, or are all of them frequently enough useful to be
+retained?  The debate of several months ago was pretty anemic -
+does this mean that nobody cares and the unreadable DO + sequence
+functions is popular?
+
+						stan shebs
+
+--
+From:  David A. Moon <Moon@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <850410223724.8.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <8504102131.AA22516@utah-orion.ARPA>
+cc:  cl-iteration@SU-AI.ARPA
+To:  Stanley Shebs <shebs%utah-orion@UTAH-CS.ARPA>
+Subject:  Re: PSL's FOR Macro
+Date:  Wed, 10 Apr 85 22:37 EST
+Received:  from SCRC-EUPHRATES by SCRC-STONY-BROOK via CHAOS with CHAOS-MAIL id 212744; Wed 10-Apr-85 22:36:29-EST
+
+    Date: 10 Apr 85 13:52 MST
+    From: Stanley Shebs <shebs%utah-orion@utah-cs>
+    Question:  would the existing LOOP with hacked syntax be acceptable
+    as a standard?  Are there any clauses that are retained for historical
+    reasons only, or are all of them frequently enough useful to be
+    retained?
+
+Perhaps you joined the mailing list after I mailed out the name of a file
+containing the results of discussions about redesigning LOOP that I had with
+several people three years ago (or was it four years?).  If you're interested
+I can dig that up again; I think there was zero response last time.  In brief,
+some clauses should be removed and the overall organization should be based
+on better principles.
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+In-reply-to:  Msg of 10 Apr 1985  15:52-EST from Stanley Shebs <shebs%utah-orion at utah-cs>
+Subject:  PSL's FOR Macro
+Cc:    cl-iteration@SU-AI.ARPA
+To:    Stanley Shebs <shebs%utah-orion@UTAH-CS.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12102217748.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 11 Apr 1985  02:07 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Thu 11 Apr 85 02:07:42-EST
+
+
+    How will we know when a Yellow Pages exists?  Presumably it's not enough
+    for a random person to declare that it exists and that contributions are
+    encouraged and will be made available to the world...
+
+Well, we've begun to gather our locally-produced Lisp packages together
+here at CMU.  At present, we have not separated this into portable and
+Perq-specific libraries, but we are keeping track of which things claim
+to be portable and nearly portable.  When this library stabilizes, it
+will be the beginning of a Yellow pages.  I guess it's not official
+until some support organization is set up to maintain and distribute
+this stuff.
+
+    Question:  would the existing LOOP with hacked syntax be acceptable
+    as a standard?  Are there any clauses that are retained for historical
+    reasons only, or are all of them frequently enough useful to be
+    retained?  The debate of several months ago was pretty anemic -
+    does this mean that nobody cares and the unreadable DO + sequence
+    functions is popular?
+
+I personally could live with DO forever, but I suspect that if I ever
+did start to use the LOOP stuff extensively, I'd get addicted like
+everyone else and decide that I couldn't live without it.  However, the
+pseudo-English syntax in LOOP still makes me nauseous, and I am deeply
+opposed to standardizing on that.
+
+I think that the only solution that is going to fly is to first do a
+pass to clean up any known problems with LOOP (as percieved by Symbolics
+and others who have been using this package) and then to put this into
+the library in two forms: the current pseudo-English version of LOOP and
+a functionally identical version with more Lispy syntax, similar to the
+PSL FOR macro.  These two forms can coexist for awhile, and then we can
+see if people want to standardize on one form or the other.  As long as
+there is a simple one-to-one translation between these alternative
+surface forms, we can't get into too much trouble doing this.
+
+That would happen a lot quicker if someone were to make available a
+public-domain version of LOOP (either syntax) as a starting point.
+
+- -- Scott
+
+--
+From:  David A. Moon <Moon@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <850411134822.6.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <FAHLMAN.12102217748.BABYL@CMU-CS-C.ARPA>
+cc:  Stanley Shebs <shebs%utah-orion@UTAH-CS.ARPA>,
+To:  Scott E. Fahlman <Fahlman@CMU-CS-C.ARPA>
+Subject:  LOOP
+Date:  Thu, 11 Apr 85 13:48 EST
+Received:  from SCRC-EUPHRATES by SCRC-QUABBIN via CHAOS with CHAOS-MAIL id 152718; Thu 11-Apr-85 13:47:54-EST
+
+    Date: Thu, 11 Apr 1985  02:07 EST
+    From: "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+
+	How will we know when a Yellow Pages exists?  Presumably it's not enough
+	for a random person to declare that it exists and that contributions are
+	encouraged and will be made available to the world...
+
+    Well, we've begun to gather our locally-produced Lisp packages together
+    here at CMU.  At present, we have not separated this into portable and
+    Perq-specific libraries, but we are keeping track of which things claim
+    to be portable and nearly portable.  When this library stabilizes, it
+    will be the beginning of a Yellow pages.  I guess it's not official
+    until some support organization is set up to maintain and distribute
+    this stuff.
+
+Good news.  Maybe soon I can stop grousing that I've been trying for three
+years to submit something to the yellow pages.
+
+    ....That would happen a lot quicker if someone were to make available a
+    public-domain version of LOOP (either syntax) as a starting point.
+
+The current LOOP is public-domain, but it only runs in Maclisp-compatible
+languages.  Its code is also pretty ugly, since it has to stay within the least
+common denominator of Maclisp.  I think there is no reason why the new LOOP for
+Common Lisp should not be public domain; the big question is who is going to
+come up with the time and energy to write it?
+
+I agree that the way to proceed is to create portable programs that people can
+try using, rather than standardizing prematurely.
+
+--
+From:  Stanley Shebs <shebs%utah-orion@utah-cs>
+In-Reply-To:  Moon's message of Thu, 11 Apr 85 13:48 EST
+Subject:  Re: LOOP
+Cc:  cl-iteration@su-ai.arpa
+To:  Moon@scrc-stony-brook.arpa
+Date:  11 Apr 85 11:52 MST
+Message-Id:  <8504111858.AA02149@utah-orion.ARPA>
+Received:  by utah-orion.ARPA (4.42/4.40.2)
+
+I've been doing a lot of inter-dialect translation lately anyway;
+a CL version of LOOP wouldn't be a noticeable increase.  If nobody
+really wants to do this, I can probably find time for this over the
+next couple months.  Probably I would fix the language to be close
+to Standard Lisp, so that it could work in some fairly small CL
+subsets...  If anybody has specific recommendations on changes from
+the current public-domain version, be sure to let me know.
+
+							stan
+
+--
+From:  "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+Subject:  LOOP
+Cc:    cl-iteration@SU-AI.ARPA
+To:    Stanley Shebs <shebs%utah-orion@UTAH-CS.ARPA>
+Sender:  FAHLMAN@CMU-CS-C.ARPA
+Message-ID:  <FAHLMAN.12102359179.BABYL@CMU-CS-C.ARPA>
+Date:  Thu, 11 Apr 1985  15:04 EST
+Received:  ID <FAHLMAN@CMU-CS-C.ARPA>; Thu 11 Apr 85 15:04:35-EST
+
+
+There's some code floating around from DePaul University that claims to
+be an implementation of Loop.  I haven't seen this yet, so I don't know
+whether it's robust, clean, complete, and so on.  I also don't know for
+sure whether it is public-domain.  It apparently uses flavors, which
+makes it less portable than would otherwise be the case.
+
+I'll try to find out more about this.  I just wanted to mention it
+before anyone got rolling on a porting effort for Loop that might
+duplicate some of the work the DePaul people have done.
+
+- -- Scott
+
+--
+From:  David A. Moon <Moon@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <850415145911.9.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <FAHLMAN.12102359179.BABYL@CMU-CS-C.ARPA>
+cc:  Stanley Shebs <shebs%utah-orion@UTAH-CS.ARPA>,
+To:  Scott E. Fahlman <Fahlman@CMU-CS-C.ARPA>
+Subject:  LOOP
+Date:  Mon, 15 Apr 85 14:59 EST
+Received:  from SCRC-EUPHRATES by SCRC-QUABBIN via CHAOS with CHAOS-MAIL id 153817; Mon 15-Apr-85 15:02:18-EST
+
+    Date: Thu, 11 Apr 1985  15:04 EST
+    From: "Scott E. Fahlman" <Fahlman@CMU-CS-C.ARPA>
+
+
+    There's some code floating around from DePaul University that claims to
+    be an implementation of Loop.  I haven't seen this yet, so I don't know
+    whether it's robust, clean, complete, and so on.  I also don't know for
+    sure whether it is public-domain.  It apparently uses flavors, which
+    makes it less portable than would otherwise be the case.
+
+    I'll try to find out more about this.  I just wanted to mention it
+    before anyone got rolling on a porting effort for Loop that might
+    duplicate some of the work the DePaul people have done.
+
+I'd like to see this if you get a copy.  On the other hand, the note that it
+uses flavors makes me suspect that what you have is an implementation of LOOPS
+rather than LOOP, which should go to the object-oriented programming group
+rather than the iteration group!
+
+--
+From:  Allan C. Wechsler <acw@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <850424161249.6.ACW@ROCKY-MOUNTAINS.SCRC.Symbolics.COM>
+To:  RPG@SU-AI.ARPA
+Subject:  Common Lisp
+Date:  Wed, 24 Apr 85 16:12 EST
+Received:  from ROCKY-MOUNTAINS by WAIKATO via CHAOS with CHAOS-MAIL id 94574; Wed 24-Apr-85 16:14:42-EST
+
+I hated Zetalisp's LOOP, so I invented a better iteration construct.  I
+understand that you moderate the CL-Iteration mailing list.  Can you
+send me the archives or a pointer to the archives, so I can see what
+ideas others have had?  Also, add me to the list, if you will.
+
+I have mixed feelings about tossing my ideas to the CL design community.
+Not that the ideas are at all secret: I want people to look at them and
+think about them.  But the CL design community has gotten so big and
+random -- I've been staying out on purpose because I have low
+zoo-tolerance.  What do you think I should do?  Is there some
+less random subset I could submit my stuff to?
+
+   --- Allan
+
+--
+From:  "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+Subject:  Testing again
+To:    cl-iteration@SU-AI.ARPA
+Sender:  FAHLMAN@C.CS.CMU.EDU
+Message-ID:  <FAHLMAN.12183166597.BABYL@C.CS.CMU.EDU>
+Date:  Thu, 13 Feb 1986  21:12 EST
+Received:  ID <FAHLMAN@C.CS.CMU.EDU>; Thu 13 Feb 86 21:12:58-EST
+
+
+(loop forever from node to node collecting dust....)
+
+--
+From:  Masinter.pa@Xerox.COM
+Comment:  Remailed at SU-AI after delay caused by mailing list error.
+Message-ID:  <860228-210232-7091@Xerox>
+To:  cl-iteration@su-ai.ARPA
+Subject:  iteration discussion
+Date:  28 Feb 86 21:01 PST
+Received:  from Cabernet.ms by ArpaGateway.ms ; 28 FEB 86 21:02:32 PST
+
+The iteration discussion died down as soon as it got "moved" to the
+iteration distribution list. Perhaps this subcomittee doesn't have the
+right membership. Here are some thoughts on iteration primitives which I
+composed several weeks ago:
+
+How legible the keyword style is depends in part upon how well the
+editor/pretty printer deals with them. The keywords aren't "cute",
+they're taken directly from some of the more commonly used "other"
+programming languages around.
+
+It is generally a bad idea to use very similar syntax to mean different
+things in different contexts. Since Common-Lisp uses "when" and "unless"
+as macros for variations on "if", it isn't good style to use them in
+loop, even though their use was natural in Interlisp (and, for history
+buffs, the Lisp/360 version which preceded it.)
+
+The most powerful application of the iteration primitives is the ability
+to define new iterators. It's disappointing that most of the Interlisp
+follow-ons left that feature out. We've found much application, e.g., in
+the ability to define ikterators which map over files or packages or
+lists or what-have-you.  If done carefully, most of the intrinsic
+complexity of "loop" can be reduced, by having a kernel of predefined
+keywords and a simple way of extending the syntax.
+
+It is likely that if there had been a powerful iteration construct that
+the sequence functions would could have been omitted from the language.
+The converse is also true:
+
+We could enhance the sequence functions using CommonLoops if we define
+default implementations for them which use only the methods that all
+ordered collections must follow, and then include new classes for
+Interval. This is the approach used successfully in Smalltalk for
+dealing with iteration, e.g.,
+
+(map #'print (interval 3 6))
+
+vs (loop for x from 3 to 6 collect (print x)).
+
+Unfortunately, taking this approach would defer any decision on
+iteration until after some decision on object-oriented programming, and
+might have performance considerations that some folks would consider
+unacceptable.
+
+--
+From:  Dick@MC.LCS.MIT.EDU
+In-reply-to:  Msg of 1 Mar 1986  00:01-EST from Masinter.pa at Xerox.COM
+Subject:  LetS -- a new loop notation
+To:    cl-iteration@SU-AI.ARPA, common-lisp@SU-AI.ARPA
+Sender:  DICK%OZ.AI.MIT.EDU@XX.LCS.MIT.EDU
+Message-ID:  <DICK.12194380978.BABYL@MIT-OZ>
+Date:  Fri, 28 Mar 1986  15:55 EST
+Received:  from MC.LCS.MIT.EDU by SU-AI.ARPA with TCP; 28 Mar 86  13:06:29 PST
+
+
+  This message advertises a Common Lisp macro package called LetS (rhymes with
+process) which it is hoped will become a standard iteration facility in Common
+Lisp.  LetS makes it possible to write a wide class of algorithms which are
+typically written as loops in a functional style which is similar to
+expressions written with the Common Lisp sequence functions.  LetS supports a
+number of features which make LetS expressions more expressive than sequence
+expressions.  However, the key feature of LetS is that every LetS expression is
+automatically transformed into an efficient iterative loop.  As a result,
+unlike sequence expressions, LetS expressions are just as efficient as the
+traditional loop expressions they replace.
+  An experimental version of LetS currently exists on the MIT-AI machine in the
+file "DICK;LETS BIN".  Although LetS is written in Common Lisp, it has not yet
+been tested on anything other than a Symbolics Lisp Machine.   For various
+detailed reasons it is unlikely to run on any other machine.  Everyone who
+wants to is invited to borrow this file and try LetS out.  I am very
+interested to hear any and all comments on LetS.
+  Extensive documentation of LetS is in the file "DICK;LETSD >" also on the
+MIT-AI machine.  Even people who do not have a Lisp Machine or are not able
+to access the code are invited to read this documentation and make comments on
+it.  I am interested in getting as wide a feedback as possible.  If you cannot
+access the documentation file directly, send me your US mail address and I will
+mail you a copy.  The documentation is much too long to reliably send via
+computer mail.
+  After an initial testing and feedback period, a final version of LetS which
+runs under all Common Lisps will be created along with formal documentation.
+This should happen within a couple of months.
+  A very brief summary of lets is included at the end of this message.
+
+						Dick Waters
+
+!
+  The advantages (with respect to conciseness, readability, verifiability and
+maintainability) of programs written in a functional style are well known.  A
+simple example of the clarity of the functional style is provided by the
+Common Lisp program below.  This function computes the sum of the positive
+elements of a vector.
+
+(defun sum-pos-vect (v)
+  (reduce #'+ (remove-if-not #'plusp v)))
+
+  A key feature of sum-pos-vect is that it makes use of an intermediate
+aggregate data structure (a sequence) to represent the selected set of vector
+elements.  The use of sequences as intermediate quantities in computations
+makes it possible to use functional composition to express a wide variety of
+computations which are usually represented as loops.  Unfortunately, as
+typically implemented, sequence expressions are extremely inefficient.
+  The problem is that straightforward evaluation of a sequence expression
+requires the actual creation of the intermediate sequence objects.  Since
+alternate algorithms using loops can often compute the same result without
+creating any intermediate sequences, the overhead engendered by using sequence
+expressions is quite reasonably regarded as unacceptable in many situations.
+  A solution to the problem of the inefficiency of sequence expressions is to
+transform them into iterative loops which do not actually create any
+intermediate sequences before executing them.  For example, sum-pos-vect might
+be transformed as shown below.
+
+(defun sum-pos-vect-transformed (v)
+  (prog (index last sum element)
+	(setq index 0)
+	(setq last (length v))
+	(setq sum 0)
+      L (if (not (< index last)) (return sum))
+	(setq element (aref v index))
+	(if (plusp element) (setq sum (+ element sum)))
+	(setq index (1+ index))
+	(go L)))
+
+  Several researchers have investigated the automatic transformation of
+sequence expressions into loops.  For example, APL compilers transform many
+kinds of sequence expressions into loops.
+  Unfortunately, there is a fundamental problem with the transformation of
+sequence expressions into loops.  Although many sequence expressions can be
+transformed, many cannot.  For example, Common Lisp provides a sequence
+function (reverse) which reverses the elements in a sequence.  Suppose that a
+sequence expression enumerates a sequence, reverses it, and then reduces it to
+some value.  This sequence expression cannot be computed without using
+intermediate storage for the enumerated sequence because the first element of
+the reversed sequence is taken from the last element of the enumerated
+sequence.  There is no way to transform the sequence expression into an
+efficient loop without eliminating the reverse operation.
+  A solution to the problems caused by the presence of non-transformable
+sequence operations is to restrict the kinds of sequence operations which
+are allowed so that every sequence expression is guaranteed to be
+transformable.  For example, one could start by outlawing the operation
+reverse.
+!
+                                     LETS
+
+  LetS supports a wide class of sequence expressions that are all guaranteed
+to be transformable into efficient loops.  In order to avoid confusion with
+the standard Common Lisp data type sequence, the data type supported by LetS
+is called a series.
+  Using LetS the program sum-pos-vect would be rendered as shown below.  The
+function Evector converts the vector v into a series which contains the same
+elements in the same order.  The function Tplusp is analogous to
+(remove-if-not #'plusp ...) except that it operates on a series.  The function
+Rsum corresponds to (reduce #'+ ... :initial-value 0) except that it takes in
+a series as its argument.
+
+(defun sum-pos-vect-lets (v)
+  (Rsum (Tplusp (Evector v))))
+
+  LetS automatically transforms the body of this program as shown below.  The
+readability of the transformed code is reduced by the fact that it contains a
+large number of gensymed variables.  However, the code is quite efficient.
+The only significant problem is that too many variables are used.  (For
+example, the variable #:vector5 is unnecessary.)  However, this problem need
+not lead to inefficiency during execution as long as a compiler which is
+capable of simple optimizations is available.
+
+(defun sum-pos-vect-lets-transformed (v)
+  (let (#:index12 #:last4 #:sum21 #:element11 #:vector5)
+    (tagbody (setq #:vector5 v)
+	     (setq #:index12 0)
+	     (setq #:last4 (length #:vector5))
+	     (setq #:sum21 0)
+	#:p0 (if (not (< #:index12 #:last4)) (go #:e9))
+	     (setq #:index12 (1+ #:index12))
+	     (setq #:element11 (aref #:vector5 #:index12))
+	     (if (not (plusp #:element11)) (go #:p0))
+	     (setq #:sum21 (+ #:element11 #:sum21))
+	     (go #:p0)
+        #:e9)
+    #:sum21))
+
+                        RESTRICTIONS ENFORCED BY LETS
+
+  The key aspect of LetS is that it enforces a palatable (and not overly
+strict) set of easily understandable restrictions which guarantee that every
+series expression can be transformed into a highly efficient loop.  This
+allows programmers to write series expressions which are much easier to work
+with than the loops they might otherwise write, without suffering a decrease
+in efficiency.
+  There are two central restrictions which are enforced by LetS.  First, every
+series must be statically identifiable so that transformation can occur at
+compile time rather than at run time.  Second every series function is
+required to be "in-order".  A series function is said to be in-order if it
+reads each input series in order, one element at a time, starting from the
+first one, and if it creates the output series (if any) in order, one element
+at a time, starting from the first one.  In addition, the function must do
+this without using internal storage for more than one element at a time for
+each of the input and output series.  For example, the series functions
+Evector, Tplusp, and Rsum are all in-order.  In contrast, the function reverse
+is not in-order.  (Reverse either has to read the input in reverse order, or
+save up the elements until the last one is read in.)
+!
+                          OTHER FEATURES OF LETS
+
+  Although efficiency is the main goal of LetS, LetS supports a number of
+features which are not directly related to efficiency per se.  Most notable of
+these is implicit mapping of functions over series.  Whenever an ordinary Lisp
+function is syntactically applied to a series, it is automatically mapped over
+the elements of the series.
+  The following example illustrates implicit mapping.  In the function below,
+the computation "(lambda (x) (expt (abs x) 3))" is implicitly mapped over the
+series of numbers generated by Evector.  Implicit mapping of this sort is a
+commonly used feature of APL and is extremely convenient.
+
+(defun sum-cube-abs-vect (v)
+  (Rsum (expt (abs (Evector v)) 3)))
+
+(sum-cube-abs-vect #(1 -2 3)) => (+ 1 8 27) => 36
+
+  New series functions can be defined by using the form defunS.  The following
+example shows how the function Rsum could be defined.  More complex forms can
+be defined by using the ordinary Common Lisp macro definition facilities to
+define macros which create appropriate series expressions.
+
+(defunS Rsum (numbers)
+    (declare (series numbers))
+  (reduceS #'+ 0 numbers))
+
+  LetS provides two forms (LetS and LetS*) which are analogous to let and
+let*.  As shown in the example below, These forms can be used to bind both
+ordinary variables (e.g., num-obs, mean, and deviation) and series variables
+(e.g., ob).  Whether or not a variable is a series is determined
+by looking at the type of value produced by the expression which computes
+the value bound to it.
+
+(defun mean-and-deviation (observations)
+  (letS* ((ob (Elist observations))
+          (num-obs (Rlength ob))
+	  (mean (/ (Rsum ob) num-obs))
+	  (deviation (- (/ (Rsum (expt ob 2)) num-obs) (expt mean 2))))
+    (list mean deviation)))
+
+  The complete documentation of LetS compares LetS with the Common Lisp
+sequence functions and with the Zeta Lisp Loop macro.  LetS supports
+essentially all of the functionality of the Loop macro in a style which looks
+like sequence functions and which is exactly as efficient as the loop macro.
+
+                           THE ANCESTRY OF LETS
+
+  The LetS package described here is descended from an earlier package of the
+same name (See MIT/AIM-680a and "Expressional Loops", Proc. Eleventh ACM
+SIGACT-SIGPLAN Symposium on the Principles of Programming Languages, January
+1984).  The current system differs from the earlier system in a number of
+ways.  In particular, the new system supports a much wider set of features.
+
+--
+From:  AI.BOYER@MCC.ARPA
+Subject:  loop 
+To:    cl-iteration@su-ai
+Message-ID:  <AI.BOYER.12195780715.BABYL@MCC.ARPA>
+Date:  Wed, 2 Apr 1986  23:04 CST
+Received:  from MCC.ARPA by SU-AI.ARPA with TCP; 2 Apr 86  21:03:36 PST
+
+Would it be rude and out of place for me to suggest some sort
+of census out there on loop?  I'd like to know:
+
+(a)  How many people are sufficiently interested in this topic
+to reply with a one digit answer?
+
+(b)  How do they rate the existing loop facility?  How about a
+scale of 0 to 4:
+
+4   Keep it just the way it is
+3   Permit/make a few minor changes
+2   Make the syntax more clispy (maybe parentheses or key words)
+          but keep the basic idea
+1   Try something really different, e.g. LetS
+0   Don't let anything like it pollute the language; use remove-if-not, etc.
+
+Undoubtedly my listing of the issues reflects a big bias for
+4.  But I promise to tabulate and the report votes fairly,
+like we always do down here in Texas.
+
+--
+From:  AI.BOYER@MCC.ARPA
+Subject:  loop
+To:    cl-iteration@su-ai
+Message-ID:  <AI.BOYER.12195894818.BABYL@MCC.ARPA>
+Date:  Thu, 3 Apr 1986  09:31 CST
+Received:  from MCC.ARPA by SU-AI.ARPA with TCP; 3 Apr 86  07:30:25 PST
+
+I apologize for not making it clear in my previous census message
+that I am talking about the Maclisp/Zetalisp loop construct
+when I say "loop".
+
+--
+From:  Dick@MC.LCS.MIT.EDU
+Subject:  LetS
+To:    cl-iteration@SU-AI.ARPA
+Sender:  DICK%OZ.AI.MIT.EDU@XX.LCS.MIT.EDU
+Message-ID:  <DICK.12195943919.BABYL@MIT-OZ>
+Date:  Thu, 3 Apr 1986  15:00 EST
+Received:  from AI.AI.MIT.EDU by SU-AI.ARPA with TCP; 3 Apr 86  12:13:06 PST
+
+
+   A few days ago I sent out a message about LetS.  Apparently because it
+was too long, it did not get through to all of the recipients.  I am including
+a shortened form of the message below.  I apologize to all the people who are
+getting this twice.
+
+						Dick Waters
+
+
+                        SHORTENED LETS MESSAGE
+
+  This message advertises a Common Lisp macro package called LetS (rhymes with
+lettuce) which it is hoped will become a standard iteration facility in Common
+Lisp.  LetS makes it possible to write a wide class of algorithms which are
+typically written as loops in a functional style which is similar to
+expressions written with the Common Lisp sequence functions.  LetS supports a
+number of features which make LetS expressions more expressive than sequence
+expressions.  However, the key feature of LetS is that every LetS expression is
+automatically transformed into an efficient iterative loop.  As a result,
+unlike sequence expressions, LetS expressions are just as efficient as the
+traditional loop expressions they replace.
+  Extensive documentation of LetS is in the file "DICK;LETSD >" on the
+MIT-AI machine.  You are invited to read this documentation and make
+comments on it.  I am interested in getting as wide a feedback as
+possible.  If you cannot access the documentation file directly, send
+me your US mail address and I will mail you a copy.
+  After an initial testing and feedback period, a final version of LetS which
+runs under all Common Lisps will be created along with formal documentation.
+This should happen within a couple of months.
+
+The following is a couple of examples of using LetS
+
+This sums up the positive elements in a vector.
+
+(defun sum-pos-vect-lets (v)
+  (Rsum (Tplusp (Evector v))))
+
+Automatic mapping is used for ordinary fns applied to series of values.
+
+(defun sum-cube-abs-vect (v)
+  (Rsum (expt (abs (Evector v)) 3)))
+
+(sum-cube-abs-vect #(1 -2 3)) => (+ 1 8 27) => 36
+
+New series functions can be defined by using the form defunS.
+
+(defunS Rsum (numbers)
+    (declare (series numbers))
+  (reduceS #'+ 0 numbers))
+
+LetS provides two forms (LetS and LetS*) which are analogous to let and let*.
+
+(defun mean-and-deviation (observations)
+  (letS* ((ob (Elist observations))
+          (num-obs (Rlength ob))
+	  (mean (/ (Rsum ob) num-obs))
+	  (deviation (- (/ (Rsum (expt ob 2)) num-obs) (expt mean 2))))
+    (list mean deviation)))
+
+--
+From:  David A. Moon <Moon@SCRC-STONY-BROOK.ARPA>
+Message-ID:  <860403225119.8.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <AI.BOYER.12195780715.BABYL@MCC.ARPA>
+cc:  cl-iteration@SU-AI.ARPA
+To:  AI.BOYER@MCC.ARPA
+Subject:  loop 
+Date:  Thu, 3 Apr 86 22:51 -EST
+Received:  from EUPHRATES.SCRC.Symbolics.COM by SCRC-STONY-BROOK.ARPA via CHAOS with CHAOS-MAIL id 455078; Thu 3-Apr-86 22:53:26-EST
+
+    Date: Wed, 2 Apr 1986  23:04 CST
+    From: AI.BOYER@MCC.ARPA
+
+    (b)  How do they rate the existing loop facility?  How about a
+    scale of 0 to 4:
+
+    4   Keep it just the way it is
+    3   Permit/make a few minor changes
+    2   Make the syntax more clispy (maybe parentheses or key words)
+	      but keep the basic idea
+    1   Try something really different, e.g. LetS
+    0   Don't let anything like it pollute the language; use remove-if-not, etc.
+
+0, 1, and 3 (or 0, 1, and 2) are not mutually inconsistent.  All three
+of these should go on simultaneously.  In my opinion it would be insane
+to design Common Lisp so that users were forbidden to use Loop,
+forbidden to use LetS, or forbidden to use sequence functions.  Common
+Lisp is a rich language and programmers should use whatever style they
+find most expressive and most suited to their needs and those of the
+group within which they work.
+
+I think LetS has a lot of good ideas in it, although obviously it needs
+refinement, which can come from widespread usage.  I was glad to see Dick
+Waters spreading the word about LetS with his recent message.
+
+Loop obviously needs refinement, too, although there is much disagreement
+about exactly what that refinement should be.  I don't want to reopen that
+topic now, because I don't have enough time available right now to say
+anything intelligent, and I don't want to subject people to more unintelligent
+off the cuff flaming about Loop, which never seems to accomplish anything.
+
+--
+From:  AI.BOYER@MCC.ARPA
+Subject:  loop census
+To:    cl-iteration@su-ai
+Message-ID:  <AI.BOYER.12196967242.BABYL@MCC.ARPA>
+Date:  Mon, 7 Apr 1986  11:42 CST
+Received:  from MCC.ARPA by SU-AI.ARPA with TCP; 7 Apr 86  09:42:41 PST
+
+Here a summary of the response to my request for one digit
+opinions on Maclisp/Zetalisp loop:
+
+    3 votes for answer 2
+    1 vote for 0
+    1 (mine) vote for 4
+
+One respondent expressed general interest but no vote.
+Another thought that investigation of all items should go on
+simultaneously, and also expressed no vote.  Here, again, is
+the menu:
+
+  4   Keep it just the way it is
+  3   Permit/make a few minor changes
+  2   Make the syntax more clispy (maybe parentheses or key words)
+	      but keep the basic idea
+  1   Try something really different, e.g. LetS
+  0   Don't let anything like it pollute the language; use remove-if-not, etc.
+
+--
+From:  "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+In-reply-to:  Msg of 3 Apr 1986  00:04-EST from AI.BOYER at MCC.ARPA
+Subject:  loop 
+Cc:    cl-iteration@SU-AI.ARPA
+To:    AI.BOYER@MCC.ARPA
+Sender:  FAHLMAN@C.CS.CMU.EDU
+Message-ID:  <FAHLMAN.12197588166.BABYL@C.CS.CMU.EDU>
+Date:  Wed, 9 Apr 1986  21:32 EST
+Received:  ID <FAHLMAN@C.CS.CMU.EDU>; Wed 9 Apr 86 21:33:01-EST
+
+
+I've been travelling and just saw your note.
+
+I'll assume that by "the existing loop facility" you mean the one on the
+MIT Lisp Machine and its immediate descendants.
+
+In that case, my current view is 2 (this basic idea, but more lispy
+syntax), but I'd listen to proposals for 3 (minor changes) or 1
+(something different -- I didn't like LetS when I looked at it a couple
+of years ago, but haven't had time to read Water's latest document).  I
+don't advocate position 0 (add nothing like this), but am happy to live
+with this until I see something I like.  This isn't one of those cases
+where the hole is so awkward that ANY solution is preferable to doing
+nothing.
+
+- -- Scott
+
+--
+From:  shebs%utah-orion@utah-cs.arpa (Stanley Shebs)
+Subject:  Iteration Status
+To:  cl-iteration@su-ai.arpa
+Message-Id:  <8608212123.AA03707@utah-orion.ARPA>
+Date:  Thu, 21 Aug 86 15:23:04 MDT
+Received:  by utah-orion.ARPA (5.31/4.40.2)
+
+Is this topic dead?  I was going through an old MAIL.TXT and observed that
+the last discussion of an iteration standard was over a year ago, and there
+was very little consensus about the form or even a need for a general
+iteration construct.  There are at least two portable iterator macros now,
+a version of MIT LOOP done by Dave Miller at DePaul and a rendition of the
+PSL FOR macro done by myself.  Neither of them is really acceptable as a
+standard, although they are fine yellow pages material.
+
+Personally, I've drifted into using DO and sequence functions, and find them
+more convenient than trying to drag a library-type FOR module everywhere I go.
+Others at Utah seem to have a similar viewpoint.  Do other people believe
+that it's not worth the effort to define a general iterator?
+If so, then perhaps this mailing list should be shut down.
+
+								stan
+
+--
+From:  Alan Snyder <snyder%hplsny@hplabs.HP.COM>
+X-Mailer:  NMail [$Revision: 2.6 $]
+In-Reply-To:  Your message of 21-Aug-86  15:23:04
+Cc:  cl-iteration@su-ai.ARPA
+To:  shebs%utah-orion@utah-cs.ARPA
+Subject:  Re: Iteration Status
+Date:  Tue, 2 Sep 86  07:56:08 PDT
+Message-Id:  <8609021456.AA26945@hplsny>
+Received:  by hplsny ; Tue, 2 Sep 86 07:56:19 pdt
+
+    From: shebs%utah-orion@utah-cs.ARPA (Stanley Shebs)
+    Subject: Iteration Status
+
+    Is this topic dead?  I was going through an old MAIL.TXT and observed that
+    the last discussion of an iteration standard was over a year ago, and there
+    was very little consensus about the form or even a need for a general
+    iteration construct.
+
+Perhaps the topic is dead.  That would be too bad.  I think Common Lisp does
+need something more than DO.
+
+    There are at least two portable iterator macros now,
+    a version of MIT LOOP done by Dave Miller at DePaul and a rendition of the
+    PSL FOR macro done by myself.  Neither of them is really acceptable as a
+    standard, although they are fine yellow pages material.
+
+We have a portable LOOP construct as well; it will be released shortly.  The
+construct is described in a memo that was distributed a while ago.  I'm not
+sure if this one is more suitable for a standard than the others.  What about
+the others makes them unsuitable?
+
+    Personally, I've drifted into using DO and sequence functions, and find them
+    more convenient than trying to drag a library-type FOR module everywhere I go.
+    Others at Utah seem to have a similar viewpoint.
+
+I disagree.  The sequence functions are OK, but DO is unreadable to me.  Every
+time I see one I have to decode it.  I think we can do better.
+
+  Alan
+- -------
+
+--
+From:  shebs%utah-orion@utah-cs.arpa (Stanley T. Shebs)
+Cc:  cl-iteration@su-ai.arpa
+Subject:  Re: Iteration Status
+To:  shebs%utah-orion@utah-cs.arpa, snyder%hplsny@hplabs.hp.com
+Message-Id:  <8609021545.AA22281@utah-orion.ARPA>
+Date:  Tue, 2 Sep 86 09:45:51 MDT
+Received:  by utah-orion.ARPA (5.31/4.40.2)
+
+Moon and others didn't like PSL FOR because of the fixed order of processing.
+In practice, it's only occasionally a pain.  Some people (Fahlman especially)
+hated the pseudo-English LOOP syntax.  I'm not a fan either, but there's not
+enough "precedent" set by other CL constructs to constrain the choices.
+HP's proposal for LOOP is a sort of amalgamation of FOR and LOOP and more
+parenthesized.  Perhaps if lots of people get a chance to play with a
+portable version, they'll get enthused about making it a standard; right
+now it's still not well publicized outside HP.
+
+I used to think DO was unreadable until I had to understand the hundreds
+of them used in MRS sources.  Now they're merely obscure :-)
+
+								stan
+
+--
+From:  DICK@AI.AI.MIT.EDU
+In-reply-to:  Msg of 21 Aug 1986  17:23-EDT from shebs%utah-orion at utah-cs.arpa (Stanley Shebs)
+Subject:  Iteration Status
+Cc:    cl-iteration@SU-AI.ARPA
+To:    shebs%utah-orion@UTAH-CS.ARPA (Stanley Shebs)
+Sender:  DICK%OZ.AI.MIT.EDU@XX.LCS.MIT.EDU
+Message-ID:  <DICK.12235747147.BABYL@MIT-OZ>
+Date:  Tue, 2 Sep 1986  12:06 EDT
+Received:  from MC.LCS.MIT.EDU by SAIL.STANFORD.EDU with TCP; 2 Sep 86  09:07:35 PDT
+
+
+I also hope that this list is not dead.
+
+The improved version of LetS, now called CL-Series, will be available
+for general use with full documentation in 6-10 weeks.  People have been
+using the initial version here for 6 months or so and are quite happy with it.
+
+			Dick Waters
+
+--
+From:  Masinter.pa@Xerox.COM
+Message-ID:  <860902-104256-1350@Xerox>
+To:  cl-iteration@su-ai.ARPA
+In-reply-to:  Alan Snyder <snyder%hplsny@hplabs.HP.COM>'s message of Tue,
+Subject:  Re: Iteration Status
+Date:  2 Sep 86 10:42 PDT
+Received:  from Cabernet.ms by ArpaGateway.ms ; 02 SEP 86 10:42:56 PDT
+
+I'd certainly like to see a loop standard in Common Lisp. In the process
+of collecting public domain "Common Lisp" I've run across a fairly large
+number of folks who believe that MIT-LISP's LOOP is part of the
+standard. We have a large number of Interlisp users who will feel at a
+loss without  an equivalent for Interlisp's FOR. Since FOR/LOOP in lisp
+is at least 15 years old, it is certainly not "premature" to standardize
+on it.
+
+I think that the transition between Interlisp FOR to MIT-LISP LOOP
+cleaned up some things, added a lot of features, and left out  an
+important one-- the ability to define new operators. It is likely that
+with the ability to define new operators, the need for some of the
+built-in ones that go added in ZetaLisp might be reduced.
+
+I've yet to acquire any of the "public domain" versions of Loop that
+reportedly exist. Does anyone have pointers to  the FTP-able versions of
+them?
+
+--
+From:  "Scott E. Fahlman" <Fahlman@C.CS.CMU.EDU>
+In-reply-to:  Msg of 2 Sep 1986  13:42-EDT from Masinter.pa at Xerox.COM
+Subject:  Iteration Status
+Cc:    cl-iteration@SU-AI.ARPA
+To:    Masinter.pa@XEROX.COM
+Sender:  FAHLMAN@C.CS.CMU.EDU
+Message-ID:  <FAHLMAN.12235792954.BABYL@C.CS.CMU.EDU>
+Date:  Tue, 2 Sep 1986  16:18 EDT
+Received:  ID <FAHLMAN@C.CS.CMU.EDU>; Tue 2 Sep 86 16:18:16-EDT
+
+
+    Since FOR/LOOP in lisp
+    is at least 15 years old, it is certainly not "premature" to standardize
+    on it.
+
+For something like an iteration package, its virtues and problems can
+only be appreciated in actual use -- nobody is really going to know what
+he likes just from reading documents.  In all of the 15 years you speak
+of, the FOR/LOOP stuff has mostly been confined to Interlisp and to the
+progeny of the MIT Lisp Machine.  Therefore, only a fraction of the
+Common Lisp community has had day-to-day access to this facility.  If
+the people who had used this facility were unanimous in singing its
+praises, that might be sufficient experience, but they are not.
+
+It seems that we are divided along a couple of axes:
+
+Some people like the bag-of-tricks approach that LOOP provides, some
+people think DO is sufficient, and some people want something based on a
+more unified (if less flexible) theory, such as LetS.
+
+For a package of LOOP-like things, some people like the cute
+pseudo-English syntax, and some hate this, preferring that phrases
+(operators and their arguments) be glued together with parentheses
+rather than "from", "to", "whereas", and their friends.
+
+We always get about this far and then bog down in irreconcilable
+religious differences.  It seems to me that the right approach for
+people who want to push some package that goes beyond DO is to design
+something that they really like, put out a public-domain portable
+version, and encourage people to try it.  A year later, if all goes
+well, they should be in a position to say "look, we're all using this,
+let's standardize it".  That assumes that the people who think they
+don't like package X are willing to try it, and that once they try it
+they realize that they like it after all.  If we remain divided, I think
+that having several competing solutions available in portable form is a
+livable solution, though obviously not optimal.
+
+- -- Scott
+
+--
+From:  Don Morrison <dfm@JASPER.Palladian.COM>
+Message-ID:  <861022104204.6.DFM@WHITBY.Palladian.COM>
+In-Reply-To:  <861021115308.3.MILLER@UR-CASHEW.ARPA>
+cc:  cl-iteration@su-ai.arpa
+To:  miller@UR-ACORN.ARPA
+Subject:  Re: Applying functions to all the symbols in a package...
+Date:  Wed, 22 Oct 86 10:42 EDT
+Received:  from WHITBY.Palladian.COM by JASPER.Palladian.COM via CHAOS with SMTP id 16921; 22 Oct 86 10:42:25-EDT
+
+    For this reason, I am somewhat surprised, that CL has iterative functions for
+    fiddling with all they symbols in a package (i.e. DO-SYMBOLS and
+    DO-EXTERNAL-SYMBOLS but no equivalent MAP forms (e.g. the zetalisp MAPATOMS
+    and MAPATOMS-ALL). This is particularly surprising in light of the fact that
+    almost every other MAP function has equivalent iterations forms, and
+    vice-versa.
+
+I don't think this is true at all.  The only pair of similar mapping/iteration functions
+I can think of are mapc/dolist, and even there the correspondence isn't exact, since
+dolist can't iterate over multiple lists in parallel.  There's no mapping equivalent to
+dotimes (nor do or do*, 'though I can't really envision such a thing, anyway), and no
+iterative equivalent for map, the list mapping functions other than mapc (mapcar, maplist,
+mapl, mapcan, and mapcon), nor maphash.
+
+If you feel strongly about such things, and I suspect a lot of people do, perhaps a reasonable
+thing to consider is how to automatically generate a mapping equivalent to an iterative function:
+a sort of inverse loop macro.  Some LetS constructs seem to have that sort of feel.  Future
+discussion of this should probably move to the iteration mailing list.
+
+--
+From:  AI.BOYER@MCC.COM
+Subject:  sloop
+To:    cl-iteration@su-ai
+Message-ID:  <AI.BOYER.12254887814.BABYL@MCC.COM>
+Date:  Fri, 14 Nov 1986  10:29 CST
+Received:  from MCC.COM by SAIL.STANFORD.EDU with TCP; 14 Nov 86  08:30:12 PST
+
+Bill Schelter has produced a lovely Common Lisp substitute
+for the Maclisp/Zetalisp loop construct called sloop.  It is
+mostly upwards compatible with loop.
+
+Sloop sources may be found in the file
+  <atp.schelter>sloop.lisp
+on utexas-20.edu.
+
+The code is free.  It was written by Schelter from scratch
+and is hence definitely free of any MIT or lisp machine
+company copyright claim.
+
+Like the original I.S.OPR facility in Interlisp, the sloop
+construct permits the addition of new "collection" type
+operators; for example, an averaging operation is defined.
+
+A very general facility different from that of loop's has
+been implemented to provide user extensible iteration paths.
+One can map over tree fringes, Common Lisp hash tables, or
+packages, e.g.
+  (sloop for sym in-package 'user when (fboundp sym) collect sym).
+
+A "cross-product" concept has been added.
+Instead of writing something like:
+  (loop for x in (l1) nconc (loop for y in (l2) collect (fn x y)))
+one may write:
+  (sloop for x in (l1) sloop (for y in (l2) collect (fn x y)))
+Only one "collection site" is created and used during
+these two nested iterations.
+
+Like the original loop, sloop takes advantage of locatives
+to do collection more efficiently when they are available,
+e.g., on MIT type lisp machines.
+
+Sloop has been run in at least four dialects of Common Lisp
+on three different kinds of machines.
+
+I believe Schelter is definitely interested in reports of
+bugs and suggestions for improvements.  Mail will reach him
+at atp.schelter@utexas-20.edu or at the Mathematics
+Department, University of Texas at Austin, Austin, Texas
+78712.
+
+--
+From:  Jeff Dalton <jeff%aiva.edinburgh.ac.uk@Cs.Ucl.AC.UK>
+Cc:  AI.BOYER@mcc.com, cl-iteration@su-ai.arpa
+Subject:  LET forms gen by SLOOP
+To:  atp.schelter@r20.utexas.edu
+Message-Id:  <1519.8611171616@aiva.ed.ac.uk>
+Date:  Mon, 17 Nov 86 16:16:31 GMT
+Received:  from aiva.edinburgh.ac.uk by mv1.Cs.Ucl.AC.UK   via Janet with NIFTP
+
+SLOOP produces LET forms that are not valid in several implementations
+of Common Lisp.  For example, in Sun (Lucid) CL, the result of
+
+  (macroexpand-1 '(sloop for x in ll do (f x)))
+
+is:
+
+   (LET ((#:LIS104 LL)
+         (X))			;<-- s.b. X or (X NIL)
+     (DECLARE (T X))
+     (MACROLET NIL
+               (BLOCK NIL
+                 (TAGBODY
+                   SLOOP::NEXT-LOOP (AND (NULL #:LIS104)
+                                         (LOCAL-FINISH))
+                      (SLOOP::DESETQ X (CAR #:LIS104))
+                      (F X)
+                      (SETF #:LIS104 (CDR #:LIS104))
+                      (GO SLOOP::NEXT-LOOP)
+                   SLOOP::FINISH-LOOP))))
+
+Evaluating this form results in:
+
+   >>Error: the argument list does not match lambda list
+            (LET-VARIABLE LET-VALUE)
+
+The problem seems to be that variables like X above are intiialized
+with the syntax '(var)' instead of '(var nil)' or just 'var'.
+ 
+- -- Jeff
+
+--
+From:  Bill Schelter <ATP.SCHELTER@R20.UTEXAS.EDU>
+Message-ID:  <12255690943.35.ATP.SCHELTER@R20.UTEXAS.EDU>
+To:  cl-iteration@SU-AI.ARPA
+Subject:  let bindings
+Date:  Mon 17 Nov 86 12:01:03-CST
+Received:  from R20.UTEXAS.EDU by SAIL.STANFORD.EDU with TCP; 17 Nov 86  10:01:12 PST
+
+I have altered sloop.lisp.72 to change (let ((x)(a 3)) .. to (let (x (a 3)).. 
+ 
+Bill 
+
+- -------
+
+--
+From:  DICK@AI.AI.MIT.EDU
+Subject:  OSS (nee LetS)
+to:    CL-Iteration@SAIL.STANFORD.EDU
+Sender:  DICK%OZ.AI.MIT.EDU@XX.LCS.MIT.EDU
+Message-ID:  <DICK.12358480925.BABYL@MIT-OZ>
+Date:  Mon, 14 Dec 1987  15:43 EST
+Received:  from MC.LCS.MIT.EDU by SAIL.STANFORD.EDU with TCP; 14 Dec 87  12:43:36 PST
+
+
+I have just finished a completely new version of my LetS macro
+package.  This macro package is now called OSS and is much more
+powerful and much better documented than the prior version.  Complete
+documentation is available in two MIT AI memos (#958 and #959).
+This documentation is too long to send in a message.  However, I would
+be delighted to mail copies of the memos to anyone who sends me their
+US mail address.
+
+The macro package has been tested extensively and is being released
+for general use.  You can obtain the OSS macro package over the ARPA
+net from the AI.AI.MIT.EDU machine where it resides in the file
+DICK;OSS LISP.  This file is written in pure Common Lisp and should
+run in any implementation of Common Lisp.  It has been tested in
+Symbolics Common Lisp version 7 (it does not run in version 6), DEC
+Common Lisp on the VAX, and Lucid Common Lisp on the SUN.  The process
+of getting the macros to work in these three environments revealed
+that Common Lisp is not quite as identical in different
+implementations as it might be.  Some small changes might be necessary
+when using OSS in other versions of Common Lisp.  For assistance in
+getting OSS running in other Common Lisps, the file DICK;OSSTST LISP
+on the AI.AI.MIT.EDU machine contains a set of regression tests.
+
+Bug reports should be sent to DICK@AI.AI.MIT.EDU.  Time permitting, I
+will be glad to help fix any and all problems.
+
+When the time comes for deciding what kinds of additional looping
+constructs are going to be included in Common Lisp (in a yellow pages
+or in some other way), I would very much like to have the opportunity
+to argue for the inclusion of OSS in addition to LOOP and whatever
+else is being considered.  In this regard I would appreciate it if
+someone would check to see that I am included in the CL-ITERATION
+mailing list.  I also hope that the people on this mailing list will
+try out OSS and see what they think of it.
+
+
+					Dick Waters
+
+--
+From:  David A. Moon <Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Message-ID:  <19880802170636.6.MOON@EUPHRATES.SCRC.Symbolics.COM>
+cc:  cl-iteration@SAIL.STANFORD.EDU
+To:  Jon L White <edsel!jonl@labrea.stanford.edu>
+Subject:  Comments on X3J13 document 88-007, "The Loop Facility"
+Date:  Tue, 2 Aug 88 13:06 EDT
+Received:  from EUPHRATES.SCRC.Symbolics.COM by STONY-BROOK.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 441320; Tue 2-Aug-88 13:06:59 EDT
+
+Here are my comments on the proposed standard for LOOP.  Please respond.
+
+I have divided my comments into "substantive" comments and "editorial"
+comments.  However, the "editorial" section should not be dismissed
+as "merely editorial."  I have already filtered out all the "mere
+editorial" comments, and what remains in this section are comments on
+places where the document is inconsistent, manifestly incorrect, or
+sufficiently inscrutable that it cannot reasonably be interpreted.  Thus
+in all these places the document does not really specify how the software
+behaves, and my "editorial" comments may really be "substantive", depending
+on how the document was supposed to be interpreted.
+
+My "substantive" comments, in contrast, refer to areas where the document
+makes an unambiguous statement that I feel would be a serious mistake to
+include in the standard.
+
+Several of the examples are very poor, encouraging bad style and
+obfuscating loop issues.  I started criticizing them individually, but
+decided that that wasn't constructive without supplying suggested
+replacement examples, and so far I haven't had time to concoct examples.
+Hence, I have omitted all criticism of the examples from these remarks.
+However, this is an issue that will use up a lot of time during the
+writing of any real documentation for this iteration standard.
+
+I did not read Chapter 3 at all, as I assume it would not be in the
+standard.  I ought to have reviewed the Glossary, but I didn't.  I
+didn't pay much attention to the data type stuff, as it is to be redone.
+All page numbers refer to 88-007 as distributed with a date of May 15, 1988.
+
+
+SUBSTANTIVE COMMENTS
+
+2-13 This page is very difficult to understand, as it tries to discuss
+simultaneously the two quite different constructs "for var = val" and
+"for var = initial-val then val".  The latter construct has historically
+been a major problem for users, because it is the only case where an
+expression is not evaluated at the time one would expect.  I strongly
+suggest eliminating it from the standard.  "for var first initial-val
+then val" provides similar functionality and can easily be made equally
+efficient in most cases (mistaken efficiency considerations, involving
+preferring to set variables with LET over binding them with a LET and
+setting them later with a SETQ, were the reason for adding the "= then"
+construct in the original LOOP).  Implementations needing compatibility
+with the "= then" construct can continue to provide it, of course.  
+"for var = val" is then simply describable as "var is a locally bound
+variable that gets set to val by the body on each iteration".  The times
+when variables get set are then simply describable as "WITH variables
+are set in the prologue, in the order they appear.  FOR/AS variables are
+set in the body, in the order they appear."  This confusing business
+with FOR/AS variables sometimes being set in the body and sometimes in
+the prologue can be junked.
+
+2-45 (loop for e being each element of s ...) is a really ugly way to say to
+iterate through a sequence.  This is left over from Maclisp, where there
+was not such a well-developed concept of a sequence data type as in Common
+Lisp.  Six years ago I proposed the syntax (loop for e across s ...) for
+this; why not adopt it?
+
+2-46 I don't think the name ARRAY-ELEMENTS should be included in the
+standard.  It perpetuates confusion between arrays and vectors.
+
+2-50 The syntax USING (INDEX var) (SEQUENCE var) is wrong, because it
+results in problems of syntactic ambiguity, especially if we ever make
+DO optional.  The syntax should be USING (INDEX var SEQUENCE var).  The
+operative rule here is that each LOOP preposition is followed by one and
+only one Lisp expression, and USING should have the same syntax as a
+preposition.
+
+2-55 This business with DEFINE-LOOP-METHOD exporting things from the
+LOOP package seems wrong to me.  The argument passed to the user's code
+for the loop method should be the exact symbol that was specified in the
+definition of the loop method.  Passing neither that symbol, nor the
+symbol that was specified when the loop method was invoked, but instead
+a third symbol, one in the LOOP package, seems pointless to me.
+Furthermore I don't approve of behind-the-scenes package exporting, it
+can lead to problems.
+
+2-56 There are fundamental problems with DEFINE-LOOP-METHOD which I
+think definitely must be fixed before standardizing.  Some of these
+problems are inherited from the 10-year-old syntax of DEFINE-LOOP-PATH;
+rather than simply renaming this macro, its syntax should have been
+redesigned to be consistent with Common Lisp.  Other problems may be
+simply editorial: the division of responsibility between LOOP and the
+method-function is very poorly specified.  I'll enumerate the problems
+and my proposed solutions; for brevity this is not a complete writeup.
+If you want me to, I'll spend some more time and produce a complete
+writeup.
+
+  Instead of a separate function and method-specific-data to pass to it,
+  define-loop-method should have a body, like define-setf-method.  Thus
+  the syntax should be
+   (define-loop-method name-or-names (iter-var options...)
+                                     preposition-list
+      &body body),
+  and the preposition-list should be like a lambda-list: within
+  body each preposition name is bound to the expression that followed it;
+  &optional separates required prepositions from optional prepositions,
+  and the latter can have default-value-forms and supplied-p variables.
+  iter-var is a variable bound to the variable of iteration.
+  options... are alternating keywords and arguments, the following
+  keyword options are currently defined:
+    :inclusive variable -- enables "inclusive" iteration and binds
+                           the variable around the body to t if inclusive
+                           iteration is used, nil otherwise.
+    (one more, see below)
+
+  The method body should return its values in the standard Common Lisp
+  way, using multiple values, not as a list.
+
+  Destructuring should be handled completely by LOOP; the iter-var argument
+  may be a cons, and "variables" in the values returned by the method body
+  may be conses, which LOOP will destructure.
+
+  Data type processing should be handled completely by LOOP, the method
+  body shouldn't even need to see it.  LOOP will attach any type declarations
+  to the variable bindings where they are needed.
+
+  Temporary variables created by the body should be created by calling
+  LOOP:NAMED-VARIABLE, not by calling gensym.  This just needs to be stated
+  explicitly.
+
+  LOOP is responsible for reporting an error if USING specifies a name for
+  a variable but the body does not call LOOP:NAMED-VARIABLE with that name.
+
+  LOOP is responsible for reporting an error if there are missing prepositions,
+  extra prepositions, or the same preposition used twice.
+
+  There should be a way to define loop methods that can be invoked by
+  (loop for var method-name ...) rather than or in addition to
+  (loop for var being each method-name ...).  This can be done with
+  an option :short-syntax preposition, where preposition is the name
+  of a preposition that is assumed, thus (loop for var method-name ...)
+  expands into (loop for var being each method-name preposition...).
+
+2-65 I don't understand why GET-LOOP-METHOD is in the documentation.  I
+don't see why anything other than the internals of LOOP would ever call this.
+
+2-68 Are these backward compatibility comstructs proposed for the standard?
+I'd like to see them removed.
+
+The order of evaluation of prepositional expressions in LOOP iteration
+driving clauses needs to be defined, or explicitly undefined.  88-007
+doesn't even define this for the built-in forms of iteration, let alone
+the user-defined.  There are several possible approaches here.  The one
+I prefer is to say that syntaxes 4 and 5 of FOR/AS are special cases
+(these evaluate expressions in the body) not regarded as prepositions.
+Those aside, all prepositional expressions are evaluated exactly once,
+in the prologue, in the order that they are written, and the LOOP system
+takes care of this (the individual LOOP methods don't have to worry about
+it, the values passed to them are gensym variables where necessary to
+assure order of evaluation, similar to DEFSETF).  Some might want
+to have an escape in DEFINE-LOOP-METHOD that allows access to the
+unevaluated prepositional phrase, however note that the only thing this
+would be used for is the WITH-KEY preposition in the obsolete
+HASH-ELEMENTS method; WITH-KEY is inconsistent with everything else,
+I have always thought it was bogus (it should have been done with USING),
+and I don't think we want to give users the tool to create more
+inconsistencies like that one.
+
+I'd like to see a standardized way to define new value accumulation
+clauses, in addition to this proposal's standardized ways (DEFLOOP and
+DEFINE-LOOP-METHOD) to define new iteration driving clauses.  I suppose
+that can always be added later.
+!
+EDITORIAL COMMENTS
+
+1-3 "The expanded loop form is a lambda expression ... and a tagbody"
+is not really true.  This is misleading and the document should be less
+specific about what the macro expands into.  The binding can't be done
+with a lambda-expression because of the mixture of parallel and sequential
+binding.
+
+1-6 It is useful to describe a category of "value returning clauses"
+which includes all the value accumulation clauses plus always, never,
+thereis, and return.
+
+1-7 Assignment is a poor name for WITH, since it is a bind, not a SETQ.
+Local variables would be a better description.
+
+2-6 The last paragraph in the first section says FOR must precede NAMED,
+but 2-42 says NAMED must precede everything else.  Which is correct?
+
+2-7 The syntax of the AND conjunction of FOR clauses is defined only in
+this example, which shows it as "AND FOR".  MIT LOOP allows FOR to be
+either included or omitted here, and perhaps this proposal was intended
+to be the same, but that is a mistake.  The FOR should be required to be
+omitted, to avoid a syntactic ambiguity with a variable named FOR, and to
+be consistent with WITH.  Thus the example should be
+  (loop for x from 1 to 10
+        and y first nil then x
+        collect (list x y))
+
+2-8 Syntax 1 for FOR is not described carefully enough.  Although each
+of the clauses is optional, it is not valid to omit all three.  Also it
+is permissible for the clauses to appear in any order, e.g. BY before
+TO.  The description of how the direction (up or down) of stepping is
+determined and when the loop terminates is hard to understand; it would
+be better if it discussed one topic at a time.
+
+2-14 This description is hard to understand.  It should simply say that
+var is a local variable that is set within the body of the loop; on the
+first iteration it is set to expr1, on all iterations after the first
+it is set to expr2.
+
+2-15 "the expression in the loop body is not evaluated" doesn't make
+any sense.  I imagine this means "the loop body is not executed".
+
+2-18 The first remark doesn't make sense unless "clause" is a typo
+for "loop expression", i.e. an entire loop.  The second remark is
+probably inaccurate; the fourth example on the next page makes it
+clear that the FINALLY clause may or may not be evaluated depending
+on which clause terminates the loop.
+
+2-23,4 Wouldn't it be more consistent for COLLECT, etc. to allow a
+type-spec just like COUNT, etc?  Of course it would only be useful if
+Common Lisp defined type specifiers for subtypes of LIST, but the
+LOOP syntax is easier to understand if there are fewer exceptions.
+
+2-25,6,7 The description of the meaning of a type-spec without an INTO
+preposition seems unreasonable; the type-spec should apply to the
+anonymous variable that accumulates the count, not to <expr>.  <expr>'s
+type is not useful since only its truth or falsity matters.  Having
+the type-spec apply always to the accumulation variable, regardless of
+whether it is named or anonymous, seems more consistent.
+
+2-25 The default type for COUNT should not be FIXNUM, since in some
+implementations FIXNUM might not include 0, and some implementations
+(e.g. XCL) do not have a large enough range of fixnums to include all
+reasonable counts.  The default should be an implementation-dependent
+subtype of INTEGER, or the standard should not specify a default.
+
+2-32 The comment about BLOCK and PROGN leaves the reader more confused
+than enlightened.  I know what it's trying to say, namely that the
+reason for existence of loop conditional clauses is solely to allow
+conditionalization of loop value accumulation clauses, which have no
+equivalent Lisp expressions, but that isn't what it actually says.
+I'd sure like to see loop conditional clauses flushed, but in all these
+years no one has been able to come up with a fully satisfactory
+proposal, so it's probably difficult.
+
+2-33 The second remark paragraph is quite unclear.  I wouldn't much
+mind flushing the IT feature, but if it's going to be included it
+needs to be unambiguously explained.  IT is neither a clause nor a
+keyword.  The explanation in the original MIT documentation is much
+clearer.
+
+2-33 I don't see any discussion of the dangling ELSE issue.  To be
+unambiguous, the specification cannot avoid this issue.
+
+2-35 "Within and around these parts, you can bind...".  I can't figure
+out what this means; certainly one cannot wrap LET forms around the
+prologue, epilogue, or body.  I suggest removing this sentence since I
+can't think of anything it could be trying to say.
+
+2-35,7 Page 2-35 says FINALLY clauses go at the end of the epilogue
+but page 2-37 says they go at the beginning of the epilogue.  Similarly,
+2-35 says INITIALLY clauses go at the beginning of the prologue and
+2-37 is silent on the subject.  I believe 2-35 is wrong in both cases.
+I think prologue forms should be executed in the order that their
+defining clauses appear, and FINALLY clauses should be executed
+before all epilogue forms created by value returning clauses.
+
+2-40 The relationship between data type declarations and destructuring
+is not clear.  I believe the rule can be summed up as "destructuring has
+precedence, but atomic type specifiers distribute".  In more words, a
+data type specifier for a destructuring pattern is a tree of type
+specifiers with the same shape as the tree of variables, with these two
+exceptions:  When aligning these trees, an atom in the type specifier
+tree matching a cons in the variable tree declares the same type for
+each variable.  A cons in the type specifier tree matching an atom
+in the variable tree is a nonatomic type specifier.  The case that is
+not made clear by your document is the meaning of
+  (loop for (x y) the (vector fixnum) in l do ...); by my rules
+this means that x is a vector and y is a fixnum, not that both x and y
+are vectors of fixnums.
+
+2-44 The description of what prepositions are allowed where is quite
+unclear.  The last paragraph on this page appears to say that from, downfrom,
+upfrom, to, downto, upto, below, above, by are valid prepositions for
+all forms of series iteration, but in fact they are only valid for
+indexed series iteration [see next comment for terminology definition].
+Also it isn't made clear that
+  (loop for x being the elements of a downto 0 ...)
+is valid, even though
+  (loop for i downto 0 ...)
+is not valid.
+A much more precise description is needed here, and again on 2-63.
+
+2-44,5 The use of the word sequence both to mean "the Common Lisp
+SEQUENCE data type" and to mean "any ordered set of elements through
+which you can iterate" is extremely confusing.  For example, it leads to
+an out of place reference to DEFLOOP on page 2-45, and to confusion in
+the third bullet on 2-56.  It would be better to follow the lead of OSS
+and use "series" as the more general term.  It's a little more complex
+in LOOP, though, as we have three concepts.  In order of increasing
+generality:
+  SEQUENCE -- the Common Lisp SEQUENCE data type, see ELEMENTS
+  Indexed Series -- an ordered series of data elements that can be
+                be accessed by an integer index, see DEFLOOP
+  Series -- an ordered series of data elements that can be accessed
+                with some iteration method, not necessarily involving
+                an integer index, see DEFINE-LOOP-METHOD
+Calling all three of these "sequence" is really confusing.
+
+2-44, 2-51 The syntax of series iteration shown is incorrect.  You show
+IN/OF with no expression after it.
+
+2-49 (make-package ("temp")) should be (make-package "temp").
+
+2-51 The syntax for invoking loop methods with define-loop-method is
+wrong.  It requires a minimum of two prepositions.  In fact giving no
+prepositions at all is valid, if the loop method accepts it.
+PRESENT-SYMBOLS is an example where giving no prepositions is valid.
+
+2-53 Using define-loop-macro with a loop method name doesn't make sense,
+since loop method names don't introduce clauses, but only appear inside
+FOR/AS clauses.
+
+I think the overall framework of iteration should be described early,
+before launching into the individual clauses.  As is, the description
+of FOR cannot really be understood without referring to material near
+the very end of the document.  The LOOP specification needs to be very
+clear about the order of evaluation of various parts of the loop, when
+variables are bound, when variables are setq'ed, and when endtests are
+executed.
+
+The document does not specify any rule about duplicate variable bindings.
+It should say "Binding the same variable twice in variable-binding clauses 
+of a single LOOP expression is an error" or something stronger.  For
+example, (loop with x = '(1 2 3) for y in l collect y into x finally
+(return x)) should not be a valid loop expression, in my opinion.
+
+--
+From:  wfs@rascal.ics.utexas.edu (Bill Schelter)
+Reply-To:  wfs@cli.com
+Subject:  Comments on X3J13 document 88-007, "The Loop Facility"
+In-Reply-To:  David A. Moon's message of Tue, 2 Aug 88 13:06 EDT <19880802170636.6.MOON@EUPHRATES.SCRC.Symbolics.COM>
+Cc:  edsel!jonl@labrea.stanford.edu, cl-iteration@sail.stanford.edu
+To:  Moon@stony-brook.scrc.symbolics.com
+Received:  by rascal.ics.utexas.edu (3.2/4.22)
+Message-Id:  <8808052113.AA09031@rascal.ics.utexas.edu>
+Date:  Fri, 5 Aug 88 16:13:39 CDT
+Posted-Date:  Fri, 5 Aug 88 16:13:39 CDT
+X-Notice:  Mail into the domain CS.UTEXAS.EDU should be routed 
+
+
+I would like to see a copy of the proposed standard.  How does one obtain
+it?
+
+Some comments on Moon's comments followed by some additional suggestions:
+
+    2-45 (loop for e being each element of s ...) is a really ugly way to
+    say to
+    iterate through a sequence.  This is left over from Maclisp, where there
+    was not such a well-developed concept of a sequence data type as in Common
+    Lisp.  Six years ago I proposed the syntax (loop for e across s ...) for
+    this; why not adopt it?
+
+I agree with this.   A very bad feature of the `being' syntax
+is that it breaks the "alternating keyword and  variable" syntax, which I find
+very useful to users in reading a loop.  
+
+I would just as soon see
+
+(loop for e in-sequence s ..
+
+as being more descriptive rather than `across' but that is not too important.
+
+
+
+Bill Schelter
+
+--
+From:  Dick Gabriel <RPG@SAIL.Stanford.EDU>
+Cc:  loop-group%clam@Sun.COM
+To:  cperdue@Sun.COM
+Subject:  Revised ISO discussion, revised DRAFT Gegenda and Subcommittee meetings    
+Date:  10 Jan 89  0009 PST
+Message-Id:  <dzP8T@SAIL.Stanford.EDU>
+Received:  from SAIL.Stanford.EDU by Sun.COM (4.1/SMI-4.0)
+
+I didn't keep a copy of the original message from Cris to which I was
+responding, but I think he was asking in it why no times had been set
+aside for subcommittee meetings in Hawaii. My response (since Jan was not
+around to answer) was simply to point out what I thought was the
+well-known fact that the Hawaii meeting has been long intended to be the
+last major technical meeting with most decisions being made at or before
+it.  Therefore, subcommittee meetings are not necessary unless they are to
+decide how to run voting on topics.
+
+This wasn't meant to disparage the work of any subcommittee, but there
+happen to be several that will not be able to contribute to the current
+draft standard.  If the iteration committee has hit upon *the* approach to
+iteration, that is wonderful, and maybe it is so wonderful that X3J13 will
+want to leave the draft open until the iteration work is done. Similarly,
+the compiler and cleanup committees may not be able to get all of their
+work completed for incorporation into the current draft. The character set
+subcommittee is possibly closer to a vote than Cris considers (at least, I
+hope it is).
+
+But this is, alas, how natural selection works: The specimen dies before
+progeny emerge.
+
+In any event, I meant simply to mention that it was long known that this
+meeting was the ultimate decision-making meeting, but that I didn't see
+why X3J13 couldn't vote to overrule that. And however badly I said it,
+that's all I meant.
+
+			-rpg-
+
+--
+From:  cperdue@Sun.COM (Cris Perdue)
+Subject:  Unification of series with generators/gatherers
+To:  loop-group%clam@Sun.COM
+Message-Id:  <8901102322.AA00650@clam.sun.com>
+Date:  Tue, 10 Jan 89 15:22:14 PST
+Received:  by clam.sun.com (3.2/SMI-3.2)
+
+Dick Waters and I have talked a bit on the phone about this.
+
+As you recall, Dick has made 2 different suggestions about
+unifying gathering with series.  The first proposal involved
+a "gathering" form that returns a series.  The second involves
+gatherer objects, more as in generators/gatherers proposals.
+
+He feels that the "gathering" form he proposed in the earlier note
+should be retracted.  I found both proposals to be logical,
+and without that "gathering" form in the proposal I certainly support the style
+with gatherer objects.
+
+I hope that the other people who care will be able to support this
+also, especially since it represents a full unification of the
+concepts of series and of generators/gatherers.  We claim that
+this is a "full unification" because it represents the union of
+the functionality with only minor addition to the number of names
+required by the series proposal alone.
+
+Dick has done a lot of implementation work, and I hope he will
+send us a note about that.
+
+If there are still supporters of generators and gatherers out there,
+and I think there are, I'm soliciting your support for the unified
+proposal now.
+				-Cris
+
+--
+From:  Dan L. Pierson <pierson@mist.encore.com>
+Date:  Wed, 11 Jan 89 00:17:35 EST
+In-Reply-To:  Your message of Tue, 10 Jan 89 15:22:14 -0800.
+Subject:  Re: Unification of series with generators/gatherers 
+Cc:  "loop-group%clam%Sun.COM@berkeley.edu"@Multimax.encore.com
+To:  "cperdue%Sun.COM@berkeley.edu"@multimax.encore.com (Cris Perdue)
+Message-Id:  <8901110517.AA04114@mist.>
+Received:  from localhost by mist. (4.0/SMI-4.0)
+
+I remain a supporter of series, generators, and gatherers (in that
+order).  You and Dick appear to have made some giant steps since
+October and I would like to see your work continue.  While I can't make
+any promises until a final report and implementation appears, I would
+expect to also to see that your work or a parallel descendent of it
+ships with any Common Lisp product we produce whether or not X3J13 decides 
+to take any action on it.
+
+--
+From:  cperdue@Sun.COM (Cris Perdue)
+Cc:  gregor.pa@xerox.com, loop-group%clam@Sun.COM, sgadol%clam@Sun.COM
+Subject:  Getting experimental usage of OSS++
+To:  waters%clam@Sun.COM
+Message-Id:  <8901121840.AA03039@clam.sun.com>
+Date:  Thu, 12 Jan 89 10:40:13 PST
+Received:  by clam.sun.com (3.2/SMI-3.2)
+
+Dick,
+
+Gregor has agreed that if the new OSS with generators and gatherers
+is portable across the rull range of 12 Common Lisp implementations
+that PCL runs on, and if the copyright notice is not a problem,
+that he would include it in PCL distributions and that PCL would
+use it in its implementation.  I think this is a very excellent
+offer.
+
+Gregor has not been paying attention to the details of the design,
+but if he begins to use it, he says he would probably begin to do so.
+
+				-Cris
+
+--
+From:  Jon L White <jonl@lucid.com>
+Subject:  Common Lisp LOOP construct
+In-Reply-To:  goldman@vaxa.isi.edu's message of Mon, 10 Jul 89 13:43:56 PST <8907102144.AA27056@vaxa.isi.edu>
+Cc:  cl-iteration@sail.stanford.edu, jonl@lucid.com
+To:  goldman@vaxa.isi.edu
+Message-Id:  <8907112224.AA11635@bhopal>
+Date:  Tue, 11 Jul 89 15:24:03 PDT
+Received:  by bhopal id AA11635g; Tue, 11 Jul 89 15:24:03 PDT
+
+re: [type declarations for the USING variable in hash-table syntax]
+    It looks like whichever variable gets relegated to the USING clause
+    can't be given a type specifier.  Have I missed something?
+
+Sigh, no Neil, it looks like "we" missed something. 
+
+What would you think of having an optional type-spec for the USING
+variables in the FOR/AS syntaxes 6 and 7?  [see X3J13/89-004, p2-13].
+The bnf for USING parts would then look like:
+
+  [USING ({HASH-KEY | HASH-VALUE} <other-var> [type-spec])]
+
+This would, of course, also apply to the package iterators.
+
+
+- -- JonL --
+
+--
+From: CL-Iteration-mailer 
+Received:  from kddlab
+Subject: Please change our address for the CL-Iteration mailing list
+Date: 11 Jul 1989 23:24 EST
+
+.UUCP by uunet.uu.net (5.61/1.14) with UUCP 
+	id AA23878; Wed, 12 Jul 89 02:25:13 -0400
+Received: by kddlab.kddlabs.co.jp (4.0/6.2Junet)
+	id AA19195; Wed, 12 Jul 89 14:52:40 JST
+Received: by nuks.unisys.junet (3.2/6.4J.6)
+	id AA01610; Wed, 12 Jul 89 14:06:53 JST
+Date: Wed, 12 Jul 89 14:06:53 JST
+From: Haruyuki Kawabe <kddlab!nuks.unisys.junet!hal@uunet.UU.NET>
+Return-Path: <hal@nuks.unisys.junet>
+Message-Id: <8907120506.AA01610@nuks.unisys.junet>
+To: CL-Iteration@sail.stanford.edu
+Subject: Please change our address for the CL-Iteration mailing list
+
+Please change our address for the CL-Iteration mailing list from
+
+	mlist%unisys.junet@uunet.uu.net
+
+to
+
+	CL-Iteration%unisys.co.jp@uunet.uu.net
+
+thanks in advance.
+
+	Haruyuki Kawabe
+	Knowledge Systems
+	Nihon Unisys, Ltd.
+	2-17-51 Akasaka, Minato-ku, 
+	Tokyo 107, JAPAN  
+	e-mail: hal%unisys.co.jp@uunet.uu.net
+
+--
+From: CL-Iteration-mailer 
+Received:  from kddlab
+Subject: Please change our address for the CL-Iteration mailing list
+Date: 11 Jul 1989 23:25 EST
+
+.UUCP by uunet.uu.net (5.61/1.14) with UUCP 
+	id AA23902; Wed, 12 Jul 89 02:25:22 -0400
+Received: by kddlab.kddlabs.co.jp (4.0/6.2Junet)
+	id AA19201; Wed, 12 Jul 89 14:52:45 JST
+Received: by nuks.unisys.junet (3.2/6.4J.6)
+	id AA01615; Wed, 12 Jul 89 14:07:16 JST
+Date: Wed, 12 Jul 89 14:07:16 JST
+From: Haruyuki Kawabe <kddlab!nuks.unisys.junet!hal@uunet.UU.NET>
+Return-Path: <hal@nuks.unisys.junet>
+Message-Id: <8907120507.AA01615@nuks.unisys.junet>
+To: CL-Iteration@sail.stanford.edu
+Subject: Please change our address for the CL-Iteration mailing list
+
+Please change our address for the CL-Iteration mailing list from
+
+	mlist%unisys.junet@uunet.uu.net
+
+to
+
+	CL-Iteration%unisys.co.jp@uunet.uu.net
+
+Thanks in advance.
+
+	Haruyuki Kawabe
+	Knowledge Systems
+	Nihon Unisys, Ltd.
+	2-17-51 Akasaka, Minato-ku, 
+	Tokyo 107, JAPAN  
+	e-mail: hal%unisys.co.jp@uunet.uu.net
+
+--
+From:  Barry Margolin <barmar@Think.COM>
+Message-Id:  <19890916005600.5.BARMAR@OCCAM.THINK.COM>
+In-Reply-To:  <19890915172111.0.SISKIND@PORTNOY.parc.xerox.com>
+Cc:  slug@warbucks.ai.sri.com, cl-iteration@sail.stanford.edu, Qobi@ai.mit.edu
+To:  Siskind.pa@xerox.com
+Subject:  RETURN-FROM inside a FINALLY
+Date:  Fri, 15 Sep 89 20:56 EDT
+Received:  from OCCAM.THINK.COM by Think.COM; Fri, 15 Sep 89 20:58:54 EDT
+Return-Path:  <barmar@Think.COM>
+
+    Date: Fri, 15 Sep 89 10:21 PDT
+    From: Siskind.pa@xerox.com
+
+    This is a CommonLisp question not necessarily a
+    Symbolics question.
+
+    I have code which looks something like:
+
+    (loop named outer
+	  collect (foo) into x
+	  finally (loop for y in x
+			when (bar y)
+			  do (return-from outer x))
+		  (return nil))
+
+    The idea is that the outer loop does some work and builds a
+    list. When it is finished, the second loop in the finally
+    clause munges over that result. If a certain criteria is met
+    for any of the elements of the list, then the whole list is
+    returned by the return-from. Otherwise the, outer loop returns
+    nil. This works fine on both the L/G-machine and Ivory. When
+    I compile this in Lucid I get an error telling me that
+    there is no block named NIL when compiling (return-from outer x).
+    I can get arround this by doing:
+
+    (block outer
+     (loop collect (foo) into x
+	   finally (loop for y in x
+			 when (bar y)
+			   do (return-from outer x))
+		   (return nil)))
+
+    which works fine but I don't know whether the first example is
+    incorrect CommonLisp code or whether it is a problem with Lucid.
+	    Jeff
+    -------
+
+First of all, Common Lisp (as defined by CLtL) doesn't include the fancy
+LOOP syntax; ANSI Common Lisp is expected to, though.
+
+What appears to be happening is that the NAMED clause is specifying the
+name for the BLOCK that LOOP creates, and this is overriding the default
+name of NIL; when leaving a named loop, you must use (RETURN-FROM <name>
+<val>).  Genera, however, creates a block named NIL *and* a block with
+the specified name, so that either (RETURN <val>) or (RETURN-FROM <name>
+<val>) will work.
+
+Your workaround seems OK.  You could also change the second (RETURN NIL)
+form to (RETURN-FROM OUTER NIL).
+
+The draft ANSI LOOP spec isn't very clear about this.  In several places
+it says that a RETURN <val> clause is equivalent to DO (RETURN <val>),
+which implies that there should always be a block named NIL.  Lucid is
+pretty tricky about this -- if the loop is named, it translates a RETURN
+clause into the appropriate RETURN-FROM form.  I'm copying this response
+to the X3J13 Iteration Subcommittee to alert them to this ambiguity in
+the draft.
+
+                                                barmar
+
+--
+From:  Glenn S. Burke <gsb@ALDERAAN.SCRC.Symbolics.COM>
+Message-ID:  <19890917215816.0.GSB@GANG-GANG.SCRC.Symbolics.COM>
+In-Reply-To:  <19890916005600.5.BARMAR@OCCAM.THINK.COM>
+cc:  slug@warbucks.ai.sri.com, cl-iteration@sail.stanford.edu, Qobi@ai.mit.edu
+To:  barmar@Think.COM, Siskind.pa@xerox.com
+Subject:  RETURN-FROM inside a FINALLY
+Date:  Sun, 17 Sep 89 17:58 EDT
+Received:  from GANG-GANG.SCRC.Symbolics.COM by ALDERAAN.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 331079; 17 Sep 89 17:59:03 EDT
+
+    Date: Fri, 15 Sep 89 20:56 EDT
+    From: Barry Margolin <barmar@Think.COM>
+
+	Date: Fri, 15 Sep 89 10:21 PDT
+	From: Siskind.pa@xerox.com
+
+	This is a CommonLisp question not necessarily a
+	Symbolics question.
+
+	I have code which looks something like:
+
+	(loop named outer
+	      collect (foo) into x
+	      finally (loop for y in x
+			    when (bar y)
+			      do (return-from outer x))
+		      (return nil))
+
+	The idea is that the outer loop does some work and builds a
+	list. When it is finished, the second loop in the finally
+	clause munges over that result. If a certain criteria is met
+	for any of the elements of the list, then the whole list is
+	returned by the return-from. Otherwise the, outer loop returns
+	nil. This works fine on both the L/G-machine and Ivory. When
+	I compile this in Lucid I get an error telling me that
+	there is no block named NIL when compiling (return-from outer x).
+	I can get arround this by doing:
+
+	(block outer
+	 (loop collect (foo) into x
+	       finally (loop for y in x
+			     when (bar y)
+			       do (return-from outer x))
+		       (return nil)))
+
+	which works fine but I don't know whether the first example is
+	incorrect CommonLisp code or whether it is a problem with Lucid.
+		Jeff
+	-------
+
+    First of all, Common Lisp (as defined by CLtL) doesn't include the fancy
+    LOOP syntax; ANSI Common Lisp is expected to, though.
+
+    What appears to be happening is that the NAMED clause is specifying the
+    name for the BLOCK that LOOP creates, and this is overriding the default
+    name of NIL; when leaving a named loop, you must use (RETURN-FROM <name>
+    <val>).  Genera, however, creates a block named NIL *and* a block with
+    the specified name, so that either (RETURN <val>) or (RETURN-FROM <name>
+    <val>) will work.
+
+    Your workaround seems OK.  You could also change the second (RETURN NIL)
+    form to (RETURN-FROM OUTER NIL).
+
+Yes, this is the preferred course.  In general to get around this
+disparity, (1) don't use RETURN (or RETURN-FROM a block name of NIL) to
+return from an unnamed LOOP when within any LOOP nesting, and (2) don't
+assume that RETURN will return you from the innermost loop if it is
+named.
+
+    The draft ANSI LOOP spec isn't very clear about this.  In several places
+    it says that a RETURN <val> clause is equivalent to DO (RETURN <val>),
+    which implies that there should always be a block named NIL.  Lucid is
+    pretty tricky about this -- if the loop is named, it translates a RETURN
+    clause into the appropriate RETURN-FROM form.  I'm copying this response
+    to the X3J13 Iteration Subcommittee to alert them to this ambiguity in
+    the draft.
+
+						    barmar
+
+
+I did a little poking around at some source code and old documentation,
+and it is clear that there was a divergence of sorts back in 1983 or
+earlier, for which I may be partly to blame.  I will be following this
+up with the appropriate parties.
+
+--
+From:  Glenn S. Burke <gsb@ALDERAAN.SCRC.Symbolics.COM>
+Message-ID:  <19890917225157.2.GSB@GANG-GANG.SCRC.Symbolics.COM>
+cc:  gsb@ALDERAAN.SCRC.Symbolics.COM, discuss-clyde@ALDERAAN.SCRC.Symbolics.COM
+To:  cl-iteration@sail.stanford.edu
+Subject:  RETURN-FROM inside a FINALLY
+Date:  Sun, 17 Sep 89 18:51 EDT
+Received:  from GANG-GANG.SCRC.Symbolics.COM by ALDERAAN.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 331088; 17 Sep 89 18:52:35 EDT
+
+    Date: Fri, 15 Sep 89 20:56 EDT
+    From: Barry Margolin <barmar@Think.COM>
+
+	Date: Fri, 15 Sep 89 10:21 PDT
+	From: Siskind.pa@xerox.com
+
+	This is a CommonLisp question not necessarily a
+	Symbolics question.
+
+	I have code which looks something like:
+
+	(loop named outer
+	      collect (foo) into x
+	      finally (loop for y in x
+			    when (bar y)
+			      do (return-from outer x))
+		      (return nil))
+
+	The idea is that the outer loop does some work and builds a
+	list. When it is finished, the second loop in the finally
+	clause munges over that result. If a certain criteria is met
+	for any of the elements of the list, then the whole list is
+	returned by the return-from. Otherwise the, outer loop returns
+	nil. This works fine on both the L/G-machine and Ivory. When
+	I compile this in Lucid I get an error telling me that
+	there is no block named NIL when compiling (return-from outer x).
+	I can get arround this by doing:
+
+	(block outer
+	 (loop collect (foo) into x
+	       finally (loop for y in x
+			     when (bar y)
+			       do (return-from outer x))
+		       (return nil)))
+
+	which works fine but I don't know whether the first example is
+	incorrect CommonLisp code or whether it is a problem with Lucid.
+		Jeff
+	-------
+
+    First of all, Common Lisp (as defined by CLtL) doesn't include the fancy
+    LOOP syntax; ANSI Common Lisp is expected to, though.
+
+    What appears to be happening is that the NAMED clause is specifying the
+    name for the BLOCK that LOOP creates, and this is overriding the default
+    name of NIL; when leaving a named loop, you must use (RETURN-FROM <name>
+    <val>).  Genera, however, creates a block named NIL *and* a block with
+    the specified name, so that either (RETURN <val>) or (RETURN-FROM <name>
+    <val>) will work.
+
+    Your workaround seems OK.  You could also change the second (RETURN NIL)
+    form to (RETURN-FROM OUTER NIL).
+
+    The draft ANSI LOOP spec isn't very clear about this.  In several places
+    it says that a RETURN <val> clause is equivalent to DO (RETURN <val>),
+    which implies that there should always be a block named NIL.  Lucid is
+    pretty tricky about this -- if the loop is named, it translates a RETURN
+    clause into the appropriate RETURN-FROM form.  I'm copying this response
+    to the X3J13 Iteration Subcommittee to alert them to this ambiguity in
+    the draft.
+
+						    barmar
+
+
+This is a documentation error in the draft.  However, it is clear that
+the "intent" of Genera loop and the intent of the "other" derivations
+diverged sometime way in the past.
+
+Even back in 1983, the "update" to LOOP documentation I was maintaining
+back at MIT contained an explicit example about this sort of case,
+stating that (as Barry says above) one needs to use RETURN-FROM instead
+of RETURN to return from a named loop.  (This did make it into print as
+part of the NIL Reference Manual.)  This same documentation contains the
+erroneous equivalence of "RETURN <form>" with "DO (RETURN <form>)".
+
+I have since (back in 1986 or thereabouts) converted that LOOP to
+Common-Lisp and distributed it, with just these semantics (one block
+name).
+
+The Genera model of LOOP naming and returns is really the Zetalisp model
+of PROG naming and returns of several years ago.  Under this model, and
+ignoring "transparent" PROGs, RETURN always from the innermost PROG,
+irrespective of its name.  As Genera has developed, these semantics have
+been carefully preserved in loop.
+
+I am of the opinion that LOOP, with a single NAMED clause, should
+establish a single block with that name, and not establish a block named
+NIL.  I do not believe this to be a correction or even clarification of
+any kind; documentation of the NAMED clause is quite explicit.  However,
+X3J13/89-004 p. 2-36 says the clause "RETURN <value>" is equivalent to
+"DO (RETURN <value>)", and this should be corrected to something like
+"DO (RETURN-FROM <loop-name> <value>)" with reference to the NAMED
+clause.
+
+It has also been suggested that the NAMED clause should be modified so
+that multiple NAMED clauses are permitted.  With no NAMED clause the
+LOOP establishes one block named NIL; with one or more NAMED clause, the
+LOOP establishes that many blocks, one with each name.  This is
+something that has cropped up as a possible extension in the past.  In
+the case of this incompatibility, would aid in mechanical conversion of
+Genera-style loop to ANSI-style with minimal textual change.  Anyone
+else have any feelings about this?
+
+--
+From:  Jon L White <jonl@lucid.com>
+Subject:  RETURN-FROM inside a FINALLY
+In-Reply-To:  Glenn S. Burke's message of Sun, 17 Sep 89 18:51 EDT <19890917225157.2.GSB@GANG-GANG.SCRC.Symbolics.COM>
+Cc:  cl-iteration@sail.stanford.edu, discuss-clyde@ALDERAAN.SCRC.Symbolics.COM,
+To:  gsb@ALDERAAN.SCRC.Symbolics.COM
+Message-Id:  <8909180229.AA13529@bhopal>
+Date:  Sun, 17 Sep 89 19:29:04 PDT
+Received:  by bhopal id AA13529g; Sun, 17 Sep 89 19:29:04 PDT
+
+re: . . .  documentation of the NAMED clause is quite explicit.  However,
+    X3J13/89-004 p. 2-36 says the clause "RETURN <value>" is equivalent to
+    "DO (RETURN <value>)", and this should be corrected to something like
+    "DO (RETURN-FROM <loop-name> <value>)" with reference to the NAMED
+    clause.
+
+As I remember it, the equivalence of "RETURN <value>" and 
+"DO (RETURN <value>)"  in the X3J13 proposal was indeed by design, 
+for the express purpose of rendering the RETURN syntax obsolete  
+(i.e. why have two forms that are *almost* alike but not exactly,
+and to be so close as to be very confusing in the differences).
+See X3J13/89-004, p.2-38, where the Loop RETURN syntax is documented 
+as being supported only for backwards-compatibililty.
+
+See also X3J13/89-004 p. 1-4, which states "Expansion of the LOOP macro
+produces an implicit block (named NIL)".  The lacuna in this document
+is that the discussion of NAMED doesn't make it clear whether it adds 
+an additional name for RETURN-FROM to use, or whether it retracts the 
+one named NIL.  I think I would prefer the ZetaLisp style that simply 
+adds block names.  The current Lucid implementation dosn't support the 
+"additive" nature, but then it doesn't claim to be ANSI Common Lisp either.
+
+
+- -- JonL --
+
+--
+From:  David A. Moon <Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Message-ID:  <19890918155858.4.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <19890917225157.2.GSB@GANG-GANG.SCRC.Symbolics.COM>
+cc:  cl-iteration@sail.stanford.edu, discuss-clyde@ALDERAAN.SCRC.Symbolics.COM
+To:  Glenn S. Burke <gsb@ALDERAAN.SCRC.Symbolics.COM>
+Subject:  RETURN-FROM inside a FINALLY
+Date:  Mon, 18 Sep 89 11:58 EDT
+Received:  from EUPHRATES.SCRC.Symbolics.COM by STONY-BROOK.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 659395; 18 Sep 89 11:59:03 EDT
+
+    Date: Sun, 17 Sep 89 18:51 EDT
+    From: Glenn S. Burke <gsb@ALDERAAN.SCRC.Symbolics.COM>
+
+    The Genera model of LOOP naming and returns is really the Zetalisp model
+    of PROG naming and returns of several years ago.  Under this model, and
+    ignoring "transparent" PROGs, RETURN always from the innermost PROG,
+    irrespective of its name.  As Genera has developed, these semantics have
+    been carefully preserved in loop.
+
+To be clear: this is not a property of RETURN.  Genera's RETURN (both Zetalisp
+and Common Lisp) preserves the equivalence with RETURN-FROM NIL.  It is a
+property of PROG.  Symbolics' extension (PROG name var-list tagbody...)
+adds a block name, rather than changing the block name from NIL to name.
+
+    I am of the opinion that LOOP, with a single NAMED clause, should
+    establish a single block with that name, and not establish a block named
+    NIL.  I do not believe this to be a correction or even clarification of
+    any kind; documentation of the NAMED clause is quite explicit.  However,
+    X3J13/89-004 p. 2-36 says the clause "RETURN <value>" is equivalent to
+    "DO (RETURN <value>)", and this should be corrected to something like
+    "DO (RETURN-FROM <loop-name> <value>)" with reference to the NAMED
+    clause.
+
+This is interesting.  GSB wants the LOOP standard to behave like Lucid's
+implementation, while JonL wants the LOOP standard to behave like
+Symbolics Genera's implementation.  At least no one can be accused of
+putting their company's commercial interests above the interests of the
+community!
+
+It is surely useless for the RETURN clause in a named loop to be an
+error, and it is worse than useless for it to return from something
+other than the loop.  Thus either the equivalence from p.2-36 is wrong,
+or the NAMED clause should add a name rather than removing the name NIL.
+
+    It has also been suggested that the NAMED clause should be modified so
+    that multiple NAMED clauses are permitted.  With no NAMED clause the
+    LOOP establishes one block named NIL; with one or more NAMED clause, the
+    LOOP establishes that many blocks, one with each name.  This is
+    something that has cropped up as a possible extension in the past.  In
+    the case of this incompatibility, would aid in mechanical conversion of
+    Genera-style loop to ANSI-style with minimal textual change.  Anyone
+    else have any feelings about this?
+
+This would be an okay extension, although it's not really necessary since
+the user can just nest BLOCKs around the LOOP.  I don't think this extension
+is a good substitute for fixing the conflict between the RETURN and NAMED
+clauses.
+
+I will also suggest an Alexandrian solution to this Gordian knot: remove
+the NAMED clause from the language.  Then all LOOPs are named NIL and there
+is no question of what the RETURN clause does.  This is consistent with
+CLtL, which eliminated the named forms of PROG and DO when it adopted those
+constructs from its predecessor languages.
+
+I do not yet have a considered opinion, but currently I prefer eliminated
+the NAMED clause.
+
+--
+From:  Jon L White <jonl@lucid.com>
+Subject:  RETURN-FROM inside a FINALLY
+In-Reply-To:  David A. Moon's message of Mon, 18 Sep 89 11:58 EDT <19890918155858.4.MOON@EUPHRATES.SCRC.Symbolics.COM>
+Cc:  gsb@ALDERAAN.SCRC.Symbolics.COM, cl-iteration@sail.stanford.edu,
+To:  Moon@STONY-BROOK.SCRC.Symbolics.COM
+Message-Id:  <8909190654.AA25835@bhopal>
+Date:  Mon, 18 Sep 89 23:54:33 PDT
+Received:  by bhopal id AA25835g; Mon, 18 Sep 89 23:54:33 PDT
+
+re: I do not yet have a considered opinion, but currently I prefer eliminated
+    the NAMED clause.
+
+Actually, I would prefer this too.  Like the RETURN clause, the NAMED
+clause was retained only for backwards compatibility.  At one time, I
+had hoped we could agree to drop these  "obsolete" forms;  but there were 
+so many other serious points and time wasn't infinite time for discussion.
+
+
+- -- JonL --
+
+--
+From:  David A. Moon <Moon@STONY-BROOK.SCRC.Symbolics.COM>
+Message-ID:  <19890919152541.0.MOON@EUPHRATES.SCRC.Symbolics.COM>
+In-Reply-To:  <8909191506.AA11048@rascal.ics.utexas.edu>
+cc:  jonl@lucid.com, gsb@ALDERAAN.SCRC.Symbolics.COM, cl-iteration@sail.stanford.edu,
+To:  wfs@rascal.ics.utexas.edu
+Subject:  RETURN-FROM inside a FINALLY
+Date:  Tue, 19 Sep 89 11:25 EDT
+Received:  from EUPHRATES.SCRC.Symbolics.COM by STONY-BROOK.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 660147; 19 Sep 89 11:25:46 EDT
+
+    Date: Tue, 19 Sep 89 10:06:03 CDT
+    From: wfs@rascal.ics.UTEXAS.EDU (Bill Schelter)
+
+    The maphash might conceivably be implemented in some common lisp so as
+    to introduce new nil blocks.  It is safer to have our own block.
+
+That would be an incorrect Common Lisp implementation, so it doesn't seem
+like a very compelling argument for the design of LOOP.
+
+    This sloop uses a (do (..)..) in its body, which has a nil block.
+
+The SLOOP approach of defining an iteration type as the complete
+iteration form, instead of the individual pieces, is "simple and
+elegant" but does not generalize to allow performing multiple iterations
+in parallel, thus it doesn't seem relevant to LOOP.
+
+So I'm not sure either of your examples sheds much light on the issue
+at hand.
+
+--
+From:  wfs@rascal.ics.UTEXAS.EDU (Bill Schelter)
+Reply-To:  wfs@rascal.ics.utexas.edu
+Subject:  RETURN-FROM inside a FINALLY
+In-Reply-To:  Jon L White's message of Mon, 18 Sep 89 23:54:33 PDT <8909190654.AA25835@bhopal>
+Cc:  Moon@STONY-BROOK.SCRC.Symbolics.COM, gsb@ALDERAAN.SCRC.Symbolics.COM,
+To:  jonl@lucid.com
+Received:  by rascal.ics.utexas.edu (3.2/4.22)
+Message-Id:  <8909191506.AA11048@rascal.ics.utexas.edu>
+Date:  Tue, 19 Sep 89 10:06:03 CDT
+Posted-Date:  Tue, 19 Sep 89 10:06:03 CDT
+
+
+1) I would like to see NAMED kept as a synonym for putting a
+block around the loop, since I hate to break old working
+code unnecessarily.
+
+2) It does seem sensible to put the nil block around each loop.
+[I don't currently do this for sloop but probably should unless
+users could stick to 3)]
+
+3) I would advocate advising users to use loop-return.  I think RETURN
+X as a keyword form should be equivalent to (loop-return x).  For
+sloop I do recommend using (loop-return x) over (return x).  Since
+sloop is quite extensible, users can and do add loop macros or loop
+maps where nil would not be an appropriate block name.  There needs to
+be a common way of returning from such extensions.  Below are two
+examples of actual user extensions, where plain return might be bad.
+
+
+;;Going through the hash table tab, looking for a value 3.
+
+(sloop for (key val) in-table tab
+           when (eql val 3) do (loop-return  ke))
+expands to
+(MACROLET
+    ((LOCAL-FINISH NIL (LIST 'GO '#:FINISH941))
+     (LOOP-FINISH NIL (LIST 'GO '#:FINISH941))
+     (LOOP-RETURN (&REST SLOOP::VALS)
+         (LIST 'RETURN-FROM '#:SLOOP940 (LIST* 'VALUES SLOOP::VALS))))
+  (BLOCK #:SLOOP940
+    (TAGBODY
+      (MAPHASH #'(LAMBDA (KEY VAL)
+                   :SLOOP-MAP-DECLARES
+                   (PROGN (COND ((EQL KE 3) (LOOP-RETURN KE)))))
+               TAB)
+      #:FINISH941
+      (LOOP-RETURN NIL))))
+
+;; Users definition of IN-TABLE
+(def-loop-map in-table (var table)
+  `(maphash #'(lambda ,var :sloop-map-declares :sloop-body) ,table))
+
+The maphash might conceivably be implemented in some common lisp so as
+to introduce new nil blocks.  It is safer to have our own block.
+
+;; Similarly a user extension IN-FRINGE to loop through the fringe of a tree:
+
+(sloop for v in-fringe tree when (symbolp v) do (loop-return v))
+
+;expands into:
+(MACROLET
+    ((LOCAL-FINISH NIL (LIST 'GO '#:FINISH937))
+     (LOOP-FINISH NIL (LIST 'GO '#:FINISH937))
+     (LOOP-RETURN (&REST SLOOP::VALS)
+         (LIST 'RETURN-FROM '#:SLOOP936 (LIST* 'VALUES SLOOP::VALS))))
+  (BLOCK #:SLOOP936
+    (TAGBODY
+      (LABELS ((SLOOP::MAP-FRINGE-AUX (SLOOP::.XTREE.)
+                   (DO ((#:FINISH935 SLOOP::.XTREE.))
+                       ((NULL #:FINISH935))
+                     (COND
+                       ((ATOM #:FINISH935) (SETF V #:FINISH935)
+                        (SETF #:FINISH935 NIL))
+                       (T (SETF V (CAR #:FINISH935))
+                          (SETF #:FINISH935 (CDR #:FINISH935))))
+                     (COND
+                       ((NULL V))
+                       ((ATOM V) :SLOOP-MAP-DECLARES
+                        (PROGN (COND ((SYMBOLP V) (LOOP-RETURN V)))))
+                       (T (SLOOP::MAP-FRINGE-AUX V))))))
+        (SLOOP::MAP-FRINGE-AUX TREE))
+      #:FINISH937
+      (LOOP-RETURN NIL))))
+
+This sloop uses a (do (..)..) in its body, which has a nil block.
+
+Bill Schelter
+
+
+ps:  sloop.lisp is available by anonymous ftp from
+rascal.ics.utexas.edu 128.83.144.1
+
+--
+From:  wfs@rascal.ics.UTEXAS.EDU (Bill Schelter)
+Reply-To:  wfs@rascal.ics.utexas.edu
+Subject:  RETURN-FROM inside a FINALLY
+In-Reply-To:  David A. Moon's message of Tue, 19 Sep 89 11:25 EDT <19890919152541.0.MOON@EUPHRATES.SCRC.Symbolics.COM>
+Cc:  jonl@lucid.com, gsb@ALDERAAN.SCRC.Symbolics.COM,
+To:  Moon@STONY-BROOK.SCRC.Symbolics.COM
+Received:  by rascal.ics.utexas.edu (3.2/4.22)
+Message-Id:  <8909192029.AA12300@rascal.ics.utexas.edu>
+Date:  Tue, 19 Sep 89 15:29:43 CDT
+Posted-Date:  Tue, 19 Sep 89 15:29:43 CDT
+
+
+    elegant" but does not generalize to allow performing multiple iterations
+    in parallel, thus it doesn't seem relevant to LOOP.
+
+>(sloop for i below 5
+        for u in-fringe '(1  (a . b) c)
+        collect (list i u))
+((0 1) (1 A) (2 B) (3 C))
+
+Most iterations can be done in parallel, only two loop-maps
+are not currently allowed.
+
+Bill
+
+--
+From:  Jon L White <jonl@lucid.com>
+Subject:  RETURN-FROM inside a FINALLY
+In-Reply-To:  Bill Schelter's message of Tue, 19 Sep 89 10:06:03 CDT <8909191506.AA11048@rascal.ics.utexas.edu>
+Cc:  Moon@STONY-BROOK.SCRC.Symbolics.COM, gsb@ALDERAAN.SCRC.Symbolics.COM,
+To:  wfs@rascal.ics.utexas.edu
+Message-Id:  <8909192030.AA06896@bhopal>
+Date:  Tue, 19 Sep 89 13:30:06 PDT
+Received:  by bhopal id AA06896g; Tue, 19 Sep 89 13:30:06 PDT
+
+re: I would like to see NAMED kept as a synonym for putting a  block 
+    around the loop, since I hate to break old working code unnecessarily.
+
+That was the point of not digging too deeply into "fixing" minor warts
+in LOOP -- it has a large existing user-community.
+
+
+re: I would advocate advising users to use loop-return.  I think RETURN
+    X as a keyword form should be equivalent to (loop-return x).  For
+
+LOOP has had a 'loop-finish'; is 'loop-return' something peculiar to
+SLOOP?  There is a documented, substantial difference between the
+macros RETURN and LOOP-FINISH.
+
+
+
+re: Since sloop is quite extensible, users can and do add loop macros or 
+    loop maps where nil would not be an appropriate block name.  ...
+    Below are two examples of actual user extensions, where plain return 
+    might be bad.
+
+I'm not sure this is a good thing; "referential transparency" for
+plain RETURN still to me seems like a worthy goal.  Unfortunately,
+the extension mechanism commonly in use for LOOP is quite complex --
+so much so that there wasn't time go "fix" it and get agreement
+on the design for the upcoming ANSI Common Lisp proposal.  Although
+SLOOP's is certainly much simpler to understand, I tend to agree
+with moon that it fails to incorporate necessary restrictions on
+how the pieces of an "iteration" can be joined together.
+
+
+By the bye, as long as NAMED still exists, why doesn't LOOP-FINISH
+admit an optional loop-name word?  In multiply-nested loops, how
+can code in the innermost one cause the normal "finish" in an outer 
+one?  Anyone got any ideas?
+
+
+- -- JonL --
+
+--
+From:  Glenn S. Burke <gsb@ALDERAAN.SCRC.Symbolics.COM>
+Message-ID:  <19900122062623.1.GSB@GANG-GANG.SCRC.Symbolics.COM>
+To:  cl-iteration@sail.stanford.edu
+Subject:  FOR x ACROSS v
+Date:  Mon, 22 Jan 90 01:26 EST
+Received:  from GANG-GANG.SCRC.Symbolics.COM by ALDERAAN.SCRC.Symbolics.COM via CHAOS with CHAOS-MAIL id 368402; 22 Jan 90 01:26:31 EST
+
+Is this supposed to heed the fill pointer if a vector has one?  
+
+Opinions?  Current practice?
+
+
+It would seem to be the more useful choice.  Symbolics' ANSI loop does
+so.
+
+--
+From:  Jon L White <jonl@lucid.com>
+Subject:  FOR x ACROSS v
+In-Reply-To:  Glenn S. Burke's message of Mon, 22 Jan 90 01:26 EST <19900122062623.1.GSB@GANG-GANG.SCRC.Symbolics.COM>
+Cc:  cl-iteration@sail.stanford.edu
+To:  gsb@ALDERAAN.SCRC.Symbolics.COM
+Message-Id:  <9001270348.AA05312@kent-state>
+Date:  Fri, 26 Jan 90 19:48:50 PST
+Received:  by kent-state id AA05312g; Fri, 26 Jan 90 19:48:50 PST
+
+re: [ACROSS] Is this supposed to heed the fill pointer if a vector has one?  
+
+Sounds right to me.  LENGTH certainly "heeds" the fill pointer.
+
+
+- -- JonL --
+
+--

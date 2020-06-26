@@ -1,0 +1,207 @@
+--
+From: unknown
+Subject: (no subject)
+
+Generic Functions as First-Class Objects
+
+Here is a summary of issues associated with the nature of generic
+functions.  In this message I will be contrasting two possible ways of
+looking at generic functions. I will call them the two models the 
+2 category model (2CM) and the one category model (1CM).
+
+2CM is this: You define a generic function with defmethod or with
+defgeneric. Defmethod normally adds another method to the cloud of methods
+associated with the named generic function.  Defgeneric defines a generic
+function, but you don't have to use defgeneric to define generic
+functions. Defmethod's specification reads like this:
+
+	(defmethod <symbol> ...)
+
+Generic functions are objects associated with symbols. Methods can only be
+defined on names that are symbols. The ordinary function that is
+associated with a generic function is a function which invokes the correct
+method.  This is called the 2 category model because there are two
+categories of things involved in a generic function: the funcallable
+object that discriminates and dispatches to the appropriate method, which
+is a member of the second category of object.  the second category is the
+set of methods along with any other information about them, such as
+argument specifications, method combination types for the individual
+methods, etc.  There are perhaps more categories of things in an
+implementation of full-blown generic functions.
+
+2CM corresponds to the current PCL implementation and New Flavors
+to a large extent.
+
+1CM has it that a generic function is a first-class, closure-like object,
+containing as its parts the methods, the method combiner (or the methods
+combined the right way), the discriminator, and the rest of the contract.
+
+Defmethod is a way of altering a named generic function. Add-method
+is the programmatic way. Anonymous generic functions and generic
+functions associated with lexical variables can be made and methods
+added to them.
+
+In this model, MAKE-GENERIC creates an anonymous generic function, and
+ADD-METHOD adds methods to it. These are the programmatic interfaces for
+generic functions. DEFMETHOD and DEFGENERIC are toplevel interfaces and
+operate on the generic functions associated with symbols as names.
+
+1CM is a model that has not been implemented, but is being proposed as
+a cleanup of 2CM for the specification.
+
+Both of these models are subject to a further consideration, which is the
+mutability or immutability of generic functions: does
+ADD-METHOD/DELETE-METHOD alter the generic function or is a copy made with
+the addition/deletion performed?
+
+There are a number of criteria against which it is possible to measure
+the appropriateness of the model for the OOP specification: aesthetics,
+user understandability, and performance. Although I doubt I can cast
+the ultimate light on these points, I'd like to explore them a little.
+
+1. Aesthetics. 
+
+	a.) 1CM has the aesthetic edge because a generic function seems to
+	    be a single object, and this is reinforced by the name
+	    `function.'  When one talks about a complex number, one
+	    believes that it is a single thing with components, not two
+	    separate things that happen to be connected to each other.
+	    Once you have a hold of it you feel that you ought to be able
+	    to funcall it and even add other methods to it.
+
+	b.) There is a relationship between functions defined via FLET,
+	    LABELS, pure closures (#'), and DEFUN.  In the three broad
+	    categories - FLET/LABELS, closures, and DEFUN - functions are
+	    being defined and created. The difference between them is the
+	    status of naming. Pure closures have no names; FLET/LABELS
+	    associate the function with lexical variables; DEFUN
+	    associates the function with a symbol. There is no significant
+	    difference in the functions in the three categories, except
+	    how they treat the names of functions within themselves.
+
+	    2CM admits only DEFUN-like generic functions - you must
+	    associate a generic function with a name which is a symbol.
+
+	    (DEFMETHOD <symbol> ((x class-1) ...) ...), classical syntax,
+	    is a special case: The method defined can be logically
+	    attached to the class lattice at the point which is the class
+	    CLASS-1. A generic function, then, can sensibly be broken into
+	    n+1 parts: the generic function which sits in the symbol
+	    somewhere and the n methods, which sit in the class lattice.
+
+(DEFMETHOD <symbol> ((x1 class-1) (x2 class-2) ... (xn classn)) ...)
+destroys this simple model. Where is this method? Attached to the
+lattice at the class CLASS-1? CLASS-2? ... CLASS-n? Multimethods
+forces us to abandon the SmallTalk model of methods being attached
+to the lattice. The next logical place to put it is with the
+symbol somehow, but the generic function (which simply dispatches)
+is taking up the function cell. Thus, the method is associated with
+the symbol <symbol>, but loosely. The logical place to put them is
+in a box which includes the funcallable generic function with all
+of the methods.
+
+c.) The user's model of generic functions is simpler with first-class
+GF model than with the cloud model. 
+With the cloud model, there is no way to make an anonymous
+generic function that can have methods added to it.
+
+After studying Common Lisp, the user will believe that functions are
+things which can be associated with names. He will understand the
+relationship between the three function-defining categories.  The term
+`generic function' will fool him into believing that there is a
+corresponding situation with generic functions: that is, he will believe
+there are three naming schemes. He will labor hard to find the other two.
+
+In addition, there are REMOVE-METHOD and COPY-GENERIC-FUNCTION.
+
+2. New Flavors has true generic functions, if you can believe their
+documentation. Quoting Symbolics's documentation:
+
+	September 1986, page 4:
+		Like ordinary functions,  generic functions take arguments...
+	September 1986, page 26:
+		There are two kinds of functions in Symbolics Lisp: ordinary
+		functions and generic functions.
+
+	September 1986, page 27:
+		Generic functions are not only syntactically compatible with
+		ordinary functions; they are semantically compatible as
+		well:
+
+		...
+
+		They are true functions that can be passed as arguments
+		and used as the first argument to FUNCALL and MAPCAR.
+		For example:
+
+		(mapc #'reset counters)
+
+[In passing I'd like to remark on Moon's comment:
+
+``No one has ever answered my question of what are the benefits (of making
+generic functions first-class objects), unless I missed the answer.  As
+far as I can tell, the sole benefit is that you can say #'FOO instead of
+(GENERIC-FUNCTION-NAMED 'FOO).  Perhaps there is something else that I am
+missing.''
+
+I tried for three hours to rationalize Moon's comment with the Symbolics
+documentation, and I guess #'reset in the example
+
+		(mapc #'reset counters)
+
+turns into (GENERIC-FUNCTION-NAMED 'reset) somehow. Perhaps there is
+something else that I am missing.]
+
+According to the Symbolics documentation, I can get at the generic function
+named foo by saying #'foo. Presumably if there were 20 methods defined on
+foo, I would have hold of them too. Is there a way to create a function with
+LABELS and add methods to it without associated it with a symbol? I.e., does
+this work:
+
+	(labels ((foo (x y) ...))
+ 	 (defmethod foo ((x ship) y) ...))
+
+? Note that `foo' is the name here; it happens to not be a symbol.
+
+Part of the problem with the Symbolics documentation is that it is 
+simpleminded in its treatment of functions and DEFUN. On page 26 of the
+September 26 draft of the New Flavors documentation, ordinary functions
+are treated consistently with the position that DEFUN is the sole means
+of defining functions and that names for functions are synonymous with
+symbols.
+
+3. Defining generic functions to be properties of symbols might be
+a good idea, but that choice emphasizes system design (how fast can
+I make this run?) at the expense of language design (how good and 
+understandable is the design?). If we decide to choose system design
+criteria, I'd vote for calling what was previously called `generic
+functions' `generic operators.'
+
+4. Generic functions can be thought of in a way analogously to
+closures. Consider:
+
+	(defun foo (x y)
+         (labels ((x-a-ship (x y) ...)
+		  (x-a-plane (x y) ...)
+		  (x-a-goat (x y) ...))
+          (case (class-of x)
+           (ship (x-a-ship x y))
+	   (plane (x-a-plane x y))
+	   (t ...)))
+
+This is like a generic function in a certain way. The closure,
+foo, which captures x-a-ship and x-a-plane, is the generic function
+and the methods are the locally-defined functions. The difference
+between this foo and a true generic function is that a true generic
+function gives you a way to add new functions to an existing generic
+function. (The example is more complex when method combinations are
+considered.)
+
+To implement generic functions efficiently, I imagine having to
+make the equivalent of growable closures. I don't see, in thinking
+about it for 5 minutes, that there is much different in developing
+an implementation that packs the information into a single, funcallable
+object and using symbols, function cells, property lists, and hash tables
+to do that, and I doubt that the performance is very different.
+
+--
